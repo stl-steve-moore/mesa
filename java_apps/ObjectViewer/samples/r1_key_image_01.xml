@@ -1,0 +1,91 @@
+<?xml version="1.0" ?>
+<Structured_Report>
+	<ID_SOP_Class_UID>1.2.840.10008.5.1.4.1.1.88.11</ID_SOP_Class_UID>
+	<ID_SOP_Instance_UID>1.113654.3.901.10</ID_SOP_Instance_UID>
+	<ID_Study_Date>20000805</ID_Study_Date>
+	<ID_Image_Date>20000805</ID_Image_Date>
+	<ID_Study_Time>162712</ID_Study_Time>
+	<ID_Image_Time>193000</ID_Image_Time>
+	<ID_Accession_Number>MOF5023 </ID_Accession_Number>
+	<ID_Modality>SR</ID_Modality>
+	<ID_Manufacturer>IHE Labs</ID_Manufacturer>
+	<ID_Referring_Physician_s_Name>NELL^FREDERICK^P^^DR</ID_Referring_Physician_s_Name>
+	<PAT_Patient_Name>BROWN^JAMES </PAT_Patient_Name>
+	<PAT_Patient_ID>M3030 </PAT_Patient_ID>
+	<PAT_Patient_Birthdate>19501216</PAT_Patient_Birthdate>
+	<PAT_Patient_Sex>M </PAT_Patient_Sex>
+	<REL_Study_Instance_UID>1.113654.3.13.1046</REL_Study_Instance_UID>
+	<REL_Series_Instance_UID>1.113654.2.901.10.1</REL_Series_Instance_UID>
+	<REL_Study_ID>RP1023</REL_Study_ID>
+	<REL_Series_Number>1 </REL_Series_Number>
+	<REL_Image_Number>1 </REL_Image_Number>
+	<PRC_Value_Type>CONTAINER </PRC_Value_Type>
+	<PRC_Concept-name_Code_Sequence>
+		<ID_Code_Value>1111</ID_Code_Value>
+		<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+		<ID_Code_Meaning>Images for Radiology Teaching File</ID_Code_Meaning>
+	</PRC_Concept-name_Code_Sequence>
+	<PRC_Verifying_Observer_Sequence>
+		<PRC_Verifying_Organization>Midwest Aviators</PRC_Verifying_Organization>
+		<PRC_Verification_DateTime>20000805193000</PRC_Verification_DateTime>
+		<PRC_Verifying_Observer_Name>PERRY^JOHN</PRC_Verifying_Observer_Name>
+		<PRC_Verifying_Observer_Identification_Code_Seq>
+			<ID_Code_Value>6060</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>PERRY^JOHN</ID_Code_Meaning>
+		</PRC_Verifying_Observer_Identification_Code_Seq>
+	</PRC_Verifying_Observer_Sequence>
+	<PRC_Completion_Flag>COMPLETE</PRC_Completion_Flag>
+	<PRC_Verification_Flag>VERIFIED</PRC_Verification_Flag>
+	<PRC_Content_Sequence>
+		<PRC_Relationship_Type>HAS OBS CONTEXT </PRC_Relationship_Type>
+		<PRC_Value_Type>CODE</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>5000</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Observation Context Mode</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Concept_Code_Sequence>
+			<ID_Code_Value>5000.1</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>DIRECT</ID_Code_Meaning>
+		</PRC_Concept_Code_Sequence>
+		<PRC_Relationship_Type>HAS OBS CONTEXT </PRC_Relationship_Type>
+		<PRC_Value_Type>PNAME </PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>5010</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Recording Observer Name </ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Person_Name>MOORE </PRC_Person_Name>
+		<PRC_Relationship_Type>HAS OBS CONTEXT </PRC_Relationship_Type>
+		<PRC_Value_Type>TEXT</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>5020</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Recording Observer Organization Name</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Text_Value>MIR </PRC_Text_Value>
+		<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+		<PRC_Value_Type>TEXT</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>3002</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Key Image Text</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Text_Value>Teaching file example.</PRC_Text_Value>
+		<ID_Referenced_SOP_Sequence>
+			<ID_Referenced_SOP_Class_UID>1.2.840.10008.5.1.4.1.1.4</ID_Referenced_SOP_Class_UID>
+			<ID_Referenced_SOP_Instance_UID>1.113654.5.15.1268</ID_Referenced_SOP_Instance_UID>
+			<ID_Referenced_SOP_Class_UID>1.2.840.10008.5.1.4.1.1.4</ID_Referenced_SOP_Class_UID>
+			<ID_Referenced_SOP_Instance_UID>1.113654.5.15.1269</ID_Referenced_SOP_Instance_UID>
+		</ID_Referenced_SOP_Sequence>
+		<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+		<PRC_Value_Type>IMAGE </PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>4000</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>IHEY2 </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Key Image List</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+	</PRC_Content_Sequence>
+</Structured_Report>

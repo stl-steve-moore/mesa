@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+
+<schema name="TID2000.xsd">
+
+<!--  ************  SEQUENCES *************** -->
+
+  <element name="PRC_Concept-name_Code_Sequence">
+     <complexType>
+  	<element   name="ID_Code_Value"      type="string"/>
+  	<element   name="ID_Coding_Scheme_Designator"    type="string"/>
+  	<element   name="ID_Code_Meaning"   type="string"/>
+     </complexType>
+  </element>
+
+  <element name="PRC_Concept_Code_Sequence">
+     <complexType>
+  	<element   name="ID_Code_Value"      type="string"/>
+  	<element   name="ID_Coding_Scheme_Designator"    type="string"/>
+  	<element   name="ID_Code_Meaning"   type="string"/>
+     </complexType>
+  </element>
+
+  <element name="PRC_Verifying_Observer_Sequence">
+     <complexType>
+  	<element   name="PRC_Verifying_Organization"      type="string"/>
+  	<element   name="PRC_Verification_DateTime"       type="string"/>
+  	<element   name="PRC_Verifying_Observer_Name"     type="string"/>
+	<element   ref="PRC_Verifying_Observer_Identification_Code_Seq"/>
+     </complexType>
+  </element>
+
+  <element name="PRC_Verifying_Observer_Identification_Code_Seq">
+     <complexType>
+	<element   name="ID_Code_Value"  type="string"/>
+	<element   name="ID_Coding_Scheme_Designator" type="string"/>
+	<element   name="ID_Code_Meaning"  type="string"/>
+     </complexType>
+  </element>
+
+  <element name="PRC_Content_Sequence">
+     <complexType>
+	<group ref="ContentItem1" minOccurs='0' maxOccurs='unbounded'/>
+	<group ref="ContentItem2" minOccurs='0' maxOccurs='unbounded'/>
+	<group ref="ContentItem3" minOccurs='0' maxOccurs='unbounded'/>
+	<group ref="ContentItem4" minOccurs='0' maxOccurs='unbounded'/>
+     </complexType>
+  </element>
+
+<!--  *************  GROUPS (Content Items) *******************  -->
+
+  <group name="ContentItem1">
+    <all>
+     <element name="PRC_Relationship_Type"	type="string"/>
+     <element name="PRC_Value_Type"             type="string"/>
+     <element ref="PRC_Concept-name_Code_Sequence"/>
+     <element ref="PRC_Concept_Code_Sequence"/>
+    </all>
+  </group>
+
+  <group name="ContentItem2" order="seq">
+     <element name="PRC_Relationship_Type"	type="string"/>
+     <element name="PRC_Value_Type"             type="string"/>
+     <element ref="PRC_Concept-name_Code_Sequence"/>
+     <element name="PRC_Person_Name"            type="string"/>
+  </group>
+
+  <group name="ContentItem3" order="seq">
+     <element name="PRC_Relationship_Type"	type="string"/>
+     <element name="PRC_Value_Type"  type="string"/>
+     <element ref="PRC_Concept-name_Code_Sequence"/>
+     <element name="PRC_Text_Value"             type="string"/>
+  </group>
+
+  <group name="ContentItem4" order="seq">
+     <element name="PRC_Relationship_Type"	type="string"/>
+     <element name="PRC_Value_Type"             type="string"/>
+     <element ref="PRC_Concept-name_Code_Sequence"/>
+     <element ref="PRC_Content_Sequence"/>
+  </group>
+
+   
+  <simpleType name="Modality" base="string"> 
+     <enumeration value="MR" /> 
+     <enumeration value="CT" /> 
+     <enumeration value="US" />
+     <enumeration value="SR" /> 
+  </simpleType>
+
+<!--  *************  MAIN  ********************  -->
+
+  <element name="Structured_Report">
+     <complexType>	
+	<element   name="ID_SOP_Class_UID"        type="string"/>
+   	<element   name="ID_SOP_Instance_UID"     type="string"/>
+  	<element   name="ID_Study_Date"	          type="string"/>
+  	<element   name="ID_Image_Date"	          type="string"/>
+  	<element   name="ID_Study_Time"           type="string"/>
+  	<element   name="ID_Image_Time"	          type="string"/>
+  	<element   name="ID_Accession_Number"     type="string"/>
+  	<element   name="ID_Modality"	          type="Modality"/>
+  	<element   name="ID_Manufacturer"	  type="string"/>
+  	<element   name="ID_Referring_Physician_s_Name"	type="string"/>
+	<element   name="PAT_Patient_Name"	fixed="bob"	  type="string"/>
+	<element   name="PAT_Patient_ID"	  type="string"/>
+  	<element   name="PAT_Patient_Birthdate"	  type="string"/>
+  	<element   name="PAT_Patient_Sex"	  type="string"/>
+  	<element   name="REL_Study_Instance_UID"  type="string"/>
+  	<element   name="REL_Series_Instance_UID" type="string"/>
+  	<element   name="REL_Study_ID"	          type="string"/>
+	<element   name="REL_Series_Number"	  type="string"/>
+	<element   name="REL_Image_Number"        type="string"/>
+	<element   name="PRC_Value_Type"          type="string"/>
+	<element   ref="PRC_Concept-name_Code_Sequence"/>
+	<element   ref="PRC_Verifying_Observer_Sequence"/>
+	<element   name="PRC_Completion_Flag"	  type="CompletionFlag"/>
+	<element   name="PRC_Verification_Flag"   type="VerificationFlag"/>
+	<element   ref="PRC_Content_Sequence"/>
+     </complexType>
+  </element>
+
+</schema>

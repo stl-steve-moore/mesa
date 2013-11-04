@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+
+<schema name="sr_601ct.xsd">
+
+<!--        Content Values             -->
+  <simpleType name="HAS CONCEPT MOD" base="string">
+     <enumeration value="HAS CONCEPT MOD" />
+  </simpleType>
+  <simpleType name="CONTAINS" base="string">
+     <enumeration value="CONTAINS" />
+  </simpleType>
+  <simpleType name="HAS OBS CONTEXT" base="string">
+     <enumeration value="HAS OBS CONTEXT" />
+  </simpleType>
+  <simpleType name="CODE" base="string">
+     <enumeration value="CODE" />
+  </simpleType>
+  <simpleType name="PNAME" base="string">
+     <enumeration value="PNAME" />
+  </simpleType>  
+  <simpleType name="TEXT" base="string">
+     <enumeration value="TEXT" />
+  </simpleType>
+
+  <!-- Coding Schemes -->
+  <simpleType name="DCM" base="string">
+     <enumeration value="DCM" />
+  </simpleType>
+  <simpleType name="LN" base="string">
+     <enumeration value="LN" />
+  </simpleType>
+  <simpleType name="ISO369_1" base="string">
+     <enumeration value="ISO369_1" />
+  </simpleType>
+
+
+  <simpleType name="Finding" base="string">
+     <enumeration value="Finding" />
+  </simpleType>
+  <simpleType name="Findings" base="string">
+     <enumeration value="Findings" />
+  </simpleType>
+  <simpleType name="History" base="string">
+     <enumeration value="History" />
+  </simpleType>
+  <simpleType name="Conclusion" base="string">
+     <enumeration value="Conclusion" />
+  </simpleType>
+  <simpleType name="Conclusions" base="string">
+     <enumeration value="Conclusions" />
+  </simpleType>
+
+  <!-- Code Values -->
+  <simpleType name="en" base="string">
+     <enumeration value="en" />
+  </simpleType>
+  <simpleType name="xxx049" base="string">
+     <enumeration value="xxx049" />
+  </simpleType>
+  <simpleType name="xxx008" base="string">
+     <enumeration value="xxx008" />
+  </simpleType>
+  <simpleType name="xxx005" base="string">
+     <enumeration value="xxx005" />
+  </simpleType>
+  <simpleType name="121060" base="string">
+     <enumeration value="121060" />
+  </simpleType>
+  <simpleType name="121071" base="string">
+     <enumeration value="121071" />
+  </simpleType>
+  <simpleType name="121077" base="string">
+     <enumeration value="121077" />
+  </simpleType>
+  <simpleType name="121076" base="string">
+     <enumeration value="121076" />
+  </simpleType>
+
+<!--         Header Values             --> 
+  <simpleType name="PatientName" base="string">
+     <enumeration value="SMITH^HAROLD" />
+  </simpleType>
+  <simpleType name="PatientID" base="string">
+     <enumeration value="PIKR750000" />
+  </simpleType>
+  <simpleType name="PatientSex" base="string">
+     <enumeration value="M" />
+  </simpleType>
+  <simpleType name="AccessionNumber" base="string">
+     <enumeration value="PIKR0003" />
+  </simpleType>
+  <simpleType name="StudyInstanceUID" base="string">
+     <enumeration value="2.16.840.1.113662.2.1.53544936282433.12345.336.16650" />
+  </simpleType>
+  <simpleType name="RequestedProcedureID" base="string">
+     <enumeration value="xxx" />
+  </simpleType>
+  <simpleType name="CompletionFlag" base="string">
+     <enumeration value="COMPLETE" />
+  </simpleType>
+  <simpleType name="VerificationFlag" base="string">
+     <enumeration value="UNVERIFIED" />
+  </simpleType>   
+  <simpleType name="Modality" base="string"> 
+     <enumeration value="SR" />  
+  </simpleType>
+
+  <group name="ContentItem1" order="seq">
+	<element name="PRC_Relationship_Type" type="HAS CONCEPT MOD"/>
+	<element name="PRC_Value_Type" type="CODE"/>
+	<element name="PRC_Concept-name_Code_Sequence">
+	    <complexType>
+		<element name="ID_Code_Value" type="xxx049"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="Language of Content Item and Descendents"/>
+	    </complexType>
+	</element>
+	<element name="PRC_Concept_Code_Sequence">
+	    <complexType>
+		<element name="ID_Code_Value" type="en"/>
+		<element name="ID_Coding_Scheme_Designator" type="ISO369_1"/>
+		<element name="ID_Code_Meaning" type="English"/>
+	    </complexType>
+	</element>
+  </group>
+
+  <group name="ContentItem2" order="seq">
+	<element name="PRC_Relationship_Type" type="HAS OBS CONTEXT"/>
+	<element name="PRC_Value_Type" type="CODE"/>
+	<element name="PRC_Concept-name_Code_Sequence">
+	    <complexType>
+		<element name="ID_Code_Value" type="xxx005"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="Observer Type"/>
+	    </complexType>
+	</element>
+	<element name="PRC_Concept_Code_Sequence">
+	    <complexType>
+		<element name="ID_Code_Value" type="xxx006"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="Person"/>
+	    </complexType>
+	</element>
+  </group>
+
+  <group name="ContentItem3" order="seq">
+	<element name="PRC_Relationship_Type" type="HAS OBS CONTEXT"/>
+	<element name="PRC_Value_Type" type="PNAME"/>
+	<element name="PRC_Concept-name_Code_Sequence">
+	    <complexType>
+		<element name="ID_Code_Value" type="xxx008"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="Person Observer Name"/>
+	    </complexType>
+	</element>
+	<element name="PRC_Person_Name" type="MOORE^STEVE"/>
+  </group>
+
+  <group name="ContentItem4" order="seq">
+	<element name="PRC_Relationship_Type" type="CONTAINS"/>
+	<element name="PRC_Value_Type" type="CONTAINER"/>
+	<element name="PRC_Concept-name_Code_Sequence">
+	    <complexType>
+		<element name="ID_Code_Value" type="121060"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="History"/>
+	    </complexType>
+	</element>
+	<element name="PRC_Content_Sequence">
+	    <complexType>
+		<element name="PRC_Relationship_Type" type="CONTAINS"/>
+		<element name="PRC_Value_Type" type="TEXT"/>
+		<element name="PRC_Concept-name_Code_Sequence">
+	    	    <complexType>
+			<element name="ID_Code_Value" type="121060"/>
+			<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+			<element name="ID_Code_Meaning" type="History"/>
+		    </complexType>
+		</element>
+		<element name="PRC_Text_Value" type="string"/>
+	    </complexType>
+	</element>
+  </group>
+
+  <group name="ContentItem5" order="seq">
+	<element name="PRC_Relationship_Type" type="CONTAINS"/>
+	<element name="PRC_Value_Type" type="CONTAINER"/>
+	<element name="PRC_Concept-name_Code_Sequence">
+	     <complexType>
+		<element name="ID_Code_Value" type="121070"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="Findings"/>
+	     </complexType>
+	</element>
+	<element name="PRC_Content_Sequence">
+             <complexType>
+		<element name="PRC_Relationship_Type" type="CONTAINS"/>
+		<element name="PRC_Value_Type" type="TEXT"/>
+		<element name="PRC_Concept-name_Code_Sequence">
+		     <complexType>
+			<element name="ID_Code_Value" type="121071"/>
+			<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+			<element name="ID_Code_Meaning" type="Finding"/>
+		     </complexType>
+		</element>
+		<element name="PRC_Text_Value" type="string"/>
+	     </complexType>
+	</element>
+  </group>
+
+  <group name="ContentItem6" order="seq">
+	<element name="PRC_Relationship_Type" type="CONTAINS"/>
+	<element name="PRC_Value_Type" type="CONTAINER"/>
+	<element name="PRC_Concept-name_Code_Sequence">
+	     <complexType>
+		<element name="ID_Code_Value" type="121076"/>
+		<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+		<element name="ID_Code_Meaning" type="Conclusions"/>
+	     </complexType>
+	</element>
+	<element name="PRC_Content_Sequence">
+	     <complexType>
+		<element name="PRC_Relationship_Type" type="CONTAINS"/>
+		<element name="PRC_Value_Type" type="TEXT"/>
+		<element name="PRC_Concept-name_Code_Sequence">
+	     	    <complexType>
+			<element name="ID_Code_Value" type="121077"/>
+			<element name="ID_Coding_Scheme_Designator" type="DCM"/>
+			<element name="ID_Code_Meaning" type="Conclusion"/>
+		    </complexType>
+		</element>
+		<element name="PRC_Text_Value" type="string"/>
+	     </complexType>
+	</element>
+  </group>
+
+  <element name="PRC_Content_Sequence">
+   	<complexType>
+	  <all>
+	    <group ref="ContentItem1"/>
+	    <group ref="ContentItem2"/>
+	    <group ref="ContentItem3"/>
+	    <group ref="ContentItem4"/>
+	    <group ref="ContentItem5"/>
+	    <group ref="ContentItem6"/>
+	  </all>
+	</complexType>
+  </element>
+
+  <element name="Structured_Report">
+     <complexType>		
+	<element   name="ID_SOP_Class_UID"        minOccurs="0"	type="string"/>
+   	<element   name="ID_SOP_Instance_UID"     minOccurs="0"	type="string"/>
+  	<element   name="ID_Study_Date"	          minOccurs="1"	type="string"/>
+  	<element   name="ID_Image_Date"	          minOccurs="0" type="string"/>
+  	<element   name="ID_Study_Time"           minOccurs="1"	type="string"/>
+  	<element   name="ID_Image_Time"	          minOccurs="0"	type="string"/>
+  	<element   name="ID_Accession_Number"     minOccurs="1" type="string"/>
+  	<element   name="ID_Modality"	          minOccurs="1" type="Modality"/>
+  	<element   name="ID_Manufacturer"	  minOccurs="1" type="string"/>
+  	<element   name="ID_Referring_Physician_s_Name" minOccurs="1"	type="string"/>
+	<element   name="PAT_Patient_Name"	  minOccurs="1" type="PatientName"/>
+	<element   name="PAT_Patient_ID"	  minOccurs="1" type="PatientID"/>
+  	<element   name="PAT_Patient_Birthdate"	  minOccurs="1" type="string"/>
+  	<element   name="PAT_Patient_Sex"	  minOccurs="1" type="PatientSex"/>
+  	<element   name="REL_Study_Instance_UID"  minOccurs="1"	type="StudyInstanceUID"/>
+  	<element   name="REL_Series_Instance_UID" minOccurs="1" type="string"/>
+  	<element   name="REL_Study_ID"	          minOccurs="1" type="string"/>
+	<element   name="REL_Series_Number"	  minOccurs="1" type="string"/>
+	<element   name="REL_Image_Number"        minOccurs="1" type="string"/>
+	<element   name="PRC_Value_Type"          type="string"/>
+	<element   ref="PRC_Concept-name_Code_Sequence"/>
+	<element   ref="PRC_Verifying_Observer_Sequence"/>
+	<element   name="PRC_Completion_Flag"	  type="string"/>
+	<element   name="PRC_Verification_Flag"   type="string"/>
+	<element   ref="PRC_Content_Sequence"/>
+     </complexType>
+  </element>
+
+</schema>
+

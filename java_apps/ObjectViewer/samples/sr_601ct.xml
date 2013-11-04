@@ -1,0 +1,119 @@
+<?xml version="1.0" ?>
+<Structured_Report xmlns:xsi="http://www.w3.org/1999/XMLSchema-instance" xsi:noNamespaceSchemaLocation="sr_601ct.xsd">
+	<ID_Study_Date>19950126</ID_Study_Date>
+	<ID_Image_Date>20010318</ID_Image_Date>
+	<ID_Study_Time>094201.590</ID_Study_Time>
+	<ID_Image_Time>041500.0000 </ID_Image_Time>
+	<ID_Accession_Number>PIKR0003</ID_Accession_Number>
+	<ID_Modality>SR</ID_Modality>
+	<ID_Manufacturer>MIR</ID_Manufacturer>
+	<ID_Referring_Physician_s_Name>####</ID_Referring_Physician_s_Name>
+	<ID_Referenced_Study_Component_Sequence>
+	</ID_Referenced_Study_Component_Sequence>
+	<PAT_Patient_Name>SMITH^HAROLD</PAT_Patient_Name>
+	<PAT_Patient_ID>PIKR750000</PAT_Patient_ID>
+	<PAT_Patient_Birthdate>####</PAT_Patient_Birthdate>
+	<PAT_Patient_Sex>M</PAT_Patient_Sex>
+	<REL_Study_Instance_UID>2.16.840.1.113662.2.1.53544936282433.12345.336.16650</REL_Study_Instance_UID>
+	<REL_Series_Instance_UID>zzz</REL_Series_Instance_UID>
+	<REL_Study_ID>1665</REL_Study_ID>
+	<REL_Series_Number>zzz</REL_Series_Number>
+	<REL_Image_Number>12345</REL_Image_Number>
+	<PRC_Value_Type>CONTAINER</PRC_Value_Type>
+	<PRC_Concept-name_Code_Sequence>
+		<ID_Code_Value>18747-6</ID_Code_Value>
+		<ID_Coding_Scheme_Designator>LN</ID_Coding_Scheme_Designator>
+		<ID_Code_Meaning>CT Report</ID_Code_Meaning>
+	</PRC_Concept-name_Code_Sequence>
+	<PRC_Completion_Flag_Description>COMPLETE</PRC_Completion_Flag_Description>
+	<PRC_Verification_Flag>UNVERIFIED</PRC_Verification_Flag>
+	<PRC_Content_Template_Sequence>
+		<ID_Mapping_Resource>DCMR</ID_Mapping_Resource>
+		<PRC_Template_Identifier>2000</PRC_Template_Identifier>
+	</PRC_Content_Template_Sequence>
+	<PRC_Content_Sequence>
+		<PRC_Relationship_Type>HAS CONCEPT MOD </PRC_Relationship_Type>
+		<PRC_Value_Type>CODE</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>xxx049</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Language of Content Item and Descendents</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Concept_Code_Sequence>
+			<ID_Code_Value>en</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>ISO369_l</ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>English </ID_Code_Meaning>
+		</PRC_Concept_Code_Sequence>
+		<PRC_Relationship_Type>HAS OBS CONTEXT </PRC_Relationship_Type>
+		<PRC_Value_Type>CODE</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>xxx005</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Observer Type</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Concept_Code_Sequence>
+			<ID_Code_Value>xxx006</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM</ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Person</ID_Code_Meaning>
+		</PRC_Concept_Code_Sequence>
+		<PRC_Relationship_Type>HAS OBS CONTEXT </PRC_Relationship_Type>
+		<PRC_Value_Type>PNAME</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>xxx008</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM</ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Person Observer Name</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Person_Name>MOORE^STEVE </PRC_Person_Name>
+		<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+		<PRC_Value_Type>CONTAINER</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>121060</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>History</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Content_Sequence>
+			<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+			<PRC_Value_Type>TEXT</PRC_Value_Type>
+			<PRC_Concept-name_Code_Sequence>
+				<ID_Code_Value>121060</ID_Code_Value>
+				<ID_Coding_Scheme_Designator>DCM </ID_Coding_Scheme_Designator>
+				<ID_Code_Meaning>History</ID_Code_Meaning>
+			</PRC_Concept-name_Code_Sequence>
+			<PRC_Text_Value>46-year-old male presented to the emergency room with parasternal</PRC_Text_Value>
+		</PRC_Content_Sequence>
+		<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+		<PRC_Value_Type>CONTAINER </PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>121070</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM </ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Findings</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Content_Sequence>
+			<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+			<PRC_Value_Type>TEXT</PRC_Value_Type>
+			<PRC_Concept-name_Code_Sequence>
+				<ID_Code_Value>121071</ID_Code_Value>
+				<ID_Coding_Scheme_Designator>DCM</ID_Coding_Scheme_Designator>
+				<ID_Code_Meaning>Finding</ID_Code_Meaning>
+			</PRC_Concept-name_Code_Sequence>
+			<PRC_Text_Value>There is an aneurysm of the entire thoracic aorta measuring up to 6.X/G </PRC_Text_Value>
+		</PRC_Content_Sequence>
+		<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+		<PRC_Value_Type>CONTAINER</PRC_Value_Type>
+		<PRC_Concept-name_Code_Sequence>
+			<ID_Code_Value>121076</ID_Code_Value>
+			<ID_Coding_Scheme_Designator>DCM</ID_Coding_Scheme_Designator>
+			<ID_Code_Meaning>Conclusions</ID_Code_Meaning>
+		</PRC_Concept-name_Code_Sequence>
+		<PRC_Content_Sequence>
+			<PRC_Relationship_Type>CONTAINS</PRC_Relationship_Type>
+			<PRC_Value_Type>TEXT</PRC_Value_Type>
+			<PRC_Concept-name_Code_Sequence>
+				<ID_Code_Value>121077</ID_Code_Value>
+				<ID_Coding_Scheme_Designator>DCM</ID_Coding_Scheme_Designator>
+				<ID_Code_Meaning>Conclusion</ID_Code_Meaning>
+			</PRC_Concept-name_Code_Sequence>
+			<PRC_Text_Value>Aneurysm of thoracic aorta with dissection affecting ascending and d8DG</PRC_Text_Value>
+		</PRC_Content_Sequence>
+	</PRC_Content_Sequence>
+</Structured_Report>
