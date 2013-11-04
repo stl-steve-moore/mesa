@@ -1,0 +1,2 @@
+1.2.840.10008.5.1.4.1.2.1.2	// Patient Root Query/Retrieve MOVE
+1.2.840.10008.5.1.4.1.2.2.2	// Study Root Query/Retrieve MOVE

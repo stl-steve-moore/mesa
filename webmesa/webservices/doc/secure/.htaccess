@@ -1,0 +1,5 @@
+AuthType Basic
+AuthName "MESA Administrator only"
+AuthUserFile /etc/apache/passwd
+Require valid-user
+

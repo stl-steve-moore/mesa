@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+ <servlet>
+  <servlet-name>InformationSource</servlet-name>
+  <servlet-class>edu.wustl.mir.mesaweb.rid.InformationSource</servlet-class>
+  <init-param>
+     <param-name>logPath</param-name>
+     <param-value>C:\users\smm\mesa\logs\info_src.log</param-value>
+     <!-- unix value /opt/mesa/logs/info_src.log</param-value -->
+  </init-param>
+  <init-param>
+    <param-name>jdbcDriverName</param-name>
+    <param-value>com.microsoft.jdbc.sqlserver.SQLServerDriver</param-value>
+    <!-- Unix value org.postgresql.Driver -->
+  </init-param>
+  <init-param>
+    <param-name>jdbcConnectURL</param-name>
+    <param-value>jdbc:microsoft:sqlserver://127.0.0.1:1433;DatabaseName=info_src;ServerName=TBALL;User=ctn;Password=ctn</param-value>
+    <!-- Unix value jdbc:postgresql:info_src?user=postgres -->
+  </init-param>
+ </servlet>
+
+ <servlet>
+  <servlet-name>IHERetrieveDocumentInfo</servlet-name>
+  <servlet-class>edu.wustl.mir.mesaweb.rid.IHERetrieveDocumentInfo</servlet-class>
+  <init-param>
+     <param-name>logPath</param-name>
+     <param-value>C:\users\smm\mesa\logs\info_src.log</param-value>
+     <!-- unix value /opt/mesa/logs/info_src.log</param-value -->
+  </init-param>
+  <init-param>
+    <param-name>jdbcDriverName</param-name>
+    <param-value>com.microsoft.jdbc.sqlserver.SQLServerDriver</param-value>
+    <!-- Unix value org.postgresql.Driver -->
+  </init-param>
+  <init-param>
+    <param-name>jdbcConnectURL</param-name>
+    <param-value>jdbc:microsoft:sqlserver://127.0.0.1:1433;DatabaseName=info_src;ServerName=TBALL;User=ctn;Password=ctn</param-value>
+    <!-- Unix value jdbc:postgresql:info_src?user=postgres -->
+  </init-param>
+  <init-param>
+     <param-name>imagePath</param-name>
+     <param-value>C:\users\smm\mesa\storage</param-value>
+     <!-- unix value /opt/mesa/storage</param-value -->
+  </init-param>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>InformationSource</servlet-name>
+  <url-pattern>/IHERetrieveSummaryInfo</url-pattern>
+ </servlet-mapping>
+
+ <servlet-mapping>
+  <servlet-name>IHERetrieveDocumentInfo</servlet-name>
+  <url-pattern>/IHERetrieveDocument</url-pattern>
+ </servlet-mapping>
+
+</web-app>
+

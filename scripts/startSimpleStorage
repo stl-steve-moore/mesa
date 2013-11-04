@@ -1,0 +1,6 @@
+#!/bin/csh
+
+# $1 = port
+# $2 = AE title
+
+simple_storage -c $2 -s -n /opt/ctn/runtime/storage.convention $1

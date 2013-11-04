@@ -1,0 +1,11 @@
+
+install:
+	cp ecg.html $(TOMCAT_HOME)/webapps/ROOT
+	cp rid.html $(TOMCAT_HOME)/webapps/ROOT
+	cp IHEDocumentList.xsl $(TOMCAT_HOME)/webapps/ROOT
+	cp web_unix_postgresql.xml $(TOMCAT_HOME)/webapps/ROOT/WEB-INF/web.xml
+	$(MESA_TARGET)/bin/createdirectory $(TOMCAT_HOME)/webapps/ROOT/WEB-INF/lib
+	cp mesaweb_rid.jar $(TOMCAT_HOME)/webapps/ROOT/WEB-INF/lib
+	cp postgresql.jar $(TOMCAT_HOME)/common/lib
+
+

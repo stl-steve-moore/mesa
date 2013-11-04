@@ -1,0 +1,10 @@
+# Microsoft Developer Studio Generated Dependency File, included by mesa_audit_eval.mak
+
+..\..\..\apps\mesa_audit_eval\mesa_audit_eval.cpp : \
+	"..\..\..\..\ctn\include\ctn_os.h"\
+	"..\..\..\include\MESA.hpp"\
+	"..\..\..\include\MFileOperations.hpp"\
+	"..\..\..\include\MString.hpp"\
+	"..\..\..\include\MSyslogFactory.hpp"\
+	"..\..\..\include\MSyslogMessage.hpp"\
+	

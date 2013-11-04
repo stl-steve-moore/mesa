@@ -1,0 +1,5 @@
+# Attending Doctor
+# Read in adt_create_visit.txt
+11234^WEAVER^TIMOTHY^P^^DR
+3456^ROSZEK^JEANETTE^G^^DR
+5678^BAXA^TIMOTHY^P^^DR

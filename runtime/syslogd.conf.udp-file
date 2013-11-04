@@ -1,0 +1,29 @@
+file-version 1.1;
+
+# Never change the name of this input channel
+input system {
+    type system;
+};
+
+# Input channel
+input udp-in {
+        type udp;
+        listen 0.0.0.0;
+        port 4001;
+};
+
+# Output channel
+output udp-file {
+    type file;
+    format-type readable;
+    format-options { ts_extended; };
+    output-path "/tmp/udp-messages.txt";
+    priority { *.*; };
+};
+
+connect udp-in to udp-file;
+
+globals {
+	user "smm";
+	group "users";
+};

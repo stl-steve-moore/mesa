@@ -1,0 +1,7 @@
+5000	IHEY2	Observation Context Mode
+5010	IHEY2	Recording Observer Name
+5020	IHEY2	Recording Observer Organization Name
+5030	IHEY2	SUID of Evidence Directly Examined by RO
+5040	IHEY2	HL7 Placer Number of Evidence - Source Procedure
+5050	IHEY2	HL7 Filler Number of Evidence - Source Procedure
+5060	IHEY2	Observation Subject Class

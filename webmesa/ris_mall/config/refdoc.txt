@@ -1,0 +1,5 @@
+# Referring Doctor
+# Read by adt_create_visit.php
+5101^NELL^FREDERICK^P^^DR
+5202^SCHULTZ^KEVIN^G^DR
+5303^BAJWA^AMNA^^DR

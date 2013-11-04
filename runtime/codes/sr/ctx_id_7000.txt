@@ -1,0 +1,18 @@
+# Context ID 7000
+# Diagnostic Imaging Report Document Titles
+#
+18745-0	LN	Cardiac Catheterization Report
+11540-2	LN	CT Abdomen Report
+11538-6	LN	CT Chest Report
+11539-4	LN	CT Head Report
+18747-6	LN	CT Report
+18748-4	LN	Diagnostic Imaging Report
+11522-0	LN	Echo Heart Report
+18760-9	LN	Echo Report
+11541-0	LN	MRI Head Report
+18755-9	LN	MRI Report
+18756-7	LN	MRI Spine Report
+18757-5	LN	Nuclear Medicine Report
+11523-3	LN	Obstetric Echo Pelvis+Fetus Report
+18758-3	LN	PET Scan Report
+11528-7	LN	Radiology Report

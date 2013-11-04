@@ -1,0 +1,5 @@
+3000	IHEY2	Findings Text
+3000.1	IHEY2	Specifing Image Findings Text
+3001	IHEY2	Conclusion Text
+3002	IHEY2	Key Image Text
+3003	IHEY2	Procedure Text

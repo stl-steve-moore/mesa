@@ -1,0 +1,28 @@
+file-version 1.1;
+
+# Never change the name of this input channel
+input system {
+    type system;
+};
+
+input udp-in {
+        type udp;
+        listen 0.0.0.0;
+        port 4001;
+};
+
+# Output sends out messages using reliable syslog/cooked mode
+output beep-out {
+    type beep;
+    format-type readable;
+    output-path "127.0.0.1";
+    port 4050;
+    priority { *.*; };
+};
+
+connect udp-in to beep-out;
+
+globals {
+	user "smm";
+	group "users";
+};

@@ -1,0 +1,10 @@
+copy ..\..\libsrc\common\*.hpp ..\..\include
+copy ..\..\libsrc\common\*.h ..\..\include
+copy ..\..\libsrc\cxxctn\*.hpp ..\..\include
+copy ..\..\libsrc\domain\*.hpp ..\..\include
+copy ..\..\libsrc\hl7\*.hpp ..\..\include
+copy ..\..\libsrc\meval\*.hpp ..\..\include
+copy ..\..\libsrc\sr\*.hpp ..\..\include
+copy ..\..\libsrc\syslog\*.hpp ..\..\include
+copy ..\..\libsrc\translators\*.hpp ..\..\include
+copy ..\..\external\hl7\*.h ..\..\include

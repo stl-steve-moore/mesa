@@ -1,0 +1,9 @@
+# Context ID 5000
+# Languages
+#
+abk	ISO639_2	Abkhazian
+eng	ISO639_2	English
+epo	ISO639_2	Esperanto
+fra	ISO639_2	French
+deu	ISO639_2	German
+jpn	ISO639_2	Japanese

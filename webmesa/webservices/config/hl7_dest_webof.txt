@@ -1,0 +1,12 @@
+# HL7 Destination Configuration File
+# Read by bin/fillDestinationTables.pl
+#
+# entries are of form, 
+#      HOST|PORT|REC_FAC_NAM|REC_APP|COM_NAM|ACTOR_TYPE
+#
+# REC_FAC_NAM -- Name of Receiving Facility
+# REC_APP -- Name of Receiving Application
+# COM_NAM -- Company Name
+
+localhost|4100|ORDER PLACER|hl7_rcvr|MESA|OP
+localhost|4200|ORDER FILLER|hl7_rcvr|MESA|OF

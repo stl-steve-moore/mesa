@@ -1,0 +1,30 @@
+file-version 1.1;
+
+# Never change the name of this input channel
+input system {
+    type system;
+};
+
+# Input channels
+input beep-cooked-in {
+        type beep-cooked;
+        listen 0.0.0.0;
+        port 4050;
+#        port 601;
+};
+
+# Output channels
+output beep-cooked-file {
+    type file;
+    format-type readable;
+    format-options { ts_extended; };
+    output-path "/tmp/cooked-messages.txt";
+    priority { *.*; };
+};
+
+connect beep-cooked-in to beep-cooked-file;
+
+globals {
+	user "smm";
+	group "users";
+};

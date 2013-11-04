@@ -1,0 +1,6 @@
+# Patient Race
+# Read in adt_create_patient.php
+AI
+BL
+WH
+DSH

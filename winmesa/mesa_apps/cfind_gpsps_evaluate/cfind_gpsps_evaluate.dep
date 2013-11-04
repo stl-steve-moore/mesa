@@ -1,0 +1,26 @@
+# Microsoft Developer Studio Generated Dependency File, included by cfind_gpsps_evaluate.mak
+
+..\..\..\apps\cfind_gpsps_evaluate\cfind_gpsps_evaluate.cpp : \
+	"..\..\..\..\ctn\include\condition.h"\
+	"..\..\..\..\ctn\include\ctn_os.h"\
+	"..\..\..\..\ctn\include\ctnthread.h"\
+	"..\..\..\..\ctn\include\dicom.h"\
+	"..\..\..\..\ctn\include\dicom_ddr.h"\
+	"..\..\..\..\ctn\include\dicom_messages.h"\
+	"..\..\..\..\ctn\include\dicom_objects.h"\
+	"..\..\..\..\ctn\include\dicom_platform.h"\
+	"..\..\..\..\ctn\include\dicom_services.h"\
+	"..\..\..\..\ctn\include\dicom_sq.h"\
+	"..\..\..\..\ctn\include\dicom_uids.h"\
+	"..\..\..\..\ctn\include\dulprotocol.h"\
+	"..\..\..\..\ctn\include\idb.h"\
+	"..\..\..\..\ctn\include\lst.h"\
+	"..\..\..\..\ctn\include\manage.h"\
+	"..\..\..\..\ctn\include\tbl.h"\
+	"..\..\..\..\ctn\include\utility.h"\
+	"..\..\..\include\ctn_api.h"\
+	"..\..\..\include\MDICOMWrapper.hpp"\
+	"..\..\..\include\MESA.hpp"\
+	"..\..\..\include\MLogClient.hpp"\
+	"..\..\..\include\MString.hpp"\
+	

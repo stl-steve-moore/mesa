@@ -1,0 +1,60 @@
+<HTML>
+ <HEAD>
+  <TITLE>RID Control</TITLE>
+ </HEAD>
+
+ <BODY BGCOLOR="#FFFFFF">
+  <H2 ALIGN="CENTER">MESA RID Control</H2>
+  <H3 ALIGN="CENTER">Last changed with MESA Version 7.2.0</H3>
+
+  <table border="1">
+  <tr><th>RID Test</th><th>Link</th></tr>
+  <tr><td>10111</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY&patientID=RID10111^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2008-12-12T23:59:59&mostRecentResults=1">SUMMARY - patient ID=RID10111^^^RID, lowerDate, upperDate, mostRecentResults> </td>
+  </tr>
+  <tr>
+
+  <tr><td>10112</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY-RADIOLOGY&patientID=RID10112^^^RID&lowerDateTime=2003-10-01T00:00:00&upperDateTime=2008-12-12T23:59:59&mostRecentResults=1">SUMMARY-RADIOLOGY - patient ID=RID10112^^^RID, lowerDate, upperDate, mostRecentResults> </td>
+  </tr>
+
+  <tr><td>10132</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY&patientID=RID10132^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2008-12-12T23:59:59&mostRecentResults=1">Summary - patient ID=RID10132^^^RID, lowerDate, upperDate, mostRecentResults> </td>
+  </tr>
+
+  <tr><td>10141 (JPEG file)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.101&preferredContentType=image/jpeg">JPEG document: 1.2.840.113654.2.3.2003.100.101</td>
+  </tr>
+
+  <tr><td>10142 (PDF file)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.102&preferredContentType=application/pdf">PDF document: 1.2.840.113654.2.3.2003.100.102</td>
+  </tr>
+
+  <tr><td>10143 (CDA document)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.103&preferredContentType=application/pdf">The MESA server is not ready for this test. CDA document: 1.2.840.113654.2.3.2003.100.103</td>
+  </tr>
+
+  <tr><td>10144 (JPEG/PDF document)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.104&preferredContentType=application/pdf">preferredContentType=application/pdf PDF document: 1.2.840.113654.2.3.2003.100.104</td>
+  </tr>
+
+  <tr><td>10144 (JPEG/PDF document)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.104&preferredContentType=image/jpeg">preferredContentType=image/jpeg JPEG image: 1.2.840.113654.2.3.2003.100.104</td>
+  </tr>
+
+  <tr><td>10145 Mismatch between HTTP Accept and preferredContentType</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.101&preferredContentType=application/pdf">JPEG document: 1.2.840.113654.2.3.2003.100.101</td>
+  </tr>
+
+  <tr><td>10146 (Unsupported Document Type)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.101&preferredContentType=application/pdf">Request PDF document: 1.2.840.113654.2.3.2003.100.101</td>
+  </tr>
+
+  <tr><td>10147 (JPEG file that does not exist)</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&documentUID=1.2.840.113654.2.3.2003.100.100&preferredContentType=image/jpeg">JPEG document: 1.2.840.113654.2.3.2003.100.100</td>
+  </tr>
+
+  </table>
+
+ </BODY>
+</HTML>

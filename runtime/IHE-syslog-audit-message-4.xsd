@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by Robert Horn (private) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="IHEYr4">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:choice>
+					<xs:element name="Import">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="MediaDescriptionType">
+									<xs:sequence>
+										<xs:element ref="User"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="InstancesStored">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="RemoteNode" type="RemoteNodeType"/>
+								<xs:element ref="InstanceActionDescription"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ProcedureRecord">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ObjectAction">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Create"/>
+											<xs:enumeration value="Modify"/>
+											<xs:enumeration value="Access"/>
+											<xs:enumeration value="Delete"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="PlacerOrderNumber"/>
+								<xs:element name="FillerOrderNumber"/>
+								<xs:element name="SUID" type="xs:string"/>
+								<xs:element name="AccessionNumber" minOccurs="0"/>
+								<xs:element name="Patient" type="PatientType"/>
+								<xs:element name="User" type="UserType"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ActorStartStop">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ActorName" type="xs:string"/>
+								<xs:element name="ApplicationAction">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Start"/>
+											<xs:enumeration value="Stop"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element ref="User"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ActorConfig">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Description" type="xs:string">
+									<xs:annotation>
+										<xs:documentation>Vendor specific free text description of the configuration change</xs:documentation>
+									</xs:annotation>
+								</xs:element>
+								<xs:element ref="User"/>
+								<xs:element name="ConfigType" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Export">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="MediaDescriptionType">
+									<xs:sequence>
+										<xs:element ref="User"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DICOMInstancesDeleted" type="InstancesAction"/>
+					<xs:element name="PatientRecord">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ObjectAction">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Create"/>
+											<xs:enumeration value="Modify"/>
+											<xs:enumeration value="Access"/>
+											<xs:enumeration value="Delete"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="Patient" type="PatientType"/>
+								<xs:element ref="User"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="OrderRecord">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ObjectAction">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Create"/>
+											<xs:enumeration value="Modify"/>
+											<xs:enumeration value="Access"/>
+											<xs:enumeration value="Delete"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+								<xs:element name="Patient" type="PatientType"/>
+								<xs:element ref="User"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="BeginStoringInstances">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="BeginStoringInstancesType">
+									<xs:sequence>
+										<xs:element name="RNode" type="RemoteNodeType"/>
+										<xs:element ref="InstanceActionDescription"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="InstancesSent">
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="RetrieveInstancesType">
+									<xs:sequence>
+										<xs:element name="RNode" type="RemoteNodeType"/>
+										<xs:element ref="InstanceActionDescription"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DICOMInstancesUsed" type="InstancesAction"/>
+					<xs:element name="StudyDeleted" type="InstancesAction"/>
+					<xs:element name="DicomQuery">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Keys" type="xs:base64Binary"/>
+								<xs:element name="Requestor" type="RemoteNodeType"/>
+								<xs:element name="CUID" type="xs:string"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="SecurityAlert">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="AlertType" type="xs:string"/>
+								<xs:element ref="User" minOccurs="0"/>
+								<xs:element name="Description"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="UserAuthenticated">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="LocalUsername"/>
+								<xs:element name="Action">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Login"/>
+											<xs:enumeration value="Logout"/>
+											<xs:enumeration value="Failure"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="AuditLogUsed">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Usage" type="UsageType"/>
+								<xs:element ref="User"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="NetworkEntry">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="MachineAction">
+									<xs:simpleType>
+										<xs:restriction base="xs:string">
+											<xs:enumeration value="Attach"/>
+											<xs:enumeration value="Detach"/>
+										</xs:restriction>
+									</xs:simpleType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:choice>
+				<xs:element name="Host" type="xs:string"/>
+				<xs:element name="TimeStamp" type="xs:dateTime"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="RemoteNodeType">
+		<xs:sequence>
+			<xs:element name="IP"/>
+			<xs:element name="Hname" type="xs:string" minOccurs="0"/>
+			<xs:element name="AET" type="xs:string" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MediaDescriptionType">
+		<xs:sequence>
+			<xs:element name="MediaID" type="xs:string" minOccurs="0"/>
+			<xs:element name="MediaType" minOccurs="0">
+				<xs:simpleType>
+					<xs:restriction base="xs:string"/>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="SUID" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Mandatory if known</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Patient" type="PatientType" maxOccurs="unbounded">
+				<xs:annotation>
+					<xs:documentation>Patients recorded onto media.
+</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="Destination" type="PrinterType" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="UserType">
+		<xs:choice>
+			<xs:element name="LocalUser"/>
+			<xs:element name="RemoteNode" type="RemoteNodeType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="PrinterType">
+		<xs:choice>
+			<xs:element name="LocalPrinter"/>
+			<xs:element name="Node" type="RemoteNodeType"/>
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="UsageType"/>
+	<xs:complexType name="PatientType">
+		<xs:sequence>
+			<xs:element name="PatientID"/>
+			<xs:element name="PatientName"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="RetrieveInstancesType"/>
+	<xs:complexType name="BeginStoringInstancesType"/>
+	<xs:complexType name="InstancesAction">
+		<xs:sequence>
+			<xs:element name="ObjectAction">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="Create"/>
+						<xs:enumeration value="Modify"/>
+						<xs:enumeration value="Access"/>
+						<xs:enumeration value="Delete"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="AccessionNumber" minOccurs="0"/>
+			<xs:element name="SUID" type="xs:string" maxOccurs="unbounded"/>
+			<xs:element name="Patient" type="PatientType"/>
+			<xs:element ref="User" minOccurs="0"/>
+			<xs:element name="CUID" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="NumberOfInstances" type="xs:integer" minOccurs="0"/>
+			<xs:element name="MPPSUID" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="User" type="UserType"/>
+	<xs:element name="InstanceActionDescription" type="InstancesAction"/>
+</xs:schema>

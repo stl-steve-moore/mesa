@@ -1,0 +1,13 @@
+# Context ID 7001
+# Diagnostic Imaging Report Headings
+#
+121060	DCM	History
+121062	DCM	Request
+121064	DCM	Current Procedure Descriptions
+121066	DCM	Prior Procedure Descriptions
+121068	DCM	Previous Findings
+121070	DCM	Findings
+121072	DCM	Impressions
+121074	DCM	Recommendations
+121076	DCM	Conclusions
+121078	DCM	Addendum

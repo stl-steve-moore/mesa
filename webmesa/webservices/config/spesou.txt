@@ -1,0 +1,5 @@
+# Specimen Source
+# Read in of_create_order.php
+Radiology^^^^R^
+Radiology^^^^L^
+&lt;NULL&gt;

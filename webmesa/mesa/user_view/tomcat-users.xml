@@ -1,0 +1,14 @@
+<!--
+  NOTE:  By default, no user is included in the "manager" role required
+  to operate the "/manager" web application.  If you wish to use this app,
+  you must define such a user - the username and password are arbitrary.
+-->
+<tomcat-users>
+  <user name="tomcat" password="tomcat" roles="tomcat,MIRImg" />
+  <user name="smm"    password="smm"    roles="MIRImg,UserMgr" />
+  <user name="gjb"    password="gjb"    roles="MIRImg" />
+  <user name="perry"  password="perry"  roles="MIRImg" />
+  <user name="carr"   password="carr"   roles="MIRImg" />
+  <user name="role1"  password="tomcat" roles="role1"  />
+  <user name="both"   password="tomcat" roles="tomcat,role1" />
+</tomcat-users>

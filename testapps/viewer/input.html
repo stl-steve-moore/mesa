@@ -1,0 +1,29 @@
+<!--
+  Phillip DiCorpo
+  Electronic Radiology Lab
+  Washington University School of Medicine
+  February 2001
+-->
+
+<html>
+<head>
+<link rel="stylesheet" href="scripts/buildTree.css">
+
+<!-- Infrastructure code for the tree -->
+<script src="scripts/buildTreeLib.js"></script>
+
+<!-- Execution of the code that actually builds the specific tree -->
+<script src="scripts/buildTree.js"></script>
+
+</head>
+<!--<body bgcolor=white TOPMARGIN="0" LEFTMARGIN="0" MARGINWIDTH="0" MARGINHEIGHT="0">-->
+<body>
+
+<b><i>Open a DICOM file to view:</i></b>
+<form name="FileForm" method="GET" action="" target="viewer">
+<input type="FILE" name="InputFile" value="" size="30"><br><br>
+<input type="BUTTON" value="View File" onClick="loadDoc(); initializeDocument()" target="viewer">
+</form>
+
+</body>
+</html>

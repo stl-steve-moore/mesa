@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FC313E75-DD91-4625-AC86-850B6C8958DA}</ProjectGuid>
+    <Keyword>MakeFileProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\Debug\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\Release\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Debug/mesa_apps.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <TypeLibraryName>.\Release/mesa_apps.tlb</TypeLibraryName>
+      <HeaderFileName>
+      </HeaderFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="archive_agent\archive_agent.vcxproj">
+      <Project>{6a5f488a-6a0b-41ca-9a08-dbda108f14ef}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="archive_cleaner\archive_cleaner.vcxproj">
+      <Project>{7058640b-5490-407c-b3c2-e06ad79259a6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="archive_server\archive_server.vcxproj">
+      <Project>{d1360020-caa9-4522-b367-fb63dda4d39b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="cfind\cfind.vcxproj">
+      <Project>{dd218863-dd9e-4a3c-85d6-e06c96d214fa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="cfind_study_probe\cfind_study_probe.vcxproj">
+      <Project>{20de21c9-f7cc-4b39-aadd-74c5f36a93a2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="cmove\cmove.vcxproj">
+      <Project>{52e16fbc-ef54-488e-a026-e78dc43b67e3}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="cmove_study\cmove_study.vcxproj">
+      <Project>{bb84bc24-89dc-4215-a861-d9d79c9a3fe9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="compare_dcm\compare_dcm.vcxproj">
+      <Project>{c172be6c-b36b-45d9-a301-8e365f663643}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="compare_hl7\compare_hl7.vcxproj">
+      <Project>{56e78511-2008-4622-91af-5c4300ba3b3e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="cstore\cstore.vcxproj">
+      <Project>{a7ba3973-6b9d-423b-a20e-43bc9a2a4402}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ctn_version\ctn_version.vcxproj">
+      <Project>{3ea93020-0064-4d43-aa3f-da4b5c347b93}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_create_object\dcm_create_object.vcxproj">
+      <Project>{2de1d581-5d7c-4235-9b7a-b457a02b2e4a}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_ctnto10\dcm_ctnto10.vcxproj">
+      <Project>{737de9ac-a879-421f-8465-6d60ac1b11a6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_diff\dcm_diff.vcxproj">
+      <Project>{a3a39b8b-4216-45d2-b48c-918377a0f1b5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_dump_compressed\dcm_dump_compressed.vcxproj">
+      <Project>{739c862d-1239-4544-a9e5-d9024fbae297}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_dump_element\dcm_dump_element.vcxproj">
+      <Project>{1b9cb295-9e31-460d-a230-49d55fe5919f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_dump_file\dcm_dump_file.vcxproj">
+      <Project>{09f11845-2052-4732-8c6f-c63f68d5e6ee}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_make_object\dcm_make_object.vcxproj">
+      <Project>{40ef9876-fcca-45b6-a7ab-bc2205d045e6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_map_to_8\dcm_map_to_8.vcxproj">
+      <Project>{9ebc59f5-a99d-468b-81d0-6b19192a7572}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_modify_elements\dcm_modify_elements.vcxproj">
+      <Project>{ed46315a-f85c-4a1f-85fa-a7a66e722b3b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_modify_object\dcm_modify_object.vcxproj">
+      <Project>{d5ef43b5-3a13-417e-a54f-30aedeac0308}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_print_dictionary\dcm_print_dictionary.vcxproj">
+      <Project>{6c3af950-c613-499f-9970-6555639db44d}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_print_element\dcm_print_element.vcxproj">
+      <Project>{b2388b53-7c93-42a9-874e-6e855486a8eb}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_ref_sop_seq\dcm_ref_sop_seq.vcxproj">
+      <Project>{0029a306-624f-488a-9e65-cde89026d275}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_replace_element\dcm_replace_element.vcxproj">
+      <Project>{dbf1b7b8-1772-4624-97e1-edf146470c1c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_resize\dcm_resize.vcxproj">
+      <Project>{5a64e2a7-55f3-4596-9e7e-de875e5fc8ea}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_rm_element\dcm_rm_element.vcxproj">
+      <Project>{dddab4a8-3cb2-4a47-a6a7-228840b6c947}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_rm_group\dcm_rm_group.vcxproj">
+      <Project>{4316ea56-7037-4822-8b19-3e0638ec9bdc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_to_html\dcm_to_html.vcxproj">
+      <Project>{8c87e7ae-353a-4579-8c8a-27f5b0e3388c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_to_text\dcm_to_text.vcxproj">
+      <Project>{8c4d3d27-9fca-4b63-9252-faccbaf46c04}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_to_xml\dcm_to_xml.vcxproj">
+      <Project>{4d405039-ee95-4ebb-b041-73088278c950}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dcm_w_disp\dcm_w_disp.vcxproj">
+      <Project>{343e91ba-9027-4991-aa82-f4d6c9629d65}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dicom_echo\dicom_echo.vcxproj">
+      <Project>{490098cd-9484-47e7-be9b-abd1405c9f54}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="dump_commit_requests\dump_commit_requests.vcxproj">
+      <Project>{5faa6b07-681d-47a4-83c0-7bccf151a5d0}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="hl7_get_value\hl7_get_value.vcxproj">
+      <Project>{ac6a08c7-d013-4f5d-9e6a-3c5bdbeabf16}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="hl7_set_value\hl7_set_value.vcxproj">
+      <Project>{c04992cb-1203-4010-9556-250fb3cad52b}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="hl7_to_txt\hl7_to_txt.vcxproj">
+      <Project>{e40a5420-f710-4ef7-8ca0-973add6fd9a5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="load_control\load_control.vcxproj">
+      <Project>{83222f6d-435a-4101-acca-d140d615c4d6}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="mesa_dump_obj\mesa_dump_obj.vcxproj">
+      <Project>{e5400a2d-b23d-4240-9df5-a9c4eb273833}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="mwlquery\mwlquery.vcxproj">
+      <Project>{003a7e5c-5131-4124-b453-d500309cd210}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="naction\naction.vcxproj">
+      <Project>{8f9561d1-6ed0-408f-ae74-0909a5f76027}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ncreate\ncreate.vcxproj">
+      <Project>{ddadd70a-eb49-471e-9f14-f4078d783cdc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="nevent\nevent.vcxproj">
+      <Project>{dfbfe350-fe13-49be-a23c-2b2b949d6ef2}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="new_uids\new_uids.vcxproj">
+      <Project>{11f50658-9126-4d49-84b9-0c3a1a8af713}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="nset\nset.vcxproj">
+      <Project>{23ab61ec-44a0-4f0f-87ab-e9e419d9ab24}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="open_assoc\open_assoc.vcxproj">
+      <Project>{57fec611-cb09-4de1-9ed6-3d3dd48f82aa}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="sc_scp_association\sc_scp_association.vcxproj">
+      <Project>{63453420-a712-4e33-8acf-3ed3f5ce7373}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="sc_scu_association\sc_scu_association.vcxproj">
+      <Project>{d378634d-4490-4f83-bd66-e9b08f79cc38}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="send_hl7\send_hl7.vcxproj">
+      <Project>{1f0c4748-2a2c-4659-a130-3aef32e5e704}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="send_image\send_image.vcxproj">
+      <Project>{954fe573-70f9-44ba-98a2-81de07048d49}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="simple_storage\simple_storage.vcxproj">
+      <Project>{3e9a8917-6817-4240-bb7f-defaa064848e}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="tcp_connect\tcp_connect.vcxproj">
+      <Project>{a0c90d39-9c38-483b-b5cc-c06ccdde8205}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ttdelete\ttdelete.vcxproj">
+      <Project>{3a5a2f16-ee32-44fd-b4d8-352d7f54dabe}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ttinsert\ttinsert.vcxproj">
+      <Project>{0a02f11f-07ff-4bb1-bfb7-d7b2c4ccfbc9}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ttlayout\ttlayout.vcxproj">
+      <Project>{a00b9553-d0f6-4ac2-b7ce-fe7dd3eaf095}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ttselect\ttselect.vcxproj">
+      <Project>{11f39b86-f3a3-4eb8-9749-0f5b8789aa4c}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ttunique\ttunique.vcxproj">
+      <Project>{2949f400-c0a7-4258-b90c-a860e4283d41}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="ttupdate\ttupdate.vcxproj">
+      <Project>{4c405878-a6b1-48dd-ab9e-3a24bd172389}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="txt_to_hl7\txt_to_hl7.vcxproj">
+      <Project>{a9f08693-5867-465f-9757-e0d91a379954}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

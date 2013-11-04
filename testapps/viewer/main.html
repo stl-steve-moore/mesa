@@ -1,0 +1,38 @@
+<!--
+  Phillip DiCorpo
+  Electronic Radiology Lab
+  Washington University School of Medicine
+  February 2001
+-->
+
+<html>
+<head>
+<!-- The following vars are declared 'globally',so
+     they be accessed by all frames
+-->
+<script language="JavaScript">
+
+	// Global variables 
+        // **************** 
+ 
+        USETEXTLINKS = 0 
+        indexOfEntries = 0//new Array 
+        nEntries = 0 
+        doc = 0//parent.frames.viewer.document 
+        //doc = document
+        browserVersion = 0 
+        selectedFolder=0
+	xmlDoc=0
+	foldersTree = 0
+</script>
+
+</head>
+<frameset rows="100,*" frameborder="no">
+  <frame src="header.html" name="header" scrolling="no">
+  <frameset cols="350,*" frameborder="no">
+     <frame src="input.html" name="input" scrolling="no">
+     <frame src="viewer.html" name="viewer" scrolling="yes">
+  </frameset>
+</frameset>
+
+</html>

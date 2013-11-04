@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+ <servlet>
+  <servlet-name>ImageManager</servlet-name>
+  <servlet-class>MESA.Servlet.ImgMgrViewer</servlet-class>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>ImageManager</servlet-name>
+  <url-pattern>/servlet/X</url-pattern>
+ </servlet-mapping>
+
+ <servlet>
+  <servlet-name>StorageManager</servlet-name>
+  <servlet-class>MESA.Servlet.StorageManager</servlet-class>
+  <init-param>
+    <param-name>StorageRoot</param-name>
+    <param-value>/opt/mesa/storage/imgmgr_study/instances</param-value>
+  </init-param>
+ </servlet>
+
+ <servlet-mapping>
+  <servlet-name>StorageManager</servlet-name>
+  <url-pattern>/servlet/StorageManager</url-pattern>
+ </servlet-mapping>
+
+</web-app>
+

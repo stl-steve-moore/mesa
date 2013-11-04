@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+ <servlet>
+  <servlet-name>
+    StorageManager
+  </servlet-name>
+  <servlet-class>
+   MESA.Servlet.StorageManager
+  </servlet-class>
+  <init-param>
+    <param-name>
+      StorageRoot
+    </param-name>
+    <param-value>
+      /dciacc/pcc-images/staging
+    </param-value>
+  </init-param>
+ </servlet>
+
+ <security-constraint>
+  <web-resource-collection>
+   <web-resource-name>
+    UserProtection
+   </web-resource-name>
+   <url-pattern>
+    /servlet/ImageManager
+   </url-pattern>
+   <url-pattern>
+    /servlet/QueueManager
+   </url-pattern>
+   <http-method>
+    GET
+   </http-method>
+   <http-method>
+    POST
+   </http-method>
+  </web-resource-collection>
+
+  <auth-constraint>
+   <role-name>
+    MIRImg
+   </role-name>
+  </auth-constraint>
+ </security-constraint>
+
+ <security-constraint>
+  <web-resource-collection>
+   <web-resource-name>
+    MgrProtection
+   </web-resource-name>
+   <url-pattern>
+    /servlet/UserManager
+   </url-pattern>
+   <http-method>
+    GET
+   </http-method>
+   <http-method>
+    POST
+   </http-method>
+  </web-resource-collection>
+
+  <auth-constraint>
+   <role-name>
+    UserMgr
+   </role-name>
+  </auth-constraint>
+ </security-constraint>
+
+ <login-config>
+  <auth-method>
+    BASIC
+  </auth-method>
+  <realm-name>
+    Default
+  </realm-name>
+ </login-config>
+
+ <security-role>
+  <role-name>
+    MIRImg
+  </role-name>
+ </security-role>
+
+ <security-role>
+  <role-name>
+    UserMgr
+  </role-name>
+ </security-role>
+
+</web-app>

@@ -1,0 +1,25 @@
+#!/bin/csh
+#
+# This script is to guarantee that a directory exists.  It will only
+# make a new directory at the last level in a hierarchy, so don't
+# expect it to go down a full path.
+#
+# Usage: createdirectory <directory>
+
+if ($1 == "") then
+  echo "Usage: createdirectory <directory>"
+  exit 1
+endif
+
+if (-e $1) then
+exit 0
+endif
+
+#echo Directory $1 does not exist.  Trying to create $1.
+mkdir -m 775 $1
+
+if ($status != 0) then
+echo Unable to create $1
+endif
+
+exit $status

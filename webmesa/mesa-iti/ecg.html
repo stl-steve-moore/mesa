@@ -1,0 +1,61 @@
+<HTML>
+ <HEAD>
+  <TITLE>ECG Control</TITLE>
+ </HEAD>
+
+ <BODY BGCOLOR="#FFFFFF">
+  <H2 ALIGN="CENTER">MESA ECG Control</H2>
+  <H3 ALIGN="CENTER">Last changed with MESA Version 7.2.0</H3>
+
+  <table border="1">
+  <tr><th>ECG Test</th><th>Link</th></tr>
+  <tr><td>20301</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY&patientID=ECG203011^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2009-12-12T23:59:59&mostRecentResults=1">SUMMARY - patient ID=ECG203011, lowerDate, upperDate, mostRecentResults> </td>
+  </tr>
+  <tr>
+     <td>
+      20301-PDF
+     </td>
+     <td>
+        <a href="IHERetrieveDocument?requestType=DOCUMENT&patientID=ECG203011^^^RID&documentUID=1.2.840.113654.2.3.2005.20301.101&preferredContentType=application/pdf">Document: 1.2.840.113654.2.3.2005.20301.101> </td>
+     </td>
+  </tr>
+  <tr>
+     <td>
+     20301-SVG
+     </td>
+     <td>
+         <a href="IHERetrieveDocument?requestType=DOCUMENT&patientID=ECG203011^^^RID&documentUID=1.2.840.113654.2.3.2005.20301.102&preferredContentType=image/svg+xml">Document: 1.2.840.113654.2.3.2005.20301.102>
+     </td>
+  </tr>
+  <tr><td>20302</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY&patientID=ECG203019^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2009-12-12T23:59:59&mostRecentResults=1">SUMMARY - patient ID=ECG203019, lowerDate, upperDate, mostRecentResults - Patient does not exist> </td>
+  </tr> 
+  <tr><td>20303</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY-CARDIOLOGY&patientID=ECG203011^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2009-12-12T23:59:59&mostRecentResults=1">SUMMARY-CARDIOLOGY - patient ID=ECG203011, lowerDate, upperDate, mostRecentResults> </td>  
+  </tr> 
+  
+  <tr><td>20304</td>
+      <!-- <td>The MESA server is not ready for this test.> </td> -->
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY-CARDIOLOGY-ECG&patientID=ECG203011^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2009-12-12T23:59:59&mostRecentResults=1">SUMMARY-CARDIOLOGY-ECG - patient ID=ECG203011, lowerDate, upperDate, mostRecentResults> </td>  
+  </tr> 
+
+  <tr><td>20305</td>
+      <td><a href="IHERetrieveSummaryInfo?requestType=SUMMARY-CARDIOLOGY-ECG&patientID=ECG203019^^^RID&lowerDateTime=2003-01-01T00:00:00&upperDateTime=2009-12-12T23:59:59&mostRecentResults=1">SUMMARY-CARDIOLOGY-ECG - patient ID=ECG203019, lowerDate, upperDate, mostRecentResults - Patient does not exist> </td>
+  </tr> 
+  <tr><td>20306</td>
+      <td>The MESA server is not ready for this test.> </td>
+  </tr> 
+  <tr><td>20308</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&patientID=ECG203011^^^RID&documentUID=1.2.840.113654.2.3.2005.20301.101&preferredContentType=application/pdf">Document: 1.2.840.113654.2.3.2005.20301.101 Vector pdf document>
+  </tr>
+  <tr><td>20309</td>
+      <td><a href="IHERetrieveDocument?requestType=DOCUMENT&patientID=ECG203011^^^RID&documentUID=1.2.840.113654.2.3.2005.20301.102&preferredContentType=image/svg+xml">Document: 1.2.840.113654.2.3.2005.20301.102 SVG document>
+  </tr>
+  <tr><td>20310</td>
+      <td>The MESA server is not ready for this test.> </td>
+  </tr> 
+  </table>
+
+ </BODY>
+</HTML>

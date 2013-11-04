@@ -1,0 +1,1745 @@
+Microsoft Developer Studio Workspace File, Format Version 6.00
+# WARNING: DO NOT EDIT OR DELETE THIS WORKSPACE FILE!
+
+###############################################################################
+
+Project: "archive_agent"=".\mesa_apps\archive_agent\archive_agent.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "archive_cleaner"=".\mesa_apps\archive_cleaner\archive_cleaner.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "archive_server"=".\mesa_apps\archive_server\archive_server.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cecho"=".\mesa_apps\cecho\cecho.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cecho_secure"=".\mesa_apps_secure\cecho_secure\cecho_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind"=".\mesa_apps\cfind\cfind.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_evaluate"=".\mesa_apps\cfind_evaluate\cfind_evaluate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_gpsps_evaluate"=".\mesa_apps\cfind_gpsps_evaluate\cfind_gpsps_evaluate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_image_avail"=".\mesa_apps\cfind_image_avail\cfind_image_avail.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_mwl_evaluate"=".\mesa_apps\cfind_mwl_evaluate\cfind_mwl_evaluate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_resp_evaluate"=".\mesa_apps\cfind_resp_evaluate\cfind_resp_evaluate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_secure"=".\mesa_apps_secure\cfind_secure\cfind_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cfind_study_probe"=".\mesa_apps\cfind_study_probe\cfind_study_probe.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cmove"=".\mesa_apps\cmove\cmove.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cmove_study"=".\mesa_apps\cmove_study\cmove_study.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "compare_dcm"=".\mesa_apps\compare_dcm\compare_dcm.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "compare_hl7"=".\mesa_apps\compare_hl7\compare_hl7.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cstore"=".\mesa_apps\cstore\cstore.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "cstore_secure"=".\mesa_apps_secure\cstore_secure\cstore_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ctn_version"=".\mesa_apps\ctn_version\ctn_version.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_create_object"=".\mesa_apps\dcm_create_object\dcm_create_object.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_ctnto10"=".\mesa_apps\dcm_ctnto10\dcm_ctnto10.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_diff"=".\mesa_apps\dcm_diff\dcm_diff.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_dump_compressed"=".\mesa_apps\dcm_dump_compressed\dcm_dump_compressed.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_dump_element"=".\mesa_apps\dcm_dump_element\dcm_dump_element.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_dump_file"=".\mesa_apps\dcm_dump_file\dcm_dump_file.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_get_elements"=".\mesa_apps\dcm_get_elements\dcm_get_elements.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_iterator"=".\mesa_apps\dcm_iterator\dcm_iterator.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_make_object"=".\mesa_apps\dcm_make_object\dcm_make_object.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_map_to_8"=".\mesa_apps\dcm_map_to_8\dcm_map_to_8.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_mask_image"=".\mesa_apps\dcm_mask_image\dcm_mask_image.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_modify_elements"=".\mesa_apps\dcm_modify_elements\dcm_modify_elements.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_modify_object"=".\mesa_apps\dcm_modify_object\dcm_modify_object.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_print_dictionary"=".\mesa_apps\dcm_print_dictionary\dcm_print_dictionary.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_print_element"=".\mesa_apps\dcm_print_element\dcm_print_element.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_ref_sop_seq"=".\mesa_apps\dcm_ref_sop_seq\dcm_ref_sop_seq.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_replace_element"=".\mesa_apps\dcm_replace_element\dcm_replace_element.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_resize"=".\mesa_apps\dcm_resize\dcm_resize.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_rm_element"=".\mesa_apps\dcm_rm_element\dcm_rm_element.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_rm_group"=".\mesa_apps\dcm_rm_group\dcm_rm_group.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_to_html"=".\mesa_apps\dcm_to_html\dcm_to_html.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_to_text"=".\mesa_apps\dcm_to_text\dcm_to_text.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_to_xml"=".\mesa_apps\dcm_to_xml\dcm_to_xml.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_vr_patterns"=".\mesa_apps\dcm_vr_patterns\dcm_vr_patterns.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dcm_w_disp"=".\mesa_apps\dcm_w_disp\dcm_w_disp.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dicom_echo"=".\mesa_apps\dicom_echo\dicom_echo.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ds_dcm"=".\mesa_apps\ds_dcm\ds_dcm.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ds_dcm_secure"=".\mesa_apps_secure\ds_dcm_secure\ds_dcm_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "dump_commit_requests"=".\mesa_apps\dump_commit_requests\dump_commit_requests.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "evaluate_gppps"=".\mesa_apps\evaluate_gppps\evaluate_gppps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "evaluate_storage_commitment"=".\mesa_apps\evaluate_storage_commitment\evaluate_storage_commitment.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "hl7_evaluate"=".\mesa_apps\hl7_evaluate\hl7_evaluate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "hl7_get_value"=".\mesa_apps\hl7_get_value\hl7_get_value.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "hl7_rcvr"=".\mesa_apps\hl7_rcvr\hl7_rcvr.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "hl7_rcvr_secure"=".\mesa_apps_secure\hl7_rcvr_secure\hl7_rcvr_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "hl7_set_value"=".\mesa_apps\hl7_set_value\hl7_set_value.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "hl7_to_txt"=".\mesa_apps\hl7_to_txt\hl7_to_txt.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ihe_audit_message"=".\mesa_apps\ihe_audit_message\ihe_audit_message.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "im_hl7ps"=".\mesa_apps\im_hl7ps\im_hl7ps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "im_sc_agent"=".\mesa_apps\im_sc_agent\im_sc_agent.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "javactn"=".\javactn\javactn.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "kill_hl7"=".\mesa_apps\kill_hl7\kill_hl7.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "kill_hl7_secure"=".\mesa_apps_secure\kill_hl7_secure\kill_hl7_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "load_control"=".\mesa_apps\load_control\load_control.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_apps"=".\mesa_apps\mesa_apps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+    Begin Project Dependency
+    Project_Dep_Name cfind
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name send_image
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name simple_storage
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_dump_file
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dicom_echo
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name archive_agent
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name archive_cleaner
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name archive_server
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cfind_study_probe
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cmove
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cmove_study
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name compare_dcm
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name compare_hl7
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name cstore
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_create_object
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_ctnto10
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_diff
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_dump_compressed
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_dump_element
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_make_object
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_map_to_8
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_modify_elements
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_modify_object
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_print_dictionary
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_print_element
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_ref_sop_seq
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_replace_element
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_resize
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_rm_element
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_rm_group
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_to_html
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_w_disp
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dump_commit_requests
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name hl7_get_value
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name hl7_set_value
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name hl7_to_txt
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name load_control
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mesa_dump_obj
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name mwlquery
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name naction
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ncreate
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nevent
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name new_uids
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name nset
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name open_assoc
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name sc_scp_association
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name sc_scu_association
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name send_hl7
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name tcp_connect
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ttdelete
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ttinsert
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ttlayout
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ttselect
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name txt_to_hl7
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ctn_version
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ttunique
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name ttupdate
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name op_hl7ps
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_to_xml
+    End Project Dependency
+    Begin Project Dependency
+    Project_Dep_Name dcm_to_text
+    End Project Dependency
+}}}
+
+###############################################################################
+
+Project: "mesa_audit_eval"=".\mesa_apps\mesa_audit_eval\mesa_audit_eval.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_composite_eval"=".\mesa_apps\mesa_composite_eval\mesa_composite_eval.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_dictionary"=".\mesa_apps\mesa_dictionary\mesa_dictionary.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_dump_dicomdir"=".\mesa_apps\mesa_dump_dicomdir\mesa_dump_dicomdir.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_dump_obj"=".\mesa_apps\mesa_dump_obj\mesa_dump_obj.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_identifier"=".\mesa_apps\mesa_identifier\mesa_identifier.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_lib"=".\mesa_lib\mesa_lib.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_lib_nodb"=".\mesa_lib_nodb\mesa_lib_nodb.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_lib_secure"=".\mesa_lib_secure\mesa_lib_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_mwl_add_sps"=".\mesa_apps\mesa_mwl_add_sps\mesa_mwl_add_sps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_mwl_sps_from_mpps"=".\mesa_apps\mesa_mwl_sps_from_mpps\mesa_mwl_sps_from_mpps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_pdi_eval"=".\mesa_apps\mesa_pdi_eval\mesa_pdi_eval.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_select_column"=".\mesa_apps\mesa_select_column\mesa_select_column.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_sr_eval"=".\mesa_apps\mesa_sr_eval\mesa_sr_eval.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_storage"=".\mesa_apps\mesa_storage\mesa_storage.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_storage_secure"=".\mesa_apps_secure\mesa_storage_secure\mesa_storage_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_update_column"=".\mesa_apps\mesa_update_column\mesa_update_column.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mesa_xml_eval"=".\mesa_apps\mesa_xml_eval\mesa_xml_eval.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mod_dcmps"=".\mesa_apps\mod_dcmps\mod_dcmps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mod_generatestudy"=".\mesa_apps\mod_generatestudy\mod_generatestudy.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mpps_evaluate"=".\mesa_apps\mpps_evaluate\mpps_evaluate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mwlquery"=".\mesa_apps\mwlquery\mwlquery.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "mwlquery_secure"=".\mesa_apps_secure\mwlquery_secure\mwlquery_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "naction"=".\mesa_apps\naction\naction.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "naction_secure"=".\mesa_apps_secure\naction_secure\naction_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ncreate"=".\mesa_apps\ncreate\ncreate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ncreate_secure"=".\mesa_apps_secure\ncreate_secure\ncreate_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nevent"=".\mesa_apps\nevent\nevent.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "new_uids"=".\mesa_apps\new_uids\new_uids.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nset"=".\mesa_apps\nset\nset.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "nset_secure"=".\mesa_apps_secure\nset_secure\nset_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "of_dcmps"=".\mesa_apps\of_dcmps\of_dcmps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "of_dcmps_secure"=".\mesa_apps_secure\of_dcmps_secure\of_dcmps_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "of_hl7ps"=".\mesa_apps\of_hl7ps\of_hl7ps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "of_identifier"=".\mesa_apps\of_identifier\of_identifier.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "of_mwl_cancel"=".\mesa_apps\of_mwl_cancel\of_mwl_cancel.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "of_schedule"=".\mesa_apps\of_schedule\of_schedule.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "op_hl7ps"=".\Mesa_apps\op_hl7ps\op_hl7ps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "open_assoc"=".\mesa_apps\open_assoc\open_assoc.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "open_assoc_secure"=".\mesa_apps_secure\open_assoc_secure\open_assoc_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "pp_dcmps"=".\mesa_apps\pp_dcmps\pp_dcmps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ppm_sched_gppps"=".\mesa_apps\ppm_sched_gppps\ppm_sched_gppps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ppm_sched_gpsps"=".\mesa_apps\ppm_sched_gpsps\ppm_sched_gpsps.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sc_scp_association"=".\mesa_apps\sc_scp_association\sc_scp_association.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sc_scu_association"=".\mesa_apps\sc_scu_association\sc_scu_association.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "send_hl7"=".\mesa_apps\send_hl7\send_hl7.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "send_hl7_secure"=".\mesa_apps_secure\send_hl7_secure\send_hl7_secure.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "send_image"=".\mesa_apps\send_image\send_image.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "simple_storage"=".\mesa_apps\simple_storage\simple_storage.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "sr_to_hl7"=".\mesa_apps\sr_to_hl7\sr_to_hl7.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "syslog_client"=".\mesa_apps\syslog_client\syslog_client.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "syslog_extract"=".\mesa_apps\syslog_extract\syslog_extract.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "syslog_server"=".\mesa_apps\syslog_server\syslog_server.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tcp_connect"=".\mesa_apps\tcp_connect\tcp_connect.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tls_client"=".\mesa_apps_secure\tls_client\tls_client.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tls_connect"=".\mesa_apps_secure\tls_connect\tls_connect.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "tls_server"=".\mesa_apps_secure\tls_server\tls_server.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttdelete"=".\mesa_apps\ttdelete\ttdelete.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttinsert"=".\mesa_apps\ttinsert\ttinsert.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttlayout"=".\mesa_apps\ttlayout\ttlayout.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttselect"=".\mesa_apps\ttselect\ttselect.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttunique"=".\mesa_apps\ttunique\ttunique.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "ttupdate"=".\mesa_apps\ttupdate\ttupdate.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Project: "txt_to_hl7"=".\mesa_apps\txt_to_hl7\txt_to_hl7.dsp" - Package Owner=<4>
+
+Package=<5>
+{{{
+}}}
+
+Package=<4>
+{{{
+}}}
+
+###############################################################################
+
+Global:
+
+Package=<5>
+{{{
+}}}
+
+Package=<3>
+{{{
+}}}
+
+###############################################################################
+

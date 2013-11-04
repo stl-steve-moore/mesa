@@ -1,0 +1,79 @@
+10110^US Procedure 1^99IHE
+10150^US Procedure 2^99IHE
+10210^Radiological Examination: Chest X-Ray^99IHE
+10250^Radiological Examination: Abdominal X-Ray^99IHE
+10310^Ultrasound Examination: Cardiac Screening^99IHE
+10350^Ultrasound Examination: Stress Echo^99IHE
+10-P2-7131C^Procedure: Balke Protocol^99IHE
+10-STR-NM1^Procedure: Stress-NM1^99IHE
+10-STR-US1^Procedure: Stress-US1^99IHE
+10-P2-7131E^Procedure: Ramp Protocol^99IHE
+10-DOBUTAMINE^Dobutamine Stress Protocol^99IHE
+10410^Radiological Examination: Left Leg^99IHE
+14050^Radiological Examination: Left Ankle^99IHE
+10610^Radiological Examination: Left Hand^99IHE
+10650^Radiological Examination: Left Wrist^99IHE
+10710^Transabdominal Ultrasound Scan^99IHE
+10750^Endovaginal Pelvic Scan^99IHE
+10810^Radiological Examination: Right Leg^99IHE
+10850^Radiological Examination: Right Ankle^99IHE
+10910^Computed Tomography: Chest^99IHE
+10950^Computed Tomography: Abdomen^99IHE
+10960^Computed Tomography: Head^99IHE
+11010^Magnetic Resonance Imaging: Head^99IHE
+11050^Magnetic Resonance Imaging: Neck^99IHE
+11210^Angiography: Cardiac^99IHE
+11250^Angiography: Carotid^99IHE
+11260^Angiography: CT^99IHE
+11270^EP: Ablation Procedure^99IHE
+11410^XRay: Ankle^99IHE
+11450^XRay: Foot^99IHE
+11510^Radiological Examination: Mammography^99IHE
+11610^Radiological Examination: Skull^99IHE
+11650^Radiological Examination: C- Spine^99IHE
+11810^OB-GYN Ultrasound^99IHE
+11910^Venogram^99IHE
+11950^Upper GI^99IHE
+12010^Magnetic Resonance Imaging: Left Knee^99IHE
+12050^Magnetic Resonance Imaging: Back^99IHE
+12110^Radiological Examination: Hand R^99IHE
+12150^Radiological Examination: Wrist R^99IHE
+12510^Magnetic Resonance Imaging Brain^99IHE
+13110^CD/DVD Import^99IHE
+13120^Scanned Film Import^99IHE
+13130^Scanned Document Import^99IHE
+13140^Network Import^99IHE
+16110^DEXA Exam: AP Spine^99IHE
+16150^DEXA Exam: Left Femur^99IHE
+16151^DEXA Exam: Right Femur^99IHE
+16210^Magnetic Resonance Imaging: Ankle^99IHE
+16310^Dynamic - Renalgram^99IHE
+16350^Gated Spect - Cardiac Gated Spect^99IHE
+16370^Spect - Bone Spect^99IHE
+17110^RF Examination: Stomach^99IHE
+17130^RF Examination: Colon^99IHE
+18110^Angiography: Diagnostic Catheterization^99IHE
+18111^Angiography: Therapeutic Catheterization^99IHE
+19110^Diagnostic ECG^99IHE
+MAWF0001^Screening Mammography, bilateral^99IHE
+MAWF0002^Screening Mammography, left^99IHE
+MAWF0003^Screening Mammography, right^99IHE
+MAWF0004^Diagnostic Mammography, bilateral^99IHE
+MAWF0005^Diagnostic Mammography, left^99IHE
+MAWF0006^Diagnostic Mammography, right^99IHE
+MAWF0007^Mammary Ductogram, Single Duct, left^99IHE
+MAWF0008^Mammary Ductogram, Single Duct, right^99IHE
+MAWF0009^Mammary Ductogram, Multiple Duct, left^99IHE
+MAWF0010^Mammary Ductogram, Multiple Duct, right^99IHE
+MAWF0011^Mammogram for marker placement, left^99IHE
+MAWF0012^Mammogram for marker placement, right^99IHE
+MAWF0013^Needle Localization, Image Guided, Mammography, left^99IHE
+MAWF0014^Needle Localization, Image Guided, Mammography, right^99IHE
+MAWF0015^Stereotactic Biopsy, Image Guidance, left^99IHE
+MAWF0016^Stereotactic Biopsy, Image Guidance, right^99IHE
+MAWF0017^Breast Specimen Mammography, left^99IHE
+MAWF0018^Breast Specimen Mammography, right^99IHE
+MAWF0019^Quality Control, Mammography^99IHE
+MAWF0020^Additional Mammography Views^99IHE
+20110^Group Test^99IHE
+20110^Group Test^99IHE

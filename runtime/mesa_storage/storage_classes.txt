@@ -1,0 +1,31 @@
+1.2.840.10008.1.1		// Verification SOP Class
+1.2.840.10008.5.1.4.1.1.1	// Computed Radiography
+1.2.840.10008.5.1.4.1.1.1.1	// Digital XRay Storage - Presentation
+1.2.840.10008.5.1.4.1.1.2	// CT
+1.2.840.10008.5.1.4.1.1.20	// NM (circa 1994)
+1.2.840.10008.5.1.4.1.1.29	// Hardcopy Grayscale Image
+1.2.840.10008.5.1.4.1.1.30	// Hardcopy Color Image
+1.2.840.10008.5.1.4.1.1.4	// MR
+1.2.840.10008.5.1.4.1.1.128	// Pet
+1.2.840.10008.5.1.4.1.1.481.2	// RT Dose
+1.2.840.10008.5.1.4.1.1.481.1	// RT Image
+1.2.840.10008.5.1.4.1.1.481.3	// RT Structure Set
+1.2.840.10008.5.1.4.1.1.7	// Secondary Capture
+1.2.840.10008.5.1.4.1.1.9	// Stand-alone Curve
+1.2.840.10008.5.1.4.1.1.10	// Stand-alone Modality Lut
+1.2.840.10008.5.1.4.1.1.8	// Stand-alone Overlay
+1.2.840.10008.5.1.4.1.1.11	// Stand-alone VOI LUT
+1.2.840.10008.5.1.4.1.1.129	// Stand-alone PET Curve
+1.2.840.10008.5.1.4.1.1.27	// Stored Print
+1.2.840.10008.5.1.4.1.1.6	// Ultrasound Image (retired)
+1.2.840.10008.5.1.4.1.1.6.1	// Ultrasound Image (circa 1995)
+1.2.840.10008.5.1.4.1.1.3	// US Multiframe (retired)
+1.2.840.10008.5.1.4.1.1.3.1	// US Multiframe (circa 1995)
+1.2.840.10008.5.1.4.1.1.12.3	// XRay Angiographic Bi-Plane
+1.2.840.10008.5.1.4.1.1.12.1	// Xray Angiographic Image
+1.2.840.10008.5.1.4.1.1.12.2	// XRF
+1.2.840.10008.5.1.4.1.1.1.1	// Dig XRay Image - For Presesentation
+1.2.840.10008.5.1.4.1.1.1.2	// Digital Mammo - For Presentation
+1.2.840.10008.5.1.4.1.1.1.3	// Dig Intra-oral XRay - For Presen
+
+1.2.840.10008.5.1.4.1.1.11.1	// Presentation State

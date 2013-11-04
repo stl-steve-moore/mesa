@@ -1,0 +1,14 @@
+1000	IHEY2	Chest Radiograph
+1001	IHEY2	Head CT With Contrast
+1002	IHEY2	MR Imaging of the Right Knee
+1003	IHEY2	MR Imaging of the Wrist
+1110	IHEY2	Images of Interest for Referring Physician
+1111	IHEY2	Images for Radiology Teaching File
+1112	IHEY2	Images for Consultation - General
+1112.1	IHEY2	Images for Consultation - Surgery
+1112.2	IHEY2	Images for Consultation - Neuroradiology
+1112.3	IHEY2	Images for Consultation - Oncology
+1112.4	IHEY2	Images for Consultation - Orthopedics
+1113	IHEY2	Images for Conferences
+1114	IHEY2	Images of Poor Quality
+1200	IHEY2	Fetal Measurments

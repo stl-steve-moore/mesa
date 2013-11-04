@@ -1,0 +1,37 @@
+#
+# authzldap.schema
+#
+# Schema definitions for OpenLDAP 2, to be used with mod_authz_ldap.
+# As I have an enterprise number for myself, I can easily define new
+# object types without interfering with other object types
+#
+# (c) 2000 Dr. Andreas Mueller, Beratung und Entwicklung
+#
+# $Id: authzldap.schema,v 1.1 2005/08/12 18:26:26 smm Exp $
+#
+
+#
+# note that failover uses the object id prefixes from our own enterprise
+# number as follows:
+#
+#	1.3.6.1.4.1.4263.1		traps
+#	1.3.6.1.4.1.4263.2		heartbeat
+#	1.3.6.1.4.1.4263.3		debug
+#
+# this is why authzldap objects use 1.3.6.1.4.1.4263.5
+#
+attributetype ( 1.3.6.1.4.1.4263.5.1 NAME 'issuerDN'
+	DESC 'The user friendly version of the distinguished name of the issuer of a certificate'
+	EQUALITY caseExactIA5Match
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
+
+attributetype ( 1.3.6.1.4.1.4263.5.2 NAME 'subjectDN'
+	DESC 'The user friendly version of the distinguished name of the subject of a certificate'
+	EQUALITY caseExactIA5Match
+	SYNTAX 1.3.6.1.4.1.1466.115.121.1.26 SINGLE-VALUE )
+
+objectclass ( 1.3.6.1.4.1.4263.5.3 NAME 'authzLDAPmap'
+	DESC 'Map Entry for mod_authz_ldap'
+	SUP top STRUCTURAL
+	MUST ( issuerDN $ owner )
+	MAY ( userCertificate $ serialNumber $ subjectDN ) )

@@ -1,0 +1,15 @@
+# Scheduled Modalities.  
+# Read in by of_schedule_procedure.php
+CR
+CT
+DX
+MG
+MR
+NM
+OT
+PT
+HC
+RTIMAGE
+US
+XA
+RF

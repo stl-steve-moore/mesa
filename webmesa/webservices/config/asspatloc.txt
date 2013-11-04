@@ -1,0 +1,7 @@
+# Assigned Patient Locations
+# Read by adt_create_visit.pl
+1E^101^1^MESA Hospital
+1W^111^1^MESA Hospital
+2E^201^1^MESA Hospital
+1W^101^1^MESA Hospital
+Outpatient
