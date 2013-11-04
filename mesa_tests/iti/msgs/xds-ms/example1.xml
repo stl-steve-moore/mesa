@@ -1,0 +1,680 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet type='text/xsl' href='IMPL_CDAR2.xsl'?>
+<ClinicalDocument xmlns='urn:hl7-org:v3'>
+  <realmCode code='US'/>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP" root="2.16.840.1.113883.10"/>
+  <id extension='999021'  root='1.3.6.4.1.4.1.2835.2'/>
+  <code code='34133-9'  codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC' displayName='SUMMARIZATION OF EPISODE NOTE'/>
+  <title>Good Health Clinic Care Record Summary</title>
+  <effectiveTime value='20050329224411+0500'/>
+  <confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25"/>
+  <languageCode code='en-US'/>
+  <setId extension='999021'  root='1.3.6.4.1.4.1.2835.1'/>
+  <versionNumber value='1'/>
+  <recordTarget>
+    <patientRole>
+      <id extension="12345" root="2.16.840.1.113883.3.933"/>
+      <addr>
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(781)555-1212' use='HP'/>
+      <patient>
+        <name>
+          <prefix>Mrs.</prefix>
+          <given>Ellen</given>
+          <family>Ross</family>
+        </name>
+        <administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1"/>
+        <birthTime value="19600127"/>
+      </patient>
+      <providerOrganization>
+        <id extension="M345" root="2.16.840.1.113883.3.933"/>
+        <name>Good Health Clinic</name>
+        <telecom value='tel:(999)555-1212' use='WP'/>
+        <addr>
+          <streetAddressLine>21 North Ave</streetAddressLine>
+          <city>Burlington</city>
+          <state>MA</state>
+          <postalCode>01803</postalCode>
+          <country>USA</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author>
+    <time value='20050329224411+0500'/>
+    <assignedAuthor>
+      <id extension='1' root='1.3.6.4.1.4.1.2835.1'/>
+      <code code='SELF' codeSystem='2.16.840.1.113883.5.111'/>
+      <addr>
+        <streetAddressLine>21 North Ave</streetAddressLine>
+        <city>Burlington</city>
+        <state>MA</state>
+        <postalCode>01803</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <assignedPerson>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Bernard</given>
+          <family>Wiseman</family>
+          <suffix>Sr.</suffix>
+        </name>
+      </assignedPerson>
+    </assignedAuthor>
+  </author>
+  <author>
+    <time value='20050329224411+0500'/>
+    <assignedAuthor>
+      <id extension='1' root='1.3.6.4.1.4.1.2835.1'/>
+      <addr>
+        <streetAddressLine>21 North Ave</streetAddressLine>
+        <city>Burlington</city>
+        <state>MA</state>
+        <postalCode>01803</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <assignedAuthoringDevice>
+        <softwareName>Good Health Clinic System v1.0</softwareName>
+      </assignedAuthoringDevice>
+    </assignedAuthor>
+  </author>
+  <dataEnterer>
+    <time value='20050329222451+0500'/>
+    <assignedEntity>
+      <id extension='2' root='1.3.6.4.1.4.1.2835.2'/>
+      <assignedPerson>
+        <name>
+          <prefix>Mrs.</prefix>
+          <given>Bernice</given>
+          <family>Wiseman</family>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </dataEnterer>
+  <!-- To represent a healthcare provider with a specific assigned healthcare role that can be identified by the author and authoring system. 
+  -->
+  <informant>
+    <assignedEntity>
+      <id extension='3' root='1.3.6.4.1.4.1.2835.2'/>
+      <assignedPerson>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Bernard</given>
+          <family>Wiseman</family>
+          <suffix>Jr.</suffix>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </informant>
+  <!-- To represent a mother who provides information about her child -->
+  <informant>
+    <relatedEntity classCode='PRS'>
+      <code code='MTH' codeSystem='2.16.840.1.113883.5.111'/>
+      <relatedPerson>
+        <name>
+          <prefix>Mrs.</prefix>
+          <given>Abigail</given>
+          <family>Ruth</family>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+  <!-- To represent a witness to a signicant health event -->
+  <informant>
+    <relatedEntity classCode='CON'>
+      <relatedPerson>
+        <name>
+          <prefix>Mr.</prefix>
+          <given>Joseph</given>
+          <given>T.</given>
+          <family>Jones</family>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+  <!-- To represent a healthcare provider in a healthcare role without an assigned role known or representable to the author.  The example below represents a physician who was the patient's primary care provider. -->
+  <informant>
+    <relatedEntity classCode='PROV'>
+      <code code='59058001' codeSystem='2.16.840.1.113883.6.96'/>
+      <relatedPerson>
+        <name>
+          <given>Jane</given>
+          <family>Queen</family>
+          <suffix></suffix>
+        </name>
+      </relatedPerson>
+    </relatedEntity>
+  </informant>
+  <custodian>
+    <assignedCustodian>
+      <representedCustodianOrganization>
+        <id extension='1' root='1.3.6.4.1.4.1.2835.3'/>
+        <name>Good Health Clinic</name>
+        <telecom value='tel:(999)555-1212' use='WP'/>
+        <addr>
+          <streetAddressLine>21 North Ave</streetAddressLine>
+          <city>Burlington</city>
+          <state>MA</state>
+          <postalCode>01803</postalCode>
+          <country>USA</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <informationRecipient>
+    <intendedRecipient>
+      <id extension='4' root='1.3.6.4.1.4.1.2835.2'/>
+      <addr>
+        <streetAddressLine>21 North Ave</streetAddressLine>
+        <city>Burlington</city>
+        <state>MA</state>
+        <postalCode>01803</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <informationRecipient>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Phil</given>
+          <family>Green</family>
+        </name>
+      </informationRecipient>
+      <receivedOrganization>
+        <name>Good Health Clinic</name>
+      </receivedOrganization>
+    </intendedRecipient>
+  </informationRecipient>
+  <legalAuthenticator>
+    <time value='20050329224512+0500'/>
+    <signatureCode code='S'/>
+    <assignedEntity>
+      <id extension='1' root='1.3.6.4.1.4.1.2835.1'/>
+      <addr>
+        <streetAddressLine>21 North Ave</streetAddressLine>
+        <city>Burlington</city>
+        <state>MA</state>
+        <postalCode>01803</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <assignedPerson>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Bernard</given>
+          <family>Wiseman</family>
+          <suffix>Sr.</suffix>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </legalAuthenticator>
+  <authenticator>
+    <time value='20050329224512+0500'/>
+    <signatureCode code='S'/>
+    <assignedEntity>
+      <id extension='3' root='1.3.6.4.1.4.1.2835.1'/>
+      <addr>
+        <streetAddressLine>21 North Ave</streetAddressLine>
+        <city>Burlington</city>
+        <state>MA</state>
+        <postalCode>01803</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <assignedPerson>
+        <name>
+          <prefix>Dr.</prefix>
+          <given>Bernard</given>
+          <family>Wiseman</family>
+          <suffix>Jr.</suffix>
+        </name>
+      </assignedPerson>
+    </assignedEntity>
+  </authenticator>
+  <participant typeCode='IND'>
+    <time></time> 
+    <associatedEntity classCode='PRS'>
+      <code code='MTH' codeSystem='2.16.840.1.113883.5.111'/>
+      <addr>
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <associatedPerson>
+        <name>
+          <prefix>Mrs.</prefix>
+          <given>Abigail</given>
+          <family>Ruth</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <participant typeCode='HLD'>
+    <time>
+      <low value='20050101'/>
+      <high value='20051231'/>
+    </time>
+    <associatedEntity classCode='POLHOLD'>
+      <id extension='123456789' root='00000000-0000-0000-0000-000000000000'/>
+      <code code='PHFAMDEP' codeSystem='2.16.840.1.113883.5.1095'/>
+      <!-- To show that the policy holder is the patient, the above would be:
+      <code code='SELF' codeSystem='2.16.840.1.113883.5.111'/>
+      -->
+      <addr>
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <associatedPerson>
+        <name>
+          <prefix>Mr.</prefix>
+          <given>Kenneth</given>
+          <family>Ross</family>
+        </name>
+      </associatedPerson>
+      <scopingOrganization>
+        <name>Good Health Insurance Company</name>
+        <telecom value='tel:(203)555-1212' use='WP'/>
+        <addr>
+          <streetAddressLine>3191 Broadbridge Avenue</streetAddressLine>
+          <city>Stratford</city>
+          <state>CT</state>
+          <postalCode>06614-2559</postalCode>
+          <country>USA</country>
+        </addr>
+      </scopingOrganization>
+    </associatedEntity>
+  </participant>
+  <participant typeCode='IND'>
+    <associatedEntity classCode='GUAR'>
+      <addr>
+        <streetAddressLine>17 Daws Rd.</streetAddressLine>
+        <city>Blue Bell</city>
+        <state>MA</state>
+        <postalCode>02368</postalCode>
+        <country>USA</country>
+      </addr>
+      <telecom value='tel:(999)555-1212' use='WP'/>
+      <associatedPerson>
+        <name>
+          <prefix>Mr.</prefix>
+          <given>Kenneth</given>
+          <family>Ross</family>
+        </name>
+      </associatedPerson>
+    </associatedEntity>
+  </participant>
+  <documentationOf>
+    <serviceEvent classCode='PCPR'>
+      <effectiveTime>
+        <low value='19600127'/>
+        <high value='20050329'/>
+      </effectiveTime>
+      <performer typeCode='PRF'>
+        <functionCode code='PCP' codeSystem='2.16.840.1.113883.5.88'/>
+        <time>        
+          <low value='1998'/>
+          <high value='2005'/>
+        </time>
+        <assignedEntity>
+          <id extension='1' root='1.3.6.4.1.4.1.2835.1'/>
+          <code code='59058001'
+            codeSystem='2.16.840.1.113883.6.96'
+            codeSystemName='SNOMED CT'
+            displayName='General Physician'/>
+          <addr>
+            <streetAddressLine>21 North Ave</streetAddressLine>
+            <city>Burlington</city>
+            <state>MA</state>
+            <postalCode>01803</postalCode>
+            <country>USA</country>
+          </addr>
+          <telecom value='tel:(999)555-1212' use='WP'/>
+          <assignedPerson>
+            <name>
+              <prefix>Dr.</prefix>
+              <given>Bernard</given>
+              <family>Wiseman</family>
+              <suffix>Sr.</suffix>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <componentOf>
+    <encompassingEncounter>
+      <id extension='9937012' root='1.3.6.4.1.4.1.2835.12'/>
+      <code code='99213' codeSystem='2.16.840.1.113883.6.12' displayName='Evaluation and Managment' codeSystemName='CPT-4'/>
+      <effectiveTime>
+        <low value='20050329'/>
+        <high value='20050329'/>
+      </effectiveTime>
+      <dischargeDispositionCode code='01' codeSystem='2.16.840.1.113883.6.21' displayName='Routine Discharge' codeSystemName='UB92'/>
+    </encompassingEncounter>
+  </componentOf>
+  <component>
+    <structuredBody>
+      <templateId extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP" root="2.16.840.1.113883.10"/>
+      <component>
+        <section>
+          <code code='X-RFVCC' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Reason for Visit/Chief Complaint</title>
+          <text>Ankle Sprain</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='X-RFR' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Reason for Referral</title>
+          <text>Follow-up care for Ankle Sprain</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='X-ADVDIR' codeSystem='2.16.840.1.113883.6.1'/>
+          <title>Advance Directives</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr><th>Documentation</th><th>Contact</th>
+                  <th>Effective Date</th><th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Living Will</td>
+                  <td>Obtain from her Husband</td><td>1994</td>         
+                  <td>Copy on file</td>
+                </tr>
+                <tr><td>Power of Attorney</td>
+                  <td>Obtain from her Husband</td><td>1994</td><td></td>
+                </tr>
+                <tr><td>Healthcare Proxy</td>
+                  <td>Obtain from her Husband</td><td>1994</td><td></td>
+                </tr>
+                <tr><td>Organ Donor</td>
+                  <td>Massachusetts Registry of Motor Vehicles</td>
+                  <td>1/27/2004 - </td><td>Registered Organ Donor</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10164-2' codeSystem='2.16.840.1.113883.6.1' />
+          <title>History of Present Illness</title>
+          <text>Patient slipped and fell on ice, twisting her ankle as she fell.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10157-6' codeSystem='2.16.840.1.113883.6.1'/>
+          <title>Family History</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr><th>Family Member</th>
+                  <th>Problem</th>
+                  <th>Cause of Death?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Father</td><td>Alcoholism</td><td>No</td></tr>
+                <tr><td>Father</td><td>Liver Cancer</td><td>Yes</td></tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='29762-2' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Social History</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr>
+                  <th>Social History</th>
+                  <th>Comments</th>
+                  <th>Date Range</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Smoking</td><td>1/2 pack per day</td><td>? - 1996</td>
+                </tr>
+                <tr>
+                  <td>Alcohol Use</td><td>1-2 drinks per week</td><td></td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='11450-4' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Conditions</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr><th>Problem</th><th>Date</th><th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Cholecystitis</td><td>9/28/2002 - 6/2003</td>
+                  <td>Resolved</td>
+                  <td>Surgery postponed until after delivery</td>
+                </tr>
+                <tr>
+                  <td>Pregnancy</td><td>7/2001 - 4/22/2002</td>
+                  <td>Resolved</td>
+                  <td>Prior history of miscarraige</td>
+                </tr>
+                <tr><td>Ankle Sprain</td><td>3/28/2005</td>
+                  <td>Current</td>
+                  <td>Slipped on ice and fell</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10155-0' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Allergies and Adverse Reactions</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr><th>Allergen</th><th>Reaction</th>
+                  <th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Penicillin</td><td>Hives</td>
+                  <td>Amoxicillin is OK</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10160-0' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Medications</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr><th>Medication</th>
+                  <th>Prescription or Dose</th>
+                  <th>Dates of Use</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Indomethacin</td>
+                  <td>50mg bid with food </td>
+                  <td>12/10/2003 - present</td>
+                </tr>
+                <tr>
+                  <td>Acetaminophen with codeine</td>
+                  <td>#3 1-2 tablets for pain as needed</td>
+                  <td>03/28/2005</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='11369-6' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Immunizations</title>
+          <text>
+            <list>
+              <item>DTP - 1962</item>
+              <item>Polio Virus - 1961</item>
+              <item>MMR - 1961</item>
+            </list>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10167-5' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Procedures</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr>
+                  <th>Procedure</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Laparoscopic Cholecystectomy</td><td>9/28/2002</td></tr>
+                <tr><td>Cesarian Section</td><td>3/22/2002</td></tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='11336-5' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Prior Encounters</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr><th>Date</th><th>Provider</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>3/28/2005</td><td>Community Hospital</td>
+                  <td>ED Visit for Ankle Sprain</td>
+                </tr>
+                <tr><td>9/28/2002</td><td>City Hospital</td>
+                  <td>Gall Bladder Surgery</td>
+                </tr>
+                <tr><td>3/21/2002</td><td>Community Hospital</td>
+                  <td>Labor and Delivery</td>
+                </tr>
+                <tr><td>10/28/2001</td><td>Community Hospital</td>
+                  <td>ED Visit for Acute Cholecystitis</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10187-3' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Review of Systems</title>
+          <text>Normal except for left foot and ankle.</text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='10210-3' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Physical Examination</title>
+          <text>Left foot and ankle are swollen profusely.</text>
+          <component>
+            <section>
+              <code code='29274-8' codeSystem='2.16.840.1.113883.6.1' />
+              <title>Vital Signs</title>
+              <text>
+                <table border='1'>
+                  <thead>
+                    <tr><th>Date</th><th>Height</th><th>Weight</th><th>Temperature</th>
+                      <th>BP</th><th>Pulse</th><th>Respiration</th><th>O2</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr><th>3/28/2005</th><th>5'9"</th><th>215 lbs.</th><th>98.7 &#xB0;F</th>
+                      <th>120/80</th><th>68</th><th>16</th><th>99%</th>
+                    </tr>
+                  </tbody>
+                </table>
+              </text>
+            </section>
+          </component>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='X-SS' codeSystem='2.16.840.1.113883.6.1'/>
+          <title>Related Reports</title>
+          <text>
+            <table border='1'>
+              <thead>
+                <tr>
+                  <th>Study</th>
+                  <th>Summary</th>
+                  <th>Date of Study</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>X-Ray Study - Left Ankle</td>
+                  <td>No Fracture</td>
+                  <td>3/28/2005</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section>
+          <code code='18776-5' codeSystem='2.16.840.1.113883.6.1' />
+          <title>Plan of Care</title>
+          <text>
+            <paragraph>Acetaminophen with codiene prn for pain.</paragraph>
+            <paragraph>Stay off the foot.  Keep foot elevated, and use supplied air splint and crutches.</paragraph>
+            <paragraph>Follow-up with orthopedist in next 5 days.</paragraph>
+          </text>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
+

@@ -1,0 +1,3 @@
+0008 0052	SERIES		// Query level
+0020 000d	1.2.276.0.7230010.3.200.13		// Study Instance UID
+0020 000e	1.2.276.0.7230010.3.200.13.0		// Series Instance UID

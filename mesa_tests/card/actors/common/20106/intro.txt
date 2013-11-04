@@ -1,0 +1,14 @@
+This is (IHE-Cardiology) test 20106
+It exercises Cath workflow C5: Patient Not Registered.
+This test case stops after verifying that the Order Filler 
+uses the UID from the first PPS from the original Modality.
+
+References:
+ IHE Card TF-1:3.4.5
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/20106.pl
+in the directory $MESA_TARGET/mesa_tests/card/msgs
+

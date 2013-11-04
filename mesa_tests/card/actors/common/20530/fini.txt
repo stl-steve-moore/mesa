@@ -1,0 +1,4 @@
+Test 20530 has run to its completion.
+
+You should now run the evaluation script per the instructions
+ for your actor.

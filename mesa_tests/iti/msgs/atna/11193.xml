@@ -1,0 +1,6 @@
+<AuditMessage>
+ <EventIdentification EventActionCode="C" EventDateTime="2006-08-31T10:38:34" EventOutcomeIndicator="0">
+  <EventID code="IHE0004" codeSystemName="IHE" displayName="Patient Care Episode" />
+ </EventIdentification>
+</AuditMessage>
+

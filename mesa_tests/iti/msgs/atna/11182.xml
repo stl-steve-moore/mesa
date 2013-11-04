@@ -1,0 +1,7 @@
+<AuditMessage>
+ <EventIdentification EventActionCode="E" EventDateTime="2006-08-31T10:38:34" EventOutcomeIndicator="0">
+  <EventID code="110100" codeSystemName="DCM" displayName="Application Activity" />
+  <EventTypeCode code="110121" codeSystemName="DCM" displayName="Application Stop" />
+ </EventIdentification>
+</AuditMessage>
+

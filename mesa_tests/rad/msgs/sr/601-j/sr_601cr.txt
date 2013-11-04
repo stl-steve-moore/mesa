@@ -1,0 +1,163 @@
+//Patient Module
+// 0010 0010	To be added find another file later
+0010 0020	CR3				//Patient ID
+0010 0030	19500403			//Patient's Birth Date
+0010 0040	M				//Patient's Sex
+//
+//General Study Module
+0020 000D	1.113654.1.2001.30
+0008 0020	20010430			//Study Date
+0008 0030	#				//Study Time
+0008 0090	#				//Referring Physician's Name
+0020 0010	#				//Study ID
+0008 0050	2001C30 			//Accession Number
+//
+//SR Document Series Module
+0008 0060	SR				//Modality
+0020 000E	1.113654.1.2001.30.2.601	//Series Instance UID
+0020 0011	1				//Series Number
+0008 1111	####				//Referenced Study Component Sequence
+//
+//
+//General Equipment Module
+0008 0070	MIR				//Manufacturer
+//
+//SR Document General Module
+0020 0013	1				//Instance Number
+0040 A370 (					// Referenced Request Sequence
+ 0020 000D	1.113654.1.2001.30		// Study Instance UID
+ 0008 1110	####				// Referenced Study Sequence
+ 0008 0050	2001C30 			//Accession Number
+ 0040 2016	A601Z^MESA_ORDPLC		// Placer Order Number
+ 0040 2017	B601Z^MESA_ORDFIL		// Filler Order Number
+ 0040 1001	#				// Requested Procedure ID
+ 0032 1060	#				// Requested Procedure Description
+ 0032 1064	####				// Requested Procedure Code Sequence
+)
+0040 A491	COMPLETE			//Completion Flag
+0040 A493	UNVERIFIED			//Verification Flag
+0008 0023	20010501			//Content Date
+0008 0033	141500.0000			//Content Time
+//
+//SR Document Content
+0040 a504 (					//Content Template Sequence
+ 0040 DB00	2000				//Template Identifier
+ 0008 0105	DCMR				//Mapping Resource
+)
+//
+0040 a040	CONTAINER			//Value Type
+0040 a043 (					//Concept Name Code Sequence
+ 0008 0100	11528-7				//Code Value
+ 0008 0102	LN				//Code Scheme Designator
+ 0008 0104	"Radiology Report"		//Code Meaning
+)
+0040 a050	SEPARATE			// Continuity of Content
+
+0040 a730 (					//Content Sequence
+ 0040 a010	"HAS CONCEPT MOD"		//Relationship Type
+ 0040 a040	CODE				//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121049				//Code Value
+  0008 0102	DCM				//Code Scheme Designator
+  0008 0104	"Language of Content Item and Descendants" 	//Code Meaning
+ )
+ 0040 a168 (					//Concept Code Sequence
+  0008 0100	eng				//Code Value
+  0008 0102	ISO639_2			//Code Scheme Designator
+  0008 0104	English				//Code Meaning
+  )
+)	
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	CODE				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121005				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Observer Type"			// Code Meaning
+ )
+ 0040 a168 (					// Concept Code Sequence
+  0008 0100	121006				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	Person				// Code Meaning
+ )
+)
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	PNAME				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121008				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Person Observer Name"		// Code Meaning
+ )
+ 0040 A123	MOORE^STEVE			// Person Name
+)
+(
+//  *******  HISTORY SECTION OF SR *************
+ 0040 a010	CONTAINS			//Relationship Type
+ 0040 a040	CONTAINER			//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121060				//Code Value
+  0008 0102	DCM				//Code Schmeme Designator
+  0008 0104	History 			//Code Meaning
+ )
+ 0040 A050	SEPARATE			// Continuity of Content
+#
+ 0040 a730 (					//Content Sequence
+  0040 a010	CONTAINS			//Relationship Type
+  0040 a040	TEXT				//Value Type
+  0040 a043 (					//Concept Name Code Sequence
+   0008 0100	121060				//Code Value
+   0008 0102	DCM				//Code Schmeme Designator
+   0008 0104	History 			//Code Meaning
+  )
+  0040 a160	Cough				//Text Value
+ ) 
+)
+#
+(
+//  *******  FINDINGS SECTION OF SR *************
+ 0040 a010	CONTAINS			//Relationship Type
+ 0040 a040	CONTAINER			//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121070				//Code Value
+  0008 0102	DCM				//Code Schmeme Designator
+  0008 0104	Findings 			//Code Meaning
+ )
+ 0040 A050	SEPARATE			// Continuity of Content
+ 0040 a730 (					//Content Sequence
+  0040 a010	CONTAINS			//Relationship Type
+  0040 a040	TEXT				//Value Type
+  0040 a043 (					//Concept Name Code Sequence
+   0008 0100	121071				//Code Value
+   0008 0102	DCM				//Code Schmeme Designator
+   0008 0104	Finding 			//Code Meaning
+  )
+  0040 a160	"PA evaluation of the chest demonstrates the lungs to be expanded and clear."	//Text Value
+ )
+)
+(
+//  *******  CONCLUSIONS SECTION OF SR *************
+ 0040 a010	CONTAINS			//Relationship Type
+ 0040 a040	CONTAINER			//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121076				//Code Value
+  0008 0102	DCM				//Code Schmeme Designator
+  0008 0104	Conclusions 			//Code Meaning
+ )
+ 0040 A050	SEPARATE			// Continuity of Content
+ 0040 a730 (					//Content Sequence
+  0040 a010	CONTAINS			//Relationship Type
+  0040 a040	TEXT				//Value Type
+  0040 a043 (					//Concept Name Code Sequence
+   0008 0100	121077				//Code Value
+   0008 0102	DCM				//Code Schmeme Designator
+   0008 0104	Conclusion 			//Code Meaning
+  )
+  0040 a160	"Normal PA chest x-ray."	//Text Value
+ )
+)
+//
+//SOP Common Module
+0008 0005	"ISO 2022 IR 6\ISO 2022 IR 87" // Specific character set
+0008 0016	1.2.840.10008.5.1.4.1.1.88.11	// SOP Class: Basic Text SR
+0008 0018	1.113654.1.2001.30.2.1		// SOP Instance UID

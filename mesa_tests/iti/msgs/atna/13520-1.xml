@@ -1,0 +1,25 @@
+<AuditMessage>
+ <EventIdentification EventActionCode="R" EventDateTime="2006-08-31T10:38:34" EventOutcomeIndicator="0">
+  <EventID code="110106" codeSystemName="DCM" displayName="Export" />
+ </EventIdentification>
+
+ <ActiveParticipant UserID="smm@ihe.org" AlternativeUserID="MD" UserIsRequestor="FALSE">
+  <RoleIDCode code="110154" codeSystemName="DCM" displayName="Destination Media"/>
+ </ActiveParticipant>
+
+ <ActiveParticipant UserID="zebra@hosp.org" UserName="Patient" UserIsRequestor="TRUE">
+  <RoleIDCode code="110153" codeSystemName="DCM" displayName="Source"/>
+ </ActiveParticipant>
+
+ <AuditSourceIdentification AuditEnterpriseSiteID="Hospital" AuditSourceID="CAM 11A">
+  <AuditSourceTypeCode code="1"/>
+ </AuditSourceIdentification>
+
+ <ParticipantObjectIdentification ParticipantObjectID="13520" ParticipantObjectTypeCode="1" ParticipantObjectTypeCodeRole="1">
+  <ParticipantObjectIDTypeCode code="2" />
+  <ParticipantObjectName>FILLMORE^MARCUS</ParticipantObjectName>
+  <ParticipantObjectDetail type="DOB" value="19750428" />
+  <ParticipantObjectDetail type="SEX" value="M" />
+</ParticipantObjectIdentification>
+</AuditMessage>
+

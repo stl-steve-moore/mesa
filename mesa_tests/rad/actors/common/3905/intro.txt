@@ -1,0 +1,15 @@
+Test:  3905
+Title: Full Field Digital Mammo image evaluation -- Digitizer modality
+
+References:
+ RAD TF-2:4.8.4.1.2.3
+ RAD TF-2:4.8.4.2.3.4
+
+If your modality is DX or CR, you should run 3900 instead.
+
+In test 3905, you will be prompted to C-STORE a "For Presentation" 
+mammography image.  The evaluation script verifies that data attributes 
+required by this profile are present in this objects.
+
+Storage Commitment N-ACTION may be sent, but it will not be evaluated
+in this test.

@@ -1,0 +1,15 @@
+This is (IHE-Cardiology) test 20102
+ It exercises Cath workflow C1.
+ In this test, the modality sends one MPPS message
+ for the diagnostic step and a separate MPPS message
+ for the interventional step.
+
+References:
+ IHE Card TF-1:4.3.1
+
+
+If you want to reset the patient name and patient ID, you need
+ to exit this test script and use the command:
+        perl mesa_reset/20102.pl
+ in the directory $MESA_TARGET/mesa_tests/card/msgs
+

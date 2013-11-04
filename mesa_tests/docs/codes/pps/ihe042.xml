@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Code Values for Billing Item Sequence (0040 0296)</mesa:title>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Identifier</mesa:column_name>
+			<mesa:column_name>Text</mesa:column_name>
+			<mesa:column_name>Coding Scheme</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>SUP_X109J</mesa:param>
+			<mesa:param>Catheter</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

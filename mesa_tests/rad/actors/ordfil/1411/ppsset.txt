@@ -1,0 +1,23 @@
+
+0040 4002	COMPLETED	// Gen Purpose Scheduled Procedure Step status
+0040 0254	"MG Screening CAD"  // Performed Procedure Step description
+
+0040 0250	20021010	// Performed Procedure Step end date
+0040 0251	1313 		// Performed Procedure Step end time
+
+0040 4033	(		// Output Information Sequence
+ 0020 000d	1.2.3.study.out	// Study Instance UID
+ 0008 1115	(		// Referenced Series Sequence
+  0020 000e	1.2.3.seriesuid	// Series Instance UID
+  0008 0054	retAETitle	// retrieve AE Title
+  0008 1199	(		// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.88.11	// Referenced SOP Class UID
+   0008 1155	1.113654.3.66.1000	// Referenced SOP instance UID
+  )
+ )
+)
+
+0040 4031	####		// Requested Subsequent Workitem Code Sequence
+
+0040 4032	####		// Non-DICOM Output Code Sequence
+

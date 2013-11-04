@@ -1,0 +1,75 @@
+
+0008 0016	#		// SOP Class UID
+0008 0018	#		// SOP Instance UID
+
+// Patient Identifiers
+0010 0010 WASHINGTON*		// Patient Name
+0010 0020 #     		// Patient ID
+
+// Patient Demographic
+0010 0030 #     		// Patient Birthdate
+0010 0040 #     		// Patient Sex
+
+0020 000d	#		// Study Instance UID for results
+
+0040 4001	#		// Gen Purpose Scheduled Procedure Step status
+0040 4003	#		// Gen Purpose Scheduled Procedure Step priority
+
+0040 4005 	#		// Scheduled Procedure Step Start Date & Time
+
+0040 a370	(		// Reference Request Sequence
+ 0008 0018	#		// SOP Instance UID of input
+ 0040 1001	# 		// Requested Procedure ID
+ 0032 1060	#		// Requested Procedure Description
+ 0008 0050	#		// Accession Number
+ 0032 1032	#		// Requesting Physician
+)
+
+0040 4018	(		// Scheduled Workitem Code Sequence
+ 0008 0100	# 		// Code Value
+ 0008 0102	#		// Coding Scheme Designator
+ 0008 0104	#		// Coding Meaning
+)
+
+0040 4020	#		// Input Availability Flag
+
+0040 4021       (               // Input Information Sequence
+ 0020 000D      #               // Study Instance UID
+ 0008 1115      (               // Referenced Series Sequence
+  0020 000E     #               // Series Instance UID
+  0008 0054     #               // Retrieve AE Title
+  0008 1199     (               // Referenced SOP Sequence
+   0008 1150    #               // Referenced SOP class UID
+   0008 1155    #               // Referenced SOP instance UID
+  )
+ )
+)
+
+0040 4004	(		// Scheduled Processing Appl Code Sequence
+ 0008 0100	# 		// Code Value
+ 0008 0102	#		// Coding Scheme Designator
+ 0008 0104      #               // Coding Meaning
+)
+
+0040 4025	(		// Scheduled Station Name Code Sequence
+ 0008 0100	# 		// Code Value
+ 0008 0102	#		// Coding Scheme Designator
+ 0008 0104      #               // Coding Meaning
+)
+
+0040 4026       (               // Scheduled Station Class Code Sequence
+ 0008 0100      #               // Code Value
+ 0008 0102      #               // Coding Scheme Designator
+ 0008 0104      #               // Coding Meaning
+)
+
+0040 4027       (               // Scheduled Station Location Code Sequence
+ 0008 0100      #               // Code Value
+ 0008 0102      #               // Coding Scheme Designator
+ 0008 0104      #               // Coding Meaning
+)
+
+0040 4034       (               // Scheduled Human Performers Sequence
+ 0040 4037      #               // Human Performer's Name
+)
+

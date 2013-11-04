@@ -1,0 +1,18 @@
+# Study level query
+
+# Instance availability is optional
+0008 0056 O
+
+# We test for equality of these attributes.
+0008 0052 =
+0008 0061 =
+0010 0010 =
+0010 0020 =
+0010 0030 =
+0010 0040 =
+0020 000D =
+0020 1206 =
+
+# We just test that these are present in the response.
+# Retrieve AE Title must be present but can be 0 length
+0008 0054 Z

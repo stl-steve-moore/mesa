@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- ?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ? -->
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>20712: General ECG Waveform</mesa:title>
+ <mesa:dateStamp value="20060728"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Stress Testing Workflow</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>Modality</mesa:list>
+  <mesa:list>PSS Manager</mesa:list>
+  <mesa:list>Image Manager/Archive</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Stress Testing Workflow -- CARD TF-1: 8.4.1 and CARD TF-2: Appendix X</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>20700 - SOP Class Supported</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 20712 involves transactions for acquisition odalities to send DICOM General ECG Waveform objects.  </mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>STRESS</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>20712/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/20712/20712.110.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>20712.110.a04.hl7</mesa:identifier>
+   <mesa:description>A04: Regiser FLORA^F as an outpatient</mesa:description>
+   <mesa:transaction>RAD-1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/20712/20712.110.a04.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>20712.120.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order Stress testing for FLORA</mesa:description>
+   <mesa:transaction>RAD-2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/20712/20712.120.o01.hl7</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20712/20712.130.o01.hl7</mesa:param>
+   <mesa:param>T20712</mesa:param>
+   <mesa:param>STRESS/20712</mesa:param>
+   <mesa:param>P2-7131C</mesa:param>
+   <mesa:param>P2-7131C</mesa:param>
+   <mesa:param>WESTBUILDING</mesa:param>
+   <mesa:param>MODALITY1</mesa:param>
+ </mesa:internal>
+ <mesa:step>
+   <mesa:identifier>20712.140.mwl</mesa:identifier>
+   <mesa:description>Perform MWL query for patient</mesa:description>
+   <mesa:transaction>RAD-5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/20712/20712.120.o01.hl7</mesa:param>
+   <mesa:param>20712/mwl_q1</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:text_file>
+  <mesa:file>20712/acquire-and-store.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20712/20712.130.o01.hl7</mesa:param>
+   <mesa:param>T20712</mesa:param>
+   <mesa:param>STRESS/20712</mesa:param>
+   <mesa:param>P2-7131C</mesa:param>
+   <mesa:param>P2-7131C</mesa:param>
+   <mesa:param>WESTBUILDING</mesa:param>
+   <mesa:param>MODALITY1</mesa:param>
+ </mesa:internal>
+ 
+ <mesa:step>
+   <mesa:identifier>20712.200.store</mesa:identifier>
+   <mesa:description>STORE</mesa:description>
+   <mesa:transaction>CARD-2</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>modality/T20712</mesa:param>
+   <mesa:param>MEDIA_AE</mesa:param>
+ </mesa:step> 
+
+ <mesa:text_file>
+  <mesa:file>20712/fini.txt</mesa:file>
+ </mesa:text_file>
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

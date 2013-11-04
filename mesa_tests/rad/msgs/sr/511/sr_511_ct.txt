@@ -1,0 +1,118 @@
+//Patient Module
+0010 0010	CTFIVE^JIM			//Patient Name
+0010 0020	CT5				//Patient ID
+0010 0030	#				//Patient's Birth Date
+0010 0040	M				//Patient's Sex
+//
+//General Study Module
+0020 000D	1.113654.1.2001.20		//Study Instance UID
+0008 0020	20010501			//Study Date
+0008 0030	194200				//Study Time
+0008 0090	#				//Referring Physician's Name
+0020 0010	#				//Study ID
+0008 0050	2001B20 			//Accession Number
+//
+//Key Object Document Series Module
+0008 0060	KO				//Modality
+0020 000E	1.113654.1.2001.20.511		//Series Instance UID
+0020 0011	511				//Series Number
+0008 1111	####				//Referenced Study Component Sequence
+//
+//
+//General Equipment Module
+0008 0070	MIR				//Manufacturer
+//
+//Key Object Document Module
+0020 0013	1				//Instance Number
+0008 0023	20010501			//Content Date
+0008 0033	194200				//Content Time
+0040 A375 (					// Current Requested Procedure Evidence Seq
+ 0020 000D	1.113654.1.2001.20		//Study Instance UID
+ 0008 1115 (					// Referenced Series Sequence
+  0020 000E	2.16.840.1.113662.2.1.53544936282433.12345.336.1665.9990	// Series Inst UID
+  0008 1199 (					// Referenced SOP Sequence
+   // Image number is 67
+   0008 1150	1.2.840.5.1.4.1.1.2		// Referenced SOP Class
+   0008 1155	2.16.840.1.113662.2.1.12345.19950126.112709.5600  // SOP Instance
+  )
+ )
+)
+//
+//SR Document Content
+0040 a504 (					//Content Template Sequence
+ 0040 DB00	2010				//Template Identifier
+ 0008 0105	DCMR				//Mapping Resource
+)
+//
+0040 a040	CONTAINER			//Value Type
+0040 a043 (					//Concept Name Code Sequence
+ 0008 0100	113000				//Code Value
+ 0008 0102	DCM				//Code Scheme Designator
+ 0008 0104	"Of Interest"			//Code Meaning
+)
+0040 A050	SEPARATE			// Continuity of Content
+//
+0040 a730 (					//Content Sequence
+ 0040 a010	"HAS CONCEPT MOD"		//Relationship Type
+ 0040 a040	CODE				//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121049				//Code Value
+  0008 0102	DCM				//Code Scheme Designator
+  0008 0104	"Language of Content Item and Descendants" 	//Code Meaning
+ )
+ 0040 a168 (					//Concept Code Sequence
+  0008 0100	eng				//Code Value
+  0008 0102	ISO639_2			//Code Scheme Designator
+  0008 0104	English				//Code Meaning
+ )
+)	
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	CODE				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121005				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Observer Type"			// Code Meaning
+ )
+ 0040 a168 (					// Concept Code Sequence
+  0008 0100	121006				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	Person				// Code Meaning
+ )
+)
+//
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	PNAME				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121008				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Person Observer Name"		// Code Meaning
+ )
+ 0040 A123	MOORE^STEVE			// Person Name
+)
+// *** Text description *** 
+(
+ 0040 a010	CONTAINS			// Relationship Type
+ 0040 a040	TEXT				//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	113012				//Code Value
+  0008 0102	DCM				//Code Schmeme Designator
+  0008 0104	"Key Object Description"	//Code Meaning
+ )
+ 0040 a160	"Key Object Test 511"		// Text Value
+)
+// The Image Reference
+(
+ 0040 a010	CONTAINS			// Relationship Type
+ 0040 a040	IMAGE				//Value Type
+ 0008 1199 (                                   // Referenced SOP Sequence
+  // Image Number 67 in series 1
+  0008 1150   1.2.840.10008.5.1.4.1.1.2       // CT Class
+  0008 1155   2.16.840.1.113662.2.1.12345.19950126.112709.5600  // SOP Instance
+ )
+)
+//
+//SOP Common Module
+0008 0016       1.2.840.10008.5.1.4.1.1.88.59	// SOP Class: Key Object Note
+0008 0018       1.113654.1.2001.20.511.1	// SOP Instance UID

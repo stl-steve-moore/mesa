@@ -1,0 +1,22 @@
+0040 0320 (					// Billing Procedure Step Sequence
+ 0008 0100	BP1001				// Code Value
+ 0008 0102	IHEDEMO				// Coding Scheme Designator
+ 0008 0104	"Billing Procedure 1001"	// Code Meaning
+)
+0040 0321 (					// Film Consumption Sequence
+ 2100 0170	1				// Number of films actually printed
+ 2000 0030	"CLEAR FILM"			// Medium Type
+ 2010 0050	8INX10IN			// Film Size ID
+)
+
+0040 0324 (					// Billing Supplies & Devices Seq
+ 0040 0296 (					// Billing Item Sequence
+  0008 0100	SUP_X109			// Code Value
+  0008 0102	IHEDEMO				// Coding Scheme Designator
+  0008 0104	Catheter			// Code Meaning
+ )
+ 0040 0293 (					// Quantity Sequence
+  0040 0294	2				// Quantity
+  0040 0295	####				// Measuring Units Sequence
+ )
+)

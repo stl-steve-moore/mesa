@@ -1,0 +1,5 @@
+
+The next events are HL7 messages to rename the unidentified
+patient. These are followed by a query to the Image Manager
+to see if the name change was processed.
+

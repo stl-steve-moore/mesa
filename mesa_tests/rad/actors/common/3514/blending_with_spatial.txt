@@ -1,0 +1,4 @@
+Your Evidence Creator (or Modality) should now create a BSPS which
+references the Spatial Registration you will store dring this test.
+Other blending parameters may be specified, but will not be
+evaluated in this test.

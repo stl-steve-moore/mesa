@@ -1,0 +1,4 @@
+APPLICATION_ID = Acquisition_Modality
+AE_TITLE = AETITLES
+PERSON_ID = John.Doe@doe.com
+PERSON_NAME = John_Doe

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Assigned Patient Location: Beds</mesa:title>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>1</mesa:param>
+			<mesa:param>Bed – 1</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>2</mesa:param>
+			<mesa:param>Bed - 2</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Units</mesa:title>
+		<mesa:description>OBX6 is used to indicate the unit of measurement for Patient Size and Patient Weight. The value in the second component shall be one of the values from table 3.4-2.</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>kg^^ISO+</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>m^^ISO+</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

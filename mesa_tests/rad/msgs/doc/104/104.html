@@ -1,0 +1,693 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Steve Moore">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (WinNT; I) [Netscape]">
+   <title>104 Messages</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h3>
+Events/Files for 104 Tests</h3>
+Case 104 has a requested procedure with 2 schedule procedure steps and
+3 action items and includes Unidentified Patient Case #2 (with a patient
+merge rather than update).
+<br>In the first part of the test, the Order Placer sends a request for
+Procedure P4. The filler expands this request into two Scheduled Procedure
+Steps. The first SPS has one action item/protocol item; the second SPS
+has two action items/protocol items.
+<br>&nbsp;
+<table BORDER >
+<tr>
+<th>Message</th>
+
+<th>Source</th>
+
+<th>Target</th>
+
+<th>HL7 Msg</th>
+
+<th>Text File</th>
+
+<th>Template</th>
+
+<th>Input 1</th>
+
+<th>Input 2</th>
+</tr>
+
+<tr>
+<td>A04: Register Blue outpatient</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/104/104.102.a04.hl7">104.102.a04.hl7</a></td>
+
+<td><a href="../../adt/104/104.102.a04.txt">104.102.a04.txt</a></td>
+
+<td><a href="../../adt/templates/a04.tpl">a04.tpl</a></td>
+
+<td><a href="../../adt/104/104.102.a04.var">104.102.a04.var</a></td>
+
+<td><a href="../../adt/104/blue.var">blue.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Order P4 (one procedure)</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/104/104.104.o01.hl7">104.104.o01.hl7</a></td>
+
+<td><a href="../../order/104/104.104.o01.txt">104.104.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/104/104.104.o01.var">104.104.o01.var</a></td>
+
+<td><a href="../../adt/104/blue.var">blue.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule P4 (two SPS, 3 AI)</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/104/104.106.o01.hl7">104.106.o01.hl7</a></td>
+
+<td><a href="../../sched/104/104.106.o01.txt">104.106.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01_3sps.tpl">o01_3sps.tpl</a></td>
+
+<td><a href="../../sched/104/104.106.o01_3sps.var">104.106.o01_3sps.var</a></td>
+
+<td><a href="../../adt/104/blue.var">blue.var</a></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS In Progress</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS in Progress</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set PPS Complete</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Store:</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Action: Storage Commitment</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Event: Storage Commitment</td>
+
+<td>Img Mgr&nbsp;</td>
+
+<td>Mod&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td><i>Begin unidentified case #2</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A04: Register Doe^J3</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/104/104.142.a04.hl7">104.142.a04.hl7</a></td>
+
+<td><a href="../../adt/104/104.142.a04.txt">104.142.a04.txt</a></td>
+
+<td><a href="../../adt/templates/a04.tpl">a04.tpl</a></td>
+
+<td><a href="../../adt/104/104.142.a04.var">104.142.a04.var</a></td>
+
+<td><a href="../../adt/104/doej3.var">doej3.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Order P1 (one procedure) for Doe</td>
+
+<td>Filler</td>
+
+<td>Placer</td>
+
+<td><a href="../../order/104/104.144.o01.hl7">104.144.o01.hl7</a></td>
+
+<td><a href="../../order/104/104.144.o01.txt">104.144.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/104/104.144.o01.var">104.144.o01.var</a></td>
+
+<td><a href="../../adt/104/doej3.var">doej3.var</a></td>
+</tr>
+
+<tr>
+<td>O02: Placer Order Number</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/104/104.146.o02.hl7">104.146.o02.hl7</a></td>
+
+<td><a href="../../order/104/104.146.o02.txt">104.146.o02.txt</a></td>
+
+<td><a href="../../order/templates/o02.tpl">o02.tpl</a></td>
+
+<td><a href="../../order/104/104.146.o02.var">104.146.o02.var</a></td>
+
+<td><a href="../../adt/104/doej3.var">doej3.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule P1 for Doe</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/104/104.148.o01.hl7">104.148.o01.hl7</a></td>
+
+<td><a href="../../sched/104/104.148.o01.txt">104.148.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/104/104.148.o01.var">104.148.o01.var</a></td>
+
+<td><a href="../../adt/104/doej3.var">doej3.var</a></td>
+</tr>
+
+<tr>
+<td><i>Perform X1 at Modality on Doe</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS In Progress</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS in Progress</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Store:</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Action: Storage Commitment</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Event: Storage Commitment</td>
+
+<td>Img Mgr</td>
+
+<td>Mod</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td><i>Patient is recognized as Blue</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A40: Merge Blue with Doe^J3</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/104/104.182.a40.hl7">104.182.a40.hl7</a></td>
+
+<td><a href="../../adt/104/104.182.a40.txt">104.182.a40.txt</a></td>
+
+<td><a href="../../adt/templates/a40.tpl">a40.tpl</a></td>
+
+<td><a href="../../adt/104/104.182.a40.var">104.182.a40.var</a></td>
+
+<td><a href="../../adt/104/blue.var">blue.var</a></td>
+</tr>
+
+<tr>
+<td>A40: Merge Blue with Doe^J3</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/104/104.184.a40.hl7">104.184.a40.hl7</a></td>
+
+<td><a href="../../adt/104/104.184.a40.txt">104.184.a40.txt</a></td>
+
+<td><a href="../../adt/templates/a40.tpl">a40.tpl</a></td>
+
+<td><a href="../../adt/104/104.184.a40.var">104.184.a40.var</a></td>
+
+<td><a href="../../adt/104/blue.var">blue.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find on Patient Blue</td>
+
+<td>Wkstation</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

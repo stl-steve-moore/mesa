@@ -1,0 +1,917 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Steve Moore">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (WinNT; I) [Netscape]">
+   <title>101 Messages</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h3>
+Events/Files for 101 Tests</h3>
+Test 101 involves separate encounters for the patient Charles White.&nbsp;
+Two tables are used to split the events from the two different encounters.&nbsp;
+The first table and related events correspond to the scheduled workflow.
+<br>&nbsp;
+<table BORDER >
+<tr>
+<th>Message</th>
+
+<th>Source</th>
+
+<th>Target</th>
+
+<th>HL7 Msg</th>
+
+<th>Text File</th>
+
+<th>Template</th>
+
+<th>Input 1</th>
+
+<th>Input 2</th>
+</tr>
+
+<tr>
+<td>A04: Register White outpatient</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/101/101.102.a04.hl7">101.102.a04.hl7</a></td>
+
+<td><a href="../../adt/101/101.102.a04.txt">101.102.a04.txt</a></td>
+
+<td><a href="../../adt/templates/a04.tpl">a04.tpl</a></td>
+
+<td><a href="../../adt/101/101.102.a04.var">101.102.a04.var</a></td>
+
+<td><a href="../../adt/101/white_x1.var">white_x1.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Order P1 for White</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/101/101.104.o01.hl7">101.104.o01.hl7</a></td>
+
+<td><a href="../../order/101/101.104.o01.txt">101.104.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/101/101.104.o01.var">101.104.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x1.var">white_x1.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule X1 for White</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/101/101.106.o01.hl7">101.106.o01.hl7</a></td>
+
+<td><a href="../../sched/101/101.106.o01.txt">101.106.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/101/101.106.o01.var">101.106.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x1.var">white_x1.var</a></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS In Progress</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS in Progress</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set PPS Complete</td>
+
+<td>Filler</td>
+
+<td>Mod</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Store:</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Action: Storage Commitment</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Event: Storage Commitment</td>
+
+<td>Img Mgr&nbsp;</td>
+
+<td>Mod&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A06: Change White to inpatient</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/101/101.126.a06.hl7">101.126.a06.hl7</a></td>
+
+<td><a href="../../adt/101/101.126.a06.txt">101.126.a06.txt</a></td>
+
+<td><a href="../../adt/templates/a06.tpl">a06.tpl</a></td>
+
+<td><a href="../../adt/101/101.126.a06.var">101.126.a06.var</a></td>
+
+<td><a href="../../adt/101/white_x2.var">white_x2.var</a></td>
+</tr>
+
+<tr>
+<td>A06: Change White to inpatient</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/101/101.128.a06.hl7">101.128.a06.hl7</a></td>
+
+<td><a href="../../adt/101/101.128.a06.txt">101.128.a06.txt</a></td>
+
+<td><a href="../../adt/templates/a06.tpl">a06.tpl</a></td>
+
+<td><a href="../../adt/101/101.128.a06.var">101.128.a06.var</a></td>
+
+<td><a href="../../adt/101/white_x2.var">white_x2.var</a></td>
+</tr>
+
+<tr>
+<td>A03: Discharge White</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/101/101.130.a03.hl7">101.130.a03.hl7</a></td>
+
+<td><a href="../../adt/101/101.130.a03.txt">101.130.a03.txt</a></td>
+
+<td><a href="../../adt/templates/a03.tpl">a03.tpl</a></td>
+
+<td><a href="../../adt/101/101.130.a03.var">101.130.a03.var</a></td>
+
+<td><a href="../../adt/101/white_x2.var">white_x2.var</a></td>
+</tr>
+
+<tr>
+<td>A03: Discharge White</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/101/101.132.a03.hl7">101.132.a03.hl7</a></td>
+
+<td><a href="../../adt/101/101.132.a03.txt">101.132.a03.txt</a></td>
+
+<td><a href="../../adt/templates/a03.tpl">a03.tpl</a></td>
+
+<td><a href="../../adt/101/101.132.a03.var">101.132.a03.var</a></td>
+
+<td><a href="../../adt/101/white_x2.var">white_x2.var</a></td>
+</tr>
+</table>
+
+<p>The second table below lists events for the patient using the workflow
+identified as Unscheduled Case #5.&nbsp; That is, the procedure is performed
+before any patient registration or ordering occurs.&nbsp; In this case,
+the Patient Identifier is picked from a pre-defined list maintained by
+the Order Filler.&nbsp; This temporary ID is entered in the images and
+PPS information.&nbsp; Later, the patient is registered by the ADT system
+as "John Doe".&nbsp; This requires the Order Filler to merge the John Doe
+with the temporary patient.&nbsp; When the real patient is identified,
+a second merge must take place.
+<p>In this test, we assume the temporary name assigned by the Order Filler
+is SUNDAY^J1.
+<br>&nbsp;
+<table BORDER >
+<tr>
+<th>Message</th>
+
+<th>Source</th>
+
+<th>Target</th>
+
+<th>HL7 Msg</th>
+
+<th>Text File</th>
+
+<th>Template</th>
+
+<th>Input 1</th>
+
+<th>Input 2</th>
+</tr>
+
+<tr>
+<td>N-Create: PPS in progress
+<br>(SUNDAY^J1)</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS in progress</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Store</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Action: Storage Commitment</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Event: Storage Commitment</td>
+
+<td>Img Mgr</td>
+
+<td>Mod</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Query for SUNDAY</td>
+
+<td>Img Disp</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A04: Register DOE^J2 outpatient</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/101/101.160.a04.hl7">101.160.a04.hl7</a></td>
+
+<td><a href="../../adt/101/101.160.a04.txt">101.160.a04.txt</a></td>
+
+<td><a href="../../adt/templates/a04.tpl">a04.tpl</a></td>
+
+<td><a href="../../adt/101/101.160.a04.var">101.160.a04.var</a></td>
+
+<td><a href="../../adt/101/doej2.var">doej2.var</a></td>
+</tr>
+
+<tr>
+<td>A40: Merge SUNDAY/DOE</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/101/101.161.a40.hl7">101.161.a40.hl7</a></td>
+
+<td><a href="../../adt/101/101.161.a40.txt">101.161.a40.txt</a></td>
+
+<td><a href="../../adt/templates/a40.tpl">a40.tpl</a></td>
+
+<td><a href="../../adt/101/101.161.a40.var">101.161.a40.var</a></td>
+
+<td><a href="../../adt/101/doej2.var">doej2.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Order P2 for DOE^J2</td>
+
+<td>Filler</td>
+
+<td>Placer</td>
+
+<td><a href="../../order/101/101.162.o01.hl7">101.162.o01.hl7</a></td>
+
+<td><a href="../../order/101/101.162.o01.txt">101.162.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/101/101.162.o01.var">101.162.o01.var</a></td>
+
+<td><a href="../../adt/101/doej2.var">doej2.var</a></td>
+</tr>
+
+<tr>
+<td>O02: Return Placer Number</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/101/101.164.o02.hl7">101.164.o02.hl7</a></td>
+
+<td><a href="../../order/101/101.164.o02.txt">101.164.o02.txt</a></td>
+
+<td><a href="../../order/templates/o02.tpl">o02.tpl</a></td>
+
+<td><a href="../../order/101/101.164.o02.var">101.164.o02.var</a></td>
+
+<td><a href="../../adt/101/doej2.var">doej2.var</a></td>
+</tr>
+
+<tr>
+<td>O01: After the fact scheduling</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/101/101.165.o01.hl7">101.165.o01.hl7</a></td>
+
+<td><a href="../../sched/101/101.165.o01.txt">101.165.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/101/101.165.o01.var">101.165.o01.var</a></td>
+
+<td><a href="../../adt/101/doej2.var">doej2.var</a></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A40: Merge DOE/WHITE</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/101/101.166.a40.hl7">101.166.a40.hl7</a></td>
+
+<td><a href="../../adt/101/101.166.a40.txt">101.166.a40.txt</a></td>
+
+<td><a href="../../adt/templates/a40.tpl">a40.tpl</a></td>
+
+<td><a href="../../adt/101/101.166.a40.var">101.166.a40.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>A40: Merge DOE/WHITE</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/101/101.168.a40.hl7">101.168.a40.hl7</a></td>
+
+<td><a href="../../adt/101/101.168.a40.txt">101.168.a40.txt</a></td>
+
+<td><a href="../../adt/templates/a40.tpl">a40.tpl</a></td>
+
+<td><a href="../../adt/101/101.168.a40.var">101.168.a40.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find: Query for updated patient</td>
+
+<td>Img Disp</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>ORM: Order P21 for WHITE</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/101/101.182.o01.hl7">101.182.o01.hl7</a></td>
+
+<td><a href="../../order/101/101.182.o01.txt">101.182.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/101/101.182.o01.var">101.182.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>ORM: Schedule X21 for WHITE</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/101/101.184.o01.hl7">101.184.o01.hl7</a></td>
+
+<td><a href="../../sched/101/101.184.o01.txt">101.184.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/101/101.184.o01.var">101.184.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Query</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>ORM: Cancel P21 for WHITE</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/101/101.188.o01x.hl7">101.188.o01x.hl7</a></td>
+
+<td><a href="../../order/101/101.188.o01x.txt">101.188.o01x.txt</a></td>
+
+<td><a href="../../order/templates/o01x.tpl">o01x.tpl</a></td>
+
+<td><a href="../../order/101/101.188.o01x.var">101.188.o01x.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>ORM: Cancel P21 for WHITE</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/101/101.190.o01.hl7">101.190.o01.hl7</a></td>
+
+<td><a href="../../sched/101/101.190.o01.txt">101.190.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/101/101.190.o01.var">101.190.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>ORM: Order P22 for WHITE</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/101/101.192.o01.hl7">101.192.o01.hl7</a></td>
+
+<td><a href="../../order/101/101.192.o01.txt">101.192.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/101/101.192.o01.var">101.192.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>ORM: Schedule X22 for WHITE</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/101/101.194.o01.hl7">101.194.o01.hl7</a></td>
+
+<td><a href="../../sched/101/101.194.o01.txt">101.194.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/101/101.194.o01.var">101.194.o01.var</a></td>
+
+<td><a href="../../adt/101/white_x3.var">white_x3.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Query</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+</table>
+
+</body>
+</html>

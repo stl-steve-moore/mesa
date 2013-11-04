@@ -1,0 +1,10 @@
+0008 0052 STUDY
+0010 0010 DOE^J4*
+0008 0061 #		// Modalities in Study
+0010 0020 #		// Patient ID
+0010 0030 #		// Birth Date
+0010 0040 #		// Sex
+0020 000D #		// Study Instance UID
+0020 1206 #		// Number of Study Related Series
+
+

@@ -1,0 +1,7 @@
+dn: dc=ihepwp,dc=org
+objectClass: top
+objectClass: dcObject
+objectClass: organization
+dc: ihepwp
+o: root
+description: root DIT

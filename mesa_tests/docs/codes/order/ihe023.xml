@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>OBR 12 : Danger Code</mesa:title>
+		<mesa:description>OBR 12 Danger Code shall contain three components taken from Table 2.3-6.</mesa:description>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Identifier</mesa:column_name>
+			<mesa:column_name>Text</mesa:column_name>
+			<mesa:column_name>Coding Scheme</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>HI</mesa:param>
+			<mesa:param>HIV positive</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>TB</mesa:param>
+			<mesa:param>Active tuberculosis</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

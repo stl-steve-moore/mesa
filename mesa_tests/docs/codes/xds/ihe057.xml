@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>CCR Insurance Coded Values</mesa:title>
+		<mesa:description>We will use a fixed value for Insurance Type.
+We will use a limited number of values Organization
+</mesa:description>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>CCR Attribute</mesa:column_name>
+			<mesa:column_name>Value</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>Body.Insurance.Insurer.InsuranceType</mesa:param>
+			<mesa:param>Primary Health Insurance</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>Body.Insurance.Insurer.InsuranceProvider.Organization</mesa:param>
+			<mesa:param>National Health Insurance</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Regional Health Insurance</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Dallas Health Plan</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

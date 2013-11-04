@@ -1,0 +1,10 @@
+
+0040 4001	"IN PROGRESS"	// GP SPS status
+
+0008 1195	1.113654-xxx.25.1000	// Transaction UID
+
+0040 4035	(		// Actual Human Performers Sequence
+ 0040 4037	Maffitt^David 		// Human Performers Name
+ 0040 4036	"None whatsoever"		// Human Performers Organization
+)
+

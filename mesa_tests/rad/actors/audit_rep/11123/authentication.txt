@@ -1,0 +1,4 @@
+USER_ID = Sponge.Bob@bob.com
+USER_NAME = Sponge Bob
+NODE_ID = 9922
+NETWORK_ID = 19.45.35.204

@@ -1,0 +1,9 @@
+# SOP Instance level query
+
+# We test for equality of these attributes.
+0008 0052 =
+0008 0018 =
+0020 000D =
+0020 000E =
+0040 A491 =
+0040 A493 =

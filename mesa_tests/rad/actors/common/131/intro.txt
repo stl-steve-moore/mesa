@@ -1,0 +1,11 @@
+This is test 131.
+It exercises IHE Administrative and Procedure Performance Process Flow.
+References:
+ IHE TF Vol I, Sec 3.3.1
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/131.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

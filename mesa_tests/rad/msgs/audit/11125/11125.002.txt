@@ -1,0 +1,3 @@
+USER_ID = Super_User
+PATIENT_ID = PT1010
+PATIENT_NAME = Sick_Patient

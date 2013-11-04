@@ -1,0 +1,7 @@
+Fusion Test 3541
+
+In this test, the Evidence Creator will modify the Blended Softcopy
+Presentation State (BSPS) object created in test 3540.  Test 3540 must be run
+before this one.  The Evidence Creator will modify the transparency of the
+SUPERIMPOSED dataset and create a new BSPS instance.
+

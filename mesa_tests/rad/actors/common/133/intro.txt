@@ -1,0 +1,11 @@
+This is test 133.
+It exercises PIR Unidentified Case #2:
+ Unidentified Patient Registered at ADT and Ordered at the DSS/OF
+References:
+ IHE TF Vol I, Sec 4.4.2
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/133.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

@@ -1,0 +1,616 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Steve Moore">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (WinNT; I) [Netscape]">
+   <title>102 Messages</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h3>
+Events/Files for 102 Tests</h3>
+Case 103 involves the patient Brown. This case will test pre-registration
+and order cancellation and re-ordering at the Order Filler.
+<br>&nbsp;
+<table BORDER >
+<tr>
+<th>Message</th>
+
+<th>Source</th>
+
+<th>Target</th>
+
+<th>HL7 Msg</th>
+
+<th>Text File</th>
+
+<th>Template</th>
+
+<th>Input 1</th>
+
+<th>Input 2</th>
+</tr>
+
+<tr>
+<td>A05: Pre-register Brown</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/102/102.102.a05.hl7">102.102.a05.hl7</a></td>
+
+<td><a href="../../adt/102/102.102.a05.txt">102.102.a05.txt</a></td>
+
+<td><a href="../../adt/templates/a05.tpl">a05.tpl</a></td>
+
+<td><a href="../../adt/102/102.102.a05.var">102.102.a05.var</a></td>
+
+<td><a href="../../adt/102/brown_x1.var">brown_x1.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Order P1 for Brown</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/102/102.104.o01.hl7">102.104.o01.hl7</a></td>
+
+<td><a href="../../order/102/102.104.o01.txt">102.104.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/102/102.104.o01.var">102.104.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x1.var">brown_x1.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule X1 for Brown</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/102/102.106.o01.hl7">102.106.o01.hl7</a></td>
+
+<td><a href="../../sched/102/102.106.o01.txt">102.106.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/102/102.106.o01.var">102.106.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x1.var">brown_x1.var</a></td>
+</tr>
+
+<tr>
+<td>A01: Admit Brown</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/102/102.108.a01.hl7">102.108.a01.hl7</a></td>
+
+<td><a href="../../adt/102/102.108.a01.txt">102.108.a01.txt</a></td>
+
+<td><a href="../../adt/templates/a01.tpl">a01.tpl</a></td>
+
+<td><a href="../../adt/102/102.108.a01.var">102.108.a01.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td><i>Modality will perform X11 rather than X1</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS In Progress (X11)</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS in Progress (X11)</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete (X11)</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set PPS Complete (X11)</td>
+
+<td>Filler</td>
+
+<td>Mod</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Store:</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: Image Available Query</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Action: Storage Commitment</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Event: Storage Commitment</td>
+
+<td>Img Mgr&nbsp;</td>
+
+<td>Mod&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td><i>New sequence at Ord Filler / Order Placer</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>O01: Order P21</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/102/102.122.o01.hl7">102.122.o01.hl7</a></td>
+
+<td><a href="../../order/102/102.122.o01.txt">102.122.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/102/102.122.o01.var">102.122.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule P21</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/102/102.124.o01.hl7">102.124.o01.hl7</a></td>
+
+<td><a href="../../sched/102/102.124.o01.txt">102.124.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/102/102.124.o01.var">102.124.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>O01: Cancel P21</td>
+
+<td>Filler</td>
+
+<td>Placer</td>
+
+<td><a href="../../order/102/102.126.o01x.hl7">102.126.o01x.hl7</a></td>
+
+<td><a href="../../order/102/102.126.o01x.txt">102.126.o01x.txt</a></td>
+
+<td><a href="../../order/templates/o01x.tpl">o01x.tpl</a></td>
+
+<td><a href="../../order/102/102.126.o01x.var">102.126.o01x.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Cancel P21</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/102/102.128.o01.hl7">102.128.o01.hl7</a></td>
+
+<td><a href="../../sched/102/102.128.o01.txt">102.128.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/102/102.128.o01.var">102.128.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>O01: Order P22</td>
+
+<td>Filler</td>
+
+<td>Placer</td>
+
+<td><a href="../../order/102/102.130.o01.hl7">102.130.o01.hl7</a></td>
+
+<td><a href="../../order/102/102.130.o01.txt">102.130.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/102/102.130.o01.var">102.130.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>O02: Placer Order Number</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/102/102.132.o02.hl7">102.132.o02.hl7</a></td>
+
+<td><a href="../../order/102/102.132.o02.txt">102.132.o02.txt</a></td>
+
+<td><a href="../../order/templates/o02.tpl">o02.tpl</a></td>
+
+<td><a href="../../order/102/102.132.o02.var">102.132.o02.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule P22</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/102/102.134.o01.hl7">102.134.o01.hl7</a></td>
+
+<td><a href="../../sched/102/102.134.o01.txt">102.134.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/102/102.134.o01.hl7">102.134.o01.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td><i>Skip the imaging part</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A03: Discharge Brown</td>
+
+<td>ADT</td>
+
+<td>Placer, Filler</td>
+
+<td><a href="../../adt/102/102.136.a03.hl7">102.136.a03.hl7</a></td>
+
+<td><a href="../../adt/102/102.136.a03.txt">102.136.a03.txt</a></td>
+
+<td><a href="../../adt/templates/a03.tpl">a03.tpl</a></td>
+
+<td><a href="../../adt/102/102.136.a03.var">102.136.a03.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+
+<tr>
+<td>A03: Discharge Brown</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/102/102.138.a03.hl7">102.138.a03.hl7</a></td>
+
+<td><a href="../../adt/102/102.138.a03.txt">102.138.a03.txt</a></td>
+
+<td><a href="../../adt/templates/a03.tpl">a03.tpl</a></td>
+
+<td><a href="../../adt/102/102.138.a03.var">102.138.a03.var</a></td>
+
+<td><a href="../../adt/102/brown_x2.var">brown_x2.var</a></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>PID Assigning Authority</mesa:title>
+		<mesa:description>Field PID3 Patient Identifier List shall be encoded as a single repetition. Components 2 and 3 are optional and may be ignored by receiving applications. Assigning Authority in component 4 depends on the application. MESA tests use a single subcomponent in component 4. Some demonstration groups will also use a single subcomponent. The 2005 XDS demonstration groups will use a more complex assigning authority per the table below.</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Assigning Authority</mesa:column_name>
+			<mesa:column_name>Domain</mesa:column_name>
+			<mesa:column_name>Example</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>ADT1</mesa:param>
+			<mesa:param>MESA Tests</mesa:param>
+			<mesa:param>583070^^^ADT1</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA_ADT</mesa:param>
+			<mesa:param>MESA Tests</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA_OF</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA1</mesa:param>
+			<mesa:param>Cross Enterprise Demonstration Group 1</mesa:param>
+			<mesa:param>665533^^^MESA1</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA2</mesa:param>
+			<mesa:param>Cross Enterprise Demonstration Group 2</mesa:param>
+			<mesa:param>112233^^^MESA1</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XYZ</mesa:param>
+			<mesa:param>Company XYZ ADT system at Connectathon 2005</mesa:param>
+			<mesa:param>665533^^^XYZ</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

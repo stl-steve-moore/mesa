@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>OBR 15: HL7 Table 0070 Specimen Source</mesa:title>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>L</mesa:param>
+			<mesa:param>Left</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>R</mesa:param>
+			<mesa:param>Right</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

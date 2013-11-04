@@ -1,0 +1,24 @@
+Carefully follow these instructions.  The sequence of activities is:
+
+	1. import objects
+	2. coerce attributes
+	3. begin storing DICOM objects to MESA Image Manager;
+		store at least one object
+	4. discontinue storing before all images are sent
+
+
+(1) The Importer actor should now import the DICOM objects for 
+test 3742.  If you are a digitizer, scan two films or documents.
+If you import from CD, import the DICOM objects for test 3742 
+from the test CD provided with the MESA distribution. If this 
+has already been accomplished, there is no need to repeat that step.
+
+(2) The Importer should also coerce the data in preparation for
+export. New information for patient AQUAMARINE^A comes from 
+the response to the MWL query. (This is the "incorrect" worklist entry.)
+
+(3) After coercing attributes as required, store one image/object
+to the MESA Image Manager/Archive.  Do not store the entire study.
+
+(4) Discontinue storing before the study is completely sent.
+

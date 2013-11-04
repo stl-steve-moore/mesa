@@ -1,0 +1,21 @@
+# 213.var (Modality 2xx tests)
+#
+# PID
+#
+$PATIENT_ID$ = MM213^^^ADT1
+$PATIENT_NAME$ = kakinuma^senta^^^^^L^A~柿沼^仙太^^^^^L^I~カキヌマ^センタ^^^^^L^P
+$DATE_TIME_BIRTH$ = 19500102
+$SEX$ = M
+$RACE$ = BL
+$PATIENT_ADDRESS$ = 東京都中央区京橋１−１−１　八重洲ビル　6F^^^^1040031^^^^^^I
+$PATIENT_ACCOUNT_NUM$ = 20-95-MM213
+#
+# PV1
+#
+$PATIENT_CLASS$ = E
+$PATIENT_LOCATION$ = 1W^111^2^XYZ_HOSPITAL
+$ATTENDING_DOCTOR$ = ^田中^一郎^^^^^^^L
+$REFERRING_DOCTOR$ = ^小林^幸恵^^^^^^^L^^^^^I
+$VISIT_NUMBER$ = V213^^^ADT1
+$VISIT_INDICATOR$ = V
+$ADMIT_DATE_TIME$ = 200007010800

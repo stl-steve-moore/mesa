@@ -1,0 +1,24 @@
+CTX: MESA Version 9.10.5 created 2006.04.06 
+CTX: Care Record Summary 12511.1
+CTX: Evaluation using CRS Schematron
+CTX: /usr/java/j2sdk1.4.2_03/bin/java org.apache.xalan.xslt.Process -IN 12511/crs_schematron.xml -XSL 12511/schematron-basic.xsl -OUT 12511/12511.xsl -PARAM diagnose yes
+CTX: /usr/java/j2sdk1.4.2_03/bin/java org.apache.xalan.xslt.Process -IN /home/bhasselfeld/Desktop/himss-2006/Dictaphone/XDS-MS_test.xml -XSL 12511/12511.xsl -OUT 12511/schematron_12511.log
+
+
+Result from schematron validation:
+Schematron schema for validating conformance to IMPL_CDAR2_LEVEL1REF_US_I1_2005MAY
+In pattern count(cda:templateId)=2:
+   number of cda:templateId tags under cda:ClinicalDocument OK
+In pattern count(cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1'])=1:
+   cda:templateId tag @root OK
+In pattern cda:title:
+   cda:title OK
+In pattern @code='US':
+   cda:realmCode OK
+In pattern @root='2.16.840.1.113883.1.3':
+   cda:typeId OK
+In pattern parent::cda:ClinicalDocument and @displayName='Discharge Summary':
+   cda:code displayName OK
+In pattern @value='1':
+   cda:versionNumber OK
+

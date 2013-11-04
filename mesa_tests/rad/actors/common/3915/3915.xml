@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>3915: Mammography - Partial View Option for Modalities</mesa:title>
+ <mesa:dateStamp value="20060801"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Mammography Image Integration Profile</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>Acquisition Modality</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>RAD TF-2:4.8.4.2.3.1</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>3900</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>
+   Only Modalities which support the Partial View option are required
+   to run test 3915.
+   
+   You will be asked to C-STORE an image which is part of a mosaic
+   used to cover an area of a breast that is larger than the detector.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>MAMMO</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>3915/intro.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:text_file>
+  <mesa:file>3915/cstore.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:step>
+   <mesa:identifier>3915.100.store</mesa:identifier>
+   <mesa:description>STORE</mesa:description>
+   <mesa:transaction>RAD-8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>tmp/3915-instances</mesa:param>
+   <mesa:param>MODALITY</mesa:param>
+ </mesa:step> 
+
+ <mesa:text_file>
+  <mesa:file>3915/fini.txt</mesa:file>
+ </mesa:text_file>
+</mesa:testSteps>
+ 
+</mesa:TestDocument>

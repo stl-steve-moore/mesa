@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 	<mesa:header>
+ 		<mesa:title>Other MSH Values</mesa:title>
+ 		<mesa:context>MSH-11, MSH-12 and MSH-18 in HL7 2.x messages</mesa:context>
+ 		<mesa:description>This table shows fixed values for fields in MSH segments for HL7 2.x messages</mesa:description>
+ 	</mesa:header>
+ 
+  <mesa:codes>
+   <mesa:columns>
+    <mesa:column_name>Field</mesa:column_name>
+    <mesa:column_name>Name</mesa:column_name>
+    <mesa:column_name>Value</mesa:column_name>
+    <mesa:column_name>Comment</mesa:column_name>
+   </mesa:columns>	 
+   <mesa:coded_entry>
+    <mesa:param>MSH.11</mesa:param>
+    <mesa:param>Processing ID</mesa:param>
+    <mesa:param>P</mesa:param>
+    <mesa:param>Production</mesa:param>
+   </mesa:coded_entry>
+ 
+   <mesa:coded_entry>
+    <mesa:param>MSH.12</mesa:param>
+    <mesa:param>Version ID</mesa:param>
+    <mesa:param>2.3.1; 2.4; 2.5</mesa:param>
+    <mesa:param>Depends on Integration Profile</mesa:param>
+   </mesa:coded_entry>
+   
+   <mesa:coded_entry>
+    <mesa:param>MSH.18</mesa:param>
+    <mesa:param>Character Set</mesa:param>
+    <mesa:param>"" or ISO IR6~ISO IR87</mesa:param>
+    <mesa:param>Empty for ASCII; ISO IR6~ISO IR87 if configured for Japanese character set</mesa:param>
+   </mesa:coded_entry>
+ 
+  </mesa:codes>	
+</mesa:CodeDocument>
+ 

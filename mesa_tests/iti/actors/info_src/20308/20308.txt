@@ -1,0 +1,20 @@
+# This file contains configuration parameters for
+# Information Source test 20308
+# The only values the user should edit
+# are
+#  URLPrefix
+#  documentUID
+
+# User of test 20308 should edit these two entries
+URLPrefix = http://info-src:8080
+documentUID = 1.2.840.113654.2.3.2005.20301.101
+
+# Do not edit below this line
+# Query Keys
+requestType = DOCUMENT
+preferredContentType = application/pdf
+
+# HTTP Request Fields
+Accept = application/pdf
+Expires = 0
+

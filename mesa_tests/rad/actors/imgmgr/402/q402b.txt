@@ -1,0 +1,5 @@
+0008 0052	SERIES	// Query Level
+0020 000D	1.113654.1.400.20	// Study Instance UID
+
+0020 000E	#	// Series Instance UID
+0020 1209	#	// Number of Series Related SOP Instances

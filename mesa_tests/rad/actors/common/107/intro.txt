@@ -1,0 +1,10 @@
+This is test 107
+It exercises Status Update from the Order Filler to the Order Placer.
+References:
+ IHE TF Vol II, Sec 4.3.4.2
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/107.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

@@ -1,0 +1,12 @@
+This is test 134.
+It exercises IHE Administrative and Procedure Performance Process Flow and
+includes the Instance Availability Notification.
+References:
+ IHE TF Vol I, Sec 3.3.1
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/134.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

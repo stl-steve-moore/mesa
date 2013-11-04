@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 40103: PCC Schematron - PPHP</title>
+  <ns prefix="cda" uri="urn:hl7-org:v3" />
+  <ns prefix="crs" uri="urn:hl7-org:crs" />
+
+ <sch:pattern name="ED-Referral">
+  <sch:rule context='/cda:ClinicalDocument'>
+   <sch:assert test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.1']">
+   ERR: Requires cda:templateId root=1.3.6.1.4.1.19376.1.5.3.1.1.9.1 in cda:ClinicalDocument (Proposed Procedure Module)
+   </sch:assert>
+   <sch:report test="cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.1']">
+   CTX: Found cda:templateId root=1.3.6.1.4.1.19376.1.5.3.1.1.9.1 in cda:ClinicalDocument (Proposed Procedure Module) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="History-of-Present-Illness">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.4']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.3.4 in cda:ClinicalDocument (History-of-Present-Illness template)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.4']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.3.4 in cda:ClinicalDocument (History-of-Present-Illness template) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="History-of-Allergies">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.13']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.3.13 in cda:ClinicalDocument (HISTORY OF ALLERGIES template)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.13']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.3.13 in cda:ClinicalDocument (HISTORY OF ALLERGIES template) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="Medication">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.19']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.3.19 in cda:ClinicalDocument (Medication)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.3.19']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.3.19 in cda:ClinicalDocument (Medication) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="HISTORY OF TOBACCO USE">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.8']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.8 in cda:ClinicalDocument (HISTORY OF TOBACCO USE)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.8']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.8 in cda:ClinicalDocument (HISTORY OF TOBACCO USE) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="HISTORY OF PRESENT ALCOHOL AND/OR SUBSTANCE ABUSE">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.10']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.10 in cda:ClinicalDocument (HISTORY OF PRESENT ALCOHOL AND/OR SUBSTANCE ABUSE)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.10']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.10 in cda:ClinicalDocument (HISTORY OF PRESENT ALCOHOL AND/OR SUBSTANCE ABUSE) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="BLOOD PRODUCTS ADMINISTRATION">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.12']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.12 in cda:ClinicalDocument (BLOOD PRODUCTS ADMINISTRATION)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.12']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.12 in cda:ClinicalDocument (BLOOD PRODUCTS ADMINISTRATION) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="HISTORY OF FAMILY MEMBER DISEASES">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.5']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.5 in cda:ClinicalDocument (HISTORY OF FAMILY MEMBER DISEASES)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.5']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.5 in cda:ClinicalDocument (HISTORY OF FAMILY MEMBER DISEASES) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="REVIEW OF SYSTEMS">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.13']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.13 in cda:ClinicalDocument (REVIEW OF SYSTEMS)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.13']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.13 in cda:ClinicalDocument (REVIEW OF SYSTEMS) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="PHYSICAL EXAM">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.15']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.15 in cda:ClinicalDocument (PHYSICAL EXAM)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.15']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.15 in cda:ClinicalDocument (PHYSICAL EXAM) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="PROBLEM LIST">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.42']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.42 in cda:ClinicalDocument (PROBLEM LIST)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.42']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.42 in cda:ClinicalDocument (PROBLEM LIST) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="Procedure Care Plan">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.40']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.40 in cda:ClinicalDocument (Procedure Care Plan)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.40']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.40 in cda:ClinicalDocument (Procedure Care Plan) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+ <sch:pattern name="EDUCATION NOTE">
+  <sch:rule context='/cda:ClinicalDocument/cda:component/cda:structuredBody'>
+   <sch:assert test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.38']]]">
+   ERR: Requires cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.38 in cda:ClinicalDocument (EDUCATION NOTE)
+   </sch:assert>
+   <sch:report test="cda:component[cda:section[cda:templateId[@root='1.3.6.1.4.1.19376.1.5.3.1.1.9.38']]]">
+   CTX: Found cda:templateID root =1.3.6.1.4.1.19376.1.5.3.1.1.9.38 in cda:ClinicalDocument (EDUCATION NOTE) (PASS)
+   </sch:report>
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

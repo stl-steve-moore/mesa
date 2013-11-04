@@ -1,0 +1,23 @@
+# 211.var (Modality 2xx tests)
+#
+# PID
+#
+$PATIENT_ID$ = MM211^^^ADT1
+#PATIENT_NAME$ = oomiya^shougo^^^^^L^A~大宮^省吾^^^^^L^I~おおみや^しょうご^^^^^L^P
+$PATIENT_NAME$ = oomiya^shougo^^^^^L^A~大宮^省吾^^^^^L^I~オオミヤ^ショウゴ^^^^^L^P
+$DATE_TIME_BIRTH$ = 19500101
+$SEX$ = M
+$RACE$ = BL
+$PATIENT_ADDRESS$ = 東京都港区虎ノ門１−１９−９^^^^1050001^^^^^^I~1-19-9,TORANOMONN^MINATO-KU^TOKYO^^1050001^JPN^^^^^A
+$PATIENT_ACCOUNT_NUM$ = 20-95-MM211
+#
+# PV1
+#
+$PATIENT_CLASS$ = E
+$PATIENT_LOCATION$ = 1W^111^2^XYZ_HOSPITAL
+#ATTENDING_DOCTOR$ = 12345^nakata^takasi^^^DR^MD^^^L^^^^^A~12345^中田^隆^^^DR^MD^^^L^^^^^I~12345^なかた^たかし^^^DR^MD^^^L^^^^^P
+$ATTENDING_DOCTOR$ = 12345^nakata^takasi^^^DR^MD^^^L^^^^^A~12345^中田^隆^^^DR^MD^^^L^^^^^I~12345^ナカタ^タカシ^^^DR^MD^^^L^^^^^P
+$REFERRING_DOCTOR$ = ^田中^一郎^^^^^^^L
+$VISIT_NUMBER$ = V211^^^ADT1
+$VISIT_INDICATOR$ = V
+$ADMIT_DATE_TIME$ = 200007010800

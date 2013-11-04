@@ -1,0 +1,6 @@
+# Delta file to get patient demographics and other identifiers
+
+AA 0010 0010 SUNDAY^J1
+#AA 0010 0020 T9020
+AA 0010 0030 
+#AA 0010 0040 M

@@ -1,0 +1,19 @@
+This is ITI test 12102.
+
+It is designed to test the PAM Integretation Profile.
+In this test, the Patient Demographic Source creates a new
+patient and sends the new patient transaction (ITI-30) to
+the Patient Demographics Consumer. The patient then has a name
+change (patient marries), and the Patient Demographic Source
+sends an update message (ITI-30, ADT A31) to notify the the
+Patient Demographic Consumer.
+
+Two messages are sent in this test.
+
+References:
+ ITI TF PAM Integration Profile
+
+Last Modified:
+ 2005.11.04
+
+

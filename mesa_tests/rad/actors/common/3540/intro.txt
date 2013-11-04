@@ -1,0 +1,8 @@
+Fusion Test 3540
+
+In this test, the Evidence Creator creates a Blended Softcopy
+Presentation State (BSPS) object that specifies how to blend for
+display two series of images.  These series were created on a hybrid
+Acquisition Modality and have the same Frame of Reference.
+This tests transaction [RAD-57] in the Image Fusion Profile and
+Storage Commitment [RAD-10].  Spatial Registration is tested in another test.

@@ -1,0 +1,3 @@
+APPLICATION_ID = Acquisition_Modality
+AE_TITLE = AE_TITLE1
+PERSON_ID = John_Doe

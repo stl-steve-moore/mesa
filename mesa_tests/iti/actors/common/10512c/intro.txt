@@ -1,0 +1,7 @@
+This is ITI test 10512c.
+It is designed to test the PIX Integretation Profile.
+In this test, the assigning authority in the PID contains
+only the OID value and not the namespace ID
+  &1.3.6.1.4.1.21367.2005.1.1&ISO
+References:
+ ITI TF-2: 3.8.4

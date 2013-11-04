@@ -1,0 +1,7 @@
+# 1502.026 (Order Placer) Patient-Record: Access
+
+OBJECT_ACTION = Access
+PATIENT_ID = M3030
+PATIENT_NAME = BROWN^JAMES
+LOCAL_USER = tmschmidt
+HOST_NAME = enterprise-east

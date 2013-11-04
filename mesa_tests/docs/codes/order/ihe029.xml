@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>ORC 5: HL7 Table 0038 Order Status</mesa:title>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>CM</mesa:param>
+			<mesa:param>Order is completed</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>CD</mesa:param>
+			<mesa:param>Order was discontinued</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>IP</mesa:param>
+			<mesa:param>Order is in progress</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

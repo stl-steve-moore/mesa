@@ -1,0 +1,4 @@
+(&(o=IHE Network)(ou=Librarians))
+sub
+BASEDN_FILE
+dn cn displayName employeeNumber pager title mail objectclass uid

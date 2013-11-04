@@ -1,0 +1,12 @@
+The Modality actor should select the worklist item and acquire 
+four waveform objects for the following patient states
+(the protocol used is not mandated by this test):
+
+- One Resting State ECG
+- One Baseline State ECG
+- One Exercise State ECG
+- One Post-exercise State ECG ECG 
+
+Use Patient ID and Study Instance UID from the worklist.
+
+Then C-STORE the 4 objects to the MESA Image Manager/Archive.

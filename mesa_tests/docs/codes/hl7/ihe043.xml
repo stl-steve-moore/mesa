@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>FT1-6: Transaction Type</mesa:title>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>CG</mesa:param>
+			<mesa:param>Charge</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>CD</mesa:param>
+			<mesa:param>Credit</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>PY</mesa:param>
+			<mesa:param>Payment</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>AJ</mesa:param>
+			<mesa:param>Adjustment</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

@@ -1,0 +1,5 @@
+This is data for ITI test cases 113xx.
+These ADT messages are used to load a Patient Demographics
+Supplier. The Supplier should start with an empty database
+to eliminate overlap in patient identifiers and/or names.
+

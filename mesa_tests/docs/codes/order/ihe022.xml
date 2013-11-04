@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>ORC 17: Entering Organization</mesa:title>
+		
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Identifier</mesa:column_name>
+			<mesa:column_name>Text</mesa:column_name>
+			<mesa:column_name>Coding Scheme</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>922229-10</mesa:param>
+			<mesa:param>IHE-RAD</mesa:param>
+			<mesa:param>IHE-CODE-231</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

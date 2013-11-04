@@ -1,0 +1,8 @@
+# Requirements for Content Items for Rpt Manager Test 652
+1	R	Language of Content Item and Descendents
+2	O	Observer Type (Person)
+3	O	Observer Name
+4	R	CONTAINER: History
+5	R	CONTAINER: Findings
+6	R	CONTAINER: Conclusions
+7	R	CONTAINER: Addendum

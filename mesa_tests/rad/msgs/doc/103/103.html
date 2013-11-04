@@ -1,0 +1,369 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Steve Moore">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (WinNT; I) [Netscape]">
+   <title>103 Messages</title>
+</head>
+<body text="#000000" bgcolor="#FFFFFF" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<h3>
+Events/Files for 103 Tests</h3>
+Case 103 exercises use Case 1 for Patient Information Reconciliation:
+Unidentified Patient Registered at ADT and Ordered at the Order Placer.
+<br>
+References:
+<br>
+$nbsp; IHE TF Vol I, Sec 4.4.1
+
+<br>&nbsp;
+<table BORDER >
+<tr>
+<th>Message</th>
+
+<th>Source</th>
+
+<th>Target</th>
+
+<th>HL7 Msg</th>
+
+<th>Text File</th>
+
+<th>Template</th>
+
+<th>Input 1</th>
+
+<th>Input 2</th>
+</tr>
+
+<tr>
+<td>A04: Register Doe outpatient</td>
+
+<td>ADT</td>
+
+<td>Placer</td>
+
+<td><a href="../../adt/103/103.102.a04.hl7">103.102.a04.hl7</a></td>
+
+<td><a href="../../adt/103/103.102.a04.txt">103.102.a04.txt</a></td>
+
+<td><a href="../../adt/templates/a04.tpl">a04.tpl</a></td>
+
+<td><a href="../../adt/103/103.102.a04.var">103.102.a04.var</a></td>
+
+<td><a href="../../adt/103/doej1.var">doej1.var</a></td>
+</tr>
+
+<tr>
+<td>A04: Register Doe outpatient</td>
+
+<td>ADT</td>
+
+<td>Filler</td>
+
+<td><a href="../../adt/103/103.103.a04.hl7">103.103.a04.hl7</a></td>
+
+<td><a href="../../adt/103/103.103.a04.txt">103.103.a04.txt</a></td>
+
+<td><a href="../../adt/templates/a04.tpl">a04.tpl</a></td>
+
+<td><a href="../../adt/103/103.103.a04.var">103.103.a04.var</a></td>
+
+<td><a href="../../adt/103/doej1.var">doej1.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Order P1 for Doe</td>
+
+<td>Placer</td>
+
+<td>Filler</td>
+
+<td><a href="../../order/103/103.104.o01.hl7">103.104.o01.hl7</a></td>
+
+<td><a href="../../order/103/103.104.o01.txt">103.104.o01.txt</a></td>
+
+<td><a href="../../order/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../order/103/103.104.o01.var">103.104.o01.var</a></td>
+
+<td><a href="../../adt/103/doej1.var">doej1.var</a></td>
+</tr>
+
+<tr>
+<td>O01: Schedule X1 for Doe</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../sched/103/103.106.o01.hl7">103.106.o01.hl7</a></td>
+
+<td><a href="../../sched/103/103.106.o01.txt">103.106.o01.txt</a></td>
+
+<td><a href="../../sched/templates/o01.tpl">o01.tpl</a></td>
+
+<td><a href="../../sched/103/103.106.o01.var">103.106.o01.var</a></td>
+
+<td><a href="../../adt/103/doej1.var">doej1.var</a></td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Find: MWL Request</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS In Progress</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Create: PPS in Progress</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set: PPS Complete</td>
+
+<td>Mod</td>
+
+<td>Filler</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Set PPS Complete</td>
+
+<td>Filler</td>
+
+<td>Mod</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>C-Store:</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Action: Storage Commitment</td>
+
+<td>Mod</td>
+
+<td>Img Mgr</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>N-Event: Storage Commitment</td>
+
+<td>Img Mgr&nbsp;</td>
+
+<td>Mod&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td><i>Patient is now recognized as Silverheels</i></td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>A08: Update name to Silverheels</td>
+
+<td>ADT</td>
+
+<td>Placer</td>
+
+<td><a href="../../adt/103/103.130.a08.hl7">103.130.a08.hl7</a></td>
+
+<td><a href="../../adt/103/103.130.a08.txt">103.130.a08.txt</a></td>
+
+<td><a href="../../adt/templates/a08.tpl">a08.tpl</a></td>
+
+<td><a href="../../adt/103/103.130.a08.var">103.130.a08.var</a></td>
+
+<td><a href="../../adt/103/silverheels.var">silverheels.var</a></td>
+</tr>
+
+<tr>
+<td>A08: Update name to Silverheels</td>
+
+<td>ADT</td>
+
+<td>Filler</td>
+
+<td><a href="../../adt/103/103.130.a08.hl7">103.130.a08.hl7</a></td>
+
+<td><a href="../../adt/103/103.130.a08.txt">103.130.a08.txt</a></td>
+
+<td><a href="../../adt/templates/a08.tpl">a08.tpl</a></td>
+
+<td><a href="../../adt/103/103.130.a08.var">103.130.a08.var</a></td>
+
+<td><a href="../../adt/103/silverheels.var">silverheels.var</a></td>
+</tr>
+
+<tr>
+<td>A08: Update name to Silverheels</td>
+
+<td>Filler</td>
+
+<td>Img Mgr</td>
+
+<td><a href="../../adt/103/103.132.a08.hl7">103.132.a08.hl7</a></td>
+
+<td><a href="../../adt/103/103.132.a08.txt">103.132.a08.txt</a></td>
+
+<td><a href="../../adt/templates/a08.tpl">a08.tpl</a></td>
+
+<td><a href="../../adt/103/103.132.a08.var">103.132.a08.var</a></td>
+
+<td><a href="../../adt/103/silverheels.var">silverheels.var</a></td>
+</tr>
+</table>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

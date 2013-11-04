@@ -1,0 +1,6 @@
+<AuditMessage>
+ <EventIdentification EventActionCode="E" EventDateTime="2006-08-31T10:38:34" EventOutcomeIndicator="0">
+  <EventID code="110112" codeSystemName="DCM" displayName="Query" />
+ </EventIdentification>
+</AuditMessage>
+

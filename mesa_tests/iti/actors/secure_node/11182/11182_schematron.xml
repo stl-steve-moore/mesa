@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11182: Schematron - ATNA STOP</title>
+
+ <sch:pattern name="EventIdentification">
+  <sch:rule context='/AuditMessage'>
+    <!-- EventIdentification -->
+    <sch:assert test="count(EventIdentification) = 1">
+    ERR: Requires ONE EventIdentification in AuditMessage (RFC 3881 5.1)
+    </sch:assert>
+    <sch:report test="count(EventIdentification) = 1">
+    CTX: Found ONE EventIdentification in AuditMessage (PASS)
+    </sch:report>
+  </sch:rule>
+  
+  <sch:rule context='/AuditMessage/EventIdentification'> 
+   <!-- EventActionCode=E -->
+   <sch:assert test="@EventActionCode='E'">
+   ERR: Requires EventActionCode=E in EventIdentification (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="@EventActionCode='E'">
+   CTX: Found EventActionCode=E in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 or 4 or 8 or 12 -->
+   <!--<sch:assert test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   ERR: Requires EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   CTX: Found EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (PASS)
+   </sch:report>-->
+   <sch:assert test="@EventOutcomeIndicator='0'">
+   ERR: Requires EventOutcomeIndicator=0 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0'">
+   CTX: Found EventOutcomeIndicator=0 in EventIdentification (PASS)
+   </sch:report>
+   
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+   
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (DICOM Supplement 95, schema)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <!-- EventID code=110100 -->
+   <!--<sch:assert test="EventID[@code='110100'] and EventID[@codeSystemName='DCM'] and EventID[@displayName='Application Activity']">
+   ERR: Requires EventID(110100, DCM, "Application Activity") (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="EventID[@code='110100'] and EventID[@codeSystemName='DCM'] and EventID[@displayName='Application Activity']">
+   CTX: Found EventID(110100, DCM, "Application Activity") (PASS)
+   </sch:report>
+   -->
+   <sch:assert test="EventID[@code='110100']">
+   ERR: Requires code=110100 in EventID (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="EventID[@code='110100']">
+   CTX: Found code=110100 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName=DCM -->
+   <sch:assert test="EventID[@codeSystemName='DCM']">
+   ERR: Requires codeSystemName=DCM in EventID (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='DCM']">
+   CTX: Found codeSystemName=DCM in EventID (PASS)
+   </sch:report>
+   
+   <!-- EventID displayName=Application Activity-->
+   <sch:assert test="EventID[@displayName='Application Activity']">
+   ERR: Requires displayName=Application Activity in EventID (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Application Activity']">
+   CTX: Found displayName=Application Activity in EventID (PASS)
+   </sch:report>
+   
+   <!-- EventTypeCode -->
+   <sch:assert test="EventTypeCode[@code = '110121'] and count(EventTypeCode[@code = '110121']) = 1">
+   ERR: Requires one EventTypeCode element with code = 110121 (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="EventTypeCode[@code = '110121'] and count(EventTypeCode[@code = '110121']) = 1">
+   CTX: Found one EventTypeCode element with code = 110121 (PASS)
+   </sch:report>
+  </sch:rule>
+  
+  <sch:rule context="/AuditMessage/EventIdentification/EventTypeCode[@code = '110121']"> 
+   <sch:assert test="current()/@codeSystemName = 'DCM' and current()/@displayName = 'Application Stop'">
+   ERR: Requires EventTypeCode (110121, DCM, "Application Stop") (DICOM Supplement 95, A.1.3.1)
+   </sch:assert>
+   <sch:report test="current()/@codeSystemName = 'DCM' and current()/@displayName = 'Application Stop'">
+   CTX: Found EventTypeCode (110121, DCM, "Application Stop") (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

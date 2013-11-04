@@ -1,0 +1,49 @@
+CTX: MESA Version 8.8.3 created 2005.04.10 
+dn: cn=Mohr^Grace^^^,dc=ihe,dc=net
+cn: Mohr^Grace^^^
+displayName: Grace Mohr
+employeeNumber: 3102
+mail: gm@ihepwp.org
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+pager: +1 630 555 2002
+title: Engineer 1
+uid: mohr01
+
+dn: cn=Mooney^Daniel^E^^,dc=ihe,dc=net
+cn: Mooney^Daniel^E^^
+displayName: Dan Mooney
+employeeNumber: 3103
+mail: dem@ihepwp.org
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+pager: +1 630 555 2068
+title: Engineer 1
+uid: moon01
+
+dn: cn=Mooney^Danielle^^^,dc=ihe,dc=net
+cn: Mooney^Danielle^^^
+displayName: Danielle Mooney
+employeeNumber: 3104
+mail: drm@ihepwp.org
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+pager: +1 630 555 2002
+title: Engineer 1
+uid: moon02
+
+dn: cn=Moore^Edward^^^,dc=ihe,dc=net
+cn: Moore^Edward^^^
+displayName: Edward Moore
+employeeNumber: 3105
+mail: em@ihepwp.org
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+pager: +1 630 555 2078
+title: Engineer 1
+uid: moor01
+

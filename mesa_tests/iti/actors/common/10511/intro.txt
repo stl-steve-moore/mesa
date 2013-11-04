@@ -1,0 +1,5 @@
+This is ITI test 10511.
+It is designed to test the PIX Integretation Profile using A01 messages
+The Query Cases are #1 and #2.
+References:
+ ITI TF-2: 3.9.4.2.2

@@ -1,0 +1,143 @@
+//Patient Module
+0010 0010	SMITH^HAROLD			//Patient Name
+0010 0020	PIKR750000			//Patient ID
+0010 0030	####				//Patient's Birth Date
+0010 0040	M				//Patient's Sex
+//
+//General Study Module
+0020 000D	2.16.840.1.113662.2.1.53544936282433.12345.336.16650	//Study Instance UID
+0008 0020	19950126			//Study Date
+0008 0030	094201.590			//Study Time
+0008 0090	####				//Referring Physician's Name
+0020 0010	1665				//Study ID
+0008 0050	PIKR0003 			//Accession Number
+//
+//SR Document Series Module
+0008 0060	SR				//Modality
+0020 000E	zzz				//Series Instance UID
+0020 0011	zzz				//Series Number
+0008 1111	####				//Referenced Study Component Sequence
+//
+//
+//General Equipment Module
+0008 0070	MIR				//Manufacturer
+//
+//SR Document General Module
+0020 0013	12345				//Instance Number
+0040 A492	COMPLETE			//Completion Flag
+0040 A493	UNVERIFIED			//Verification Flag
+0008 0023	20010318			//Content Date
+0008 0033	041500.0000			//Content Time
+//
+//SR Document Content
+0040 a504	(				//Content Template Sequence
+	0040 DB00	2000			//Template Identifier
+	0008 0105	DCMR			//Mapping Resource
+	)
+//
+0040 a040	CONTAINER			//Value Type
+0040 a043	(				//Concept Name Code Sequence
+	0008 0100	18747-6			//Code Value
+	0008 0102	LN			//Code Scheme Designator
+	0008 0104	"CT Report"		//Code Meaning
+	)
+0040 a730	(				//Content Sequence
+	0040 a010	"HAS CONCEPT MOD"	//Relationship Type
+	0040 a040	CODE			//Value Type
+	0040 a043	(			//Concept Name Code Sequence
+		0008 0100	xxx049		//Code Value
+		0008 0102	DCM		//Code Scheme Designator
+		0008 0104	"Language of Content Item and Descendents" 	//Code Meaning
+		)
+	0040 a168	(			//Concept Code Sequence
+		0008 0100	eng		//Code Value
+		0008 0102	ISO369_2	//Code Scheme Designator
+		0008 0104	English		//Code Meaning
+		)
+	)	
+	(
+	0040 a010	"HAS OBS CONTEXT"	// Relationship Type
+	0040 a040	CODE			// Value Type
+	0040 a043	(			// Concept Name Code Sequence
+		0008 0100	xxx005		// Code Value
+		0008 0102	DCM		// Code Scheme Designator
+		0008 0104	"Observer Type"	// Code Meaning
+		)
+	0040 a168	(			// Concept Code Sequence
+		0008 0100	xxx006		// Code Value
+		0008 0102	DCM		// Code Scheme Designator
+		0008 0104	Person		// Code Meaning
+		)
+	)
+	(
+	0040 a010	"HAS OBS CONTEXT"	// Relationship Type
+	0040 a040	PNAME			// Value Type
+	0040 a043	(			// Concept Name Code Sequence
+		0008 0100	xxx008		// Code Value
+		0008 0102	DCM		// Code Scheme Designator
+		0008 0104	"Person Observer Name"	// Code Meaning
+		)
+	0040 A123	MOORE^STEVE		// Person Name
+	)
+	(
+	//  *******  HISTORY SECTION OF SR *************
+	0040 a010	CONTAINS		//Relationship Type
+	0040 a040	CONTAINER		//Value Type
+	0040 a043	(			//Concept Name Code Sequence
+		0008 0100	121060		//Code Value
+		0008 0102	DCM		//Code Schmeme Designator
+		0008 0104	History 	//Code Meaning
+		)
+	0040 a730	(			//Content Sequence
+		0040 a010	CONTAINS	//Relationship Type
+		0040 a040	TEXT		//Value Type
+		0040 a043	(			//Concept Name Code Sequence
+			0008 0100	121060		//Code Value
+			0008 0102	DCM		//Code Schmeme Designator
+			0008 0104	History 	//Code Meaning
+			)
+		0040 a160	"46-year-old male presented to the emergency room with parasternal and epigastric pain."	//Text Value
+		) 
+	)
+	(
+	//  *******  FINDINGS SECTION OF SR *************
+	0040 a010	CONTAINS		//Relationship Type
+	0040 a040	CONTAINER		//Value Type
+	0040 a043	(			//Concept Name Code Sequence
+		0008 0100	121070		//Code Value
+		0008 0102	DCM		//Code Schmeme Designator
+		0008 0104	Findings 	//Code Meaning
+		)
+	0040 a730	(			//Content Sequence
+		0040 a010	CONTAINS	//Relationship Type
+		0040 a040	TEXT		//Value Type
+		0040 a043	(			//Concept Name Code Sequence
+			0008 0100	121071		//Code Value
+			0008 0102	DCM		//Code Schmeme Designator
+			0008 0104	Finding 	//Code Meaning
+			)
+		0040 a160	"There is an aneurysm of the entire thoracic aorta measuring up to 6.2 cm in diameter."	//Text Value
+		)
+	)
+	(
+	//  *******  CONCLUSIONS SECTION OF SR *************
+	0040 a010	CONTAINS		//Relationship Type
+	0040 a040	CONTAINER		//Value Type
+	0040 a043	(			//Concept Name Code Sequence
+		0008 0100	121076		//Code Value
+		0008 0102	DCM		//Code Schmeme Designator
+		0008 0104	Conclusions 	//Code Meaning
+		)
+	0040 a730	(			//Content Sequence
+		0040 a010	CONTAINS	//Relationship Type
+		0040 a040	TEXT		//Value Type
+		0040 a043	(			//Concept Name Code Sequence
+			0008 0100	121077		//Code Value
+			0008 0102	DCM		//Code Schmeme Designator
+			0008 0104	Conclusion 	//Code Meaning
+			)
+		0040 a160	"Aneurysm of thoracic aorta with dissection affecting ascending and descending aorta."	//Text Value
+		)
+	)
+//
+//SOP Common Module

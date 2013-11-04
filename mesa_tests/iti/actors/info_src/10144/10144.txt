@@ -1,0 +1,22 @@
+# This file contains configuration parameters for
+# Information Source test 10144
+# The only values the user should edit
+# are
+#  URLPrefix
+#  documentUID
+#  preferredContentType
+
+# User of test 10144 should edit these three entries
+URLPrefix = http://info-src:8080
+documentUID = 1.2.840.113654.2.3.2003.100.104
+preferredContentType = application/pdf
+
+# Do not edit below this line
+# Query Keys
+requestType = DOCUMENT
+
+# HTTP Request Fields
+#Accept = image/jpeg
+#Accept = application/pdf
+Accept = application/pdf, image/jpeg
+

@@ -1,0 +1,5 @@
+In the next set of transactions, the (MESA) Evidence
+Creator will send 3 series of DICOM objects to the Image Manager:
+	PET
+	CT
+	BSPS

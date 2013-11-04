@@ -1,0 +1,6 @@
+20206
+
+At this point the DICOM Headers of the stress echo images which were just
+created should be manually verified using the information supplied in Test 
+Case 20403 which tests the Volume 2 CARD-2 Stress Echo Option.
+

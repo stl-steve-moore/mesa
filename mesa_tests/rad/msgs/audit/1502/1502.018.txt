@@ -1,0 +1,7 @@
+# 1502.018 (ADT) Patient-Record: Modify
+
+OBJECT_ACTION = Modify
+PATIENT_ID = M3030
+PATIENT_NAME = BROWN^JAMES
+LOCAL_USER = cdjohnson
+HOST_NAME = reception-east

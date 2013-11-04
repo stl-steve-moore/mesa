@@ -1,0 +1,5 @@
+This is test 313.
+It is used to send an encapsulated PDF file to an Image Manager.
+References:
+
+

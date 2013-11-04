@@ -1,0 +1,4 @@
+Test 151 has run to its completion.
+
+Run the evaluation script for your one notification message.
+  perl 151/eval_151.pl <log level>

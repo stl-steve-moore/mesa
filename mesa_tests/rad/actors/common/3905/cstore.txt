@@ -1,0 +1,6 @@
+Digitize one film.
+
+The Patient ID should be MESA3905. The patient name should be MESA^Mammo3905. These values are not critical to the test.
+
+You should now C-STORE [RAD-8] this "For Presentation" Mammography
+image to the MESA Image Manager. (You should not store a Secondary Capture.)

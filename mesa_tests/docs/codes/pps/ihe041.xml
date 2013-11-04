@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Values for Billing Procedure Step Sequence (0040 0320)</mesa:title>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Identifier</mesa:column_name>
+			<mesa:column_name>Text</mesa:column_name>
+			<mesa:column_name>Coding Scheme</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>BP1001</mesa:param>
+			<mesa:param>Billing Procedure 1001</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>BP1002</mesa:param>
+			<mesa:param>Billing Procedure 1002</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+				<mesa:coded_entry>
+			<mesa:param>BP1003</mesa:param>
+			<mesa:param>Billing Procedure 1003</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+				<mesa:coded_entry>
+			<mesa:param>BP1004</mesa:param>
+			<mesa:param>Billing Procedure 1004</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+				<mesa:coded_entry>
+			<mesa:param>BP1005</mesa:param>
+			<mesa:param>Billing Procedure 1005</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

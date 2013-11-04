@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Physician Lists</mesa:title>
+		<mesa:description>The MESA tests, Connectathon tests and demonstration scenarios use coded values for physicians. Depending on the context, a physician may be one of
+•	admitting
+•	attending
+•	consulting
+•	referring
+The tables below will list legal values for physicians and their specialty.
+</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Specialty</mesa:column_name>
+			<mesa:column_name>Likely Categories</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>11234^WEAVER^TIMOTHY^P^^DR</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Attending, Admitting</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>3456^ROSZEK^JEANETTE^G^^DR</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Attending</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>5678^BAXA^TIMOTHY^P^^DR</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Attending</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>7890^CHAVEZ^JULIO^^^DR</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>9012^JIANG^WEI^^^DR</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>12345NAKATA^TAKASI^^^DR^MD</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Attending</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>5101^NELL^FREDERICK^P^^DR</mesa:param>
+			<mesa:param>Primary Care Physician</mesa:param>
+			<mesa:param>Referring</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>5202^SCHULTZ^KEVIN^G^^DR</mesa:param>
+			<mesa:param>Primary Care Physician</mesa:param>
+			<mesa:param>Referring</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>5303^BAJWA^AMNA^^^DR</mesa:param>
+			<mesa:param>Primary Care Physician</mesa:param>
+			<mesa:param>Referring</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>5404^CAIN^LAUAREN^^^DR</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>5505^BYRNE^NEIL^^^DR</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>6101^DANKE^LOREN^P^^DR</mesa:param>
+			<mesa:param>Radiologist</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>6202^YIU^CHENG^^^DR</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Radiologist</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>6303^LOPEZ^GABRIELLA^^^DR</mesa:param>
+			<mesa:param>Cardiologist</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>6404^WYNN^DONALD^^^DR</mesa:param>
+			<mesa:param>Cardiologist</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>6505^BANDA^REUBEN^J^^DR</mesa:param>
+			<mesa:param>General Surgeon</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>7101^ESTRADA^JAIME^P^^DR</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Ordering Provider</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>7202^ESSELMAN^HENRY^G^^DR</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Ordering Provider</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>7303^DARROW^BARBARA^P^^DR</mesa:param>
+			<mesa:param>Cardio-thoracic surgeon</mesa:param>
+			<mesa:param>Ordering Provider</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>7404^PRUST^RALPH^^^DR</mesa:param>
+			<mesa:param>Cardio-thoracic surgeon</mesa:param>
+			<mesa:param>Ordering Provider</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>7505^RA^KYU^^^DR</mesa:param>
+			<mesa:param>House staff</mesa:param>
+			<mesa:param>Ordering Provider</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

@@ -1,0 +1,12 @@
+20204
+
+The Order Filler is about to recieve a PPS from a modality for which it 
+has no scheduled procedure.  This indicates that it is Case E4.
+The Order Filler will be responsible for
+ - sending an ORM message (RAD-3) to the Order Placer to "post" order the procedure
+ - sending an ORM message (RAD-3) to the Order Placer with status information
+ - sending an ORM message (RAD-4) to the Image Mgr to link Study Instance UIDs
+Each step above will be prompted by the test script.
+
+
+

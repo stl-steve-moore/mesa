@@ -1,0 +1,18 @@
+Test:  3742
+Title: 3742 - IRWF Exception Management - incorrect worklist item (scheduled)
+
+This test is for Importers which support the Scheduled Import Option.
+
+This tests the behavior of the Importer when the operator realizes, after storing one
+object to the Image Manager, that the wrong item was selected from the worklist
+received from the DSS/OF.  
+
+After the PPS is discontinued, the Importer will re-query the DSS/OF for the correct
+patient, reconcile the imported objects with this patient information, and store them to the Image Manager.  
+
+The next step in the test will display the Patient Name and Patient ID
+that will appear in the MWL for data to be imported. 
+The first Patient listed (Patient ID=3799) will be for the incorrect worklist item. The second Patient listed (Patient ID=3742) will be for the correct worklist item .
+
+
+

@@ -1,0 +1,4 @@
+(mail=fwe@ihe.net)
+sub
+BASEDN_FILE
+dn cn displayName employeeNumber pager title mail objectclass uid

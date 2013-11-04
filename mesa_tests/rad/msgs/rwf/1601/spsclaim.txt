@@ -1,0 +1,15 @@
+
+0040 4001	"IN PROGRESS"	// GP SPS status
+
+0008 1195	1.113654.3.25.1000	// Transaction UID
+
+0040 4035	(			// Actual Human Performers Sequence
+ 0040 4009	 (			// Human Performer Code Sequence
+  0008 0100	  8020			// Code Value
+  0008 0102	  IHEDEMO		// Coding Scheme Designator
+  0008 0104	  Radiologist^Jane		// Code Meaning
+		 )
+ 0040 4037	Radiologist^Jane 	// Human Performers Name
+ 0040 4036	"ACME Institute of Radiology"		// Human Performers Organization
+)
+

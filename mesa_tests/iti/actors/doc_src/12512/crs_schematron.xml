@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE schema [
+<!-- 
+Replace baseURI below with a reference to the published Implementation Guide HTML.
+-->
+<!ENTITY baseURI "">
+]>
+<schema xmlns="http://www.ascc.net/xml/schematron" xmlns:cda="urn:hl7-org:v3" xmlns:crs='urn:hl7-org:crs'>
+    
+    <title>Schematron schema for validating conformance to IMPL_CDAR2_LEVEL1REF_US_I1_2005MAY</title>
+    <ns prefix="cda" uri="urn:hl7-org:v3" />
+    <ns prefix="crs" uri="urn:hl7-org:crs" />
+
+    <pattern name='XDSMSdemographicschecking'>
+	<rule id='patient demographics' context='cda:patientRole'>
+		<report test="cda:addr[cda:streetAddressLine = '4525 Scott Ave']">
+			patient cda:streetAddressLine OK
+		</report>
+		<assert test="cda:addr[cda:streetAddressLine = '4525 Scott Ave']">
+			ERR: patient cda:streetAddressLine does not match 4525 Scott Ave
+		</assert>
+		<report test="cda:addr[cda:city = 'St. Louis']">
+			patient cda:city OK
+		</report>
+		<assert test="cda:addr[cda:city = 'St. Louis']">
+			ERR: patient cda:city does not match St. Louis
+		</assert>
+		<report test="cda:addr[cda:state = 'MO']">
+			patient cda:state OK
+		</report>
+		<assert test="cda:addr[cda:state = 'MO']">
+			ERR: patient cda:state does not match MO
+		</assert>
+		<report test="cda:addr[cda:postalCode = '63110']">
+			patient cda:postalCode OK
+		</report>
+		<assert test="cda:addr[cda:postalCode = '63110']">
+			ERR: patient cda:postalCode does not match 63110
+		</assert>
+		<report test="cda:telecom[@value = 'tel:314-555-1671']">
+			patient cda:telecom OK
+		</report>
+		<assert test="cda:telecom[@value = 'tel:314-555-1671']">
+			ERR: patient cda:telecom does not match tel:314-555-1671
+		</assert>
+		<report test="cda:patient[cda:administrativeGenderCode[@code='F' and @codeSystem='2.16.840.1.113883.5.1']]">
+			cda:administrativeGenderCode OK
+		</report>
+		<assert test="cda:patient[cda:administrativeGenderCode[@code='F' and @codeSystem='2.16.840.1.113883.5.1']]">
+			ERR: correct cda:administrativeGenderCode not found
+		</assert>
+		<report test="cda:patient[cda:birthTime[@value='19580204']]">
+			cda:birthTime OK
+		</report>
+		<assert test="cda:patient[cda:birthTime[@value='19580204']]">
+			ERR: cda:birthTime does not match 19580204
+		</assert>
+		<report test="cda:providerOrganization[cda:name = 'Gateway Hospital']">
+			cda:providerOrganization name OK
+		</report>
+		<assert test="cda:providerOrganization[cda:name = 'Gateway Hospital']">
+			ERR: cda:providerOrganization name does not match Gateway Hospital
+		</assert>
+		<report test="cda:providerOrganization[cda:addr[cda:streetAddressLine = '600 Euclid Ave']]">
+			provider organization cda:streetAddressLine OK
+		</report>
+		<assert test="cda:providerOrganization[cda:addr[cda:streetAddressLine = '600 Euclid Ave']]">
+			ERR: provider organization cda:streetAddressLine does not match 600 Euclid Ave
+		</assert>
+		<report test="cda:providerOrganization[cda:addr[cda:city = 'St. Louis']]">
+			provider organization cda:city OK
+		</report>
+		<assert test="cda:providerOrganization[cda:addr[cda:city = 'St. Louis']]">
+			ERR: provider organization cda:city does not match St. Louis
+		</assert>
+		<report test="cda:providerOrganization[cda:addr[cda:state = 'MO']]">
+			provider organization cda:state OK
+		</report>
+		<assert test="cda:providerOrganization[cda:addr[cda:state = 'MO']]">
+			ERR: provider organization cda:state does not match MO
+		</assert>
+		<report test="cda:providerOrganization[cda:addr[cda:postalCode = '63110']]">	
+			provider organization cda:postalCode OK
+		</report>
+		<assert test="cda:providerOrganization[cda:addr[cda:postalCode = '63110']]">	
+			ERR: provider organization cda:postalCode does not match 63110
+		</assert>
+		<report test="cda:providerOrganization[cda:addr[cda:country = 'USA']]">
+			provider organization cda:country OK
+		</report>
+		<assert test="cda:providerOrganization[cda:addr[cda:country = 'USA']]">
+			ERR: provider organization cda:country does not match USA
+		</assert>
+	</rule>
+	<rule id='custodian' context='cda:custodian'>
+		<report test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:name = 'Gateway Hospital']]">
+			custodian cda:name OK
+		</report>
+		<assert test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:name = 'Gateway Hospital']]">
+			ERR: custodian cda:name does not match Gateway Hospital
+		</assert>
+		<report test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:streetAddressLine = '600 Euclid Ave']]]">			
+			custodian cda:streetLAddressLine OK
+		</report>
+		<assert test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:streetAddressLine = '600 Euclid Ave']]]">			
+			ERR: custodian cda:streetAddressLine does not match 600 Euclid Ave
+		</assert>
+		<report test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:city = 'St. Louis']]]">			
+			custodian cda:city OK
+		</report>
+		<assert test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:city = 'St. Louis']]]">			
+			ERR: custodian cda:city does not match St. Louis
+		</assert>
+		<report test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:state = 'MO']]]">
+			custodian cda:state OK
+		</report>
+		<assert test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:state = 'MO']]]">
+			ERR: custodian cda:state does not match MO
+		</assert>
+		<report test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:postalCode = '63110']]]">
+			custodian cda:postalCode OK
+		</report>
+		<assert test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:postalCode = '63110']]]">
+			ERR: custodian cda:postalCode does not match 63110
+		</assert>
+		<report test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:country = 'USA']]]">
+			custodian cda:country OK
+		</report>
+		<assert test="cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:country = 'USA']]]">
+			ERR: custodian cda:country does not match USA
+		</assert>
+	</rule>
+	<rule id='author' context='cda:author'>
+		<report test="cda:assignedAuthor[cda:addr[cda:streetAddressLine = '700 Euclid Ave']]">
+			author cda:streetAddressLine OK
+		</report>
+		<assert test="cda:assignedAuthor[cda:addr[cda:streetAddressLine = '700 Euclid Ave']]">
+			ERR: author cda:streetAddressLine does not match 700 Euclid Ave
+		</assert>
+		<report test="cda:assignedAuthor[cda:addr[cda:city = 'St. Louis']]">
+			author cda:city OK
+		</report>
+		<assert test="cda:assignedAuthor[cda:addr[cda:city = 'St. Louis']]">
+			ERR: author cda:city does not match St. Louis
+		</assert>
+		<report test="cda:assignedAuthor[cda:addr[cda:state = 'MO']]">
+			author cda:state OK
+		</report>
+		<assert test="cda:assignedAuthor[cda:addr[cda:state = 'MO']]">
+			ERR: author cda:state does not match MO
+		</assert>
+		<report test="cda:assignedAuthor[cda:addr[cda:country = 'USA']]">
+			author cda:country OK
+		</report>
+		<assert test="cda:assignedAuthor[cda:addr[cda:country = 'USA']]">
+			ERR: author cda:country does not match USA
+		</assert>
+	</rule>    
+</pattern>
+</schema>

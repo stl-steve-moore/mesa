@@ -1,0 +1,4 @@
+Test 401 does not use the SWF perl scripts.
+This is an older test that has a different procedure that is
+documented in the test instructions.
+

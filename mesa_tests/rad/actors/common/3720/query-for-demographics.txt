@@ -1,0 +1,4 @@
+You should now send a query to the MESA Patient Demographic Supplier.  
+Use Patient ID "3720" or Patient Name "GOLDENROD^G" as a query key. 
+
+

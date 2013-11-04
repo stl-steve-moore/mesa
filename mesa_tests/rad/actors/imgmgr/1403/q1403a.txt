@@ -1,0 +1,22 @@
+0008 0052	IMAGE		// Query level
+0020 000d	1.113654.1.2001.1402.1		// Study Instance UID
+0020 000e	1.113654.1.2001.1402.1.1	// Series Instance UID
+0008 0016	#				// SOP Class UID
+0008 0018	#				// SOP Instance UID
+0010 0010	#				// Patient Name
+0010 0020	#				// Patient ID
+0008 0050	#				// Accession Number
+
+// ED required Return Keys
+0008 0023	#		// Content Date
+0008 0033	#		// Content Time
+0040 A370	####		// Referenced Request Sequence
+0040 A504	(		// Content Template Sequence
+  0040 DB00	#		// Template Identifier
+)
+0040 A043	(		// Concept Name Code Sequence
+  0008 0100	#		// Code Value
+  0008 0102	#		// Code Scheme Designator
+  0008 0103	#		// Code Scheme Version
+  0008 0104	#		// Code Scheme Meaning
+)

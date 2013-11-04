@@ -1,0 +1,10 @@
+Fusion Test 3550
+
+The MESA Evidence Creator sends data of three types to the Image Mgr/Archive:
+ - PT
+ - CT
+ - BSPS
+
+The MESA system then queries the Image Manager/Archive by SOP Class UID
+(for BSPS objects).
+

@@ -1,0 +1,12 @@
+Test: 3739
+Title: 3739: IRWF Exception Management - abandoned import (unscheduled)
+
+References:
+ RAD TF-3:4.60.4.1.2.2
+
+This test is for Importers which support the Unscheduled Import Option.  If you support the Scheduled Import option, you should run test 3740 instead.
+
+Test Case 3739 involves transactions for PPS EXCEPTION MANAGEMENT in the Import Reconciliation Workflow when the Importer abandons the import after the PPS In Progress message has been sent.  
+
+This test requires the Importer actor to query the Patient Demographic Supplier for patient data, then import DICOM objects from media provided with the MESA tools, or to digitize a film or document. Ensure that this media is available prior to starting this test.
+

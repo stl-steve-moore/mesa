@@ -1,0 +1,10 @@
+0008 0052	IMAGE		// Query level
+0020 000d	1.113654.1.400.10		// Study Instance UID
+0020 000e	1.113654.1.400.10.1		// Series Instance UID
+0008 0018	#				// SOP Instance UID
+
+0008 0016	#		// SOP Class UID
+0028 0010	#		// Rows
+0028 0011	#		// Columns
+0028 0100	#		// Bits allocated
+0028 0008	#		// Number of Frames

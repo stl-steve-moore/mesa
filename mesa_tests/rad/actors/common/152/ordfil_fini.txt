@@ -1,0 +1,4 @@
+Test 152 has run to its completion.
+
+Run the evaluation script for your two notification messages.
+  perl 152/eval_152.pl <log level>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Physicians and Healtchare Organizations</mesa:title>
+		<mesa:description>Choose a physician name from the values provided in table 4.1-1 of this document. Do not invent new names.
+For health system organizations, chose from the table below:
+
+</mesa:description>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>CCR Attribute</mesa:column_name>
+			<mesa:column_name>Value</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>Source.Actor.Organization.Name</mesa:param>
+			<mesa:param>Millenium Health System</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Great Plains Healthcare</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Lakeside Hospital System</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Metro Hospital System</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

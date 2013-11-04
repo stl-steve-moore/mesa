@@ -1,0 +1,6 @@
+In the next step, the Order Filler sends an Appointment Notification
+for the original appointment. This is an SIU^S12.
+
+There are other transactions in SWF that may happen, but we are
+ignoring these. For example, the Order Filler sends a Scheduling
+ORM to the Image Manager. This test ignores that message.

@@ -1,0 +1,575 @@
+//Patient Module
+0010 0010	MRTHREE^STEVE			//Patient Name
+0010 0020	MR3				//Patient ID
+0010 0030	#				//Patient's Birth Date
+0010 0040	M				//Patient's Sex
+//
+//General Study Module
+0020 000D	1.113654.1.2001.10		//Study Instance UID
+0008 0020	19950204			//Study Date
+0008 0030	101315				//Study Time
+0008 0090	MCFARLAND			//Referring Physician's Name
+0020 0010	3				//Study ID
+0008 0050	2001A10	 			//Accession Number
+//
+//SR Document Series Module
+0008 0060	SR				//Modality
+0020 000E	1.113654.1.2001.10.2.603	//Series Instance UID
+0020 0011	1				//Series Number
+0008 1111	####				//Referenced Study Component Sequence
+//
+//
+//General Equipment Module
+0008 0070	MIR				//Manufacturer
+//
+//SR Document General Module
+0020 0013	1				//Instance Number
+0040 A491	COMPLETE			//Completion Flag
+0040 A493	UNVERIFIED			//Verification Flag
+0008 0023	20010501			//Content Date
+0008 0033	141500				//Content Time
+0040 A370 (					// Referenced Request Sequence
+ 0020 000D	1.113654.1.2001.10		// Study Instance UID
+ 0008 1110 (					// Referenced Study Sequence
+  0008 1150	1.2.840.10008.3.1.2.3.1		// Referenced SOP Class UID
+  0008 1155	1.113654.1.2001.10.0.603	// Referenced SOP Instance UID
+ )
+ 0008 0050	2001A10	 			//Accession Number
+ 0040 2016	A603Z^MESA_ORDPLC		// Placer Order Number
+ 0040 2017	B603Z^MESA_ORDFIL		// Filler Order Number
+ 0040 1001	#				// Requested Procedure ID
+ 0032 1060	#				// Requested Procedure Description
+ 0032 1064	####				// Requested Procedure Code Sequence
+)
+0040 A375 (					// Current Requested Procedure Evidence
+ 0020 000D	1.113654.1.2001.10		// Study Instance UID
+ 0008 1115 (					// Referenced Series Sequence
+  0020 000E	1.113654.1.2001.10.1		// Series Instance UID
+  0008 1199 (					// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133202037.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133209075.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133210080.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133211086.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133212094.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133214101.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133215106.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133216112.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133217122.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133218129.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133220134.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133204048.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133221142.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133222150.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133223158.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133224163.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133226169.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133227174.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133228182.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133255332.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133257345.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133259349.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133205055.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133301353.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133302360.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133303366.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133305372.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133306379.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133307385.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133309392.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133311398.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133312403.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133313410.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133206064.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133314418.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133316426.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133317433.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133318438.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133319445.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133320451.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133322458.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133323464.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133324470.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133325476.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133207067.100	// Referenced SOP Instance UID
+  )
+  (
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133327485.100	// Referenced SOP Instance UID
+  )
+ )
+ (					// Referenced Series Sequence
+  0020 000E	1.113654.1.2001.10.2		// Series Instance UID
+  0008 1199 (					// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133229200.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133235227.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133236229.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133237233.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133238236.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133238241.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133239242.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133240245.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133240247.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133241252.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133241254.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133230203.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133242258.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133243264.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133243267.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133244271.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133245275.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133245279.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133246280.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133246286.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133247290.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133248294.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133231206.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133249297.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133249301.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133250303.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133250306.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133251310.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133252312.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133253314.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133253318.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133254322.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133328494.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133231209.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133329499.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133330503.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133330508.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133331509.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133332514.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133332517.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133333520.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133333523.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133334527.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133232211.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133232215.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133233218.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133234221.100	// Referenced SOP Instance UID
+  )
+  (						// Referenced SOP Sequence
+   0008 1150	1.2.840.10008.5.1.4.1.1.4	// Referenced SOP Class UID
+   0008 1155	1.2.840.113674.950809133234223.100	// Referenced SOP Instance UID
+  )
+ )
+)
+//
+//SR Document Content
+0040 a504 (					//Content Template Sequence
+ 0040 DB00	2000				//Template Identifier
+ 0008 0105	DCMR				//Mapping Resource
+)
+//
+0040 a040	CONTAINER			//Value Type
+0040 a043 (					//Concept Name Code Sequence
+ 0008 0100	18755-9				//Code Value
+ 0008 0102	LN				//Code Scheme Designator
+ 0008 0104	"MRI Report"			//Code Meaning
+)
+0040 a050	SEPARATE			// Continuity of Content
+0040 a730 (					//Content Sequence
+ 0040 a010	"HAS CONCEPT MOD"		//Relationship Type
+ 0040 a040	CODE				//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121049				//Code Value
+  0008 0102	DCM				//Code Scheme Designator
+  0008 0104	"Language of Content Item and Descendants" 	//Code Meaning
+ )
+ 0040 a168 (					//Concept Code Sequence
+  0008 0100	eng				//Code Value
+  0008 0102	ISO639_2			//Code Scheme Designator
+  0008 0104	English				//Code Meaning
+ )
+)
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	CODE				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121005				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Observer Type"			// Code Meaning
+ )
+ 0040 a168 (					// Concept Code Sequence
+  0008 0100	121006				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	Person				// Code Meaning
+ )
+)
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	PNAME				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121008				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Person Observer Name"		// Code Meaning
+ )
+ 0040 A123	MOORE^STEVE			// Person Name
+)
+(
+//  *******  HISTORY SECTION OF SR *************
+ 0040 a010	CONTAINS			//Relationship Type
+ 0040 a040	CONTAINER			//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121060				//Code Value
+  0008 0102	DCM				//Code Schmeme Designator
+  0008 0104	History 			//Code Meaning
+ )
+ 0040 A050	SEPARATE			// Continuity of Content
+ 0040 a730 (					//Content Sequence
+  0040 a010	CONTAINS			//Relationship Type
+  0040 a040	TEXT				//Value Type
+  0040 a043 (					//Concept Name Code Sequence
+   0008 0100	121060				//Code Value
+   0008 0102	DCM				//Code Schmeme Designator
+   0008 0104	History 			//Code Meaning
+  )
+  0040 a160	"Rule out internal derangement."	//Text Value
+ ) 
+)
+(
+//  *******  FINDINGS SECTION OF SR *************
+ 0040 a010	CONTAINS				//Relationship Type
+ 0040 a040	CONTAINER				//Value Type
+ 0040 a043 (						//Concept Name Code Sequence
+  0008 0100	121070					//Code Value
+  0008 0102	DCM					//Code Schmeme Designator
+  0008 0104	Findings 				//Code Meaning
+ )
+ 0040 A050	SEPARATE			// Continuity of Content
+ 0040 a730 (						//Content Sequence
+  0040 a010	CONTAINS				//Relationship Type
+  0040 a040	TEXT					//Value Type
+  0040 a043 (						//Concept Name Code Sequence
+   0008 0100	121071					//Code Value
+   0008 0102	DCM					//Code Schmeme Designator
+   0008 0104	Finding 				//Code Meaning
+  )
+  0040 a160	"Within the posterior horn of the medial meniscus there is minimal increase in signal intensity."	//Text Value
+ )
+ (					//Content Sequence
+  0040 a010	CONTAINS			//Relationship Type
+  0040 a040	IMAGE				//Value Type
+  0040 a043 (					//Concept Name Code Sequence
+   0008 0100	121080				//Code Value
+   0008 0102	DCM				//Code Schmeme Designator
+   0008 0104	"Best illustration of findings"	//Code Meaning
+  )
+  0008 1199 (					// Referenced SOP Sequence
+    0008 1150	1.2.840.10008.5.1.4.1.1.4	// MR Class
+    0008 1155	1.2.840.113674.950809133325476.100 // SOP Instance
+// Image Number 45 in series 103
+  )
+ )
+ (					//Content Sequence
+  0040 a010	CONTAINS			//Relationship Type
+  0040 a040	IMAGE				//Value Type
+  0040 a043 (					//Concept Name Code Sequence
+   0008 0100	121080				//Code Value
+   0008 0102	DCM				//Code Schmeme Designator
+   0008 0104	"Best illustration of findings"	//Code Meaning
+  )
+  0008 1199 (					// Referenced SOP Sequence
+    0008 1150	1.2.840.10008.5.1.4.1.1.4	// MR Class
+    0008 1155	1.2.840.113674.950809133327485.100  // SOP Instance
+// Image Number 46 in series 103
+  )
+ )
+)
+(
+//  *******  CONCLUSIONS SECTION OF SR *************
+ 0040 a010	CONTAINS				//Relationship Type
+ 0040 a040	CONTAINER				//Value Type
+ 0040 a043 (						//Concept Name Code Sequence
+  0008 0100	121076					//Code Value
+  0008 0102	DCM					//Code Schmeme Designator
+  0008 0104	Conclusions 				//Code Meaning
+ )
+ 0040 A050	SEPARATE			// Continuity of Content
+ 0040 a730 (						//Content Sequence
+  0040 a010	CONTAINS				//Relationship Type
+  0040 a040	TEXT					//Value Type
+  0040 a043 (						//Concept Name Code Sequence
+   0008 0100	121077					//Code Value
+   0008 0102	DCM					//Code Schmeme Designator
+   0008 0104	Conclusion 				//Code Meaning
+  )
+  0040 a160	"Joint diffusion with superior joint plicae."	//Text Value
+ )
+)
+//
+//SOP Common Module
+0008 0016	1.2.840.10008.5.1.4.1.1.88.11		// SOP Class: Basic Text SR
+0008 0018	1.113654.1.2001.10.2.1.603		// SOP Instance UID

@@ -1,0 +1,15 @@
+# Study level query
+
+# We test for equality of these attributes.
+0008 0052 =
+0008 0061 =
+0010 0010 =
+0010 0020 =
+0010 0030 =
+0010 0040 =
+0020 000D =
+0020 1206 =
+
+# We just test that these are present in the response.
+0008 0054 Z
+0008 0056 O

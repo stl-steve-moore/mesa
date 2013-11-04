@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>50001: Eye Care Workflow: Order Initiated by Order Filler</mesa:title>
+ <mesa:dateStamp value="20060822"/>
+ <mesa:versionNumber value="10.1.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Eye Care</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Please run 50000 first.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Case 50001 involves the patient RICHMOND. This case will test ordering ordering at the Order Filler (see IHE TF Vol I, section 3.3.3. The table below gives the overview of the test case.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>SWF</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>50001/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/50001/50001.110.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>50001.110.a04.adt</mesa:identifier>
+   <mesa:description>A04: Register RICHMOND</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/50001/50001.110.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>50001.120.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser RICHMOND</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/50001/50001.120.a04.hl7</mesa:param>
+ </mesa:step>
+
+ <mesa:step>
+   <mesa:identifier>50001.130.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order EYE-200</mesa:description>
+   <mesa:transaction>3</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/50001/50001.130.o01.hl7</mesa:param>
+   <mesa:param>order/50001/50001.131.o01.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>50001.140.o02.orm</mesa:identifier>
+   <mesa:description>ORR: Placer Order Number</mesa:description>
+   <mesa:transaction>3</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER_O02</mesa:param>
+   <mesa:param>order/50001/50001.140.o02.hl7</mesa:param>
+   <mesa:param>ordplc/1001.hl7</mesa:param>
+ </mesa:step> 
+
+<mesa:text_file>
+  <mesa:file>50001/fini.txt</mesa:file>
+ </mesa:text_file>
+</mesa:testSteps>
+
+ 
+</mesa:TestDocument>
+

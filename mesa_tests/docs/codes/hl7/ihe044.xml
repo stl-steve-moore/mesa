@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>FT1-7: Transaction Code</mesa:title>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Text</mesa:column_name>
+			<mesa:column_name>Coding Scheme</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>MR1001</mesa:param>
+			<mesa:param>MRI HEAD</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>DX1001</mesa:param>
+			<mesa:param>MRI HEAD Interpretation</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

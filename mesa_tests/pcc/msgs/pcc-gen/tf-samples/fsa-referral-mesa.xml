@@ -1,0 +1,550 @@
+<ClinicalDocument xmlns='urn:hl7-org:v3'>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.2'/>
+  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.3'/>
+  <id root=' ' extension=' '/>
+  <code code='34133-9' displayName=' '
+    codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+  <title>Referral Summary</title>
+  <effectiveTime value='20070619012005'/>
+  <confidentialityCode code='N' displayName='Normal' 
+    codeSystem='2.16.840.1.113883.5.25' codeSystemName='Confidentiality' />
+  <languageCode code='en-US'/>     
+
+  <component><structuredBody>
+    <component>
+      <section>
+        <!-- Required Reason for Referral Section content -->
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.1'/>
+	<id root=' ' extension=' '/>
+	<code code='42349-1' displayName='REASON FOR REFERRAL'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+	  Reason for Referral: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.4'/>
+        <!-- Required History Present Illness Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10164-2' displayName='HISTORY OF PRESENT ILLNESS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		History Present Illness: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.11'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.6'/>
+        <!-- Required Active Problems Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11450-4' displayName='PROBLEM LIST'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Active Problems: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.8'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.19'/>
+        <!-- Required Current Meds Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10160-0' displayName='HISTORY OF MEDICATION USE'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Medications: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.7'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.2'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.13'/>
+        <!-- Required Allergies Section content -->
+	<id root=' ' extension=' '/>
+	<code code='48765-2' displayName='Allergies, adverse reactions, alerts'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Allergies and Other Adverse Reactions: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.3'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.8'/>
+        <!-- Required if known Resolved Problems Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11348-0' displayName='HISTORY OF PAST ILLNESS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Resolved Problems: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.12'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.11'/>
+        <!-- Required if known List of Surgeries Section content -->
+	<id root=' ' extension=' '/>
+	<code code='47519-4' displayName='HISTORY OF PROCEDURES'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		List of Surgeries: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.6'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.23'/>
+        <!-- Required if known Immunizations Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11369-6' displayName='HISTORY OF IMMUNIZATIONS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Immunizations : Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.12'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.4'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.14'/>
+        <!-- Required if known Family History Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10157-6' displayName='HISTORY OF FAMILY MEMBER DISEASES'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Family History: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.15'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.16'/>
+        <!-- Required if known Social History Section content -->
+	<id root=' ' extension=' '/>
+	<code code='29762-2' displayName='SOCIAL HISTORY'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Social History: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.18'/>
+        <!-- Optional Pertinent Review of Systems Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10187-3' displayName='REVIEW OF SYSTEMS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Review of Systems: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.16'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.25'/>
+        <!-- Required if known Vital Signs Section content -->
+	<id root=' ' extension=' '/>
+	<code code='8716-3' displayName='VITAL SIGNS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Vital Signs: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.24'/>
+        <!-- Required if known Physical Exam Section content -->
+	<id root=' ' extension=' '/>
+	<code code='29545-1' displayName='PHYSICAL EXAMINATION'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Physical Exam: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.27'/>
+        <!-- Required if known Relevant Diagnostic Surgical Procedures / Clinical Reports and Relevant Diagnostic Test and Reports Section content -->
+	<id root=' ' extension=' '/>
+	<code code='30954-2' displayName='STUDIES SUMMARY'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Relevant Diagnostic Surgical Procedures / Clnical Reports ...: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.31'/>
+        <!-- Required if known Plan of Care (new meds, labs, or x-rays ordered) Section content -->
+	<id root=' ' extension=' '/>
+	<code code='18776-5' displayName='TREATMENT PLAN'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Plan of Care: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='2.16.840.1.113883.10.20.1.1'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.34'/>
+        <!-- Required if known Advance Directives Section content -->
+	<id root=' ' extension=' '/>
+	<code code='42348-3' displayName='ADVANCE DIRECTIVES'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Advance Directives: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.XX'/>
+        <!-- Required Patient Administrative Identifiers -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.5'/>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.17'/>
+	<id root=' ' extension=' '/>
+	<code code='47420-5' displayName='FUNCTIONAL STATUS ASSESSMENT'
+	  codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Functional Status Assessment: Narrative Text
+	</text>  
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.5'/>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.17'/>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.2.1'/>
+	<id root=' ' extension=' '/>
+	<code code='47420-5' displayName='Functional Status Assessment'
+	  codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+	  Text as described above
+	</text>  
+	<component>
+	  <section>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.2.2'/>
+	    <!-- Required Pain Scale Assessment Section content -->
+	<id root=' ' extension=' '/>
+	<code code='38208-5' displayName='Pain severity'
+	  codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Pain Scale Assessment: Narrative Text
+	</text>   
+	<entry>
+	  <!-- Required Pain Score Observation element -->
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.1'/>
+
+<observation typeCode='OBS' moodCode='EVN'>
+<!-- Moore, why two of these -->
+ <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+ <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+ <id root=' ' extension=' '/>
+ <code code='38208-5|38221-8|38214-3' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+   <translation code='406127006' displayName='Pain intensity'
+     codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+ </code>
+ <text><reference value='#4'/></text>
+ <statusCode code='completed'/>
+ <effectiveTime value=' '/>
+ <repeatNumber value=' '/>
+ <value type='CO' />
+ <interpretationCode code='4' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+ <targetSiteCode code=' ' codeSystem=' ' codeSystemName=' '/>
+ <!-- Moore, need a target site, back or neck -->
+</observation>
+
+
+
+	</entry>
+	  </section>
+	</component>
+
+	<component>
+	  <section>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.2.3'/>
+	    <!-- Optional Braden Score Assessment Section content -->
+	<id root=' ' extension=' '/>
+	<code code='38228-3' displayName='BRADEN SCALE SKIN ASSESSMENT PANEL'
+	  codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+	  Text as described above
+	</text>   
+	<!-- Moore, entry or observation?? -->
+	<entry>
+	  <!-- Required Braden Score Observation element -->
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.2'/>
+	</entry>
+	<observation classCode='OBS' moodCode='EVN'>
+	 <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	 <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	 <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.2'/>
+	 <id root=' ' extension=' '/>
+	 <code code='38227-5' 
+	       displayName='Braden scale score.total' 
+	       codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	   <translation code='225392000' displayName='Pressure sore risk assessment'
+	      codeSystem='2.16.840.1.113883.6.1' codeSystemName='SNOMED CT'/>
+	 </code>
+	 <text><reference value='#23'/></text>
+	 <statusCode code='completed'/>
+	 <effectiveTime value=' '/>
+	 <repeatNumber value=' '/>
+	 <value type='INT' value='#15'/>
+	 <interpretationCode code='30207005' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	 <!-- Six entries, containing each of the assessment components -->
+	 <entryRelationship typeCoded='COMP'>
+
+	   <!-- Observation: Sensory Perception/response to pain -->
+	   <observation classCode='OBS' moodCode='EVN'>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	    <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.3'/>
+	    <id root=' ' extension=' '/>
+	    <code code='38222-6' 
+	          displayName='Sensory Perception' 
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code='24820001' displayName='response to pain' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+	    <text><reference value='#4'/></text>
+	    <statusCode code='completed'/>
+	    <repeatNumber value=' '/>
+	    <value type='INT' value='2'/>
+	    <interpretationCode code='425403003' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	   </observation>
+	   <!-- Observation: Moisture Exposure / moistness of skin -->
+	   <observation classCode='OBS' moodCode='EVN'>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	    <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.3'/>
+	    <id root=' ' extension=' '/>
+	    <code code='38229-1' 
+	          displayName='Moisture Exposure' 
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code='364532007' displayName='moistness of skin' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+	    <text><reference value='#4'/></text>
+	    <statusCode code='completed'/>
+	    <repeatNumber value=' '/>
+	    <value type='INT' value='4'/>
+	    <interpretationCode code='89292003' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	   </observation>
+	   <!-- Observation: Physical Mobility / ability to assume and maintain a position -->
+	   <observation classCode='OBS' moodCode='EVN'>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	    <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.3'/>
+	    <id root=' ' extension=' '/>
+	    <code code='38224-2' 
+	          displayName='Physical Mobility' 
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code='249864002' displayName='ability to assume and maintain a position' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+	    <text><reference value='#4'/></text>
+	    <statusCode code='completed'/>
+	    <repeatNumber value=' '/>
+	    <value type='INT' value='2'/>
+	    <interpretationCode code='160692006' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	   </observation>
+	   <!-- Observation: Physical Activity / physical activity -->
+	   <observation classCode='OBS' moodCode='EVN'>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	    <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.3'/>
+	    <id root=' ' extension=' '/>
+	    <code code='38223-4' 
+	          displayName='Physical Activity' 
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code='68130003' displayName='physical activity' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+	    <text><reference value='#4'/></text>
+	    <statusCode code='completed'/>
+	    <repeatNumber value=' '/>
+	    <value type='INT' value='2'/>
+	    <interpretationCode code='160684002' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	   </observation>
+	   <!-- Observation: Nutrition Intake Pattern / nutritional status -->
+	   <observation classCode='OBS' moodCode='EVN'>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	    <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.3'/>
+	    <id root=' ' extension=' '/>
+	    <code code='38225-9' 
+	          displayName='Nutrition Intake Pattern' 
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code='87286001' displayName='nutritional status' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+	    <text><reference value='#4'/></text>
+	    <statusCode code='completed'/>
+	    <repeatNumber value=' '/>
+	    <value type='INT' value='3'/>
+	    <interpretationCode code='88323005' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	   </observation>
+	   <!-- Observation: Friction and Shear / ability to mobilize -->
+	   <observation classCode='OBS' moodCode='EVN'>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+	    <templateId root='2.16.840.1.113883.10.20.1.31'/>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.3'/>
+	    <id root=' ' extension=' '/>
+	    <code code='38226-7'
+	          displayName='Friction and Shear'
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code='301438001' displayName='ability to mobilize' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+	    <text><reference value='#3'/></text>
+	    <statusCode code='completed'/>
+	    <repeatNumber value=' '/>
+	    <value type='INT' value='2'/>
+	    <interpretationCode code='88323005' codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	   </observation>
+
+	 </entryRelationship>
+
+	</observation>
+
+<!--
+	    <code code='38222-6|38229-1|38223-4|38224-2|38225-9|38226-7' 
+	          displayName=' ' 
+	          codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'>
+	      <translation code=' ' displayName=' ' 
+	        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+	    </code>
+-->
+
+	  </section>
+	</component>
+
+	<component>
+	  <section>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.2.4'/>
+	    <!-- Optional Geriatric Depression Scale Section content -->
+	    <id root=' ' extension=' '/>
+	    <code code='48542-5' displayName='Geriatric Depression Scale (GDS) Panel'
+	      codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	    <text>
+		Geriatric Depression Scale: Narrative Text
+	    </text>   
+	    <entry>
+<observation classCode='OBS' moodCode='EVN'>
+ <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+ <templateId root='2.16.840.1.113883.10.20.1.31'/>
+ <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.4'/>
+ <id root=' ' extension=' '/>
+ <code code='48544-1' 
+       displayName='Geriatric Depression Scale Total' 
+       codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+ <text><reference value='#xxx'/></text>
+ <statusCode code='completed'/>
+ <effectiveTime value=' '/>
+ <repeatNumber value=' '/>
+ <value type='INT' value=' '/>
+ <interpretationCode code=' ' codeSystem=' ' codeSystemName=' '/>
+ <methodCode code=' ' codeSystem=' ' codeSystemName=' '/>
+ <targetSiteCode code=' ' codeSystem=' ' codeSystemName=' '/>
+ <!-- From 0 to 30 entries, containing some or all of the assessment components -->
+ <entryRelationship typeCoded='COMP'>
+  <observation classCode='OBS' moodCode='EVN'>
+   <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+   <templateId root='2.16.840.1.113883.10.20.1.31'/>
+   <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.5'/>
+   <id root=' ' extension=' '/>
+   <code code='48512-8' displayName='Are you basically satisfied with your life' 
+         codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+   <text><reference value='#1'/></text>
+   <statusCode code='completed'/>
+   <repeatNumber value=' '/>
+   <value type='INT' value='0'/>
+   <interpretationCode code='373066001' displayName='Yes'
+        codeSystem='2.16.840.1.113883.6.96' codeSystemName='SNOMED CT'/>
+  </observation>
+ </entryRelationship>
+</observation>
+	    </entry>
+	  </section>
+	</component>
+
+	<component>
+	  <section>
+	    <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.2.5'/>
+	    <!-- Optional Minimum Data Set Section content -->
+	    <id root=' ' extension=' '/>
+	    <code code='46006-3' displayName='Physical functioning and structural problems'
+	      codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	    <text>
+	      Text as described above
+	    </text>   
+	    <entry>
+	      <!-- Optional Survey Panel element -->
+		<templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.7'/>
+	    </entry> 
+	    <entry>
+	      <!-- Optional Survey Observations element -->
+		<templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.12.3.6'/>
+	    </entry>
+	  </section>
+	</component>
+      </section>
+    </component>
+
+  </structuredBody></component>
+</ClinicalDocument>

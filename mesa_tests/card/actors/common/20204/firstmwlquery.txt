@@ -1,0 +1,12 @@
+The Order Filler has received a PPS from a modality for which it 
+has no scheduled procedure.  This indicates that it is Case C5.
+The Order Filler is now responsible for creating and scheduling a 
+procedure using the Study Instance UID and the procedure codes that 
+it received in the initial Modality PPS.
+
+Test 20204 now expects the first MWL query from the SECOND MODALITY 
+to go to the Order Filler.  There should now be an SPS entry on the 
+worklist. This query happens before the MPPS complete message from 
+the first modality, so there should still be entries for both modalities.
+
+

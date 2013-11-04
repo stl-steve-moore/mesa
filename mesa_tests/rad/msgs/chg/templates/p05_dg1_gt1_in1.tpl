@@ -1,0 +1,175 @@
+MSH
+ 1 |
+ 2 ^~\&
+ 3 $SENDING_APP$
+ 4 $SENDING_FACILITY$
+ 5 $RECEIVING_APP$
+ 6 $RECEIVING_FACILITY$
+ 7 
+ 8 
+ 9 BAR^P05
+ 10 $MESSAGE_CONTROL_ID$
+ 11 P
+ 12 2.3.1
+ 13 
+ 14 
+ 15 
+ 16 
+ 17 
+EVN
+ 1 
+ 2 $EVN_RECORDED_DATE_TIME$
+ 3 
+ 4 
+ 5 
+ 6 $EVN_EVENT_OCCURRED$
+PID
+ 1
+ 2 
+ 3 $PATIENT_ID$
+ 4 
+ 5 $PATIENT_NAME$
+ 6 
+ 7 $DATE_TIME_BIRTH$
+ 8 $SEX$
+ 9
+ 10 $RACE$
+ 11 $PATIENT_ADDRESS$
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17 
+ 18 $PATIENT_ACCOUNT_NUM$
+ 19 
+ 20 
+ 21 
+ 22 
+ 23 
+DG1
+ 1 $SETID_DG1$
+ 2
+ 3
+ 4 $DIAGNOSIS_DESCRIPTION$
+ 5 
+ 6 $DIAGNOSIS_TYPE$
+ 7
+ 8 
+ 9 
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17
+ 18 
+ 19
+GT1
+ 1 $SETID_GT1$
+ 2
+ 3 $GUARANTOR_NAME$
+ 4
+ 5
+ 6
+ 7
+ 8 
+ 9 
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17
+ 18 
+ 19
+ 20 
+ 21 
+ 22 
+ 23 
+ 24 
+ 25 
+ 26 
+ 27
+ 28 
+ 29
+ 30 
+ 31 
+ 32 
+ 33 
+ 34 
+ 35 
+ 36 
+ 37
+ 38 
+ 39
+ 40 
+ 41 
+ 42 
+ 43 
+ 44 
+ 45 
+ 46 
+ 47
+ 48 
+ 49
+ 50 
+ 51 
+ 52 
+ 53 
+ 54 
+ 55 
+IN1
+ 1 $SETID_IN1$
+ 2 $INSURANCE_PLAN_ID$
+ 3 $INSURANCE_COMPANY_ID$
+ 4 $INSURANCE_COMPANY_NAME$
+ 5
+ 6
+ 7
+ 8 
+ 9 
+ 10 
+ 11 
+ 12 
+ 13 
+ 14 
+ 15 
+ 16 
+ 17
+ 18 
+ 19
+ 20 
+ 21 
+ 22 
+ 23 
+ 24 
+ 25 
+ 26 
+ 27
+ 28 
+ 29
+ 30 
+ 31 
+ 32 
+ 33 
+ 34 
+ 35 
+ 36 
+ 37
+ 38 
+ 39
+ 40 
+ 41 
+ 42 
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48 
+ 49

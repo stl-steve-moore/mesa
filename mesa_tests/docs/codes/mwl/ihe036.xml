@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Scheduled Station AE Title (0040,0001) and Scheduled Station Name (0040,0010)</mesa:title>
+		<mesa:description>In the table:
+1.	The Scheduled Station AE Title and Scheduled Station Name have the same value. This is by design.
+2.	All names use underscore (_) as a separator. The table may make it look like the separators are space characters.
+</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Scheduled Station AE Title</mesa:column_name>
+			<mesa:column_name>Scheduled Station Name</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>MODALITY1</mesa:param>
+			<mesa:param>MODALITY1</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MR3T</mesa:param>
+			<mesa:param>MR3T</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+		
+	</mesa:codes>
+</mesa:CodeDocument>

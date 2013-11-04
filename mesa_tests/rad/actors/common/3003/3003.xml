@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 3003: Teaching File Export with Wait for More Data Sent via DICOM</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Teaching File/Clinical Trial</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>Export Selector</mesa:list>
+  <mesa:list>Export Manager</mesa:list>
+  <mesa:list>Reciever</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>None</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 3003 exercises the option of waiting for additional data. In this use case the data being waited for is transferred via DICOM, followed by a final manifest that includes the additional data. As the report is processed, systems will/should generate audit records as the report is reviewed and/or exported.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>TCE</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>3003/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:internal>
+   <mesa:param>GEN-TF-SOP-INSTANCES</mesa:param>
+   <mesa:param>T3003IM1</mesa:param>
+   <mesa:param>BROWN^JOHN</mesa:param>
+   <mesa:param>3003-1</mesa:param>
+   <mesa:param>19800212</mesa:param>
+   <mesa:param>F</mesa:param>
+   <mesa:param>MR</mesa:param>
+   <mesa:param>P2</mesa:param>
+   <mesa:param>X2</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+ </mesa:internal>
+ <mesa:internal>
+   <mesa:param>GEN-TF-KON-MOD</mesa:param>
+   <mesa:param>T3003KON1</mesa:param>
+   <mesa:param>T3003IM1</mesa:param>
+   <mesa:param>TCE001</mesa:param>
+ </mesa:internal>
+ <mesa:step>
+   <mesa:identifier>3003.010.dcm</mesa:identifier>
+   <mesa:description>C-Store of the DICOM objects to be exported to the teaching file</mesa:description>
+   <mesa:transaction>RAD-50</mesa:transaction>
+   <mesa:source>SEL</mesa:source>
+   <mesa:destination>MGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003IM1</mesa:param>
+   <mesa:param>MESAEXPSEL</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>3003.020.dcm</mesa:identifier>
+   <mesa:description>C-Store of the KOS document that holds the manifest of objects being exported thus far for the teaching file. The Document Title shall be EV (TCE001, IHERADTF, "For Teaching File Export"), and the Document Title Modifier shall have a Wait value.</mesa:description>
+   <mesa:transaction>RAD-51</mesa:transaction>
+   <mesa:source>SEL</mesa:source>
+   <mesa:destination>MGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003KON1</mesa:param>
+   <mesa:param>MESAEXPSEL</mesa:param> 
+   <mesa:param>WAIT</mesa:param>  
+ </mesa:step> 
+  <mesa:internal>
+   <mesa:param>GEN-TF-SOP-INSTANCES</mesa:param>
+   <mesa:param>T3003IM2</mesa:param>
+   <mesa:param>BROWN^JOHN</mesa:param>
+   <mesa:param>3003-1</mesa:param>
+   <mesa:param>19800212</mesa:param>
+   <mesa:param>F</mesa:param>
+   <mesa:param>MR</mesa:param>
+   <mesa:param>P2</mesa:param>
+   <mesa:param>X2</mesa:param>
+   <mesa:param>CT/CT1/CT1S1</mesa:param>
+ </mesa:internal>
+ <mesa:internal>
+   <mesa:param>GEN-TF-KON2</mesa:param>
+   <mesa:param>T3003KON2</mesa:param>
+   <mesa:param>T3003IM1</mesa:param>
+   <mesa:param>T3003IM2</mesa:param>
+   <mesa:param>TCE001</mesa:param>
+ </mesa:internal>
+ <mesa:step>
+   <mesa:identifier>3003.030.dcm</mesa:identifier>
+   <mesa:description>C-Store of additional DICOM objects to be exported to the teaching file</mesa:description>
+   <mesa:transaction>RAD-50</mesa:transaction>
+   <mesa:source>SEL</mesa:source>
+   <mesa:destination>MGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003IM2</mesa:param>
+   <mesa:param>MESAEXPSEL</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>3003.040.dcm</mesa:identifier>
+   <mesa:description>C-Store of the KOS document that holds the manifest of complete set of DICOM objects being exported to the teaching file. The Document Title shall be EV (TCE001, IHERADTF, "For Teaching File Export"), and the Document Title Modifier shall not have a Wait value.</mesa:description>
+   <mesa:transaction>RAD-51</mesa:transaction>
+   <mesa:source>SEL</mesa:source>
+   <mesa:destination>MGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003KON2</mesa:param>
+   <mesa:param>MESAEXPSEL</mesa:param> 
+  </mesa:step> 
+  <mesa:internal>
+   <mesa:param>DEIDENTIFY-IMG</mesa:param>
+   <mesa:param>T3003IM1</mesa:param>
+   <mesa:param>T3003IMD1</mesa:param>
+   <mesa:param>3003</mesa:param>
+   <mesa:param>deltaIM.txt</mesa:param>
+ </mesa:internal>
+<mesa:internal>
+   <mesa:param>DEIDENTIFY-IMG</mesa:param>
+   <mesa:param>T3003IM2</mesa:param>
+   <mesa:param>T3003IMD2</mesa:param>
+   <mesa:param>3003</mesa:param>
+   <mesa:param>deltaIM.txt</mesa:param>
+ </mesa:internal>
+  <mesa:internal>
+   <mesa:param>DEIDENTIFY-KON</mesa:param>
+   <mesa:param>3003</mesa:param>
+   <mesa:param>deltaKON.txt</mesa:param>
+   <mesa:param>GEN-TF-KON2</mesa:param>
+   <mesa:param>T3003KOND2</mesa:param>
+   <mesa:param>T3003IMD1</mesa:param>
+   <mesa:param>T3003IMD2</mesa:param>
+   <mesa:param>TCE001</mesa:param>
+ </mesa:internal>
+ <mesa:step>
+   <mesa:identifier>3003.050.dcm</mesa:identifier>
+   <mesa:description>C-Store of the de-identified KOS document that holds the complete manifest, along with the de-identified DICOM objects.</mesa:description>
+   <mesa:transaction>RAD-53</mesa:transaction>
+   <mesa:source>MGR</mesa:source>
+   <mesa:destination>RCVR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003KOND2</mesa:param>
+   <mesa:param>MESAEXPRCR</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>3001.050.dcm</mesa:identifier>
+   <mesa:description>C-Store of the de-identified KOS document that holds the manifest, along with the de-identified DICOM objects.</mesa:description>
+   <mesa:transaction>RAD-53</mesa:transaction>
+   <mesa:source>MGR</mesa:source>
+   <mesa:destination>RCVR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003IMD1</mesa:param>
+   <mesa:param>MESAEXPRCR</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>3001.050.dcm</mesa:identifier>
+   <mesa:description>C-Store of the de-identified KOS document that holds the manifest, along with the de-identified DICOM objects.</mesa:description>
+   <mesa:transaction>RAD-53</mesa:transaction>
+   <mesa:source>MGR</mesa:source>
+   <mesa:destination>RCVR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T3003IMD2</mesa:param>
+   <mesa:param>MESAEXPRCR</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:text_file>
+  <mesa:file>3003/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+
+ 
+</mesa:TestDocument>
+

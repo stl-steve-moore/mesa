@@ -1,0 +1,13 @@
+This is test 1603.
+It exercises IHE Reporting Workflow, use case 2
+In this test, the Report Creator claims a work item
+and then defers the work item.
+References:
+ IHE TF Vol I, Sec 13.4.2
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/1603.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

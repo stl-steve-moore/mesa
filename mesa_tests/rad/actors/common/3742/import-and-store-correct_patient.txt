@@ -1,0 +1,14 @@
+Carefully follow these instructions.  The sequence of activities is:
+
+	1. coerce attributes
+	2. store images
+
+
+(1) Your images are already imported.  The Importer should now coerce 
+the data in preparation for export. New information for patient IVORY^I 
+comes from the response to the MWL query. (This is the "correct" worklist entry.)
+
+(2) After coercing attributes as required, store the entire study (all imported 
+images) to the MESA Image Manager.
+
+

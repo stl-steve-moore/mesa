@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+
+
+  <title>CTX: 14110: XDS-SD Wrapper Format - HL7 CDA R2 (Schematron)</title>
+
+  <ns prefix="cda" uri="urn:hl7-org:v3"/>
+
+  <ns prefix="crs" uri="urn:hl7-org:crs"/>
+
+
+  <sch:pattern name="ClinicalDocument child-less elements  Reference ITI TF-1:7.1.8.2.1">
+
+    <sch:rule context="cda:ClinicalDocument">
+
+      <!-- ClinicalDocument/id is present, but  with no extension -->
+
+      <sch:assert test="cda:id"> ERR: ClinicalDocument/id is missing </sch:assert>
+      <sch:report test="cda:id"> CTX: ClinicalDocument/id exists (PASS) </sch:report>
+
+      <sch:assert test="cda:id[@extension]"> CTX: ClinicalDocument/id@extension is empty (PASS)</sch:assert>
+      <sch:report test="cda:id[@extension]"> ERR: ClinicalDocument/id is should have no extension</sch:report>
+
+      <sch:assert test="cda:effectiveTime[@value]"> ERR: ClinicalDocument/effectiveTime is missing </sch:assert>
+      <sch:report test="cda:effectiveTime[@value]"> CTX: ClinicalDocument/effectiveTime exists
+        (PASS) </sch:report>
+
+      <!-- ClinicalDocument/CconfidentialityCode@code and confidentialityCode@codeSystem are present -->
+
+      <sch:assert test="cda:confidentialityCode[@code]"> ERR:
+        ClinicalDocument/confidentialityCode@code is missing </sch:assert>
+      <sch:report test="cda:confidentialityCode[@code]"> CTX:
+        ClinicalDocument/confidentialityCode@code exists (PASS) </sch:report>
+
+      <sch:assert test="cda:confidentialityCode[@codeSystem]"> ERR:
+        ClinicalDocument/confidentialityCode@codeSystem is missing </sch:assert>
+      <sch:report test="cda:confidentialityCode[@codeSystem]"> CTX:
+        ClinicalDocument/confidentialityCode@codeSystem exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/languageCode is present -->
+
+      <sch:assert test="cda:languageCode[@code]"> ERR: ClinicalDocument/languageCode@code is missing </sch:assert>
+      <sch:report test="cda:languageCode[@code]"> CTX: ClinicalDocument/languageCode@code exists
+        (PASS) </sch:report>
+
+    </sch:rule>
+
+  </sch:pattern>
+
+  <sch:pattern name="ClinicalDocument/recordTarget elements Reference ITI TF-1:7.1.8.2.2">
+
+    <sch:rule context="cda:ClinicalDocument">
+
+      <!-- ClinicalDocument/recordTarget/patientRole/id is present with root and extension attributes -->
+
+      <sch:assert test="cda:recordTarget[cda:patientRole[cda:id[@root]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/id@root is missing </sch:assert>
+
+      <sch:report test="cda:recordTarget[cda:patientRole[cda:id[@root]]]"> CTX:
+        ClinicalDocument/recordTarget/patientRole/id@root exists (PASS) </sch:report>
+
+      <sch:assert test="cda:recordTarget[cda:patientRole[cda:id[@extension]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/id@extension is missing </sch:assert>
+
+      <sch:report test="cda:recordTarget[cda:patientRole[cda:id[@extension]]]"> CTX:
+        ClinicalDocument/recordTarget/patientRole/id@extension exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/recordTarget/patientRole/addr is present with at least country element -->
+
+      <sch:assert test="cda:recordTarget[cda:patientRole[cda:addr[cda:country]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/addr/country is missing </sch:assert>
+
+      <sch:report test="cda:recordTarget[cda:patientRole[cda:addr[cda:country]]]"> CTX:
+        ClinicalDocument/recordTarget/patientRole/addr/country exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/recordTarget/patientRole/patient/name is present with at least a given and family subelement -->
+
+      <sch:assert test="cda:recordTarget[cda:patientRole[cda:patient[cda:name[cda:given]]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/patient/name/given is missing </sch:assert>
+
+      <sch:report test="cda:recordTarget[cda:patientRole[cda:patient[cda:name[cda:given]]]]"> CTX:
+        ClinicalDocument/recordTarget/patientRole/patient/name/given exists (PASS) </sch:report>
+
+      <sch:assert test="cda:recordTarget[cda:patientRole[cda:patient[cda:name[cda:family]]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/patient/name/family is missing </sch:assert>
+
+      <sch:report test="cda:recordTarget[cda:patientRole[cda:patient[cda:name[cda:family]]]]"> CTX:
+        ClinicalDocument/recordTarget/patientRole/patient/name/family exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode is present -->
+
+      <sch:assert
+        test="cda:recordTarget[cda:patientRole[cda:patient[cda:administrativeGenderCode]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/patient/administrativeGenderCode is missing </sch:assert>
+
+      <sch:report
+        test="cda:recordTarget[cda:patientRole[cda:patient[cda:administrativeGenderCode]]]"> CTX:
+        ClinicalDocument/recordTarget/patient/administrativeGenderCode exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/recordTarget/patientRole/patient/birthTime is present  with precision to the year-->
+
+      <sch:assert test="cda:recordTarget[cda:patientRole[cda:patient[cda:birthTime[@value]]]]"> ERR:
+        ClinicalDocument/recordTarget/patientRole/patient/birthTime is missing </sch:assert>
+
+      <sch:report test="cda:recordTarget[cda:patientRole[cda:patient[cda:birthTime[@value]]]]"> CTX:
+        ClinicalDocument/recordTarget/patient/birthTime exists (PASS) </sch:report>
+
+    </sch:rule>
+
+  </sch:pattern>
+
+  <!-- ClinicalDocument/recordTarget/author (original):  no checks for these elements; only required if known Ref. ITI TF-1:7.1.8.2.3-->
+
+  <sch:pattern name="ClinicalDocument/author - scanner - elements -- Reference ITI TF-1:7.1.8.2.4">
+
+    <sch:rule context="cda:ClinicalDocument">
+
+      <sch:assert test="cda:author"> ERR: ClinicalDocument/author is missing </sch:assert>
+
+      <sch:report test="cda:author"> CTX: ClinicalDocument/author exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/author/time -->
+
+      <sch:assert test="cda:author[cda:time]"> ERR: ClinicalDocument/author/time is missing </sch:assert>
+
+      <sch:report test="cda:author[cda:time]"> CTX: ClinicalDocument/author/time exists (PASS) </sch:report>
+
+      <!--       NOT WORKING
+        <sch:assert test="cda:author[cda:time[@value]]=cda:effectiveTime[@value]" > ERR: ClinicalDocument/author/time must equal ClinicalDocument/effectiveTime </sch:assert>
+      
+      <sch:report test="cda:author[cda:time[@value]]=cda:effectiveTime[@value]"> CTX: ClinicalDocument/author/time matches ClinicalDocument/effectiveTime (PASS) </sch:report>
+      -->
+
+      <!-- ClinicalDocument/author/assignedAuthor/id@root -->
+
+      <sch:assert test="cda:author[cda:assignedAuthor[cda:id[@root]]]"> ERR:
+        ClinicalDocument/author/assignedAuthor/id@root is missing </sch:assert>
+
+      <sch:report test="cda:author[cda:assignedAuthor[cda:id[@root]]]"> CTX:
+        ClinicalDocument/author/assignedAuthor/id@root exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/author/assignedAuthor//assignedAuthoringDevice/code -->
+
+      <sch:assert test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code]]]"> ERR:
+        ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code is missing </sch:assert>
+
+      <sch:report test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code]]]"> CTX:
+        ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code exists (PASS) </sch:report>
+
+      <sch:assert
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@codeSystem='1.2.840.10008.2.16.4']]]]"
+        > ERR: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code@codeSystem wrong
+        value </sch:assert>
+
+      <sch:report
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@codeSystem='1.2.840.10008.2.16.4']]]]"
+        > CTX: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code@codeSystem
+        correct (PASS) </sch:report>
+
+      <sch:assert
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@code='CAPTURE']]]] or cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@code='WSD']]]]"
+        > ERR: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code@code wrong value </sch:assert>
+
+      <sch:report
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@code='CAPTURE']]]] or cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@code='WSD']]]]"
+        > CTX: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code@code correct
+        (PASS) </sch:report>
+
+      <sch:assert
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@displayName='Image Capture']]]] or cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@displayName='Workstation']]]]"
+        > ERR: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code@displayName wrong
+        value </sch:assert>
+
+      <sch:report
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@displayName='ImageCapture']]]] or cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:code[@displayName='Workstation']]]]"
+        > CTX: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/code@displayName
+        correct (PASS) </sch:report>
+
+      <!-- ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/manufacturerModelName -->
+
+      <sch:assert
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:manufacturerModelName]]]"
+        > ERR: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/manufacturerModelName
+        is missing </sch:assert>
+
+      <sch:report
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:manufacturerModelName]]]"
+        > CTX: ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/manufacturerModelName
+        exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/author/assignedAuthor//assignedAuthoringDevice/softwareName -->
+
+      <sch:assert
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:softwareName]]]"> ERR:
+        ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/softwareName is missing </sch:assert>
+
+      <sch:report
+        test="cda:author[cda:assignedAuthor[cda:assignedAuthoringDevice[cda:softwareName]]]"> CTX:
+        ClinicalDocument/author/assignedAuthor/assignedAuthoringDevice/softwareModelName exists
+        (PASS) </sch:report>
+
+      <!-- ClinicalDocument/author/assignedAuthor/representedOrganization@root -->
+
+      <sch:assert test="cda:author[cda:assignedAuthor[cda:representedOrganization[cda:id[@root]]]]">
+        ERR: ClinicalDocument/author/assignedAuthor/representedOrganization@root is missing </sch:assert>
+
+      <sch:report test="cda:author[cda:assignedAuthor[cda:representedOrganization[cda:id[@root]]]]">
+        CTX: ClinicalDocument/author/assignedAuthor/representedOrganization@root exists (PASS) </sch:report>
+
+    </sch:rule>
+
+  </sch:pattern>
+
+  <!-- ClinicalDocument/recordTarget/author (original):  no checks for these elements; only required if known Ref. ITI TF-1:7.1.8.2.3-->
+
+  <sch:pattern name="ClinicalDocument/dataEnterer elements -- Reference ITI TF-1:7.1.8.2.5">
+
+    <sch:rule context="cda:ClinicalDocument">
+
+      <sch:assert test="cda:dataEnterer"> ERR: ClinicalDocument/dataEnterer is missing </sch:assert>
+
+      <sch:report test="cda:dataEnterer"> CTX: ClinicalDocument/dataEnterer exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/dataEnterer/time -->
+
+      <sch:assert test="cda:dataEnterer[cda:time]"> ERR: ClinicalDocument/dataEnterer/time is
+        missing </sch:assert>
+
+      <sch:report test="cda:dataEnterer[cda:time]"> CTX: ClinicalDocument/dataEnterer/time exists
+        (PASS) </sch:report>
+
+      <!-- ClinicalDocument/dataEnterer/assignedEntity/id@root and @extension -->
+
+      <sch:assert test="cda:dataEnterer[cda:assignedEntity[cda:id[@root]]]"> ERR:
+        ClinicalDocument/dataEnterer/assignedEntity/id@root is missing </sch:assert>
+
+      <sch:report test="cda:dataEnterer[cda:assignedEntity[cda:id[@root]]]"> CTX:
+        ClinicalDocument/dataEnterer/assignedEntity/id@root exists (PASS) </sch:report>
+
+
+      <sch:assert test="cda:dataEnterer[cda:assignedEntity[cda:id[@extension]]]"> ERR:
+        ClinicalDocument/dataEnterer/assignedEntity/id@extension is missing </sch:assert>
+
+      <sch:report test="cda:dataEnterer[cda:assignedEntity[cda:id[@extension]]]"> CTX:
+        ClinicalDocument/dataEnterer/assignedEntity/id@extension exists (PASS) </sch:report>
+
+    </sch:rule>
+
+  </sch:pattern>
+
+  <sch:pattern name="ClinicalDocument/custodian elements -- Reference ITI TF-1:7.1.8.2.6">
+
+    <sch:rule context="cda:ClinicalDocument">
+
+      <sch:assert test="cda:custodian"> ERR: ClinicalDocument/custodian is missing </sch:assert>
+
+      <sch:report test="cda:custodian"> CTX: ClinicalDocument/custodian exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/name and addr-->
+
+      <sch:assert
+        test="cda:custodian[cda:assignedCustodian[cda:representedCustodianOrganization[cda:name]]]">
+        ERR: ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/name is
+        missing </sch:assert>
+
+      <sch:report
+        test="cda:custodian[cda:assignedCustodian[cda:representedCustodianOrganization[cda:name]]]">
+        CTX: ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/name
+        exists (PASS) </sch:report>
+
+      <sch:assert
+        test="cda:custodian[cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr]]]">
+        ERR: ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/addr is
+        missing </sch:assert>
+
+      <sch:report
+        test="cda:custodian[cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr]]]">
+        CTX: ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/addr
+        exists (PASS) </sch:report>
+
+      <sch:assert
+        test="cda:custodian[cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:country]]]]"
+        > ERR:
+        ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/addr/country
+        is missing </sch:assert>
+
+      <sch:report
+        test="cda:custodian[cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:country]]]]"
+        > CTX:
+        ClinicalDocument/custodian/assignedCustodian/representedCustodianOrganization/addr/country
+        exists (PASS) </sch:report>
+
+    </sch:rule>
+
+  </sch:pattern>
+
+  <!-- ClinicalDocument/legalAuthenticator:  no checks for these elements; not required Ref. ITI TF-1:7.1.8.2.7-->
+
+  <!-- ClinicalDocument/documentationOf:  no checks for these elements; only required if known Ref. ITI TF-1:7.1.8.2.8-->
+
+  <sch:pattern name="ClinicalDocument/component/nonXMLBody  -- Reference ITI TF-1:7.1.8.2.9">
+
+    <sch:rule context="cda:ClinicalDocument">
+
+      <sch:assert test="cda:component[cda:nonXMLBody]"> ERR: ClinicalDocument/component/nonXMLBody
+        is missing </sch:assert>
+
+      <sch:report test="cda:component[cda:nonXMLBody]"> CTX: ClinicalDocument/component/nonXMLBody
+        exists (PASS) </sch:report>
+
+      <!-- ClinicalDocument/component/nonXMLBody/text -->
+
+      <sch:assert
+        test="cda:component[cda:nonXMLBody[cda:text[@mediaType='application/pdf']]] or cda:component[cda:nonXMLBody[cda:text[@mediaType='text/plain']]]"
+        > ERR: ClinicalDocument/component/nonXMLBody/text@mediaType wrong value </sch:assert>
+
+      <sch:report
+        test="cda:component[cda:nonXMLBody[cda:text[@mediaType='application/pdf']]] or cda:component[cda:nonXMLBody[cda:text[@mediaType='text/plain']]]"
+        > CTX: ClinicalDocument/component/nonXMLBody/text@mediaType correct (PASS) </sch:report>
+
+      <sch:assert test="cda:component[cda:nonXMLBody[cda:text[@representation='B64']]]"> ERR:
+        ClinicalDocument/component/nonXMLBody/text@representation must be B64 </sch:assert>
+
+      <sch:report test="cda:component[cda:nonXMLBody[cda:text[@representation='B64']]]"> CTX:
+        ClinicalDocument/component/nonXMLBody/text@representation correct (PASS) </sch:report>
+
+    </sch:rule>
+
+  </sch:pattern>
+
+</sch:schema>

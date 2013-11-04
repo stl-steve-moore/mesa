@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 	<mesa:header>
+ 		<mesa:title>Ordering Codes and Requested Procedure Codes: Universal Service ID Components 1-3</mesa:title>
+ 	</mesa:header>
+ 
+  <mesa:codes>
+   <mesa:columns>
+    <mesa:column_name>Scenario</mesa:column_name>
+    <mesa:column_name>Identifier</mesa:column_name>
+    <mesa:column_name>Text</mesa:column_name>
+    <mesa:column_name>Coding Scheme</mesa:column_name>
+   </mesa:columns>	 
+   <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P1</mesa:param>
+    <mesa:param>Procedure 1</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+ <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P2</mesa:param>
+    <mesa:param>Procedure 2</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P3</mesa:param>
+    <mesa:param>Procedure 3</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P4</mesa:param>
+    <mesa:param>Procedure 4</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P5</mesa:param>
+    <mesa:param>Procedure 5</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P6</mesa:param>
+    <mesa:param>Procedure 6</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P7</mesa:param>
+    <mesa:param>Procedure 7</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P8</mesa:param>
+    <mesa:param>Procedure 8</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P9</mesa:param>
+    <mesa:param>Procedure 9</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P10</mesa:param>
+    <mesa:param>Procedure 10</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P20</mesa:param>
+    <mesa:param>Procedure 20</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+      <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P21</mesa:param>
+    <mesa:param>Procedure 21</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P22</mesa:param>
+    <mesa:param>Procedure 22</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P23</mesa:param>
+    <mesa:param>Procedure 23</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P101</mesa:param>
+    <mesa:param>Mammography Screening</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>CATH.001</mesa:param>
+    <mesa:param>Cardiac Cath Consultation</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>ECHO.001</mesa:param>
+    <mesa:param>TTE</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>ECHO.002</mesa:param>
+    <mesa:param>STRESS ECHO</mesa:param>
+    <mesa:param>ERL_MESA</mesa:param>
+   </mesa:coded_entry>
+        <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10110</mesa:param>
+    <mesa:param>US Procedure 1</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10150</mesa:param>
+    <mesa:param>US Procedure 2</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10210</mesa:param>
+    <mesa:param>Radiological Examination: Chest X-Ray</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10250</mesa:param>
+    <mesa:param>Radiological Examination: Abdominal X-Ray</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10310</mesa:param>
+    <mesa:param>Ultrasound Examination: Cardiac Screening</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10350</mesa:param>
+    <mesa:param>Ultrasound Examination: Stress Echo</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10410</mesa:param>
+    <mesa:param>Radiological Examination: Left Leg</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10450</mesa:param>
+    <mesa:param>Radiological Examination: Left Ankle</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10710</mesa:param>
+    <mesa:param>Transabdominal Ultrasound Scan</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10750</mesa:param>
+    <mesa:param>Endovaginal Pelvic Scan</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10910</mesa:param>
+    <mesa:param>Computed Tomography: Chest</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10950</mesa:param>
+    <mesa:param>Computed Tomography: Abdomen</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11010</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Head</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11050</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Neck</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11060</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Cardiac</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11210</mesa:param>
+    <mesa:param>Angiography: Cardiac</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11250</mesa:param>
+    <mesa:param>Angiography: Carotid</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11510</mesa:param>
+    <mesa:param>Radiological Examination: Mammography</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11610</mesa:param>
+    <mesa:param>Radiological Examination: Skull</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11650</mesa:param>
+    <mesa:param>Radiological Examination: C-Spine</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>11810</mesa:param>
+    <mesa:param>OB-GYN Ultrasound</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>12010</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Left Knee</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>12050</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Back</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>12110</mesa:param>
+    <mesa:param>Radiological Examination: Right Hand</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>12150</mesa:param>
+    <mesa:param>Radiological Examination: Right Wrist</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>12510</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Brain</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16110</mesa:param>
+    <mesa:param>DEXA Exam: AP Spine</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16150</mesa:param>
+    <mesa:param>DEXA Exam: Left Femur</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16151</mesa:param>
+    <mesa:param>DEXA Exam: Right Femur</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16210</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Ankle</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16212</mesa:param>
+    <mesa:param>Nuclear Lung Scan</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16214</mesa:param>
+    <mesa:param>Nuclear Bone Scan</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16216</mesa:param>
+    <mesa:param>Nuclear RVG</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16310</mesa:param>
+    <mesa:param>Dynamic - Renalgram</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16320</mesa:param>
+    <mesa:param>Myocardial Perfusion</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16350</mesa:param>
+    <mesa:param>Gated Spect - Cardiac Gated Spect</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16370</mesa:param>
+    <mesa:param>Spect - Bone Spect</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+<mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>16410</mesa:param>
+    <mesa:param>Radiological Examination: Ankle</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>17110</mesa:param>
+    <mesa:param>RF Examination: Stomach</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>17130</mesa:param>
+    <mesa:param>RF Examination: Colon</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>18110</mesa:param>
+    <mesa:param>Angiography: Diagnostic Catheterization</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>18111</mesa:param>
+    <mesa:param>Angiography: Therapeutic Catheterization</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>19110</mesa:param>
+    <mesa:param>Electrophysiology: Diagnostic ECG</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>20110</mesa:param>
+    <mesa:param>Group Test</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+   </mesa:coded_entry>
+ </mesa:codes>	
+</mesa:CodeDocument>
+ 

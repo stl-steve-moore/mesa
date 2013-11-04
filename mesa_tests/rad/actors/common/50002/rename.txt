@@ -1,0 +1,5 @@
+
+The next events are HL7 messages to rename the patient.
+These are followed by a queries to the Order Filler and Image Manager
+to see if the name change was processed.
+

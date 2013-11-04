@@ -1,0 +1,5 @@
+This is ITI test 10502.
+It is designed to test the PIX Integretation Profile.
+The query case is #3.
+References:
+ ITI TF-2: 3.9.4.2.2

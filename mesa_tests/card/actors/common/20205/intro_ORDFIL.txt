@@ -1,0 +1,2 @@
+John Doe will be the temporary patient name.
+WU-MED-20205^^^MESA will be the temporary patient ID.

@@ -1,0 +1,7 @@
+This is ITI test 10512a.
+It is designed to test the PIX Integretation Profile.
+In this test, the assigning authority in the PID has one
+component: Namespace ID
+  HIMS2005
+References:
+ ITI TF-2: 3.8.4

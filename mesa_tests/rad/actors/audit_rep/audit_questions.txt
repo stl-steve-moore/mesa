@@ -1,0 +1,26 @@
+This text file contains questions for developers of
+Audit Record Repository actors.
+Run the tests that are specified, use this file
+to answer questions, and then send the modified
+file to the Project Manager.
+
+1201, 11121
+ What is the type of actor that was started and what is
+ the name of the local user?
+
+1202, 11122
+ What was the configuration change?
+ What is the name of the local user who made the change?
+
+1203, 11123
+ What is the name of the authenticated user?
+
+1502.
+ Name all of the users who had access to the patient record of BROWN^JAMES.
+ Who was the last user who had access to the patient record of BROWN^JAMES?
+
+11125.
+ Name the user who had access to the patient record of Sick^Patient.
+
+Optional Bonus Question.
+ Who is buried in Grant's tomb?

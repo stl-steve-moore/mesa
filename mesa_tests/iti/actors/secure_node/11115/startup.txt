@@ -1,0 +1,3 @@
+ACTOR_NAME = Acquisition_Modality
+LOCAL_USER = Moore
+HOST_NAME = drno

@@ -1,0 +1,14 @@
+Test: 3720
+Title: 3720: Importer (portable media) Coerces Attributes - Unscheduled Import Option
+
+References:
+ Import Reconciliation Workflow -- RAD TF-1: 21.3.1.3 and RAD TF-2: Appendix A.2
+
+Test Case 3720 involves transactions for the Unscheduled Import Option
+for Importers from digital media (eg CD) in the Import Reconciliation Workflow. 
+This test requires the Importer actor to import a DICOM study from media 
+provided with the MESA tools. Ensure that this media is available prior
+to starting this test.    
+
+If you import scanned film or documents, you should run test 3721 instead. 
+

@@ -1,0 +1,9 @@
+Fusion Test 3512
+
+Acquisition Modalities capable of creating and storing
+Spatial Registration objects must run this test.
+
+In this test, the Modality determines the spatial transformation
+necessary between two data sets it has acquired, then creates and 
+C-STORES a valid DICOM Spatial Registration object. 
+

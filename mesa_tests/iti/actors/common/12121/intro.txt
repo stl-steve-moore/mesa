@@ -1,0 +1,4 @@
+This is ITI test 12121.
+It is designed to test the PAM Integretation Profile.
+References:
+ ITI TF Supplement 2005-2006

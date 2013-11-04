@@ -1,0 +1,6 @@
+<AuditMessage>
+ <EventIdentification EventActionCode="C" EventDateTime="2006-08-31T10:38:34" EventOutcomeIndicator="0">
+  <EventID code="IHE0001" codeSystemName="IHE" displayName="Health Services Provision Event" />
+ </EventIdentification>
+</AuditMessage>
+

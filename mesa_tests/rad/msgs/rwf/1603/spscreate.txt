@@ -1,0 +1,4 @@
+schedWorkitemCode	110005^DCM^Interpretation^
+stationname	REPORTER_1^ihedemo^
+stationclass	REPORTER^ihedemo^^
+startdatetime	200304111300

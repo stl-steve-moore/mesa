@@ -1,0 +1,3 @@
+This is the end of the script for loading ADT messages
+into the Patient Demographics Supplier. You should
+now run the appropriate individual tests.

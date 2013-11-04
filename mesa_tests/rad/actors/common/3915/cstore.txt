@@ -1,0 +1,8 @@
+Create one Mammography image which encodes Partial View in (0028,1350) and
+the Partial View Code Sequence (0028,1352).  These attributes are evaluated
+in this test.
+
+The Patient ID should be MESA3915. The patient name should be MESA^Mammo3915. 
+These values are not critical to the test.
+
+You should now C-STORE [RAD-8] this Mammography image to the MESA Image Manager.

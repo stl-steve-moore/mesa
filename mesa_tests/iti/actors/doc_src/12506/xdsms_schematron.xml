@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE schema [
+<!-- 
+Replace baseURI below with a reference to the published Implementation Guide HTML.
+-->
+<!ENTITY baseURI "">
+]>
+<schema xmlns="http://www.ascc.net/xml/schematron" xmlns:cda="urn:hl7-org:v3" xmlns:crs='urn:hl7-org:crs' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'>
+    
+    <title>Schematron schema for validating conformance to XDS-MS Content Profile</title>
+    <ns prefix="cda" uri="urn:hl7-org:v3" />
+    <ns prefix="crs" uri="urn:hl7-org:crs" />
+    <ns prefix="xsi" uri="http://www.w3.org/2001/XMLSchema-instance"/>
+    <pattern name='Basics'>
+        <rule id='CDA-Document' context='/'>
+            <assert test='cda:ClinicalDocument'>
+                Please try again with a CDA document.
+            </assert>
+        </rule>
+        <rule id='XDS-MS-Template' context='/cda:ClinicalDocument'>
+            <assert test='cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="XDS-MS-2005"]'>
+                The Clinical Document must have a template ID indicating 
+                compliance with the XDS-MS Content Profile.
+            </assert>
+        </rule>
+        <rule id='goodCodingPractice' context='cda:code|cda:value[xsi:type="cda:CD"]'>
+            <assert test='(@code and @codeSystem) or (not(@code) and not(@codeSystem))'>
+                Both code and and codeSystem must be present, or both must be omitted.
+            </assert>
+            <assert test='(@code and @displayName) or not(@code)'>
+                Warning: displayName should be provided for each code.
+            </assert>
+            <assert test='(@codeSystem and @codeSystemName) or not(@codeSystem)'>
+                Warning: codeSystemName should be provided for each codeSystem.
+            </assert>
+        </rule>
+        <rule id='references' context='cda:reference'>
+            <assert test='@value'>
+                The reference element must have a value pointing to the text in the narrative.
+            </assert>
+            <assert test='substring(@value,1,1)="#"'>
+                The vaue of the reference must be a local uri starting with 
+                a # character.
+            </assert>
+            <assert test='count(//cda:section/cda:text//cda:*[concat("#",@ID) = current()/@value])=1'>
+                An element with matching ID must be present for this reference value.
+            </assert>
+            <assert test='count(ancestor::cda:section[1]/cda:text//cda:*[concat("#",@ID) = current()/@value])=1'>
+                Warning: The element with matching ID should be in the same section as this entry.
+            </assert>
+        </rule>
+    </pattern>
+    <pattern id='comments'>
+        <rule id='comment' context='cda:observation[cda:code[(@code="COMMENT" or @code="INSTRUCT") and @codeSystem="1.3.6.1.4.1.19376.1.5.3.2"]]'>
+            <assert test='@classCode="OBS"'>
+                The classCode of a comment must be OBS.
+            </assert>
+            <assert test='@moodCode="EVN"'>
+                The moodCode of a comment must be EVN.
+            </assert>
+            <assert test='cda:statusCode/@code="completed"'>
+                A comment must have a completed statusCode. 
+            </assert>
+            <assert test='cda:text'>
+                A text element is required.
+            </assert>
+            <assert test='cda:text/cda:reference'>
+                An reference element is required in the text element.
+            </assert>
+            <!-- A comment should appear inside a entryRelationShip -->
+            <assert test='parent::cda:entryRelationship'>
+                A comment must appear in an entryRelationship element.
+            </assert>
+            <assert test='../@typeCode="SUBJ"'>
+                The typeCode of the entryRelationship element containing a comment
+                must be SUBJ.
+            </assert>
+            <assert test='../@inversionInd="true"'>
+                The inversionInd attribute of the entryRelationship element containing
+                a comment must be true.
+            </assert>
+        </rule>
+        <!--
+        A comment, depending upon it's type (COMMENT|INSTRUCT) should appear
+        inside a condition, allergy, or medication.
+        -->
+        <rule id='comment-in-observation' context='cda:code[@code="COMMENT" and @codeSystem="1.3.6.1.4.1.19376.1.5.3.2"]'>
+            <assert test='../self::cda:observation'>
+                A comment must be an observation.
+            </assert>
+            <assert test='../../../self::cda:observation'>
+                Comments must only be provided for observations.
+            </assert>
+            <assert test='../../preceding::cda:value|../../preceding::cda:entryRelationship[TBD]'>
+                Comments should follow the value or severity observation [or reaction]
+            </assert>
+        </rule>
+        
+        <rule id='instruct-in-medication' context='cda:code[@code="INSTRUCT" and @codeSystem="1.3.6.1.4.1.19376.1.5.3.2"]'>
+            <assert test='../self::cda:observation'>
+                Instructions should only appear in an observation entry.
+            </assert>
+            <assert test='../../../self::cda:substanceAdministration'>
+                Instructions should only be provided for medications.
+            </assert>
+        </rule>
+    </pattern>
+
+    <pattern id='condition-common'>
+        <rule id='condition-or-allergy' context='cda:observation[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and (@extension="condition" or @extension="allergy")]]'>
+            <!-- meet the rules for conditions -->
+            <assert test='@classCode="COND"'>
+                The classCode of a condition observation must be COND.  
+            </assert>
+            <assert test='@moodCode="EVN"'>
+                The moodCode of a condition oberservation must be EVN.
+            </assert>
+            <assert test='cda:id'>
+                The condition must have an id.
+            </assert>
+            <assert test='cda:statusCode and cda:statusCode[@code="completed" or @code="active"]'>
+                The statusCode must be present, and must have a value of completed or active.
+            </assert>
+            <assert test='cda:effectiveTime/cda:low'>
+                Warning:  The low value of the effectiveTime is not present.
+            </assert>
+            <assert test='(cda:statusCode[@code="completed"] and cda:effectiveTime/cda:high) or cda:statusCode[@code="active"]'>
+                A completed observation must have a high value for the effectiveTime. 
+            </assert>
+            <assert test='(cda:statusCode[@code="active"] and not(cda:effectiveTime/cda:high)) or cda:statusCode[@code="completed"]'>
+                An active observation must not have a high value for the effectiveTime. 
+            </assert>
+            <assert test='cda:value'>
+                A value must be present describing the condition.
+            </assert>
+            <assert test='cda:value[@xsi:type="cda:CD"]'>
+                The type of the value must be CD.
+            </assert>
+            <assert test='cda:value[@code and @codeSystem] or cda:value[not(@code) and not(@codeSystem)]'>
+                Both code and codeSystem must be either specified or omitted.
+            </assert>
+            <assert test='cda:value[@code and @displayName] or cda:value[not(@code)]'>
+                Warning: when a code is provided, a displayName should also be provided.
+            </assert>
+            <assert test='cda:value[@codeSystem and @codeSystemName] or cda:value[not(@codeSystem)]'>
+                Warning: when a codeSystem is provided, a codeSystemName should also be provided.
+            </assert>
+            <assert test='cda:value/cda:originalText'>
+                An originalText element is required in the value element.
+            </assert>
+            <assert test='cda:value/cda:originalText/cda:reference'>
+                An reference element is required in the original text.
+            </assert>
+        </rule>
+    </pattern>
+    <pattern id='condition-specific'>
+        <rule id='condition' context='cda:observation[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="condition"]]'>
+            <!-- there are no specifics here -->            
+        </rule>
+        <rule id='allergy' context='cda:observation[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="allergy"]]'>
+            
+        </rule>
+        <rule id='reaction' context='cda:observation[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="reaction"]]'>
+            <!-- the reaction must follow the value -->
+            <assert test='../preceding::cda:value'>
+                The reaction must follow the value.
+            </assert>
+        </rule>
+    </pattern>
+    <pattern id='medications'>
+        <rule id='medication' context='cda:substanceAdministration[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="medication"]]'>
+            
+        </rule>
+        <rule id='split-dose' context='cda:substanceAdministration[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="split-dose"]]'>
+            
+        </rule>
+        <rule id='tapered-dose' context='cda:substanceAdministration[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="tapered-dose"]]'>
+            
+        </rule>
+        <rule id='conditional-dose' context='cda:substanceAdministration[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="conditional-dose"]]'>
+            
+        </rule>
+        <rule id='combination-medication' context='cda:substanceAdministration[cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1" and @extension="combination-medicine"]]'>
+            
+        </rule>
+    </pattern>
+    <pattern name='RequiredSections' see='&baseURI;#ClinicalDocument'>
+        <p>This schema applies to CDA Release 2.0 documents.</p>
+        <!-- Context is for referrals -->
+        <rule id='Referrals' context='/cda:ClinicalDocument[cda:code[@code="34133-9"]]'>
+            <!-- Required sections -->
+            <!--
+            1.3     Active Problems         R   Conditions          11450-4     PROBLEM LIST
+            1.6     Resolved Problems       R2  Conditions          11348-0     HISTORY OF PAST ILLNESS
+            1.4     Current Meds            R   Medications         10160-0     HISTORY OF MEDICATION USE
+            1.5     Allergies and Other     R   Allergies and       10155-0     HISTORY OF ALLERGIES
+                    Adverse Reactions           Adverse Reactions   
+            1.1     Reason for Referral     R   Reason for Referral X-RFR       REASON FOR REFERRAL
+            1.17    Advance Directives      R2  Advance Directives  X-ADVDIR    ADVANCE DIRECTIVES
+            1.2     History of              R   History of Present  10164-2     HISTORY OF PRESENT ILLNESS
+                    Present Illness             Illness 
+                                            O   Functional Status   10158-4     HISTORY OF FUNCTIONAL STATUS
+            1.9     Family History          R2  Family History      10157-6     HISTORY OF FAMILY MEMBER DISEASES
+            1.10    Social History          R2  Social History      29762-2     SOCIAL HISTORY
+            1.8     Immunizations           R2  Immunizations       11369-6     HISTORY OF IMMUNIZATIONS
+            1.7     List of surgeries       R2  Past Surgical       10167-5     HISTORY OF SURGICAL PROCEDURES
+                                                History 
+                                            O   Prior Encounters    11346-4     HISTORY OF OUTPATIENT VISITS
+                                            O   Prior Encounters    11336-5     HISTORY OF HOSPITALIZATIONS
+            1.11    Review of Systems       O   Review of Systems   10187-3     REVIEW OF SYSTEMS
+            1.13    PE                      R2  Physical Exam       10210-3     GENERAL STATUS, PHYSICAL FINDINGS
+            1.12    Vitals                  R2  Physical Exam       8716-3      VITAL SIGNS, PHYSICAL FINDINGS
+            1.16    Plan of Care            R2  Care Plan           18776-5     TREATMENT PLAN
+            1.14    Relevant Surgical       R2  Studies and Reports 30954-2     STUDIES SUMMARY
+                    Procedures / Clinical Reports   
+            1.15    Relevant Diagnostic     R2  Studies and Reports 30954-2     STUDIES SUMMARY
+                    Test and Reports
+            -->
+            <assert test='.//cda:section/cda:code[@code="11450-4"]'>
+                Active problems are required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="10160-0"]'>
+                Medications are required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="10155-0"]'>
+                Allergies are required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="X-RFR"]'>
+                Reason for Referral is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="10164-2"]'>
+                History of Present Illness is required.
+            </assert>
+        </rule>
+        <rule id='DischargeSummary' context='/cda:ClinicalDocument[cda:code[not(@code="34133-9")]]'>
+            <!-- Required sections -->
+            <!--
+            2.9     Active Problems             R   Conditions          11450-4     PROBLEM LIST
+            2.10    Resolved Problems           R   Conditions          11348-0     HISTORY OF PAST ILLNESS
+            2.8     Discharge Diagnosis         R   Conditions          11535-2     HOSPITAL DISCHARGE DX
+            2.5     Admitting Diagnosis         R   Conditions          X-HADX      HOSPITAL ADMISSION DX
+            2.11    Selected Meds Administered  R2  Medications         10160-0     HISTORY OF MEDICATION USE
+            2.12    Discharge Meds              R   Medications         10183-2     HOSPITAL DISCHARGE MEDICATIONS
+                                                R2  Medications         X-MOA       MEDICATIONS ON ADMISSION
+            2.13    Allergies                   R   Allergies and       10155-0     HISTORY OF ALLERGIES
+                                                    Adverse Reactions   
+            2.7     Hospital Course             R   Hospital Course     8648-8      HOSPITAL COURSE
+                                                O   Advance Directives  X-ADVDIR    ADVANCE DIRECTIVES
+            2.6     History of Present Illness  R2  History of Present  10164-2     HISTORY OF PRESENT ILLNESS
+                                                    Illness 
+                                                O   Functional Status   10158-4     HISTORY OF FUNCTIONAL STATUS
+            2.17    Functional Status           O   Functional Status   X-FS        Needs new code for Functional Status
+            2.15    Review of Systems           O   Review of Systems   10187-3     REVIEW OF SYSTEMS
+                                                    Physical Exam       10184-0     HOSPITAL DISCHARGE PHYSICAL
+            2.16    Vital Signs                 R2  Physical Exam       8716-3      VITAL SIGNS, PHYSICAL FINDINGS
+            2.18    Discharge Procedures        R   Studies and Reports 11493-4     HOSPITAL DISCHARGE STUDIES SUMMARY 
+            2.19    Tests, Reports 
+            2.20    Plan of Care                R   Care Plan           18776-5     TREATMENT PLAN
+            2.14    Discharge Diet              O   Care Plan           X-DD        DISCHARGE DIET
+            -->
+            <assert test='.//cda:section/cda:code[@code="11450-4"]'>
+                A list of active problems is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="11348-0"]'>
+                A list of resolved problems is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="11535-2"]'>
+                A Discharge Diagnosis is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="X-HADX"]'>
+                An Admitting Diagnosis is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="10155-0"]'>
+                An Allergies section is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="8648-8"]'>
+                A Hospital Course section is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="11493-4"]'>
+                A Discharge Procedures, Tests or Reports section is required.
+            </assert>
+            <assert test='.//cda:section/cda:code[@code="18776-5"]'>
+                A Plan of Care section is required.
+            </assert>
+        </rule>
+    </pattern>
+</schema>

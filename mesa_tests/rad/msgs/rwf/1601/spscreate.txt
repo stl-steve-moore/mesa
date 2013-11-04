@@ -1,0 +1,4 @@
+schedWorkitemCode	110005^DCM^Interpretation^
+stationname	REPORTER_1^IHEDEMO^Interpretation Station 1
+stationclass	REPORTER^IHEDEMO^ACME 3 step station
+startdatetime	200304111300

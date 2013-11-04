@@ -1,0 +1,21 @@
+This is ITI test 11335.
+It is designed to test the PDQ Integretation Profile.
+The query used is by patient ID.
+Field QPD-8 contains a value to specify "Domains Returned".
+
+References:
+ ITI TF-2: 21
+
+These next (indented) instructions are for PD Suppliers:
+  This script assumes you have loaded demographics into
+  your server with a separate step. If you do not have
+  the proper demographics loaded in your server, please
+  exit this script and load those demographics.
+
+  To use MESA scripts:
+    perl scripts/pds_pdq.pl 11300 1
+
+  You can also load the demographics by hand. You are
+  not required to use the MESA scripts.
+
+Test 11335 will now begin.

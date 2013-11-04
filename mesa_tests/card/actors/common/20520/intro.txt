@@ -1,0 +1,5 @@
+This is test 20520.
+It exercises IHE Cardiology DRPT workflow.
+References:
+ IHE Cardiology TF Vol I, Sec 6
+

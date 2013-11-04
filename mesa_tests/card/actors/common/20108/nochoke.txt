@@ -1,0 +1,10 @@
+20108- 
+
+At this point in this test case, the hemo modality 
+in Cath Lab #2 has successfully performed a broad query
+to the OF and found the original patient.  The hemo then 
+sent an MPPS In Progress message.  The DSS/OF then created
+the necessary SPS for that room and the XA queried those SPS 
+using DMWL.  At this point, verify that the OF database is 
+in fact accurate.  The rest of the transactions are tested 
+elsewhere.  20108 effectively completed.

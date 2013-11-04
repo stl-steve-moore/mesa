@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 100: MWL Tests for Order Filler</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>This test is designed specifically for an Order Filler to exercise Modality Worklist functions. Order Fillers will need to have proper responses to MWL queries to complete the remaining tests. The steps are documented here for consistency with other tests.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>SWF</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>100/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/100/100.102.a04.hl7</mesa:file>
+ </mesa:patient>
+<mesa:patient>
+   <mesa:file>adt/100/100.104.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>100.102.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser KING as outpatient</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>REGISTER</mesa:param>
+   <mesa:param>adt/100/100.102.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>100.104.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser QUEEN as outpatient</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>REGISTER</mesa:param>
+   <mesa:param>adt/100/100.104.a04.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>100.106.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P1 for KING</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/100/100.106.o01.hl7</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+   <mesa:param>T100_106</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+   <mesa:param>T100_106</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+
+<mesa:step>
+   <mesa:identifier>100.106.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P1 for KING</mesa:description>
+   <mesa:transaction>4c</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+ </mesa:step> 
+
+<mesa:step>
+   <mesa:identifier>100.108.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P22 for KING</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/100/100.108.o01.hl7</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+   <mesa:param>T100_106</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+   <mesa:param>T100_106</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+<mesa:step>
+   <mesa:identifier>100.108.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P22 for KING</mesa:description>
+   <mesa:transaction>4c</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.114.o01.hl7</mesa:param>
+ </mesa:step> 
+  
+ <mesa:step>
+   <mesa:identifier>100.110.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P4 for QUEEN</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/100/100.110.o01.hl7</mesa:param>
+ </mesa:step> 
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+   <mesa:param>T100_106</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.112.o01.hl7</mesa:param>
+   <mesa:param>T100_106</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+
+ <mesa:step>
+   <mesa:identifier>100.110.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P4 for QUEEN</mesa:description>
+   <mesa:transaction>4c</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.116.o01.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>100.112.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P8 for QUEEN</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/100/100.110.o01.hl7</mesa:param>
+ </mesa:step> 
+
+  <mesa:step>
+   <mesa:identifier>100.112.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P8 for QUEEN</mesa:description>
+   <mesa:transaction>4c</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/100/100.118.o01.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>100.114.dcm</mesa:identifier>
+   <mesa:description>MWL query for KING (2 results)</mesa:description>
+   <mesa:transaction>5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/100/100.106.o01.hl7</mesa:param>
+   <mesa:param>100/mwl_q1</mesa:param>
+ </mesa:step>  
+ <mesa:step>
+   <mesa:identifier>100.116.dcm</mesa:identifier>
+   <mesa:description>MWL query for all MR exams (5 results, two exams have 2 SPS)</mesa:description>
+   <mesa:transaction>5a</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL_MOD</mesa:param>
+   <mesa:param>RT</mesa:param>
+   <mesa:param>100/mwl_q2</mesa:param>
+ </mesa:step>  
+ <mesa:step>
+   <mesa:identifier>100.118.dcm</mesa:identifier>
+   <mesa:description>MWL query for all RT exams (one result)</mesa:description>
+   <mesa:transaction>5a</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL_MOD</mesa:param>
+   <mesa:param>MR</mesa:param>
+   <mesa:param>100/mwl_q3</mesa:param>
+ </mesa:step>  
+  <mesa:step>
+   <mesa:identifier>100.120.dcm</mesa:identifier>
+   <mesa:description>MWL query for all CT exams (zero results)</mesa:description>
+   <mesa:transaction>5a</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL_MOD</mesa:param>
+   <mesa:param>CT</mesa:param>
+   <mesa:param>100/mwl_q4</mesa:param>
+ </mesa:step>    
+  <mesa:step>
+   <mesa:identifier>100.122.dcm</mesa:identifier>
+   <mesa:description>MWL query for all exams scheduled for MODALITY1 (the MR system)</mesa:description>
+   <mesa:transaction>5a</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL_AETITILE</mesa:param>
+   <mesa:param>MODALITY1</mesa:param>
+   <mesa:param>100/mwl_q5</mesa:param>
+ </mesa:step> 
+   <mesa:step>
+   <mesa:identifier>100.124.dcm</mesa:identifier>
+   <mesa:description>MWL query for all exams scheduled for MODALITY2 (the RT system)</mesa:description>
+   <mesa:transaction>5a</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL_AETITILE</mesa:param>
+   <mesa:param>MODALITY2</mesa:param>
+   <mesa:param>100/mwl_q6</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:text_file>
+   <mesa:file>100/fini.txt</mesa:file>
+ </mesa:text_file>
+
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

@@ -1,0 +1,7 @@
+# Requirements for Content Items for Rpt Repository Test 811
+1	R	Language of Content Item and Descendents
+2	O	Observer Type (Person)
+3	O	Observer Name
+4	R	TEXT
+5	R	IMAGE
+6	R	IMAGE

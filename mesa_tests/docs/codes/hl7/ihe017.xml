@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Observation Identifier</mesa:title>
+		<mesa:description>OBX3 is used to transmit Patient Size and Patient Weight. The second component of this element is used to differentiate between values. The value in the second component shall be one of the values from Table 3.4-1.</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>BODY WEIGHT</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>BODY HEIGHT</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

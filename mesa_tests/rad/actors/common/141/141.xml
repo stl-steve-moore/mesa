@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>141: Administrative and Procedure Performance Process Flow</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 141 involves transactions for the patient Charles Black and tests the ADministrative Procedure Performance Process Flow (see IHE Vol I, section 3.3.1). The table below gives the overview of the test case. The steps in this case are the same as in case 131. The difference is that this test case uses a patient with Japanese characters.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>SWF</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>141/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/141/141.102.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>141.102.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser patient as outpatient (Patient Class = 'E')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/141/141.102.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>141.102.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser patient as outpatient (Patient Class = 'E')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/141/141.104.a04.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>141.104.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P1 for patient</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/141/141.106.o01.hl7</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/141/141.108.o01.hl7</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/141/141.108.o01.hl7</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+
+ <mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/141/141.108.o01.hl7</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+
+ <mesa:step>
+   <mesa:identifier>141.106.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Schedule X1</mesa:description>
+   <mesa:transaction>4</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/141/141.108.o01.hl7</mesa:param>
+   <mesa:param>T141</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>131.108.dcm</mesa:identifier>
+   <mesa:description>MWL C-Find</mesa:description>
+   <mesa:transaction>5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/141/141.106.o01.hl7</mesa:param>
+   <mesa:param>141/mwl_q1</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>141.110.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure(X1)</mesa:description>
+   <mesa:transaction>6</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:step>
+   <mesa:identifier>141.114.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure(X1)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+ 
+ 
+ <mesa:step>
+   <mesa:identifier>141.118.dcm</mesa:identifier>
+   <mesa:description>C-Store (Images)</mesa:description>
+   <mesa:transaction>8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+
+ <mesa:step>
+   <mesa:identifier>141.122.dcm</mesa:identifier>
+   <mesa:description>Storage Commitment (N-Action)</mesa:description>
+   <mesa:transaction>10</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMMIT-N-ACTION</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>141.124.dcm</mesa:identifier>
+   <mesa:description>Storage Commitment (N-Event Report)</mesa:description>
+   <mesa:transaction>10</mesa:transaction>
+   <mesa:source>IM</mesa:source>
+   <mesa:destination>MOD</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMMIT-N-EVENT</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:description>C-Find: Images available query</mesa:description>
+   <mesa:transaction>14</mesa:transaction>
+   <mesa:source>ID</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>QUERY</mesa:param>
+   <mesa:param>T141</mesa:param>
+   <mesa:param>cfind</mesa:param>
+   <mesa:param>141/cfind_q1</mesa:param>
+   <mesa:param>141/cfind_q1</mesa:param>
+ </mesa:step> 
+
+
+ <mesa:text_file>
+  <mesa:file>141/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- ?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ? -->
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 20530: Verify Conversion into DICOM Encapsulated Report Message Content (CARD-9)</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test 20530 tests the creation and content of an DICOM message with an encapsulated PDF report.</mesa:paragraph>
+<mesa:paragraph>This test case is only valid when the Report Manager is NOT grouped with the Report Repository or IF the Report Manager DOES support the DICOM OPTION.</mesa:paragraph>
+<mesa:paragraph>MESA: The MESA tools act as a  Report Creator by sending a pre-canned report, per the instructions in the Description column, to the vendor's Report Manager. The MESA tools then act as a Report Repository to accept the DICOM encapsulated report and evaluate it.</mesa:paragraph>
+<mesa:paragraph>Any patient name and ID can be used.</mesa:paragraph> 
+</mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>DRPT_WORKFLOW</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>20530/intro.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:step>
+   <mesa:identifier>1</mesa:identifier>
+   <mesa:description>ORU: send a valid HL7 encapsulated report- unsoliticited CARD-7.</mesa:description>
+   <mesa:transaction>CARD-7</mesa:transaction>
+   <mesa:source>RPTCRT</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>rpt/20530/20530.102.r01.hl7</mesa:param>
+ </mesa:step>
+ <mesa:internal>
+   <mesa:param>GEN-DR-PDF</mesa:param>
+   <mesa:param>T20530DCM</mesa:param>
+   <mesa:param>rpt_manager/hl7</mesa:param>
+ </mesa:internal>
+<mesa:step>
+   <mesa:identifier>2</mesa:identifier>
+   <mesa:description>C-Store: After the Report Manager has used it's internal mechanisms to release the report, RE-encapsulated the PDF report as a DICOM object (CARD-9)</mesa:description>
+   <mesa:transaction>CARD-9</mesa:transaction>
+   <mesa:source>RPTMGR</mesa:source>
+   <mesa:destination>RPTREP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T20530DCM</mesa:param>
+   <mesa:param>TEST_MANAGER_AE</mesa:param>
+ </mesa:step>
+ 
+ <mesa:text_file>
+  <mesa:file>20530/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

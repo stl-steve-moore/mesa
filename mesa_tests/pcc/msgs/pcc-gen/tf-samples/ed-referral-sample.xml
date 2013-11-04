@@ -1,0 +1,150 @@
+<ClinicalDocument xmlns='urn:hl7-org:v3'>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.3'/>
+  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.10'/>
+  <id root=' ' extension=' '/>
+  <code code='34133-9' displayName=' '
+    codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+  <title>Emergency Department Referral</title>
+  <effectiveTime value='20070620012005'/>
+  <confidentialityCode code='N' displayName='Normal' 
+    codeSystem='2.16.840.1.113883.5.25' codeSystemName='Confidentiality' />
+  <languageCode code='en-US'/>     
+     :
+  <component><structuredBody>
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.1'/>
+        <!-- Required Reason for Referral Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.4'/>
+        <!-- Required History Present Illness Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.6'/>
+        <!-- Required Active Problems Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.19'/>
+        <!-- Required Current Meds Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.13'/>
+        <!-- Required Allergies Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.8'/>
+        <!-- Required if known Resolved Problems Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.11'/>
+        <!-- Required if known List of Surgeries Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.23'/>
+        <!-- Required if known Immunizations Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.14'/>
+        <!-- Required if known Family History Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.16'/>
+        <!-- Required if known Social History Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.18'/>
+        <!-- Optional Pertinent Review of Systems Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.25'/>
+        <!-- Required if known Vital Signs Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.24'/>
+        <!-- Required if known Physical Exam Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.27'/>
+        <!-- Required if known Relevant Diagnostic Results and/or Clinical Reports Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.31'/>
+        <!-- Required if known Plan of Care Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.10.3.2'/>
+        <!-- Required Mode of Transport to the Emergency Department Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.10.4.1'/>
+        <!-- Required if known Estimated Time of Arrival Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.13.2.10'/>
+        <!-- Required if known Proposed ED disposition Section content -->
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.34'/>
+        <!-- Required Advance Directives Section content -->
+      </section>
+    </component>
+
+       
+  </structuredBody></component>
+</ClinicalDocument>

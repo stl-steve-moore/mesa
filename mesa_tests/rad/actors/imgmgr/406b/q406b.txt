@@ -1,0 +1,10 @@
+# Query level
+0008 0052	STUDY
+# Modalities in study
+0008 0061	#
+# Study Instance UID
+0020 000D	#
+# Patient Name
+0010 0010	*=宇都宮*
+# Patient ID
+0010 0020	#

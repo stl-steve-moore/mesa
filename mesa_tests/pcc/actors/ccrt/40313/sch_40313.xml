@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+
+
+  <title>CTX: 40313: (Schematron)</title>
+
+  <ns prefix="cda" uri="urn:hl7-org:v3" />
+  <ns prefix="crs" uri="urn:hl7-org:crs" />
+
+  <!-- Test for the participant element with the template ID for spouse -->
+  <sch:pattern id="Z1" name = "Z1">
+    <sch:rule context='/cda:ClinicalDocument'>
+      
+      <assert
+        test='count(cda:participant/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.2.4.2"]) =1'>
+        ERR: Need to have exactly one participant section with template ID/root = 1.3.6.1.4.1.19376.1.5.3.1.2.4.2
+      </assert>
+
+    </sch:rule>
+  </sch:pattern>
+
+  <sch:pattern id="Z2" name="Z2">
+    <sch:rule context='/cda:ClinicalDocument/cda:participant/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.2.4.2"]'>
+      <sch:assert test="../cda:associationEntity[cda:assignedPerson[cda:name[cda:given = 'Thomas']]]"> 
+        ERR: participant/associationEntity/assignedPerson/name/given should be Thomas
+      </sch:assert>
+      
+      <sch:report test="../cda:associationEntity[cda:assignedPerson[cda:name[cda:given = 'Thomas']]]"> 
+        CTX: participant/associationEntity/assignedPerson/name/given is Thomas (PASS)
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+ 
+  <sch:pattern id="Z3" name="Z3">
+    <sch:rule context='/cda:ClinicalDocument/cda:participant/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.2.4.2"]'>
+      <sch:assert test="../cda:associationEntity[cda:assignedPerson[cda:name[cda:family = 'Caster']]]"> 
+        ERR: participant/associationEntity/assignedPerson/name/family should be Caster
+      </sch:assert>
+      
+      <sch:report test="../cda:associationEntity[cda:assignedPerson[cda:name[cda:family = 'Caster']]]"> 
+        CTX: participant/associationEntity/assignedPerson/name/family is Caster (PASS)
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+  
+ 
+  <sch:pattern id="Z4" name="Z4">
+    <sch:rule context='/cda:ClinicalDocument/cda:participant/cda:templateId[@root="1.3.6.1.4.1.19376.1.5.3.1.2.4.2"]'>
+      <sch:assert test="../cda:associationEntity[cda:code[@code = 'xx-fatherofbaby']]"> 
+        ERR: participant/associationEntity/code/@code should be xx-fatherofbaby
+      </sch:assert>
+      
+      <sch:report test="../cda:associationEntity[cda:code[@code = 'xx-fatherofbaby']]"> 
+        CTX: participant/associationEntity/code/@code is xx-fatherofbaby (PASS)
+      </sch:report>
+    </sch:rule>
+  </sch:pattern>
+ 
+</sch:schema>

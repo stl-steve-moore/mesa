@@ -1,0 +1,896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ?>
+
+<cda:ClinicalDocument xmlns:cda="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<cda:realmCode code="US"/>
+<cda:typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+<cda:templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP"/>
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.1" extension="XDS-MS-2005"/>
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.3" extension="Referral-Summary-2005"/>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.3" extension="484/1"/>
+<cda:code displayName="Discharge Summary" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="18842-5"/>
+<cda:title>Discharge Summary</cda:title>
+
+<cda:effectiveTime value="20060215"/>
+<cda:confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+<cda:languageCode code="en-US"/>
+<cda:setId root="1.3.6.1.4.1.21367.2006.1.2.103.4" extension="484"/>
+<cda:versionNumber value="1"/>
+<cda:recordTarget>
+<cda:patientRole>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.1" extension="241832"/>
+<cda:addr>
+<cda:streetAddressLine>4525 Scott Ave</cda:streetAddressLine>
+<cda:city>St. Louis</cda:city>
+<cda:state>MO</cda:state>
+ <cda:postalCode>63110</cda:postalCode>
+</cda:addr>
+<cda:telecom use="HP" value='tel:314-555-1671'/>
+<cda:patient>
+<cda:name>
+<cda:given>CONNOR</cda:given>
+<cda:family>FINNEGAN</cda:family>
+</cda:name>
+<cda:administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="M"/>
+<cda:birthTime value="19860413"/>
+</cda:patient>
+<cda:providerOrganization>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+<cda:name>Gateway Hospital</cda:name>
+<cda:telecom use="PUB" value="tel:781-229-3600"/>
+<cda:addr>
+<cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+<cda:city>St. Louis</cda:city>
+<cda:state>MO</cda:state>
+<cda:postalCode>63110</cda:postalCode>
+<cda:country>USA</cda:country>
+</cda:addr>
+</cda:providerOrganization>
+</cda:patientRole>
+</cda:recordTarget>
+<cda:author>
+<cda:time value="20060215"/>
+<cda:assignedAuthor>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/>
+<cda:addr>
+<cda:streetAddressLine>700 Euclid Ave</cda:streetAddressLine>
+<cda:city>St. Louis</cda:city>
+<cda:state>MO</cda:state>
+<cda:postalCode>63110</cda:postalCode>
+<cda:country>USA</cda:country>
+</cda:addr>
+<cda:telecom use="HP" value="1-781-229-3677"/>
+<cda:assignedPerson>
+<cda:name>
+<cda:given>Brian</cda:given>
+<cda:family>Hasselfeld</cda:family>
+</cda:name>
+</cda:assignedPerson>
+</cda:assignedAuthor>
+</cda:author>
+<cda:custodian>
+<cda:assignedCustodian>
+<cda:representedCustodianOrganization>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+<cda:name>Gateway Hospital</cda:name>
+<cda:telecom use="PUB" value="tel:781-229-3600"/>
+<cda:addr>
+<cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+<cda:city>St. Louis</cda:city>
+<cda:state>MO</cda:state>
+<cda:postalCode>63110</cda:postalCode>
+<cda:country>USA</cda:country>
+</cda:addr>
+</cda:representedCustodianOrganization>
+</cda:assignedCustodian>
+</cda:custodian>
+<cda:legalAuthenticator>
+<cda:time value="20060215"/>
+<cda:signatureCode code="S"/>
+<cda:assignedEntity>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="Carus, Wyn"/>
+<cda:telecom use="DIR" value="tel:781-229-3600"/>
+<cda:addr>
+<cda:streetAddressLine>21 North Ave</cda:streetAddressLine>
+<cda:city>Burlington</cda:city>
+<cda:state>MA</cda:state>
+<cda:postalCode>01803</cda:postalCode>
+<cda:country>USA</cda:country>
+</cda:addr>
+<cda:assignedPerson>
+<cda:name>Carus, Wyn</cda:name>
+</cda:assignedPerson>
+</cda:assignedEntity>
+</cda:legalAuthenticator>
+<cda:documentationOf>
+<cda:serviceEvent classCode="PCPR">
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:performer typeCode="PRF">
+<cda:time>
+<!--author: Carus, Wyn-->
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:time>
+<cda:assignedEntity>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/>
+<cda:addr>
+<cda:streetAddressLine>21 North Ave</cda:streetAddressLine>
+<cda:city>Burlington</cda:city>
+<cda:state>MA</cda:state>
+<cda:postalCode>01803</cda:postalCode>
+</cda:addr>
+<cda:telecom use="HP" value="1-781-229-3677"/>
+<cda:assignedPerson>
+<cda:name>
+<cda:given>Wyn</cda:given>
+<cda:family>Carus</cda:family>
+</cda:name>
+</cda:assignedPerson>
+</cda:assignedEntity>
+</cda:performer>
+</cda:serviceEvent>
+</cda:documentationOf>
+<cda:componentOf>
+<cda:encompassingEncounter>
+<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.2" extension=""/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:dischargeDispositionCode codeSystemName="UB92" displayName="Routine Discharge" codeSystem="2.16.840.1.113883.6.21" code="01"/>
+</cda:encompassingEncounter>
+</cda:componentOf>
+<cda:component>
+<cda:structuredBody>
+<cda:templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP"/>
+<cda:component>
+<cda:section ID="section-1">
+<!--Type: dss14:CHIEF COMPLAINT-->
+<!--subtype: -->
+<!--Temporal: -->
+<cda:code nullFlavor="UNK"/>
+<cda:title>CHIEF COMPLAINT:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-1">
+<cda:content ID="s-1">
+<cda:content ID="problem-1">Chest Pain</cda:content> </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-1" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Chest pain" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="29857009" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-1"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-2">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10217-8" displayName="INDICATIONS"/>
+<cda:title>REASON FOR VISIT:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-2">
+<cda:content ID="s-2">
+<cda:content ID="problem-2">Chest Pain</cda:content> after <cda:content ID="problem-3">Motor Vehicle Accident</cda:content>. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-2" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Chest pain" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="29857009" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-2"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-3" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Motor vehicle accident (victim)" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="127348004" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-3"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-3">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="X-ADVDIR" displayName="ADVANCE DIRECTIVES"/>
+<cda:title>ADVANCE DIRECTIVES:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-3">
+<cda:content ID="s-3">None </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-4">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="X-HADX" displayName="HOSPITAL ADMISSION DX"/>
+<cda:title>ADMISSION DX:</cda:title>
+<cda:text>
+<cda:list ID="l-1">
+<cda:item ID="li-1">1. <cda:content ID="s-4">
+<cda:content ID="problem-4">Motor Vehicle Accident</cda:content> </cda:content>
+</cda:item> <cda:item ID="li-2">2. <cda:content ID="s-5">
+<cda:content ID="problem-5">Smoker</cda:content> </cda:content>
+</cda:item>
+</cda:list>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-4" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Motor vehicle accident (victim)" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="127348004" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-4"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-5" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="365582009" displayName="Social and Personal History Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Smoker" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="77176002" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-5"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-5">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11535-2" displayName="HOSPITAL DISCHARGE DX"/>
+<cda:title>DISCHARGE DX:</cda:title>
+<cda:text>
+<cda:list ID="l-2">
+<cda:item ID="li-3">1. <cda:content ID="s-6">
+<cda:content ID="problem-6">Motor Vehicle Accident</cda:content> </cda:content>
+</cda:item> <cda:item ID="li-4">2. <cda:content ID="s-7">
+<cda:content ID="problem-7">Pulmonary Nodule</cda:content> </cda:content>
+</cda:item> <cda:item ID="li-5">3. <cda:content ID="s-8">
+<cda:content ID="problem-8">Tobacco Abuse</cda:content> </cda:content>
+</cda:item>
+</cda:list>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-6" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Motor vehicle accident (victim)" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="127348004" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-6"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-7" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Lesion of lung" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="301232003" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-7"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-8" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="365582009" displayName="Social and Personal History Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Tobacco dependence syndrome" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="89765005" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-8"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-6">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10164-2" displayName="HISTORY OF PRESENT ILLNESS"/>
+<cda:title>HISTORY OF PRESENT ILLNESS:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-4">
+<cda:content ID="s-9">This is a 62-year old man with little history with medical establishment who was involved in a <cda:content ID="problem-9">motor vehicle accident</cda:content>. </cda:content> <cda:content ID="s-10">The patient was an unrestrained driver of a pickup truck that was rear-ended by another vehicle while stopped at a red light. </cda:content> <cda:content ID="s-11">The other vehicle was moving at approximately 30 mph. </cda:content> <cda:content ID="s-12">The patient was ambulating by the time of EMS arrival, however complained of <cda:content ID="problem-10">neck and chest pain</cda:content>. </cda:content> <cda:content ID="s-13">Patient hit the steering wheel, but the windshield was not starred and the steering wheel was intact. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-9" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Motor vehicle accident (victim)" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="127348004" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-9"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-10" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Chest pain" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="29857009" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-10"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-7">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11348-0" displayName="HISTORY OF PAST ILLNESS"/>
+<cda:title>PAST MEDICAL HISTORY:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-5">
+<cda:content ID="s-14">None. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:component>
+<cda:section ID="section-17">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10157-6" displayName="HISTORY OF FAMILY MEMBER DISEASES"/>
+<cda:title>Family History:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-6">
+<cda:content ID="s-15">Father died of <cda:content ID="problem-11">MI</cda:content> at 78. </cda:content>  <cda:content ID="s-16">Mother died of <cda:content ID="problem-12">Pneumonia</cda:content> at 85. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-11" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="297129003" displayName="Family History Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Myocardial infarction" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="22298006" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-11"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-12" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="297129003" displayName="Family History Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Pneumonia" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="233604007" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-12"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-18">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="29762-2" displayName="SOCIAL HISTORY"/>
+<cda:title>Social History:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-7">
+<cda:content ID="s-17">Single. </cda:content>  <cda:content ID="s-18">
+<cda:content ID="problem-13">Drinks two beers per week</cda:content>. </cda:content>  <cda:content ID="s-19">
+<cda:content ID="problem-14">Smokes</cda:content> 1ppd x adult life. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-13" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="365582009" displayName="Social and Personal History Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Current drinker" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="219006" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-13"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-14" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="365582009" displayName="Social and Personal History Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Smoker" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="77176002" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-14"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-8">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11336-5" displayName="HISTORY OF HOSPITALIZATIONS"/>
+<cda:title>PRIOR HOSPITALIZATIONS:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-8">
+<cda:content ID="s-20">None </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-9">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11450-4" displayName="PROBLEM LIST"/>
+<cda:title>PROBLEMS:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-9">
+<cda:content ID="s-21">None </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-10">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10155-0" displayName="HISTORY OF ALLERGIES"/>
+<cda:title>ALLERGIES:</cda:title>
+<cda:text>
+<cda:list ID="l-3">
+<cda:item ID="li-6">1. <cda:content ID="s-22">
+<cda:content ID="allergy-1">Penicillin</cda:content> </cda:content>
+</cda:item>
+</cda:list>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="allergy"/>
+<cda:id extension="484.1.allergy-1" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="10619000" displayName="Allergy"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#allergy-1"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-11">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="X-MOA" displayName="MEDICATIONS ON ADMISSION"/>
+<cda:title>MEDICATIONS ON ADMISSION:</cda:title>
+<cda:text>
+<cda:list ID="l-4">
+<cda:item ID="li-7">1. <cda:content ID="s-23">
+<cda:content ID="medname-2">Percocet</cda:content> </cda:content>
+</cda:item>
+</cda:list>
+</cda:text>
+<cda:entry>
+<cda:substanceAdministration negationInd="false" moodCode="EVN" classCode="SBADM">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="medication"/>
+<cda:id extension="484.1.medname-2" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:text>
+<cda:reference value="#medname-2"/>
+</cda:text>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime xsi:type="cda:IVL_TS">
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:effectiveTime nullFlavor="UNK"/>
+<cda:consumable>
+<cda:manufacturedProduct>
+<cda:manufacturedLabeledDrug>
+<cda:code>
+<cda:originalText>
+<cda:reference value="#medname-2"/>
+</cda:originalText>
+</cda:code>
+<cda:name>Percocet</cda:name>
+</cda:manufacturedLabeledDrug>
+</cda:manufacturedProduct>
+</cda:consumable>
+</cda:substanceAdministration>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-12">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="8648-8" displayName="HOSPITAL COURSE"/>
+<cda:title>HOSPITAL COURSE:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-10">
+<cda:content ID="s-24">The patient was admitted for overnight observation. </cda:content>  <cda:content ID="s-25">With a concern of chest paint, serial troponins and EKGs were checked and were normal  A chest X-ray was obtained, and showed no <cda:content ID="problem-15">pulmonary edema</cda:content>, effusions, or <cda:content ID="problem-16">rib fractures</cda:content>, but did reveal a 2mm <cda:content ID="problem-17">nodule in the right upper lobe</cda:content>. </cda:content>  <cda:content ID="s-26">
+<cda:content ID="medname-3">Percocet</cda:content> was given for pain, presumed to be <cda:content ID="problem-18">muscular strain</cda:content> from the accident. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-17" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Nodule" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="27925004" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-17"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+<cda:entry>
+<cda:substanceAdministration negationInd="false" moodCode="EVN" classCode="SBADM">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="medication"/>
+<cda:id extension="484.1.medname-3" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:text>
+<cda:reference value="#medname-3"/>
+</cda:text>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime xsi:type="cda:IVL_TS">
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:effectiveTime nullFlavor="UNK"/>
+<cda:consumable>
+<cda:manufacturedProduct>
+<cda:manufacturedLabeledDrug>
+<cda:code>
+<cda:originalText>
+<cda:reference value="#medname-3"/>
+</cda:originalText>
+</cda:code>
+<cda:name>Percocet</cda:name>
+</cda:manufacturedLabeledDrug>
+</cda:manufacturedProduct>
+</cda:consumable>
+</cda:substanceAdministration>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-13">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10183-2" displayName="HOSPITAL DISCHARGE MEDICATIONS"/>
+<cda:title>MEDICATIONS ON DISCHARGE:</cda:title>
+<cda:text>
+<cda:list ID="l-5">
+<cda:item ID="li-8">1. <cda:content ID="s-27">
+<cda:content ID="medname-4">Percocet</cda:content> </cda:content>
+</cda:item>
+</cda:list>
+</cda:text>
+<cda:entry>
+<cda:substanceAdministration negationInd="false" moodCode="EVN" classCode="SBADM">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="medication"/>
+<cda:id extension="484.1.medname-4" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:text>
+<cda:reference value="#medname-4"/>
+</cda:text>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime xsi:type="cda:IVL_TS">
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:effectiveTime nullFlavor="UNK"/>
+<cda:consumable>
+<cda:manufacturedProduct>
+<cda:manufacturedLabeledDrug>
+<cda:code>
+<cda:originalText>
+<cda:reference value="#medname-4"/>
+</cda:originalText>
+</cda:code>
+<cda:name>Percocet</cda:name>
+</cda:manufacturedLabeledDrug>
+</cda:manufacturedProduct>
+</cda:consumable>
+</cda:substanceAdministration>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-14">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10210-3" displayName="PHYSICAL EXAMINATION"/>
+<cda:title>PHYSICAL EXAM ON DISCHARGE</cda:title>
+<cda:text>
+<cda:paragraph ID="p-11">
+<cda:content ID="s-28">Well developed. </cda:content> <cda:content ID="s-29">well nourished, in no distress </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:component>
+<cda:section ID="section-19">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="8716-3" displayName="VITAL SIGNS"/>
+<cda:title>Vital Signs:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-12">
+<cda:content ID="s-30">BP 112/60, Pulse 60, Resp 16, Temp 96.7, sPO2 96% on RA </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-20">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11393-6" displayName="EARS AND NOSE AND MOUTH AND THROAT, PHYSICAL FINDINGS"/>
+<cda:title>HEENT:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-13">
+<cda:content ID="s-31">Atraumatic, Normal Cephalic. </cda:content>  <cda:content ID="s-32">PERRLA, EOMI. </cda:content>  <cda:content ID="s-33">Cranial nerves II-XII intact grossly. </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-21">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11411-6" displayName="NECK, PHYSICAL FINDINGS"/>
+<cda:title>Neck:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-14">
+<cda:content ID="s-34">Supple with normal range of motion. </cda:content>  <cda:content ID="s-35">
+<cda:content ID="problem-19">Mild tenderness over trapezius bilaterally</cda:content> </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-19" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Muscle pain" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="68962001" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-19"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-22">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11390-2" displayName="CARDIOVASCULAR SYSTEM, PHYSICAL FINDINGS"/>
+<cda:title>CV:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-15">
+<cda:content ID="s-36">normal </cda:content> <cda:content ID="s-37">S1, S2. </cda:content>  <cda:content ID="s-38">no MRG. </cda:content>  <cda:content ID="s-39">No <cda:content ID="problem-20">peripheral edema</cda:content>. </cda:content>  <cda:content ID="s-40">Pulses 2+ in 4 extremities </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-23">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11391-0" displayName="CHEST, PHYSICAL FINDINGS"/>
+<cda:title>Pulmonary:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-16">
+<cda:content ID="s-41">Clear to auscultation and Percussion Bilateral. </cda:content>  <cda:content ID="s-42">Mild Tenderness to AP pressure </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-24">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11356-3" displayName="GENITOURINARY, HISTORY OF SYMPTOMS AND DISEASES"/>
+<cda:title>GI:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-17">
+<cda:content ID="s-43">Soft, Nontender, without mass or hepatospleenomegally. </cda:content>  <cda:content ID="s-44">Normal bowel sounds. </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-25">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11356-3" displayName="GENITOURINARY, HISTORY OF SYMPTOMS AND DISEASES"/>
+<cda:title>GU:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-18">
+<cda:content ID="s-45">Normal circumsized male. </cda:content>  <cda:content ID="s-46">No lesion or discharge </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-26">
+<!--Type: dss14:REVIEW OF SYSTEMS-->
+<!--subtype: MUSCULOSKELETAL-->
+<!--Temporal: -->
+<cda:code nullFlavor="UNK"/>
+<cda:title>Musculoskeletal:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-19">
+<cda:content ID="s-47">Normal ROM. </cda:content>  <cda:content ID="s-48">
+<cda:content ID="problem-21">Mild tenderness over trapezius area</cda:content> </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-21" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Muscle pain" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="68962001" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-21"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-27">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="8672-8" displayName="NEUROLOGIC SYSTEM, HISTORY OF SYMPTOMS AND DISEASES"/>
+<cda:title>Neurologic:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-20">
+<cda:content ID="s-49">Grossly intact strength, sensation, reflexes and gait. </cda:content>
+</cda:paragraph>
+</cda:text>
+</cda:section>
+</cda:component>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-15">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11493-4" displayName="HOSPITAL DISCHARGE STUDIES SUMMARY"/>
+<cda:title>DIAGNOSTIC TESTS:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-21">
+<cda:content ID="s-50">EKGs were normal. </cda:content>  <cda:content ID="s-51">Serial troponins were normal. </cda:content>  <cda:content ID="s-52">Chest X-ray shows no <cda:content ID="problem-22">pulmonary edema</cda:content>, effusions, or <cda:content ID="problem-23">rib fractures</cda:content>. </cda:content>  <cda:content ID="s-53">It did reveal a 2mm <cda:content ID="problem-24">nodule in the right upper lobe</cda:content>. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-24" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="completed"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+<cda:high value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Nodule" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="27925004" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-24"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+<cda:component>
+<cda:section ID="section-16">
+<cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="18776-5" displayName="TREATMENT PLAN"/>
+<cda:title>DISCHARGE PLAN:</cda:title>
+<cda:text>
+<cda:paragraph ID="p-22">
+<cda:content ID="s-54">The patient was instructed to follow up with a primary care physician on return and have repeat chest radiography in 3 months to evaluate the newly noted <cda:content ID="problem-25">pulmonary nodule</cda:content>. </cda:content>
+</cda:paragraph>
+</cda:text>
+<cda:entry>
+<cda:observation negationInd="false" moodCode="EVN" classCode="COND">
+<cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1" extension="condition"/>
+<cda:id extension="484.1.problem-25" root="1.3.6.1.4.1.21367.2006.1.2.103.10"/>
+<cda:code codeSystemName="SNOMED CT" codeSystem="2.16.840.1.113883.6.96" code="246188002" displayName="Finding"/>
+<cda:statusCode code="active"/>
+<cda:effectiveTime>
+<cda:low value="20060215"/>
+</cda:effectiveTime>
+<cda:value displayName="Lesion of lung" codeSystemName="SNOMED-CT" codeSystem="2.16.840.1.113883.6.96" code="301232003" xsi:type="cda:CD">
+<cda:originalText>
+<cda:reference value="#problem-25"/>
+</cda:originalText>
+</cda:value>
+</cda:observation>
+</cda:entry>
+</cda:section>
+</cda:component>
+</cda:structuredBody>
+</cda:component>
+</cda:ClinicalDocument> 
+        
+        
+        
+    
+
+

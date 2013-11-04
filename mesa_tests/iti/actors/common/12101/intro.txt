@@ -1,0 +1,11 @@
+This is ITI test 12101.
+
+It is designed to test the PAM Integretation Profile.
+In this test, the Patient Demographic Source creates a new
+patient and sends the new patient transaction (ITI-30) to
+the Patient Demographics Consumer.
+One HL7 ADT A28 message is sent.
+
+References:
+ ITI TF PAM Integration Profile
+

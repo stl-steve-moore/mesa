@@ -1,0 +1,11 @@
+==== This text is intended for Evidence Creator actors only.
+     Other actors should ignore this text.
+
+In this next step, the Evidence Creator should take the two
+series it received for this test 3540 and properly blend the images.
+For example, this may require setting the Rescale Intercept & Slope, 
+or LUT, and modifying the Opacity of the superimposed series. 
+
+The test makers do not have the final parameters for the BSPS object.
+
+====

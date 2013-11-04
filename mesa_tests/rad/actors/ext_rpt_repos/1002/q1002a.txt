@@ -1,0 +1,4 @@
+0008 0052	STUDY	// Query Level
+0020 1206	#	// Number of Study Related Series
+0020 1208	#	// Number of Study Related SOP Instances
+0020 000D	#	// Study Instance UID

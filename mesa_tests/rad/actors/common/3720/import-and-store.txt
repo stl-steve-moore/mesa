@@ -1,0 +1,12 @@
+The Importer actor should now import the DICOM objects for 
+test 3720 from the test CD provided with the MESA distribution. 
+If this has already been accomplished, there is no need to 
+repeat that step.
+
+The Importer should also coerce the data in preparation for
+export. New information for patient GOLDENROD^G comes from 
+the response to the PDQ query. Please use the proper identification.
+
+After coercing attributes as required, store the study to the 
+MESA Image Manager/Archive.
+

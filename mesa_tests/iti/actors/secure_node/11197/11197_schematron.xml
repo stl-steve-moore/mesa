@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11197: Schematron - ATNA PHI IMPORT</title>
+
+ <sch:pattern name="EventIdentification">
+  <sch:rule context='/AuditMessage'>
+    <!-- EventIdentification -->
+    <sch:assert test="count(EventIdentification) = 1">
+    ERR: Requires ONE EventIdentification in AuditMessage (RFC 3881 5.1)
+    </sch:assert>
+    <sch:report test="count(EventIdentification) = 1">
+    CTX: Found ONE EventIdentification in AuditMessage (PASS)
+    </sch:report>
+  </sch:rule>
+  
+  <sch:rule context='/AuditMessage/EventIdentification'> 
+   <!-- EventActionCode=E -->
+   <sch:assert test="@EventActionCode='C'">
+   ERR: Requires EventActionCode=C in EventIdentification (DICOM Supplement 95, A.1.3.5)
+   </sch:assert>
+   <sch:report test="@EventActionCode='C'">
+   CTX: Found EventActionCode=C in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 or 4 or 8 or 12 -->
+   <!--<sch:assert test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   ERR: Requires EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   CTX: Found EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (PASS)
+   </sch:report>-->
+   <sch:assert test="@EventOutcomeIndicator='0'">
+   ERR: Requires EventOutcomeIndicator=0 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0'">
+   CTX: Found EventOutcomeIndicator=0 in EventIdentification (PASS)
+   </sch:report>
+   
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (DICOM Supplement 95, A.1.3.5)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+   
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (DICOM Supplement 95, schema)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <sch:assert test="EventID[@code='110107']">
+   ERR: Requires code=110107 in EventID (DICOM Supplement 95, A.1.3.5)
+   </sch:assert>
+   <sch:report test="EventID[@code='110107']">
+   CTX: Found code=110107 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName=DCM -->
+   <sch:assert test="EventID[@codeSystemName='DCM']">
+   ERR: Requires codeSystemName=DCM in EventID (DICOM Supplement 95, A.1.3.5)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='DCM']">
+   CTX: Found codeSystemName=DCM in EventID (PASS)
+   </sch:report>
+   
+   <!-- EventID displayName=Import-->
+   <sch:assert test="EventID[@displayName='Import']">
+   ERR: Requires displayName=Import in EventID (DICOM Supplement 95, A.1.3.5)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Import']">
+   CTX: Found displayName=Import in EventID (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

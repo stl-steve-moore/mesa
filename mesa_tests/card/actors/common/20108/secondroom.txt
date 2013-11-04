@@ -1,0 +1,21 @@
+In test 20108, the procedure is seemingly still in progress
+in Room 1.  Meanwhile, the physician has decided, for whatever reason
+(e.g, equipment failure or change from diagnostic to interventional),
+to move the procedure from Room 1 to Room 2.   The procedure is not yet
+closed out in Room 1 (no MPPS from  modalities).
+
+The Order Filler is about to receive a broad DICOM MWL query from 
+an Acquisition Modality in Room 2.
+
+Then an MPPS in Progress Message (CARD-1) will be sent from the 
+Acquisition Modality to the Order Filler from Room 2.
+
+The Order Filler will be expected to schedule procedure
+steps for the remaining equipment in the room with the
+expectation that those SPS will be needed before there
+is time to place an order for the corresponding procedures.
+
+The Order Filler will need to schedule two SPS, one for an IVUS
+modality and the second for an XA:
+ XX-20012/LAB7_IVUS/IVUS
+ XX-20013/LAB7_XA/XA

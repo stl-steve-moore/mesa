@@ -1,0 +1,11 @@
+This is test 1240.
+It is part of the Basic Security Integration Profile.
+It tests other workflow profiles in the context
+of Basic Security.
+References:
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/1240.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>3512 - Acquisition Modality stores Spatial Registration IOD </mesa:title>
+ <mesa:dateStamp value="20060714"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Image Fusion (FUS)</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Acquisition Modality</mesa:paragraph>
+  <mesa:paragraph>Image Manager/Archive</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>RAD TF-1:20.4.3</mesa:paragraph>
+  <mesa:paragraph>RAD TF-3:4.57</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>References to Other Standards/Documents</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>DICOM PS3.3 - 2004 A.30</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>283 - DICOM Composite Object Evaluation  - DVT</mesa:paragraph>
+  <mesa:paragraph>284 - DICOM Composite Object Evaluation  - DICOM3TOOLS</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>In this test, the Acquisition Modality use their application to determine the spatial transformation 
+   necessary between two image sets it has acquired, and create a Spatial Registration object.
+   </mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+ <mesa:section>
+  <mesa:title>Test Setup</mesa:title>
+  <mesa:text>
+   <mesa:paragraph>
+  None.
+   </mesa:paragraph>
+  </mesa:text>
+ </mesa:section>
+ 
+ <mesa:section>
+  <mesa:title>Sequence of Transactions</mesa:title>
+ </mesa:section>
+ 
+ <mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>FUS</mesa:name>
+ </mesa:profile>
+
+ <mesa:text_file>
+   <mesa:file>3512/intro_mod.txt</mesa:file>
+ </mesa:text_file>
+ 
+
+ <mesa:text_file>
+  <mesa:file>3512/spatial_registration_mod.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:internal>
+   <mesa:param>SPATIAL-REGISTRATION</mesa:param>
+   <mesa:param>COMPUTE</mesa:param>
+   <mesa:param>3512/fusion.txt</mesa:param>
+   <mesa:param>FUS/3512/CT</mesa:param>
+   <mesa:param>FUS/3512/PT</mesa:param>
+   <mesa:param>FUS/3512/SPATIAL</mesa:param>
+ </mesa:internal>
+
+ <mesa:internal>
+   <mesa:param>STORAGE-COMMITMENT</mesa:param>
+   <mesa:param>COMPUTE</mesa:param>
+   <mesa:param>FUS/3512/SPATIAL</mesa:param>
+   <mesa:param>FUS/3512/sc</mesa:param>
+ </mesa:internal>
+  
+ <mesa:step>
+  <mesa:identifier>3512.130</mesa:identifier>
+  <mesa:description>C-STORE a Spatial Registration IOD to the Image Manager</mesa:description>
+  <mesa:transaction>RAD-56</mesa:transaction>
+  <mesa:source>MOD</mesa:source>
+  <mesa:destination>IM</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>STORE</mesa:param>
+  <mesa:param>FUS/3512/SPATIAL</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+ 
+ <mesa:step>
+  <mesa:identifier>3512.140</mesa:identifier>
+  <mesa:description>Storage Commitment (N-ACTION)</mesa:description>
+  <mesa:transaction>RAD-10</mesa:transaction>
+  <mesa:source>MOD</mesa:source>
+  <mesa:destination>IM</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>COMMIT-N-ACTION</mesa:param>
+  <mesa:param>FUS/3512/sc</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+ 
+ <mesa:step>
+  <mesa:identifier>3512.150</mesa:identifier>
+  <mesa:description>Storage Commitment (N-EVENT REPORT)</mesa:description>
+  <mesa:transaction>RAD-10</mesa:transaction>
+  <mesa:source>IM</mesa:source>
+  <mesa:destination>MOD</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>COMMIT-N-EVENT</mesa:param>
+  <mesa:param>FUS/3512/sc</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+
+ <mesa:text_file>
+   <mesa:file>3512/fini.txt</mesa:file>
+ </mesa:text_file>
+ 
+</mesa:testSteps>
+
+</mesa:TestDocument>
+

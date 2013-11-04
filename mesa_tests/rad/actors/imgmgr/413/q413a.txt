@@ -1,0 +1,9 @@
+0008 0052	IMAGE	// Query Level
+0020 000D	1.113654.1.2001.20	// Study Instance UID
+0020 000E	1.113654.1.2001.20.512	// Series Instance UID
+0008 0018	1.113654.1.2001.20.512.1	// SOP Instance UID
+//
+0008 0023	#			// Content date
+0008 0033	#			// Content time
+0040 A032	#			// Observation DateTime
+0040 A043	####			// Concept Name Code Sequence

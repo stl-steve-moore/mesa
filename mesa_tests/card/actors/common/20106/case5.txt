@@ -1,0 +1,8 @@
+The Order Filler has received a PPS from a modality for which it
+has no scheduled procedure.  This indicates that it is Case C5.
+The Order Filler is now responsible for creating and scheduling a
+procedure using the Study Instance UID and the procedure codes that
+it received in the initial Modality PPS. The OF will send a 
+RAD-4 (Procedure Scheduled) message to the Image Manager to notify 
+the IM of the newly created procedure.
+

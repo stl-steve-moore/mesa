@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Code Values for Human Performer Code Sequence: 0040 4009</mesa:title>
+		</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Meaning</mesa:column_name>
+			<mesa:column_name>Coding Scheme</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>8010</mesa:param>
+			<mesa:param>Radiologist^Joe</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>8020</mesa:param>
+			<mesa:param>Radiologist^Jane</mesa:param>
+			<mesa:param>IHEDEMO</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

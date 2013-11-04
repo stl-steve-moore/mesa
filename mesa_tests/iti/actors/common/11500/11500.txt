@@ -1,0 +1,4 @@
+(cn=Mooney^*)
+sub
+BASEDN_FILE
+dn cn displayName employeeNumber pager title mail objectclass uid

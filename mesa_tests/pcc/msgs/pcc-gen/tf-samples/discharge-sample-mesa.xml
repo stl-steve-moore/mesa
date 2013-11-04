@@ -1,0 +1,283 @@
+<ClinicalDocument xmlns='urn:hl7-org:v3'>
+  <typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.2'/>
+  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.4'/>
+  <id root=' ' extension=' '/>
+  <code code='18842-5' displayName=' '
+    codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+  <title>Discharge Summary</title>
+  <effectiveTime value='20070619012005'/>
+  <confidentialityCode code='N' displayName='Normal' 
+    codeSystem='2.16.840.1.113883.5.25' codeSystemName='Confidentiality' />
+  <languageCode code='en-US'/>     
+     :
+  <component><structuredBody>
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.11'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.6'/>
+        <!-- Required Active Problems Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11450-4' displayName='PROBLEM LIST'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Active Problems: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'/>
+	</entry>
+
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.8'/>
+        <!-- Required Resolved Problems Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11348-0' displayName='HISTORY OF PAST ILLNESS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Resolved Problems: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.7'/>
+	<!-- Required Discharge Diagnosis Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11535-2' displayName='HOSPITAL DISCHARGE DX'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Discharge Diagnosis: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.2'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.3'/>
+        <!-- Required Admitting Diagnosis Section content -->
+	<id root=' ' extension=' '/>
+	<code code='46241-6' displayName='HOSPITAL ADMISSION DX'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Admitting Diagnosis: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.21'/>
+        <!-- Required if known Selected Meds Administered Section content -->
+	<id root=' ' extension=' '/>
+	<code code='18610-6' displayName='MEDICATIONS ADMINISTERED'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Medications Administered: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.7'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.22'/>
+        <!-- Required Discharge Meds Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10183-2' displayName='HOSPITAL DISCHARGE MEDICATIONS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Discharge Medications: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.7'/>
+	</entry>
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.20'/>
+        <!-- Required if known Admission Medications Section content -->
+	<id root=' ' extension=' '/>
+	<code code='42346-7' displayName='MEDICATIONS ON ADMISSION'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Admissin Medications: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.7'/>
+	</entry>
+
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.2'/>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.13'/>
+	<!-- Required Allergies Section content -->
+	<id root=' ' extension=' '/>
+	<code code='48765-2' displayName='Allergies, adverse reactions, alerts'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Allergies and Other Adverse Reactions: Narrative Text
+	</text>
+	<entry>
+	  <templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.3'/>
+	</entry>
+      </section>
+
+    </component>
+
+    <component>
+      <section>
+	<templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.5'/>
+        <!-- Required Hospital Course Section content -->
+	<id root=' ' extension=' '/>
+	<code code='8648-8' displayName='HOSPITAL COURSE'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Hospital Course: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.1'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.34'/>
+        <!-- Optional Advance Directives Section content -->
+	<id root=' ' extension=' '/>
+	<code code='42348-3' displayName='ADVANCE DIRECTIVES'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Advance Directives: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.4'/>
+        <!-- Required if known History of Present Illness Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10164-2' displayName='HISTORY OF PRESENT ILLNESS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		History of Present Illness: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.5'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.17'/>
+        <!-- Optional Functional Status Section content -->
+	<id root=' ' extension=' '/>
+	<code code='47420-5' displayName='FUNCTIONAL STATUS ASSESSMENT'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Functional Status Assessment: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.18'/>
+        <!-- Optional Review of Systems Section content -->
+	<id root=' ' extension=' '/>
+	<code code='10187-3' displayName='REVIEW OF SYSTEMS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Review of Systems: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.24'/>
+        <!-- Optional Physical Examination Section content -->
+	<id root=' ' extension=' '/>
+	<code code='29545-1' displayName='PHYSICAL EXAMINATION'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Physical Examination: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+	<templateId root='2.16.840.1.113883.10.20.1.16'/>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.25'/>
+        <!-- Optional Vital Signs Section content -->
+	<id root=' ' extension=' '/>
+	<code code='8716-3' displayName='VITAL SIGNS'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Vital Signs: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.29'/>
+        <!-- Optional Discharge Procedures Tests, Reports Section content -->
+	<id root=' ' extension=' '/>
+	<code code='11493-4' displayName='HOSPITAL DISCHARGE STUDIES SUMMARY'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Discharge Procedures, Tests, Reports : Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.31'/>
+        <!-- Required Plan of Care Section content -->
+	<id root=' ' extension=' '/>
+	<code code='18776-5' displayName='TREATMENT PLAN'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Plan of Care: Narrative Text
+	</text>
+      </section>
+    </component>
+
+    <component>
+      <section>
+        <templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.33'/>
+        <!-- Optional Discharge Diet Section content -->
+	<id root=' ' extension=' '/>
+	<code code='42344-2' displayName='DISCHARGE DIET'
+		codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/>
+	<text>
+		Discharge Diet: Narrative Text
+	</text>
+      </section>
+    </component>
+
+       
+  </structuredBody></component>
+</ClinicalDocument>

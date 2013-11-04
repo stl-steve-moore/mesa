@@ -1,0 +1,21 @@
+# 231.var (Modality 2xx tests)
+#
+# PID
+#
+$PATIENT_ID$ = MM231^^^ADT1
+$PATIENT_NAME$ = フクオカ^チヒロ^^^^^L^P~福岡^千尋^^^^^L^I
+$DATE_TIME_BIRTH$ = 19500121
+$SEX$ = F
+$RACE$ = BL
+$PATIENT_ADDRESS$ = 東京都中央区京橋１−１−１　八重洲ビル　6F^^^^1040031^^^^^^I
+$PATIENT_ACCOUNT_NUM$ = 20-95-MM231
+#
+# PV1
+#
+$PATIENT_CLASS$ = E
+$PATIENT_LOCATION$ = 1W^111^2^XYZ_HOSPITAL
+$ATTENDING_DOCTOR$ = 小林^幸恵^^^^^^^L^^^^^I
+$REFERRING_DOCTOR$ = 12345^nakata^takasi^^^DR^MD^^^L^^^^^A~12345^中田^隆^^^DR^MD^^^L^^^^^I~12345^なかた^たかし^^^DR^MD^^^L^^^^^P
+$VISIT_NUMBER$ = V231^^^ADT1
+$VISIT_INDICATOR$ = V
+$ADMIT_DATE_TIME$ = 200007010800

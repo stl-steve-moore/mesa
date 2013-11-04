@@ -1,0 +1,7 @@
+##
+## Test Case 153: Appointment Notification - Cancel Bookings
+##
+
+This test is designed to test Appointment Notification for radiology
+examintations scheduled by Department System Scheduler/Order Filler based on
+transaction SIU^S15

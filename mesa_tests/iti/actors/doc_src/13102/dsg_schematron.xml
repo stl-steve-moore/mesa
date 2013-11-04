@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<schema xmlns="http://www.ascc.net/xml/schematron" xmlns:dsg="http://www.w3.org/2000/09/xmldsig#" xmlns:xad="http://uri.etsi.org/01903/v1.1.1#">
+	<title>A Schematron Mini-Schema for Digital Signature Content Evaluation</title>
+	<ns prefix="dsg" uri="http://www.w3.org/2000/09/xmldsig#" />
+	<ns prefix="xades" uri="http://uri.etsi.org/01903/v1.1.1#" />
+
+	<pattern name='Signature'>
+        <rule id='dsg-root' context='/*'>
+            <assert test='self::dsg:Signature'>
+                The root of a Digital Signature must be a Signature element from the http://www.w3.org/2000/09/xmldsig# namespace.
+            </assert>
+        </rule>
+    </pattern>
+
+	<pattern name="CanonicalizationMethod">
+		<rule context="dsg:CanonicalizationMethod">
+			<assert test="@Algorithm = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments'">CanonicalizationMethod element Algorithm attribute must be constant value of http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments</assert>
+		</rule>
+	</pattern>
+
+	<pattern name="SignatureMethod">
+		<rule context="dsg:SignatureMethod">
+			<assert test="@Algorithm = 'http://www.w3.org/2000/09/xmldsig#rsa-sha1'">SignatureMethod element Algorithm attribute must be constant value of http://www.w3.org/2000/09/xmldsig#rsa-sha1</assert>
+		</rule>
+	</pattern>
+
+	<pattern name="DigestMethod_xmldsig">
+		<rule context="dsg:DigestMethod">
+			<assert test="@Algorithm = 'http://www.w3.org/2000/09/xmldsig#sha1'">DigestMethod element Algorithm attribute must be constant value of http://www.w3.org/2000/09/xmldsig#sha1</assert>
+		</rule>
+	</pattern>
+
+	<!--<pattern name="DigestMethod_xades">
+		<rule context="xades:DigestMethod">
+			<assert test="@Algorithm = 'http://www.w3.org/2000/09/xmldsig#sha1'">dsg:DigestMethod element Algorithm attribute must be constant value of http://www.w3.org/2000/09/xmldsig#sha1</assert>
+		</rule>
+	</pattern>-->
+	<pattern name="Reference">
+		<rule context="dsg:SignedInfo/Reference">
+			<assert test="@URI = '#IHEManifest'">Reference element URI attribute must be constant value of #IHEManifest</assert>
+			<assert test="@Type = 'http://www.w3.org/2000/09/xmldsig#Manifest'">Reference element Type attribute must be constant value of http://www.w3.org/2000/09/xmldsig#Manifest</assert>
+		</rule>
+	</pattern>
+
+	<pattern name="KeyInfo">
+		<rule context="dsg:Signature">
+			<assert test="dsg:KeyInfo">KeyInfo element is required under Signature element.</assert>
+			<assert test="dsg:KeyInfo//dsg:X509Certificate">KeyInfo element is required under Signature element.</assert>
+		</rule>
+	</pattern>
+
+	<pattern name="QualifyingProperties">
+		<rule context="dsg:Signature">
+			<assert test="dsg:Object/xades:QualifyingProperties">QualifyingProperties element is required under Signature/Object element.</assert>
+		</rule>
+		<rule context="/dsg:Signature/dsg:Object/xades:QualifyingProperties/xades:SignedProperties/xades:SignedSIgnatureProperties">
+			<assert test='string-length(xades:SigningTime) = 14'> SigningTime elemet is required as a datetime type.</assert>
+			<assert test="xades:SigningCertificate"> SigningCertificate elemet is required.</assert>
+			<assert test="xades:SignaturePolicyIdentifier"> SignaturePolicyIdentifier elemet is required.</assert>
+		</rule>
+	</pattern>
+	<pattern name="SignatureProperties">
+		<rule context="/dsg:Signature/dsg:Object">
+			<assert test="dsg:SignatureProperties">SignatureProperties element is required under Signature/Object element.</assert>
+			<assert test="dsg:SignatureProperties/dsg:SignatureProperty/@id">ID attruibute of SignatureProperty element is required under Signature/Object element.</assert>
+		</rule>
+	</pattern>
+
+	<pattern name="Manifest">
+		<rule context="/dsg:Signature/dsg:Object">
+			<assert test="dsg:Manifest">Manifest element is required under Signature/Object element.</assert>
+			<assert test="dsg:Manifest/@id = 'IHEManifest'">Manifest element id attribute must be constant value of IHEManifest</assert>
+			<assert test="dsg:Manifest//Reference/@URI = '??'">Reference element URI attribute must ??</assert>
+		</rule>
+		<rule context="/dsg:Signature/dsg:Object/dsg:Manifest//dsg:Reference//dsg:Transforms">
+			<assert test="dsg:Transform/@Algorithm = 'http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments' or dsg:Transform/@Algorithm = 'urn:oid:1.2.840.10008.1.2.1'">Transform element algorithm attribute must be contant value of http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments for XML objects or the specific transfer syntax for DICOM objects.</assert>
+			
+		</rule>
+			
+
+	</pattern>
+</schema>

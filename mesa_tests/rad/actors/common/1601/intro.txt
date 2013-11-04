@@ -1,0 +1,11 @@
+This is test 1601.
+It exercises IHE Reporting Workflow.
+References:
+ IHE TF Vol I, Sec 13
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/1601.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

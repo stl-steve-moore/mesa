@@ -1,0 +1,12 @@
+This is test 1303.
+It is part of the Charge Posting Integration Profile.
+It tests Account Management: Update Account
+References:
+ IHE TF Vol III, Sec 4.36.4.1
+ IHE TF Vol III, Sec 4.36.4.3
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/1303.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

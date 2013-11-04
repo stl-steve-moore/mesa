@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>ORC 7, Component 6: Quantity/Timing</mesa:title>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>S</mesa:param>
+			<mesa:param>STAT</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>A</mesa:param>
+			<mesa:param>ASAP</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>R</mesa:param>
+			<mesa:param>ROUTINE</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>P</mesa:param>
+			<mesa:param>PRE-OP</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>C</mesa:param>
+			<mesa:param>CALLBACK</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>T</mesa:param>
+			<mesa:param>TIMING</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

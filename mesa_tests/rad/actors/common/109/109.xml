@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 109: Exception Management</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Rad TF 1: 3.3.4.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>This is the text for Exception Management for Order Filler and Image Manager systems.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>SCHEDULED_WORKFLOW</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>109/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/109/109.102.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>109.102.a04.adt</mesa:identifier>
+   <mesa:description>ADT A04: Regiser GREY as outpatient (Patient Class = 'O')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/109/109.102.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>109.103.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser GREY as outpatient (Patient Class = 'O')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/109/109.103.a04.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>109.104.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P1 (one procedure)</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/109/109.104.o01.hl7</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/109/109.106.o01.hl7</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/109/109.106.o01.hl7</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+
+ <mesa:internal>
+   <mesa:param>GEN-MPPS-ABANDON-CODED</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/109/109.106.o01.hl7</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+   <mesa:param>110514</mesa:param>
+ </mesa:internal>
+
+ <mesa:step>
+   <mesa:identifier>109.106.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Schedule X1</mesa:description>
+   <mesa:transaction>4</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/109/109.106.o01.hl7</mesa:param>
+   <mesa:param>T109</mesa:param>
+ </mesa:step> 
+
+ <mesa:step>
+   <mesa:identifier>109.110.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure(X1)</mesa:description>
+   <mesa:transaction>6</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:step>
+   <mesa:identifier>109.112.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure(X1)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step>  
+
+ <mesa:step>
+   <mesa:identifier>109.114.dcm</mesa:identifier>
+   <mesa:description>C-Store (Images)</mesa:description>
+   <mesa:transaction>8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+
+ <mesa:step>
+   <mesa:description>C-Find: Images available query</mesa:description>
+   <mesa:transaction>14</mesa:transaction>
+   <mesa:source>ID</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>QUERY</mesa:param>
+   <mesa:param>T109</mesa:param>
+   <mesa:param>cfind</mesa:param>
+   <mesa:param>109/cfind_grey</mesa:param>
+  </mesa:step> 
+
+ <mesa:text_file>
+  <mesa:file>109/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

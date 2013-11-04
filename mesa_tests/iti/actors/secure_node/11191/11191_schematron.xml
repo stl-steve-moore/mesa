@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11191: Schematron - Order record Event</title>
+
+ <sch:pattern name="EventActionCode">
+  <sch:rule context='/AuditMessage/EventIdentification'>
+   
+   <!-- EventActionCode=C or R or U or D-->
+   <sch:assert test="@EventActionCode='C'or @EventActionCode='R'or @EventActionCode='U'or @EventActionCode='D'">
+   ERR: Requires EventActionCode=C or R or U or D in EventIdentification (DICOM Supplement 95, A.1.3.10)
+   </sch:assert>
+   <sch:report test="@EventActionCode='C'or @EventActionCode='R'or @EventActionCode='U'or @EventActionCode='D'">
+   CTX: Found EventActionCode=C or R or U or D  in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 -->
+   <sch:assert test="@EventOutcomeIndicator='0'">
+   ERR: Requires EventOutcomeIndicator=0 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0'">
+   CTX: Found EventOutcomeIndicator=0 in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (DICOM Supplement 95, A.1.3.10)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (DICOM Supplement 95, schema)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <!-- EventID code=110109 -->
+   <sch:assert test="EventID[@code='110109']">
+   ERR: Requires code=110109 in EventID (DICOM Supplement 95, A.1.3.10)
+   </sch:assert>
+   <sch:report test="EventID[@code='110109']">
+   CTX: Found code=110109 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName=DCM -->
+   <sch:assert test="EventID[@codeSystemName='DCM']">
+
+   ERR: Requires codeSystemName=DCM in EventID (DICOM Supplement 95, A.1.3.10)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='DCM']">
+   CTX: Found codeSystemName=DCM in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID displayName=Order Record-->
+   <sch:assert test="EventID[@displayName='Order Record']">
+   ERR: Requires displayName=Order Record in EventID (DICOM Supplement 95, A.1.3.10)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Order Record']">
+   CTX: Found displayName=Order Record in EventID (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

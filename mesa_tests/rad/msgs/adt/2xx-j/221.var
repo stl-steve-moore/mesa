@@ -1,0 +1,22 @@
+# 221.var (Modality 2xx tests)
+#
+# PID
+#
+$PATIENT_ID$ = MM221^^^ADT1
+$PATIENT_NAME$ = 功刀^幸一^^^^^L^I~クヌギ^コウイチ^^^^^L^P
+$DATE_TIME_BIRTH$ = 19500121
+$SEX$ = M
+$RACE$ = BL
+$PATIENT_ADDRESS$ = 東京都八王子市南町４−１３^^^^1920072^^^^^^I
+$PATIENT_ACCOUNT_NUM$ = 20-95-MM221
+#
+# PV1
+#
+$PATIENT_CLASS$ = E
+$PATIENT_LOCATION$ = 1W^111^2^XYZ_HOSPITAL
+#ATTENDING_DOCTOR$ = ^タカハシ^カズオ^^^^^^^L
+$ATTENDING_DOCTOR$ = ^高橋^和男^^^^^^^L
+$REFERRING_DOCTOR$ = ^佐々木^治郎^^^^^^^L^^^^^I~^ササキ^ジロウ^^^^^^^L^^^^^P
+$VISIT_NUMBER$ = V221^^^ADT1
+$VISIT_INDICATOR$ = V
+$ADMIT_DATE_TIME$ = 200007010800

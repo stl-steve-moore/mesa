@@ -1,0 +1,2107 @@
+
+100/IMAGES/000000
+DICOM File: 100/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132920
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      215
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.13
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        0 //            ID Accession Number//
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      106
+0010 0010       12 //               PAT Patient Name//IWRF^PATRICK
+0010 0020        4 //                 PAT Patient ID//100 
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19600412
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.5
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.5
+0020 0010        6 //                   REL Study ID//98654 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+1362/IMAGES/000000
+DICOM File: 1362/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133138
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.25
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//12345 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 84
+ Group: 0040, Length:       68
+ 0040 0031       14 //  PRC Local Namespace Entity ID//ACCESSIONGREEN
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.50
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 72
+ Group: 0008, Length:       64
+ 0008 0100        6 //                  ID Code Value//CH200 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       28 //                ID Code Meaning//Green Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      106
+0010 0010       10 //               PAT Patient Name//Smith^Adam
+0010 0020        4 //                 PAT Patient ID//1362
+0010 0021       42 //       PAT Issuer of Patient ID//IHEGREEN&1.3.6.1.4.1.21367.13.20.2000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19580101
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.9
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.9
+0020 0010        6 //                   REL Study ID//12345 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+1824/IMAGES/000000
+DICOM File: 1824/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133132
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.22
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//12345 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 82
+ Group: 0040, Length:       66
+ 0040 0031       12 //  PRC Local Namespace Entity ID//ACCESSIONRED
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.40
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 70
+ Group: 0008, Length:       62
+ 0008 0100        6 //                  ID Code Value//CH100 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       26 //                ID Code Meaning//Red Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010       10 //               PAT Patient Name//Smith^Adam
+0010 0020        4 //                 PAT Patient ID//1824
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19580101
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.8
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.8
+0020 0010        6 //                   REL Study ID//12345 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+200/IMAGES/000000
+DICOM File: 200/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132918
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      215
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.16
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        0 //            ID Accession Number//
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010        8 //               PAT Patient Name//IWRF^PAT
+0010 0020        4 //                 PAT Patient ID//200 
+0010 0021       42 //       PAT Issuer of Patient ID//IHEFACILITY&1.3.6.1.4.1.21367.3000.1.6&ISO
+0010 0030        8 //          PAT Patient Birthdate//19600412
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.6
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.6
+0020 0010        6 //                   REL Study ID//98432 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+2048/IMAGES/000000
+DICOM File: 2048/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133136
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.28
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//33732 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 82
+ Group: 0040, Length:       66
+ 0040 0031       12 //  PRC Local Namespace Entity ID//ACCESSIONRED
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.40
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 70
+ Group: 0008, Length:       62
+ 0008 0100        6 //                  ID Code Value//CH100 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       26 //                ID Code Meaning//Red Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010       10 //               PAT Patient Name//Jones^Paul
+0010 0020        4 //                 PAT Patient ID//2048
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19590404
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.10
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.10
+0020 0010        6 //                   REL Study ID//33732 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+300/IMAGES/000000
+DICOM File: 300/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132918
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      215
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.19
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        0 //            ID Accession Number//
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010        8 //               PAT Patient Name//IWRF^PAT
+0010 0020        4 //                 PAT Patient ID//200 
+0010 0021       42 //       PAT Issuer of Patient ID//IHEFACILITY&1.3.6.1.4.1.21367.3000.1.6&ISO
+0010 0030        8 //          PAT Patient Birthdate//19600412
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.7
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.7
+0020 0010        6 //                   REL Study ID//98321 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+3385/IMAGES/000000
+DICOM File: 3385/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133134
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.31
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//42182 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 82
+ Group: 0040, Length:       66
+ 0040 0031       12 //  PRC Local Namespace Entity ID//ACCESSIONRED
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.40
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 70
+ Group: 0008, Length:       62
+ 0008 0100        6 //                  ID Code Value//CH100 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       26 //                ID Code Meaning//Red Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      102
+0010 0010        8 //               PAT Patient Name//Wong^Kim
+0010 0020        4 //                 PAT Patient ID//3385
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19600505
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.11
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.11
+0020 0010        6 //                   REL Study ID//42182 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+3464/IMAGES/000000
+DICOM File: 3464/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133142
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.34
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//57351 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 84
+ Group: 0040, Length:       68
+ 0040 0031       14 //  PRC Local Namespace Entity ID//ACCESSIONGREEN
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.50
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 72
+ Group: 0008, Length:       64
+ 0008 0100        6 //                  ID Code Value//CH200 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       28 //                ID Code Meaning//Green Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      106
+0010 0010       10 //               PAT Patient Name//Wong^Khim 
+0010 0020        4 //                 PAT Patient ID//1362
+0010 0021       42 //       PAT Issuer of Patient ID//IHEGREEN&1.3.6.1.4.1.21367.13.20.2000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19600515
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.12
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.12
+0020 0010        6 //                   REL Study ID//57351 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+4712/IMAGES/000000
+DICOM File: 4712/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133136
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.37
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//62045 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 82
+ Group: 0040, Length:       66
+ 0040 0031       12 //  PRC Local Namespace Entity ID//ACCESSIONRED
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.40
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 70
+ Group: 0008, Length:       62
+ 0008 0100        6 //                  ID Code Value//CH100 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       26 //                ID Code Meaning//Red Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010       10 //               PAT Patient Name//Wong^Kihm 
+0010 0020        4 //                 PAT Patient ID//4712
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19600526
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.13
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.13
+0020 0010        6 //                   REL Study ID//62045 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+555/IMAGES/000000
+DICOM File: 555/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132924
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      221
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       26 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.1
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        8 //            ID Accession Number//ACC-555 
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      106
+0010 0010       12 //               PAT Patient Name//IWRF^PIERRE 
+0010 0020        4 //                 PAT Patient ID//555 
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19550505
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      448
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.1
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.1
+0020 0010        4 //                   REL Study ID//444 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+6418G/IMAGES/000000
+DICOM File: 6418G/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133146
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.43
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//39621 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 84
+ Group: 0040, Length:       68
+ 0040 0031       14 //  PRC Local Namespace Entity ID//ACCESSIONGREEN
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.50
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 72
+ Group: 0008, Length:       64
+ 0008 0100        6 //                  ID Code Value//CH200 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       28 //                ID Code Meaning//Green Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      110
+0010 0010       14 //               PAT Patient Name//Black^Michael 
+0010 0020        4 //                 PAT Patient ID//6418
+0010 0021       42 //       PAT Issuer of Patient ID//IHEGREEN&1.3.6.1.4.1.21367.13.20.2000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19501226
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.15
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.15
+0020 0010        6 //                   REL Study ID//39621 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+6418/IMAGES/000000
+DICOM File: 6418/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133136
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.40
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//93717 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 82
+ Group: 0040, Length:       66
+ 0040 0031       12 //  PRC Local Namespace Entity ID//ACCESSIONRED
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.40
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 70
+ Group: 0008, Length:       62
+ 0008 0100        6 //                  ID Code Value//CH100 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       26 //                ID Code Meaning//Red Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010       10 //               PAT Patient Name//Brown^John
+0010 0020        4 //                 PAT Patient ID//6418
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19801212
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.14
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.14
+0020 0010        6 //                   REL Study ID//93717 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+7012/IMAGES/000000
+DICOM File: 7012/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 133142
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      235
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.46
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        6 //            ID Accession Number//23516 
+0008 0051       -1 //ID Issuer of Accession Number Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 84
+ Group: 0040, Length:       68
+ 0040 0031       14 //  PRC Local Namespace Entity ID//ACCESSIONGREEN
+ 0040 0032       26 //        PRC Universal Entity ID//1.3.6.1.4.1.21367.13.77.50
+ 0040 0033        4 //   PRC Universal Entity ID Type//ISO 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0082       -1 //   ID Institution Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: ELEMENT LIST
+ Object size: 72
+ Group: 0008, Length:       64
+ 0008 0100        6 //                  ID Code Value//CH200 
+ 0008 0102        6 //    ID Coding Scheme Designator//99IHE 
+ 0008 0104       28 //                ID Code Meaning//Green Connectathon Hospital 
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      106
+0010 0010       10 //               PAT Patient Name//Robert^Guy
+0010 0020        4 //                 PAT Patient ID//7012
+0010 0021       42 //       PAT Issuer of Patient ID//IHEGREEN&1.3.6.1.4.1.21367.13.20.2000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19701226
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      454
+0020 000d       28 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.16
+0020 000e       28 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.16
+0020 0010        6 //                   REL Study ID//23516 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+777/IMAGES/000000
+DICOM File: 777/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132920
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      221
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       26 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.4
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        8 //            ID Accession Number//ACC-777 
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      102
+0010 0010        8 //               PAT Patient Name//IWRF^ROB
+0010 0020        4 //                 PAT Patient ID//777 
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19511207
+0010 0040        2 //                PAT Patient Sex//M 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      448
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.2
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.2
+0020 0010        4 //                   REL Study ID//777 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+888/IMAGES/000000
+DICOM File: 888/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132916
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      213
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       26 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.7
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        0 //            ID Accession Number//
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010       10 //               PAT Patient Name//IWRF^SONIA
+0010 0020        4 //                 PAT Patient ID//888 
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19300901
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.3
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.3
+0020 0010        6 //                   REL Study ID//98012 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+
+999/IMAGES/000000
+DICOM File: 999/IMAGES/000000
+
+DCM Dump Elements
+Object type: ELEMENT LIST
+Object size: 132918
+Group: 0002, Length:      188
+0002 0000        4 //              META Group Length//      bc 188
+0002 0001        2 //META File Meta Information Version//Unimplemented
+0002 0002       26 //META Media Stored SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0002 0003       62 //META Media Stored SOP Instance UID//1.3.6.1.4.1.9328.50.50.200181958442523443212362213908870303446
+0002 0010       20 //       META Transfer Syntax UID//1.2.840.10008.1.2.1
+0002 0012       16 //  META Implementation Class UID//1.2.40.0.13.1.1
+0002 0013       14 //META Implementation Version Name//dcm4che-1.4.27
+Group: 0008, Length:      215
+0008 0005       10 //      ID Specific Character Set//ISO_IR 100
+0008 0008       22 //                  ID Image Type//ORIGINAL\PRIMARY\OTHER
+0008 0016       26 //               ID SOP Class UID//1.2.840.10008.5.1.4.1.1.4
+0008 0018       28 //            ID SOP Instance UID//1.3.6.1.4.21367.999.10.3.10
+0008 0020        8 //                  ID Study Date//20050619
+0008 0023        8 //                ID Content Date//20050619
+0008 0030        6 //                  ID Study Time//120000
+0008 0033        0 //                ID Content Time//
+0008 0050        0 //            ID Accession Number//
+0008 0060        2 //                    ID Modality//MR
+0008 0070        0 //                ID Manufacturer//
+0008 0090        2 //  ID Referring Physician's Name//  
+0008 1032       -1 //     ID Procedure Code Sequence//SEQUENCE
+DCM Dump Sequence
+
+ DCM Dump Elements
+ Object type: UNKNOWN
+ Object size: 8
+ DCM Dump Elements Complete
+
+DCM Dump Sequence Complete
+Group: 0010, Length:      104
+0010 0010       10 //               PAT Patient Name//IWRF^MARIE
+0010 0020        4 //                 PAT Patient ID//999 
+0010 0021       40 //       PAT Issuer of Patient ID//IHERED&1.3.6.1.4.1.21367.13.20.1000&ISO 
+0010 0030        8 //          PAT Patient Birthdate//19831126
+0010 0040        2 //                PAT Patient Sex//F 
+Group: 0012, Length:       62
+0012 0062        4 //    CT Patient Identity Removed//YES 
+0012 0063       42 //    CT De-identification Method//CTP: DICOM-S142-Baseline: 20090911:165957 
+Group: 0013, Length:       46
+0013 0010        4 //                               //CTP 
+0013 1010       10 //                               //Some unimplemented logic if here
+0013 1013        8 //                               //Some unimplemented logic if here
+Group: 0018, Length:      378
+0018 0010        0 //       ACQ Contrast/Bolus Agent//
+0018 0015        6 //         ACQ Body Part Examined//BRAIN 
+0018 0020        2 //          ACQ Scanning Sequence//RM
+0018 0021        4 //           ACQ Sequence Variant//OSP 
+0018 0022        0 //               ACQ Scan Options//
+0018 0023        2 //       ACQ MR Acquisition Type //2D
+0018 0024        6 //              ACQ Sequence Name//scout 
+0018 0025        2 //                 ACQ Angio Flag//N 
+0018 0050       14 //            ACQ Slice Thickness//008.000000E+00
+0018 0080       14 //            ACQ Repetition Time//001.500000E+01
+0018 0081       14 //                  ACQ Echo Time//006.000000E+00
+0018 0083        2 //         ACQ Number of Averages//1 
+0018 0084       14 //          ACQ Imaging Frequency//006.361547E+01
+0018 0085        2 //             ACQ Imaged Nucleus//1H
+0018 0086        2 //                ACQ Echo Number//1 
+0018 0087        8 //    ACQ Magnetic Field Strength//1.493806
+0018 0088        2 //     ACQ Spacing Between Slices//-8
+0018 0091        2 //          ACQ Echo Train Length//1 
+0018 0093        4 //           ACQ Percent Sampling//100 
+0018 0094        4 //ACQ Percent Phase Field of View//100 
+0018 1200        8 //   ACQ Date of Last Calibration//20041121
+0018 1201       14 //   ACQ Time of Last Calibration//195152.000000 
+0018 1250        8 //             ACQ Receiving Coil//CP Head 
+0018 1310        8 //         ACQ Acquisition Matrix// 200 512
+0018 1312        4 //   ACQ Phase Encoding Direction//COL 
+0018 1314        2 //                 ACQ Flip Angle//30
+0018 1316        2 //                        ACQ SAR//0 
+0018 5100        4 //           ACQ Patient Position//HFS 
+Group: 0020, Length:      450
+0020 000d       26 //         REL Study Instance UID//1.3.6.1.4.21367.999.10.1.4
+0020 000e       26 //        REL Series Instance UID//1.3.6.1.4.21367.999.10.2.4
+0020 0010        6 //                   REL Study ID//98123 
+0020 0011        2 //              REL Series Number//1 
+0020 0012        2 //         REL Acquisition Number//1 
+0020 0013        2 //            REL Instance Number//1 
+0020 0030       42 //       REL Image Position (RET)//-01.494141E+02\-1.494141E+02\-0.000000E+00
+0020 0032       12 //     REL Image Position Patient//-150\-150\-0
+0020 0035       84 //          REL Image Orientation//001.000000E+00\-0.000000E+00\-0.000000E+00\00.000000E+00\01.000000E+00\-0.000000E+00
+0020 0037       14 //REL Image Orientation (Patient)//1\-0\-0\0\1\-0
+0020 0050       14 //             REL Location (RET)//000.000000E+00
+0020 0052       62 //     REL Frame of Reference UID//1.3.6.1.4.1.9328.50.50.116505440388786860746572043172591685926
+0020 0070        6 //  REL Image Geometry Type (RET)//PLANAR
+0020 0080        0 //        REL Masking Image (RET)//
+0020 1001        2 //     REL Acquisitions in Series//1 
+0020 1040        0 //REL Position Reference Indicator//
+0020 1041       14 //             REL Slice Location//000.000000E+00
+Group: 0028, Length:      206
+0028 0002        2 //          IMG Samples Per Pixel//   1 1
+0028 0004       12 // IMG Photometric Interpretation//MONOCHROME2 
+0028 0005        2 //     IMG Image Dimensions (RET)//   2 2
+0028 0010        2 //                       IMG Rows// 100 256
+0028 0011        2 //                    IMG Columns// 100 256
+0028 0030       28 //              IMG Pixel Spacing//001.171875E+00\01.171875E+00
+0028 0040        4 //         IMG Image Format (RET)//RECT
+0028 0100        2 //             IMG Bits Allocated//  10 16
+0028 0101        2 //                IMG Bits Stored//   c 12
+0028 0102        2 //                   IMG High Bit//   b 11
+0028 0103        2 //       IMG Pixel Representation//   0 0
+0028 0200        2 //             IMG Image Location//7fe0 32736
+0028 0303        8 //                               //MODIFIED
+0028 1050        8 //              IMG Window Center//251\251 
+0028 1051        8 //               IMG Window Width//561\561 
+Group: 7fe0, Length:   131080
+7fe0 0010   131072 //                 PXL Pixel Data//Data on disk
+DCM Dump Elements Complete
+
+

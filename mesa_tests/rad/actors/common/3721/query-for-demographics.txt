@@ -1,0 +1,4 @@
+You should now send a query to the MESA Patient Demographic Supplier.  
+Use Patient ID "3721" or Patient Name "YELLOW^Y" as a query key. 
+
+

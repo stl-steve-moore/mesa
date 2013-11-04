@@ -1,0 +1,7 @@
+# Requirements for Content Items for Image Creator Test 512
+1	O	Language of Content Item and Descendents
+2	O	Observer Type (Person)
+3	O	Observer Name
+4	O	TEXT : Key Object Description
+5	R	IMAGE
+6	R	IMAGE

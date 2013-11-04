@@ -1,0 +1,4 @@
+
+1. The Evidence Creator should locate the Blended Softcopy Presentation State created for test 3540.
+2. Use your application to modify the transparency of the superimposed series from 0.5 to 0.7.
+3. Send the new DICOM BSPS object to the MESA Image Manager.

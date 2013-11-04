@@ -1,0 +1,4 @@
+objectclass=*
+base
+BASEDN_NULL
+namingContexts

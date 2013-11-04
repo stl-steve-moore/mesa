@@ -1,0 +1,11 @@
+0040 0320 (					// Billing Procedure Step Sequence
+ 0008 0100	BP1003				// Code Value
+ 0008 0102	IHEDEMO				// Coding Scheme Designator
+ 0008 0104	"Billing Procedure 1003"	// Code Meaning
+)
+//
+0040 0321 (					// Film Consumption Sequence
+ 2100 0170	3				// Number of films actually printed
+ 2000 0030	"BLUE FILM"			// Medium Type
+ 2010 0050	11INX14IN			// Film Size ID
+)

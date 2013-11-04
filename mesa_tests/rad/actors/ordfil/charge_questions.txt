@@ -1,0 +1,24 @@
+This text file contains questions for developers of
+Charge Processor actors.
+Run the tests that are specified, use this file
+to answer questions, and then send the modified
+file to the Project Manager.
+
+1301
+ What is the name of the guarantor for ALABAMA^MONTGOMERY?
+ What is the name of the insurance company?
+
+1302
+ What is the name of the original insurance company (sent in the P01)?
+ What is the name of the new insurance company (sent in the P05)?
+
+1303
+ There are no questions to answer.
+
+1305
+ What is the name of the technologist who performed the procedure?
+ What is the transaction code for the technical charges?
+ What is the name of the Radiologist who performed the interpretation?
+
+Bonus question:
+

@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>133: PIR Case 2: Unidentified Patient Registered at ADT and Ordered at Department System Scheduler/Order Filler</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 133 involves transactions for the patient Ivan Indigo and tests the Unidentified Case 2: Unidentified Patient Registered at ADT and Ordered at the DSS/Order Filler (see IHE TF Vol I, section 4.4.2). The table below gives the overview of the test case.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>SCHEDULED_WORKFLOW</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>133/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/133/133.102.a04.hl7</mesa:file>
+ </mesa:patient>
+<mesa:patient>
+   <mesa:file>adt/133/133.142.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>133.102.a04.adt</mesa:identifier>
+   <mesa:description>ADT A04: Register INDIGO as outpatient (Patient Class='E')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/133/133.102.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>133.103.a04.adt</mesa:identifier>
+   <mesa:description>ADT A04: Register INDIGO as outpatient</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/133/133.103.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:text_file>
+   <mesa:file>133/new_patient.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:comment>
+   <mesa:description>Indigo leaves, to return later as unidentified patient</mesa:description>
+  </mesa:comment> 
+ 
+ <mesa:comment>
+   <mesa:description>Unidentified case #2</mesa:description>
+ </mesa:comment>
+
+ <mesa:step>
+   <mesa:identifier>133.142.a04.adt</mesa:identifier>
+   <mesa:description>ADT: A04 Register DOE^J133</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/133/133.142.a04.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.143.a04.adt</mesa:identifier>
+   <mesa:description>ADT: A04: Register DOE^J133</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/133/133.143.a04.hl7</mesa:param>
+   
+ </mesa:step> 
+<mesa:text_file>
+   <mesa:file>133/doe.txt</mesa:file>
+ </mesa:text_file>
+<mesa:step>
+   <mesa:identifier>133.144.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order Pl (one procedure)</mesa:description>
+   <mesa:transaction>3</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/133/133.144.o01.hl7</mesa:param>
+   <mesa:param>order/133/133.147.o01.hl7</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>133.146.o02.orr</mesa:identifier>
+   <mesa:description>ORR: Placer Order Number</mesa:description>
+   <mesa:transaction>3</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER_O02</mesa:param>
+   <mesa:param>order/133/133.146.o02.hl7</mesa:param>
+   <mesa:param>ordplc/1001.hl7</mesa:param>
+ </mesa:step> 
+
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/133/133.148.o01.hl7</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+<mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/133/133.148.o01.hl7</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+<mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/133/133.148.o01.hl7</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+<mesa:step>
+   <mesa:identifier>133.148.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Schedule X1 (one SPS, one Protocol Code Item)</mesa:description>
+   <mesa:transaction>4</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/133/133.148.o01.hl7</mesa:param>
+   <mesa:param>T133</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.150.dcm</mesa:identifier>
+   <mesa:description>MWL C-Find</mesa:description>
+   <mesa:transaction>5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/133/133.147.o01.hl7</mesa:param>
+   <mesa:param>133/mwl_q1</mesa:param>
+ </mesa:step> 
+
+<mesa:comment>
+   <mesa:description>Perform X1 at Modality</mesa:description>
+ </mesa:comment> 
+
+<mesa:step>
+   <mesa:identifier>133.152.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure</mesa:description>
+   <mesa:transaction>6</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.154.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.156.dcm</mesa:identifier>
+   <mesa:description>C-Store (Images)</mesa:description>
+   <mesa:transaction>8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.158.dcm</mesa:identifier>
+   <mesa:description>Storage Commitment (N-Action)</mesa:description>
+   <mesa:transaction>10</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMMIT-N-ACTION</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.160.dcm</mesa:identifier>
+   <mesa:description>Storage Commitment (N-Event)</mesa:description>
+   <mesa:transaction>10</mesa:transaction>
+   <mesa:source>IM</mesa:source>
+   <mesa:destination>MOD</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMMIT-N-EVENT</mesa:param>
+   <mesa:param>T133</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.162.dcm</mesa:identifier>
+   <mesa:description>C-Find on Patient INDIGO</mesa:description>
+   <mesa:transaction>14</mesa:transaction>
+   <mesa:source>ID</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>QUERY-NAME-HL7</mesa:param>
+   <mesa:param>adt/133/133.102.a04.hl7</mesa:param>
+   <mesa:param>cfind</mesa:param>
+   <mesa:param>133/cfind_pre_merge</mesa:param>
+   <mesa:param>133/cfind_pre_merge</mesa:param>
+ </mesa:step> 
+<mesa:text_file>
+   <mesa:file>133/merge.txt</mesa:file>
+ </mesa:text_file>
+
+<mesa:comment>
+   <mesa:description>Patient is recognized as BLUE</mesa:description>
+ </mesa:comment> 
+
+<mesa:step>
+   <mesa:identifier>133.182.a40.adt</mesa:identifier>
+   <mesa:description>A40: Merge INDIGO with DOE^J133</mesa:description>
+   <mesa:transaction>12</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A40-MERGE</mesa:param>
+   <mesa:param>adt/133/133.182.a40.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.183.140.adt</mesa:identifier>
+   <mesa:description>A40: Merge INDIGO with DOE^J133</mesa:description>
+   <mesa:transaction>12</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A40-MERGE</mesa:param>
+   <mesa:param>adt/133/133.183.a40.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.184.a40.adt</mesa:identifier>
+   <mesa:description>A40: Merge INDIGO with DOE^J133</mesa:description>
+   <mesa:transaction>12</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A40-MERGE</mesa:param>
+   <mesa:param>adt/133/133.184.a40.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>133.190.dcm</mesa:identifier>
+   <mesa:description>C-Find on Patient INDIGO</mesa:description>
+   <mesa:transaction>14</mesa:transaction>
+   <mesa:source>ID</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>QUERY-NAME-HL7</mesa:param>
+   <mesa:param>adt/133/133.102.a04.hl7</mesa:param>
+   <mesa:param>cfind</mesa:param>
+   <mesa:param>133/cfind_post_merge</mesa:param>
+   <mesa:param>133/cfind_post_merge</mesa:param>
+  </mesa:step> 
+<mesa:text_file>
+  <mesa:file>133/fini.txt</mesa:file>
+ </mesa:text_file>
+</mesa:testSteps>
+
+ 
+</mesa:TestDocument>
+

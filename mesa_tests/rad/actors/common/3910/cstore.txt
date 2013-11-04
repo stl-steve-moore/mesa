@@ -1,0 +1,8 @@
+Create one “For Presentation” mammography image. In creating a full field image 
+(not magnification or specimen images), your Modality should encode the
+region outside the breast using Pixel Padding Value (0008,0120).
+
+The Patient ID should be MESA3910. The patient name should be MESA^Mammo3910. 
+These values are not critical to the test.
+
+You should now C-STORE [RAD-8] this Mammography image to the MESA Image Manager.

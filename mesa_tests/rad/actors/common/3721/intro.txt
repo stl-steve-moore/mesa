@@ -1,0 +1,12 @@
+Test: 3721
+Title: 3721: Importer (digitizer) Coerces Attributes - Unscheduled Import Option
+
+References:
+ Import Reconciliation Workflow -- RAD TF-1: 21.3.1.3 and RAD TF-2: Appendix A.2
+
+Test Case 3721 involves transactions for the Unscheduled Import Option
+for Importers in the Import Reconciliation Workflow which import by digitizing film or
+documents. Ensure that a film or document is available to scan prior to starting this test.
+
+If you import from digital media (eg CD), you should run test 3720 instead. 
+

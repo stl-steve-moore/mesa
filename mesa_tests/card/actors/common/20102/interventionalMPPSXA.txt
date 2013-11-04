@@ -1,0 +1,4 @@
+Test 20102 - INTERVENTIONAL
+ The XA modality will not send MPPS in-progress and complete
+ messages for the interventional step. Images will also be sent
+ to the Image Manager.

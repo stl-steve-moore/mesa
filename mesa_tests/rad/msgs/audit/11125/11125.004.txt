@@ -1,0 +1,3 @@
+USER_ID = Herndon_Simon
+PATIENT_ID = PT1010
+PATIENT_NAME = Sick_Patient

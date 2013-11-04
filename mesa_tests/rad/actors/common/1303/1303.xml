@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 1303: Account Management: End Account</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+ 
+  <mesa:list>Order Placer</mesa:list>
+  
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 1303 covers account management and the P06 message used to end a patient account. See IHE TF Vol 3, section 4.36.4.3. The nominal patient name is ARIZONA^PHOENIX.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>CHARGE_POSTING</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>1303/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/1303/1303.106.a01.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>1303.102.p01.bar</mesa:identifier>
+   <mesa:description>P01: Account Management: New Account</mesa:description>
+   <mesa:transaction>36</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>CP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ACCOUNT-NEW-P01</mesa:param>
+   <mesa:param>chg/1303/1303.102.p01.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>1303.106.a01.bar</mesa:identifier>
+   <mesa:description>Admit ALASKA</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A01-ADMIT</mesa:param>
+   <mesa:param>adt/1303/1303.106.a01.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>1303.108.a01.bar</mesa:identifier>
+   <mesa:description>Admit ALASKA</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A01-ADMIT</mesa:param>
+   <mesa:param>adt/1303/1303.108.a01.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>1303.110.p05.bar</mesa:identifier>
+   <mesa:description>P05: Account Management: End Account</mesa:description>
+   <mesa:transaction>36</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>CP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ACCOUNT-END-P06</mesa:param>
+   <mesa:param>chg/1303/1303.110.p06.hl7</mesa:param>
+ </mesa:step>
+
+ <mesa:text_file>
+  <mesa:file>1303/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

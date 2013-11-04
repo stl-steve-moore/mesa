@@ -1,0 +1,4 @@
+The patient now has a name change (e.g., patient marries).
+The Demographic Source records the name change and sends
+an ADT A31 message to notify the Patient Demographics Consumer.
+

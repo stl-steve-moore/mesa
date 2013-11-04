@@ -1,0 +1,10 @@
+
+0040 4001	SCHEDULED		// GP SPS status
+
+0008 1195	1.113654.3.25.1000	// Transaction UID
+
+0040 4035	(			// Actual Human Performers Sequence
+ 0040 4037	Radiologist^Jane 	// Human Performers Name
+ 0040 4036	"ACME Institute of Radiology"		// Human Performers Organization
+)
+

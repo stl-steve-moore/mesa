@@ -1,0 +1,38 @@
+<Signature Id="signatureID" xmlns="http://www.w3.org/2000/09/xmldsig#"> 
+	<SignedInfo> 
+		<CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments"/>
+		<SignatureMethod Algorithm="urn:ihe:iti:dsg:nosig"/>
+		<Reference URI="#IHEManifest" Type="http://www.w3.org/2000/09/xmldsig#Manifest"> 
+		  <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+			<DigestValue>MDA=</DigestValue> 
+		</Reference> 
+	</SignedInfo> 
+	<SignatureValue>base64SignatureValue</SignatureValue> 
+	<Object> 
+		<SignatureProperties> 
+			<SignatureProperty Id="recommendedRegistry" Target="signatureID">http://www.ihe.net/registryBaseURL
+				<timestamp xmlns="http://www.ietf.org/rfcXXXX.txt">  
+            	  <date>20050908</date>  
+            	  <time>14:34:34:34</time>  
+          		</timestamp> 
+			</SignatureProperty> 
+		</SignatureProperties> 
+		<Manifest Id="IHEManifest"> 
+			<Reference URI="ihexds:registry:xxxx-xxxx"> 
+			  <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+			  <DigestValue>YmFzZTY0RGlnZXN0VmFsdWU=</DigestValue> 
+        <!--this is document A, read it first--> 
+      </Reference> 
+      <Reference URI="ihexds:registry:xxxx-xxxx"> 
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+        <DigestValue>YmFzZTY0RGlnZXN0VmFsdWU=</DigestValue> 
+        <!--this is document B--> 
+      </Reference> 
+			<Reference URI="ihexds:registry:xxxx-xxxx"> 
+				<DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/> 
+				<DigestValue>YmFzZTY0RGlnZXN0VmFsdWU=</DigestValue> 
+				<!--this is document C--> 
+			</Reference> 
+		</Manifest> 
+	</Object> 
+</Signature> 

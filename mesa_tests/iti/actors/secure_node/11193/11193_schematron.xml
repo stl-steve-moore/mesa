@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11193: Schematron - ATNA PATIENT CARE EPISODE</title>
+
+ <sch:pattern name="EventIdentification">
+  <sch:rule context='/AuditMessage'>
+    <!-- EventIdentification -->
+    <sch:assert test="count(EventIdentification) = 1">
+    ERR: Requires ONE EventIdentification in AuditMessage (RFC 3881 5.1)
+    </sch:assert>
+    <sch:report test="count(EventIdentification) = 1">
+    CTX: Found ONE EventIdentification in AuditMessage (PASS)
+    </sch:report>
+  </sch:rule>
+  
+  <sch:rule context='/AuditMessage/EventIdentification'> 
+   <!-- EventActionCode=c -->
+   <sch:assert test="@EventActionCode='C' or @EventActionCode='R' or @EventActionCode='U' or @EventActionCode='D'">
+   ERR: Requires EventActionCode=C/R/U/D in EventIdentification (ITI TF Vol2, 3.20.7.3.4)
+   </sch:assert>
+   <sch:report test="@EventActionCode='C' or @EventActionCode='R' or @EventActionCode='U' or @EventActionCode='D'">
+   CTX: Found EventActionCode=C/R/U/D in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 or 4 or 8 or 12 -->
+   <!--<sch:assert test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   ERR: Requires EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   CTX: Found EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (PASS)
+   </sch:report>-->
+   <sch:assert test="@EventOutcomeIndicator='0'">
+   ERR: Requires EventOutcomeIndicator=0 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0'">
+   CTX: Found EventOutcomeIndicator=0 in EventIdentification (PASS)
+   </sch:report>
+   
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (ITI TF Vol2, 3.20.7.3.4)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+   
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (DICOM Supplement 95, schema)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <sch:assert test="EventID[@code='IHE0004']">
+   ERR: Requires code=IHE0004 in EventID (ITI TF Vol2, 3.20.7.3.4)
+   </sch:assert>
+   <sch:report test="EventID[@code='IHE0004']">
+   CTX: Found code=IHE0004 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName -->
+   <sch:assert test="EventID[@codeSystemName='IHE']">
+   ERR: Requires codeSystemName=IHE in EventID (ITI TF Vol2, 3.20.7.3.4)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='IHE']">
+   CTX: Found codeSystemName=IHE in EventID (PASS)
+   </sch:report>
+   
+   <!-- EventID displayName-->
+   <sch:assert test="EventID[@displayName='Patient Care Episode']">
+   ERR: Requires displayName="Patient Care Episode" in EventID (ITI TF Vol2, 3.20.7.3.4)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Patient Care Episode']">
+   CTX: Found displayName="Patient Care Episode" in EventID (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

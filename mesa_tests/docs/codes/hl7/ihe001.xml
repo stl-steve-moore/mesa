@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Sending/Receiving Application/Facility</mesa:title>
+		<mesa:context>MESA_ADT, MESA_OP, MESA_OF, MESA_IM in HL7 2.x messages</mesa:context>
+		<mesa:description>Fields MSH-3 Sending Application and MSH-5 Receiving Application shall contain only one component (Namespace ID) which shall be drawn from the HL7 Table 0361.  Fields MSH-4 Sending Facility and MSH-6 Receiving Facility shall contain only one component (Namespace ID).</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Application</mesa:column_name>
+			<mesa:column_name>Facility</mesa:column_name>
+			<mesa:column_name>Actor</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+			<mesa:column_name>Domain</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>MESA_ADT</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>MESA ADT System</mesa:param>
+			<mesa:param>MESA</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA_OP</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>MESA Order Placer</mesa:param>
+			<mesa:param>MESA</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA_OF</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>MESA Order Filler</mesa:param>
+			<mesa:param>MESA</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>MESA_IM</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>MESA Image Manager</mesa:param>
+			<mesa:param>MESA</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Cross-Enterprise</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>Ambulatory Care</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>ACC</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>AMBULATORY</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+			<mesa:param>XX</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

@@ -1,0 +1,5 @@
+Test 10512 is now implemented in 3 separate tests:
+ 10512a
+ 10512b
+ 10512c
+Please run those tests.

@@ -1,0 +1,8 @@
+Do not run test 10514. It is covered by other tests.
+
+This is ITI test 10514.
+It is designed to test the PIX Integretation Profile.
+It tests Patient Merge requests.
+References:
+ ITI TF-2: 3.8
+ ITI TF-2: 3.9.4.2.2

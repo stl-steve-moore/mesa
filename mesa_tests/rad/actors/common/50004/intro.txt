@@ -1,0 +1,5 @@
+This is test 50004.
+It exercises the EyeCare profile.
+In this test, the modality performs a different procedure
+than what is scheduled.
+

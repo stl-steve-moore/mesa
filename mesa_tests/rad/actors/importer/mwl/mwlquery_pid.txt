@@ -1,0 +1,46 @@
+0040 0100 (	// Scheduled Procedure Step Sequence
+ 0040 0001 #	// Scheduled Station AE Title
+ 0040 0002 #	// Scheduled Procedure Step Start Date
+ 0040 0003 #	// Scheduled Procedure Start Time
+ 0040 0011 #	// Scheduled Procedure Step Location
+ 0008 0060 #	// Modality
+ 0040 0009 #	// Scheduled Procedure Step ID
+ 0040 0008 (	// Scheduled Action Item Code Sequence
+  0008 0100 #	// Code Value
+  0008 0102 #	// Coding Scheme Designator
+  0008 0104 #	// Code Meaning
+ )
+ 0040 0007 #	// Scheduled Procedure Step Description
+)
+
+0032 1064 (	// Requested Procedure Code Sequence
+ 0008 0100 #	// Code Value
+ 0008 0102 #	// Coding Scheme Version
+ 0008 0104 #	// Code Meaning
+)
+
+0040 1001 #	// Requested Procedure ID
+0032 1060 #	// Requested Procedure Description
+0020 000D #	// Study Instance UID
+0008 1110 ####	// Referenced Study Sequence
+
+// Imaging Service Request
+0008 0050 #	// Accession Number
+0032 1032 #	// Requesting Physician
+0008 0090 #	// Referring Physician's Name
+0040 2016 #	// Placer Issuer and Number
+0040 2017 #	// Filler Issuer and Number
+
+0038 0010 #	// Admission ID
+0038 0300 #	// Current Patient Location
+
+// Patient Identifiers
+0010 0010 #	// Patient Name
+0010 0020 3726	// Patient ID
+
+// Patient Demographic
+0010 0030 #	// Patient Birthdate
+0010 0040 #	// Patient Sex
+
+// Patient Medical
+0010 1030 #	// Patient Weight

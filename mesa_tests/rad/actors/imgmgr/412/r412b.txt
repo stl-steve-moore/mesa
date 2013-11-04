@@ -1,0 +1,2 @@
+0008 0052	STUDY		// Query level
+0020 000d	1.2.276.0.7230010.3.200.3		// Study Instance UID

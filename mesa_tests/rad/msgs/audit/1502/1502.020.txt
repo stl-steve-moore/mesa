@@ -1,0 +1,7 @@
+# 1502.020 (Order Filler) Modality-worklist-provided
+
+OBJECT_ACTION = Access
+PATIENT_ID = M3030
+PATIENT_NAME = BROWN^JAMES
+LOCAL_USER = gwfoster
+HOST_NAME = radiology-east

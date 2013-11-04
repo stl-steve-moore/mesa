@@ -1,0 +1,94 @@
+// Patient Module
+0010 0010 MESA2423^NM		// Name
+0010 0020 MESA2423		// Patient ID
+0010 0030 19601011		// DOB
+0010 0040 O			// Sex
+
+// General Study Module
+0020 000D 1.2.840.113654.2.3.2004.1.2423
+0008 0020 20040820		// Study Date
+0008 0030 120000		// Study Time
+0008 0090 #			// Referring Phys
+0020 0010 #			// Study ID
+0008 0050 #			// Accession Number
+
+// Patient Study is empty
+
+// General Series
+0008 0060 NM			// Modality
+0020 000E 1.2.840.113654.2.3.2004.1.2423.1
+0020 0011 1			// Series Number
+
+// NM/PET Patient Orientation
+0054 0410 ####			// Patient Orientation Code Sequence
+0054 0414 ####			// Patient Gantry Relationship Code Sequence
+
+// General Equipment
+0008 0070 "MESA NM Division"	// Manufacturer
+
+// General Image
+0020 0013 101			// Instance Number
+
+// Image Pixel
+0028 0002 1			// Samples per pixel
+0028 0004 MONOCHROME2		// Photometric Interpretation
+0028 0010 256			// Rows
+0028 0011 256			// Columns
+0028 0100 16			// Bits allocated
+0028 0101 16			// Bits stored
+0028 0102 15			// High bit
+0028 0103 0			// Pixel representation (unsigned)
+0028 1050 1024			// Center
+0028 1051 520			// Width
+
+// NM Image Pixel
+// Some entries are covered by Image Pixel
+0028 0030 5\5			// Pixel spacing in mm
+
+// Multi-frame
+0028 0008 18			// Number of Frames
+0028 0009 { 00540010, 00540020, 00540060, 00540070 }	// Frame Increment Pointer
+
+// NM Multi-frame
+0054 0010 { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }	// Energy Window Vector
+0054 0011 1			// Number of engergy window groupings.
+0054 0020 { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }	// Detector vector
+0054 0021 1			// Number of detectors
+0054 0060 { 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3 }	// R-R Interval Vector
+0054 0061 3			// Number of R-R Intervals
+0054 0070 { 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7, 8 }	// Time Slot Vector
+0054 0071 8			// Number of time slots
+
+// NM Image
+0008 0008 { ORIGINAL, PRIMARY, GATED, EMISSION }	// Image Type
+0018 0070 20000			// Counts accumulated
+0018 1242 1000			// Actual Frame Duration (msec)
+
+// R-R Intervals Sequence
+0054 0062 (
+ 0054 0063 (
+  0018 1081 500			// Low R-R Value
+  0018 1082 750			// High R-R Value
+ )
+ 0054 0063 (
+  0018 1081 800			// Low R-R Value
+  0018 1082 1050		// High R-R Value
+ )
+ 0054 0063 (
+  0018 1081 1100		// Low R-R Value
+  0018 1082 1500		// High R-R Value
+ )
+)
+
+// NM Isotope
+0054 0012 (			// Energy Window Information Sequence
+ 0054 0018 Low-Energy
+)
+0054 0016 ####			// Radiopharmaceutical Information Sequence
+
+// NM Detector
+0054 0022 ####			// Detector Information Sequence
+
+// SOP Common
+0008 0016 1.2.840.10008.5.1.4.1.1.20	// SOP Class UID
+0008 0018 1.2.840.113654.2.3.2004.1.2423.1.101

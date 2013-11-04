@@ -1,0 +1,10 @@
+The Importer actor should now scan one film or document for 
+test 3726.  If this has already been accomplished, there is 
+no need to repeat that step.
+
+The Importer should also coerce the data in preparation for
+export. New information for patient LAVENDER^L comes from 
+the response to the MWL query.
+
+After coercing attributes as required, store the study to the 
+MESA Image Manager/Archive.

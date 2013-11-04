@@ -1,0 +1,5 @@
+Your Order Filler need to assign a temporary Patient Name and temporary
+Patient ID. This name/ID is owned by the DSS/Order Filler and will be used
+at the modality during acquisition. Later, you will receive an ADT message
+with the permanent name/identifier, and you will merge your identifier
+with the permanent identifier.

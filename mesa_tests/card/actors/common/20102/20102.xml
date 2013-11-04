@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- ?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ? -->
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 20102: C1: Patient Registerd at ADT and Procedure Ordered at the Order Placer with Diagnostic to Interventional Transition (multiple MPPS)</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test the Order Filler to verify that it can handle the modality separately the singly SPS of Left Heart Cath into a Diagnostic and Interventional Procedure Step, ie., multiple MPPS corresponding to a single SPS. Patient Name is FO^Charlotte.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>CATH_WORKFLOW</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>20102/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/20102/20102.102.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>20102.102.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser FO as outpatient (Patient Class = 'O')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/20102/20102.102.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>20101.104.a04.adt</mesa:identifier>
+   <mesa:description>A04: Regiser FO as outpatient (Patient Class = 'O')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/20102/20102.104.a04.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>20102.106.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order "CATH CONSULT" for FE (Requested Procedure- Procedure Code="CATH CONSULT")</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/20102/20102.106.o01.hl7</mesa:param>
+ </mesa:step> 
+ 
+ <mesa:internal>
+   <mesa:param>CARD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.108.o01.hl7</mesa:param>
+   <mesa:param>T20102</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20011</mesa:param>
+   <mesa:param>YY-20011</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_HEMO</mesa:param>
+ </mesa:internal>
+
+ <mesa:internal>
+   <mesa:param>CARD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.108.o01.hl7</mesa:param>
+   <mesa:param>T20102</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20011</mesa:param>
+   <mesa:param>YY-20011</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_HEMO</mesa:param>
+ </mesa:internal>
+
+ <mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.108.o01.hl7</mesa:param>
+   <mesa:param>T20102</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20011</mesa:param>
+   <mesa:param>YY-20011</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_HEMO</mesa:param>
+ </mesa:internal>
+
+ <mesa:step>
+   <mesa:identifier>20102.108.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Schedule CATHLAB7 (SPS procedure code= Left Heart Cath)</mesa:description>
+   <mesa:transaction>4</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.108.o01.hl7</mesa:param>
+   <mesa:param>T20102</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>20102.110.dcm</mesa:identifier>
+   <mesa:description>MWL C-Find. Query based on: Scheduled AE Title=HEMO7. Scheduled Date=today. Return SPS: SPS procedure code desc=Left Heart Cath. RP procedure code desc=CATH CONSULT</mesa:description>
+   <mesa:transaction>5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/20102/20102.106.o01.hl7</mesa:param>
+   <mesa:param>20102/mwl_q1</mesa:param>
+ </mesa:step> 
+ <mesa:text_file>
+   <mesa:file>20102/secondprocedure.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:step>
+   <mesa:identifier>20102.112.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure(PPS Diag Left Heart Cath for Patient "FE")</mesa:description>
+   <mesa:transaction>CARD-1</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T20102</mesa:param>
+   <mesa:param>LAB7_HEMO</mesa:param>
+   <mesa:param>SPS-YES</mesa:param>
+ </mesa:step> 
+  <mesa:internal>
+   <mesa:param>CATH-SCHEDULE-MPPS-TRIGGER</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.108.o01.hl7</mesa:param>
+   <mesa:param>T20102_IVUS</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20012</mesa:param>
+   <mesa:param>YY-20012</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_IVUS</mesa:param>
+   <mesa:param>IVUS</mesa:param>
+   <mesa:param>40011</mesa:param>
+ </mesa:internal>
+ <mesa:internal>
+   <mesa:param>CATH-SCHEDULE-MPPS-TRIGGER</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.108.o01.hl7</mesa:param>
+   <mesa:param>T20102_XA</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20013</mesa:param>
+   <mesa:param>YY-20013</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+   <mesa:param>XA</mesa:param>
+   <mesa:param>40012</mesa:param>
+ </mesa:internal>
+ <mesa:text_file>
+   <mesa:file>20102/secondmwlquery.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:step>
+   <mesa:identifier>20102.114.dcm</mesa:identifier>
+   <mesa:description>MWL C-Find (SPS procedure code= Left Heart Cath)</mesa:description>
+   <mesa:transaction>5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/20102/20102.106.o01.hl7</mesa:param>
+   <mesa:param>20102/mwl_q2</mesa:param>
+ </mesa:step> 
+ 
+ 
+ <mesa:step>
+   <mesa:identifier>20102.114.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure (PPS Diag Left Heart Cath)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T20102</mesa:param>
+   <mesa:param>LAB7_HEMO</mesa:param>
+ </mesa:step> 
+
+ <mesa:step>
+   <mesa:identifier>20102.114.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure (PPS Diag Left Heart Cath)</mesa:description>
+   <mesa:transaction>8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T20102</mesa:param>
+   <mesa:param>LAB7_HEMO</mesa:param>
+ </mesa:step> 
+ <mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.116a.o01.hl7</mesa:param>
+   <mesa:param>T20102XAdiag</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20013</mesa:param>
+   <mesa:param>YY-20013</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+ </mesa:internal>
+<mesa:text_file>
+   <mesa:file>20102/diagnosticMPPSXA.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:step>
+   <mesa:identifier>20102.112.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure(PPS Diag Left Heart Cath for Patient "FE")</mesa:description>
+   <mesa:transaction>CARD-1</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T20102XAdiag</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+   <mesa:param>SPS-NO</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>20102.114.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure (PPS Diag Left Heart Cath)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T20102XAdiag</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+ </mesa:step> 
+ <mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/20102/20102.116a.o01.hl7</mesa:param>
+   <mesa:param>T20102XAinterventional</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>XX-20013</mesa:param>
+   <mesa:param>YY-20013INT</mesa:param>
+   <mesa:param>CATHLAB7</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+ </mesa:internal>
+<mesa:text_file>
+   <mesa:file>20102/interventionalMPPSXA.txt</mesa:file>
+ </mesa:text_file>
+<mesa:step>
+   <mesa:identifier>20102.112.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure(PPS Interventional Left Heart Cath for Patient "FE")</mesa:description>
+   <mesa:transaction>CARD-1</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T20102XAinterventional</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+   <mesa:param>SPS-NO</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>20102.114.dcm</mesa:identifier>
+   <mesa:description>PPS: End procedure (PPS Interventional Left Heart Cath)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T20102XAinterventional</mesa:param>
+   <mesa:param>LAB7_XA</mesa:param>
+ </mesa:step> 
+ <mesa:text_file>
+  <mesa:file>20102/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

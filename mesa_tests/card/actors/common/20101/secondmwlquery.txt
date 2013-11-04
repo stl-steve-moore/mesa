@@ -1,0 +1,8 @@
+The Order Filler has now scheduled one additional SPS that
+was triggered by a PPS from the first modality in the Cath
+Workflow.
+
+Test 20101 now sends a new MWL query to the Order Filler to
+determine if the new SPS is on the worklist. This query
+happens before the MPPS complete message from the first modality,
+so there should still be entries for both modalities.

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<systems>
+ <system codeSystemName='LOINC' codeSystem='2.16.840.1.113883.6.1'>
+  <code value='11502-2' dispalyName='LABORATORY REPORT.TOTAL'/>
+  <code value='18717-9' dispalyName='BLOOD BANK STUDIES'/>
+  <code value='18718-7' dispalyName='CELL MARKER STUDIES'/>
+  <code value='18719-5' dispalyName='CHEMISTRY STUDIES'/>
+  <code value='18720-3' dispalyName='COAGULATION STUDIES'/>
+  <code value='18721-1' dispalyName='THERAPEUTIC DRUG MONITORING STUDIES'/>
+  <code value='18722-9' dispalyName='FERTILITY STUDIES'/>
+  <code value='18723-7' dispalyName='HEMATOLOGY STUDIES'/>
+  <code value='18724-5' dispalyName='HLA STUDIES'/>
+  <code value='18725-2' dispalyName='MICROBIOLOGY STUDIES'/>
+  <code value='18727-8' dispalyName='SEROLOGY STUDIES'/>
+  <code value='18728-6' dispalyName='TOXICOLOGY STUDIES'/>
+  <code value='18729-4' dispalyName='URINALYSIS STUDIES'/>
+  <code value='18767-4' dispalyName='BLOOD GAS STUDIES'/>
+  <code value='18768-2' dispalyName='CELL COUNTS+DIFFERENTIAL STUDIES'/>
+  <code value='18769-0' dispalyName='MICROBIAL SUSCEPTIBILITY TESTS'/>
+  <code value='26435-8' dispalyName='MOLECULAR PATHOLOGY STUDIES'/>
+  <code value='26436-6' dispalyName='LABORATORY STUDIES'/>
+  <code value='26437-4' dispalyName='CHEMISTRY CHALLENGE STUDIES'/>
+  <code value='26438-2' dispalyName='CYTOLOGY STUDIES'/>
+ </system>
+ <system codeSystemName='SNOMED CT' codeSystem='2.16.840.1.113883.2.1.3.2.4.15'>
+  <code value='197431000000109' dispalyName='laboratory report'/>
+ </system>
+</systems>
+

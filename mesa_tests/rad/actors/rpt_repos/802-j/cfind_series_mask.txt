@@ -1,0 +1,8 @@
+# Study level query
+
+# We test for equality of these attributes.
+0008 0052 =
+0008 0060 =
+0020 000D =
+0020 000E =
+0020 1209 =

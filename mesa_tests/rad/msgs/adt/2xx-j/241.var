@@ -1,0 +1,23 @@
+# 241.var (Modality 2xx tests)
+#
+# PID
+#
+$PATIENT_ID$ = MM241^^^ADT1
+#PATIENT_NAME$ = 島津^沙織^^^^^L^I~simadu^saori^^^^^L^A~しまづ^さおり^^^^^L^P
+$PATIENT_NAME$ = 島津^沙織^^^^^L^I~simadu^saori^^^^^L^A~シマヅ^サオリ^^^^^L^P
+$DATE_TIME_BIRTH$ = 19500121
+$SEX$ = F
+$RACE$ = BL
+$PATIENT_ADDRESS$ = 東京都八王子市南町４−１３^^^^1920072^^^^^^I
+$PATIENT_ACCOUNT_NUM$ = 20-95-MM241
+#
+# PV1
+#
+$PATIENT_CLASS$ = E
+$PATIENT_LOCATION$ = 1W^111^2^XYZ_HOSPITAL
+#ATTENDING_DOCTOR$ = ^タカハシ^カズオ^^^^^^^L
+$ATTENDING_DOCTOR$ = ^高橋^和男^^^^^^^L
+$REFERRING_DOCTOR$ = 5101^^小林^幸恵^^^^^^^L^^^^^I
+$VISIT_NUMBER$ = V241^^^ADT1
+$VISIT_INDICATOR$ = V
+$ADMIT_DATE_TIME$ = 200007010800

@@ -1,0 +1,3 @@
+The next order events are for an Imaging Service that
+occurred before the order was placed. These orders
+are placed "post-imaging".

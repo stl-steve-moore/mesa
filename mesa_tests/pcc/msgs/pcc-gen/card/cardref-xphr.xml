@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ?>
+
+<cda:ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 ../../cd/hl7/cda/CDA_R2_NormativeWebEdition2005/infrastructure/cda/CDA.xsd"
+ xmlns:cda="urn:hl7-org:v3">
+ <cda:realmCode code="US"/>
+ <cda:typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+ <cda:templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP"/>
+ <cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2" extension="Medical Summary"/>
+ <cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5" extension="PHR Extract"/>
+ <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.3" extension="484/1"/>
+ <cda:code displayName="Summary Of Episode Note" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1"
+  code="34133-9"/>
+ <cda:title>XPHR</cda:title>
+
+ <cda:effectiveTime value="20050215095400+0500"/>
+ <cda:confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+ <cda:languageCode code="en-US"/>
+ <cda:setId root="1.3.6.1.4.1.21367.2006.1.2.103.4" extension="484"/>
+ <cda:versionNumber value="1"/>
+ <cda:recordTarget>
+  <cda:patientRole>
+   <cda:id root="1.3.6.1.4.1.21367.2005.1.1" extension="40004"/>
+   <cda:addr>
+    <cda:streetAddressLine>1625 Main</cda:streetAddressLine>
+    <cda:city>St. Louis</cda:city>
+    <cda:state>MO</cda:state>
+    <cda:postalCode>63110</cda:postalCode>
+   </cda:addr>
+   <cda:telecom use="HP" value="tel:314-555-1672"/>
+   <cda:patient>
+    <cda:name>
+     <cda:given>Margaret</cda:given>
+     <cda:family>Wilson</cda:family>
+    </cda:name>
+    <cda:administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="F"/>
+    <cda:birthTime value="19480503"/>
+   </cda:patient>
+   <cda:providerOrganization>
+    <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+    <cda:name>Gateway Hospital</cda:name>
+    <cda:telecom use="PUB" value="tel:781-229-3600"/>
+    <cda:addr>
+     <cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+     <cda:city>St. Louis</cda:city>
+     <cda:state>MO</cda:state>
+     <cda:postalCode>63110</cda:postalCode>
+     <cda:country>USA</cda:country>
+    </cda:addr>
+   </cda:providerOrganization>
+  </cda:patientRole>
+ </cda:recordTarget>
+ <cda:author>
+  <cda:time value="20060215"/>
+  <cda:assignedAuthor>
+   <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/>
+   <!--code code="SELF" codeSystem="2.16.840.1.113883.5.111"/-->
+   <cda:addr>
+    <cda:streetAddressLine>700 Euclid Ave</cda:streetAddressLine>
+    <cda:city>St. Louis</cda:city>
+    <cda:state>MO</cda:state>
+    <cda:postalCode>63110</cda:postalCode>
+    <cda:country>USA</cda:country>
+   </cda:addr>
+   <cda:telecom use="HP" value="1-781-229-3677"/>
+   <cda:assignedPerson>
+    <cda:name>
+     <cda:given>Brian</cda:given>
+     <cda:family>Hasselfeld</cda:family>
+    </cda:name>
+   </cda:assignedPerson>
+  </cda:assignedAuthor>
+ </cda:author>
+ <cda:custodian>
+  <cda:assignedCustodian>
+   <cda:representedCustodianOrganization>
+    <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+    <cda:name>Gateway Hospital</cda:name>
+    <cda:telecom use="PUB" value="tel:781-229-3600"/>
+    <cda:addr>
+     <cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+     <cda:city>St. Louis</cda:city>
+     <cda:state>MO</cda:state>
+     <cda:postalCode>63110</cda:postalCode>
+     <cda:country>USA</cda:country>
+    </cda:addr>
+   </cda:representedCustodianOrganization>
+  </cda:assignedCustodian>
+ </cda:custodian>
+ <cda:legalAuthenticator>
+  <cda:time value="20060215"/>
+  <cda:signatureCode code="S"/>
+  <cda:assignedEntity>
+   <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="Carus, Wyn"/>
+   <cda:addr>
+    <cda:streetAddressLine>21 North Ave</cda:streetAddressLine>
+    <cda:city>Burlington</cda:city>
+    <cda:state>MA</cda:state>
+    <cda:postalCode>01803</cda:postalCode>
+    <cda:country>USA</cda:country>
+   </cda:addr>
+   <cda:telecom use="PUB" value="tel:781-229-3600"/><!-- Note the location of this moved, and please change these numbers to an invalid phone number  -->
+   <cda:assignedPerson>
+    <cda:name>Carus, Wyn</cda:name>
+   </cda:assignedPerson>
+  </cda:assignedEntity>
+ </cda:legalAuthenticator>
+ <cda:documentationOf>
+  <cda:serviceEvent classCode="PCPR"><!-- Healthcare Provider -->
+   <cda:effectiveTime>
+    <cda:low value="20060215"/>
+    <cda:high value="20060215"/>
+   </cda:effectiveTime>
+   <cda:performer typeCode="PRF">
+    <cda:time>
+     <!--author: Carus, Wyn-->
+     <cda:low value="20060215"/>
+     <cda:high value="20060215"/>
+    </cda:time>
+    <cda:assignedEntity>
+     <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/>
+     <cda:addr>
+      <cda:streetAddressLine>21 North Ave</cda:streetAddressLine>
+      <cda:city>Burlington</cda:city>
+      <cda:state>MA</cda:state>
+      <cda:postalCode>01803</cda:postalCode>
+     </cda:addr>
+     <cda:telecom use="PUB" value="1-781-229-3677"/>
+     <cda:assignedPerson>
+      <cda:name>
+       <cda:given>Wyn</cda:given>
+       <cda:family>Carus</cda:family>
+      </cda:name>
+     </cda:assignedPerson>
+    </cda:assignedEntity>
+   </cda:performer>
+  </cda:serviceEvent>
+ </cda:documentationOf>
+ <cda:component>
+  <cda:structuredBody>
+   <cda:templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP"/><!-- No longer appropriate as of last release of CRS -->
+<!-- Medication -->
+      <cda:component>
+    <cda:section ID="section-17">
+     <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.19'/><!-- You need a template ID for each section -->
+     <cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10160-0" displayName="HISTORY OF MEDICATION USE"/><!-- Added cda: prefix -->
+     <cda:title>HISTORY OF MEDICATION USE:</cda:title>
+     <!-- ???? -->
+	 <cda:text>
+      <cda:list ID="l-5">
+       <cda:item ID="li-8">1. <cda:content ID="s-27">
+        <cda:content ID="medname-3">Theophylline</cda:content><!-- This should normally contain the SIG as well, e.g. "200mg bid PO X45 days" -->
+       </cda:content>
+       </cda:item>
+      </cda:list>
+     </cda:text>
+	 <!-- ???? -->
+     <cda:entry>
+      <cda:substanceAdministration classCode='SBADM' moodCode='RQO'>
+       <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.7'/>
+       <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.7.1'/>
+       <cda:id root='1.3.6.1.4.1.21367.2006.1.2.103.10' extension='484.1.medname-3'/>
+       <cda:text><cda:reference value='#medname-3'/>Here is the text<!-- Strike the text, it doesn't belong here.  When reference is used, it is in place of text --></cda:text>
+       <cda:statusCode code='completed'/>
+       <cda:effectiveTime xsi:type='cda:IVL_TS'><!-- NOTE: If you use cda: for the instance, then you also need to use cda: in xsi:type -->
+        <cda:low value='20060101'/>
+        <cda:high value='20060214'/>
+       </cda:effectiveTime>
+       <cda:effectiveTime operator='A' xsi:type='cda:PIVL_TS' institutionSpecified='false'>
+        <cda:period value='8' unit='h' /><!-- should be every 12 hours for the specified medication -->
+       </cda:effectiveTime>
+       <cda:routeCode code='PO' codeSystem='2.16.840.1.113883.5.112' displayName='Swallow, oral' codeSystemName='RouteOfAdministration' />
+        <cda:doseQuantity value='0.200' unit='g'/><!-- This is correct. It could also be value='200' unit='mg' -->
+        <cda:rateQuantity value='0.025' unit='g/h'/><!-- Inappropriate for a medication unless it is given continuously. e.g., through an IV -->
+        <cda:consumable>
+         <cda:manufacturedProduct>
+          <cda:manufacturedLabeledDrug>
+           <!-- Don't use SNOMED RT for this example.  SNOMED-CT, RxNorm or NDC are free for use in the US.  
+                  If you are using SNOMED-CT, then codeSystem=''2.16.840.1.113883.6.96', and code='372810006'.
+                  If you are using Rx-NORM, then codeSystem="2.16.840.1.113883.6.96" and code="346574"
+                  If you are using NDC, then codeSystem="2.16.840.1.113883.6.96" and one possible code value is code="55289-*751"
+           -->
+           <cda:code code='C-69510' displayName='Theophylline' codeSystem='2.16.840.1.113883.6.5' codeSystemName='SNOMED'>
+            <cda:originalText><cda:reference value='#medname-3'/></cda:originalText>
+           </cda:code>
+           <cda:name>Eheodur 200mg BID</cda:name><!-- Eheodur came from where?  and if 200mg BID, then the frequency is every 12 hours, not every 8 -->
+          </cda:manufacturedLabeledDrug>
+         </cda:manufacturedProduct>
+        </cda:consumable>        
+       <cda:entryRelationship typeCode='RSON'><!-- Here you need to have a previously reported problem before you use this -->
+         <cda:act classCode='ACT' moodCode='EVN'>
+          <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.4.1'/>
+          <cda:id root='1' extension='A'/>
+          <cda:code/><!-- This needs a CP to the PCC Technical Framework, since CDA says that code is required for act, but the TF does not reflect this.
+           The values of code and codeSystem must match that of the original act
+          -->  
+         </cda:act>
+        </cda:entryRelationship>
+         </cda:substanceAdministration>
+     </cda:entry>
+    </cda:section>
+   </cda:component>
+
+<!-- Required Vital Signs xphr32 -->
+   <cda:component>
+   <cda:section ID='section-18' >
+      <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.5.3.2'/>
+      <cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="8716-3" displayName="VITAL SIGNS"/>
+      <!-- optional -->
+      <cda:title>VITAL SIGNS</cda:title>
+      <!-- ???? -->
+      <cda:text>
+      </cda:text>
+      <!-- ???? -->
+      <cda:entry>
+      <!--  one or more observations -->
+         <cda:observation typeCode='OBS' moodCode='EVN'>
+            <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.13'/>
+            <cda:id root='1.3.6.1.4.1.21367.2006.1.2.103.10' extension='484.1.obs-1'/>
+	    <!-- read xphr p37 for specific info 
+            <code code='' codeSystem='' codeSystemName='IHEMeasurements|IHEPregnancyObservations'/>
+            <text><reference value='#xxx'/></text>
+            <statusCode code='completed'/>
+            <effectiveTime value='20061009'/>
+            <repeatNumber value=''/>
+            <value xsi:type='' …/>
+            <interpretationCode code='' codeSystem='' codeSystemName=''/>
+            <methodCode code='' codeSystem='' codeSystemName=''/>
+            <targetSiteCode code='' codeSystem='' codeSystemName=''/>
+			-->
+         </cda:observation>
+      </cda:entry>
+   </cda:section>
+   </cda:component>
+   
+   <!-- Conditions -->
+   <cda:component>
+   <cda:section ID='section-19' >
+      <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.6'/>
+      <cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11450-4" displayName="PROBLEM LIST"/>
+      <!-- optional -->
+      <cda:title>PROBLEM LIST</cda:title>
+      <!-- ???? -->
+      <cda:text>
+      </cda:text>
+      <!-- ???? -->
+      <cda:entry>
+        <cda:act classCode='ACT' moodCode='EVN'>
+          <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5.1'/>
+          <cda:id root='' extension=''/>
+          <!--<cda:statusCode code='active|suspended|aborted|completed'/>-->
+	  <cda:statusCode code='active'/>
+          <cda:effectiveTime>
+            <cda:low value=''/>
+            <cda:high value=''/>
+          </cda:effectiveTime>
+          <!-- one or more entry relationships identifying problems of concern -->
+          <cda:entryRelationship type='SUBJ'>
+          </cda:entryRelationship>
+          <!-- zero or one entry relationships identifying the health status of concern -->
+          <cda:entryRelationship type='SUBJ'>
+          </cda:entryRelationship>
+          <!-- optional entry relationship providing more information about the concern -->
+          <cda:entryRelationship type='REFR'>
+          </cda:entryRelationship>
+        </cda:act>
+      <!--  one or more Encounter 
+         <cda:encounter classCode='ENC' moodCode='APT|ARQ|EVN'>
+            <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.14'/>
+            <cda:id root='' extension=''/>
+            <cda:code code='' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ActEncounterCode' />
+            <cda:text><reference value='#xxx'/></cda:text>
+            <cda:effectiveTime>
+               <cda:low value=''/>
+               <cda:high value=''/>
+            </cda:effectiveTime>
+            <cda:priorityCode code=''/>
+            <cda:performer typeCode='PRF'>
+               <cda:time><cda:low value=''/><cda:high value=''/></cda:time>
+               <cda:assignedEntity></cda:assignedEntity>
+            </cda:performer>
+            <cda:author />
+            <cda:informant />
+            <cda:participant typeCode='LOC'>
+               <cda:participantRole classCode='SDLOC'>
+                  <cda:id/>
+                  <cda:code/>
+                  <cda:addr>...</cda:addr>
+                  <cda:telecom value='' use=''/>
+                  <cda:playingEntity classCode='PLC' determinerCode='INST'>
+                     <cda:name></cda:name>
+                  </cda:playingEntity>
+               </cda:participantRole>
+            </cda:participant>
+         </cda:encounter>
+	-->
+      </cda:entry>
+   </cda:section>
+   </cda:component>
+
+   <!-- Allergies and Drgug Sensitives -->
+   <cda:component>
+   <cda:section ID='section-20' >
+      <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.3.13'/>
+      <cda:code codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="10155-0" displayName="HISTORY OF ALLERGIES"/>
+      <!-- optional -->
+      <cda:title>HISTORY OF ALLERGIES</cda:title>
+      <!-- ???? -->
+      <cda:text>
+      </cda:text>
+      <!-- ???? -->
+      <cda:entry>
+      <!--  Allergies and Intolerances Entry -->
+         <cda:observation classCode='COND' moodCode='EVN' negationInd='false'>
+            <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.5'/>
+            <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.4.6'/>
+            <cda:id root='' extension=''/>
+            <cda:code code='ALG|OINT|DALG|EALG|FALG|DINT|EINT|FINT|DNAINT|ENAINT|FNAINT' codeSystem='2.16.840.1.113883.5.4' codeSystemName='ObservationIntoleranceType'/>
+	    <cda:statusCode code='completed'/>
+            <cda:effectiveTime>
+               <cda:low value=''/>
+               <cda:high value=''/>
+            </cda:effectiveTime>
+            <cda:value xsi:type='cda:CD' code='' codeSystem='' displayName='' codeSystemName=''/>
+            <cda:participant typeCode='CSM'>
+               <cda:participantRole classCode='MANU'>
+                  <cda:playingEntity classCode='MMAT'>
+                      <cda:code code='' codeSystem=''>
+                         <cda:originalText><cda:reference value='#substance'/></cda:originalText>
+		      </cda:code>
+                      <cda:name></cda:name> 
+                  </cda:playingEntity>
+               </cda:participantRole>
+            </cda:participant>
+            <!-- Optional <entryRelationship> element containing reactions -->
+            <!-- Optional <entryRelationship> element containing clinical status -->
+            <!-- Optional <entryRelationship> element containing severity -->
+            <!-- Optional <entryRelationship> element containing comments -->
+	 </cda:observation>
+      </cda:entry>
+   </cda:section>
+   </cda:component>   
+   
+    </cda:structuredBody>
+ </cda:component>
+</cda:ClinicalDocument>

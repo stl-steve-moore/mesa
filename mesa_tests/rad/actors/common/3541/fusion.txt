@@ -1,0 +1,10 @@
+OPACITY 0.7
+UNDERLYING	1
+SUPERIMPOSED	1
+RescaleIntercept -1024
+RescaleSlope 1
+RescaleType 1
+WindowCenter 1
+WindowWidth 1
+PRESENTATION_LABEL	Head_PET/CT
+CREATORS_NAME	FENSTER^LIDDY

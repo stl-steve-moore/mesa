@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11181: Schematron - ATNA Start</title>
+
+ <sch:pattern name="EventActionCode">
+  <sch:rule context='/AuditMessage/EventIdentification'>
+   
+   <!-- EventActionCode=E -->
+   <sch:assert test="@EventActionCode='E'">
+   ERR: Requires EventActionCode=C in EventIdentification (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="@EventActionCode='E'">
+   CTE: Found EventActionCode=C in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 -->
+   <sch:assert test="@EventOutcomeIndicator='0'">
+   ERR: Requires EventOutcomeIndicator=0 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0'">
+   CTX: Found EventOutcomeIndicator=0 in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (DICOM Supplement 95, schema)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <!-- EventID code=110113 -->
+   <sch:assert test="EventID[@code='110113']">
+   ERR: Requires code=110113 in EventID (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventID[@code='110113']">
+   CTX: Found code=110113 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName=DCM -->
+   <sch:assert test="EventID[@codeSystemName='DCM']">
+
+   ERR: Requires codeSystemName=DCM in EventID (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='DCM']">
+   CTX: Found codeSystemName=DCM in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID displayName=Security Alert-->
+   <sch:assert test="EventID[@displayName='Security Alert']">
+   ERR: Requires displayName=Security Alert in EventID (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Security Alert']">
+   CTX: Found displayName=Security Alert in EventID (PASS)
+   </sch:report>
+
+   <!-- EventTypeCode code=110126 -->
+   <sch:assert test="EventTypeCode[@code='110126' and @codeSystemName='DCM' and @displayName='Node Authentication'] or EventTypeCode[@code='110127' and @codeSystemName='DCM' and @displayName='Emergency Override'] or EventTypeCode[@code='110128' and @codeSystemName='DCM' and @displayName='Network Configuration'] or EventTypeCode[@code='110129' and @codeSystemName='DCM' and @displayName='Security Configuration'] or EventTypeCode[@code='110130' and @codeSystemName='DCM' and @displayName='Hardware Configuration'] or EventTypeCode[@code='110131' and @codeSystemName='DCM' and @displayName='Software Configuration'] or EventTypeCode[@code='110132' and @codeSystemName='DCM' and @displayName='Use of Restricted Function'] or EventTypeCode[@code='110133' and @codeSystemName='DCM' and @displayName='Audit Recording Stopped'] or EventTypeCode[@code='110134' and @codeSystemName='DCM' and @displayName='Audit Recording Started'] or EventTypeCode[@code='110135' and @codeSystemName='DCM' and @displayName='Object Security Attributes Changed'] or EventTypeCode[@code='110136' and @codeSystemName='DCM' and @displayName='Security Roles Changed'] or EventTypeCode[@code='110137' and @codeSystemName='DCM' and @displayName='User security Attributes Changed']">
+   ERR: Requires code='110126 or 110127 or 110128 or 110129 or 110129 or 110130 or 110131 or 110132 or 110133 or 110134 or 110135 or 110136 or 110137' and codeSystemName=DCM and displayName='Node Authentication or Emergency Override or Network Configuration or Security Configuration or Hardware Configuration or Software Configuration or Use of Restricted Function or Audit Recording Stopped or Audit Recording Started or Object Security Attributes Changed orSecurity Roles Changed or User security Attributes Changed' in EventTypeCode (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventTypeCode[@code='110126' and @codeSystemName='DCM' and @displayName='Node Authentication'] or EventTypeCode[@code='110127' and @codeSystemName='DCM' and @displayName='Emergency Override'] or EventTypeCode[@code='110128' and @codeSystemName='DCM' and @displayName='Network Configuration'] or EventTypeCode[@code='110129' and @codeSystemName='DCM' and @displayName='Security Configuration'] or EventTypeCode[@code='110130' and @codeSystemName='DCM' and @displayName='Hardware Configuration'] or EventTypeCode[@code='110131' and @codeSystemName='DCM' and @displayName='Software Configuration'] or EventTypeCode[@code='110132' and @codeSystemName='DCM' and @displayName='Use of Restricted Function'] or EventTypeCode[@code='110133' and @codeSystemName='DCM' and @displayName='Audit Recording Stopped'] or EventTypeCode[@code='110134' and @codeSystemName='DCM' and @displayName='Audit Recording Started'] or EventTypeCode[@code='110135' and @codeSystemName='DCM' and @displayName='Object Security Attributes Changed'] or EventTypeCode[@code='110136' and @codeSystemName='DCM' and @displayName='Security Roles Changed'] or EventTypeCode[@code='110137' and @codeSystemName='DCM' and @displayName='User security Attributes Changed']">
+   CTX: Found code='110126 or 110127 or 110128 or 110129 or 110129 or 110130 or 110131 or 110132 or 110133 or 110134 or 110135 or 110136 or 110137' and codeSystemName=DCM and displayName='Node Authentication or Emergency Override or Network Configuration or Security Configuration or Hardware Configuration or Software Configuration or Use of Restricted Function or Audit Recording Stopped or Audit Recording Started or Object Security Attributes Changed orSecurity Roles Changed or User security Attributes Changed' in EventTypeCode (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

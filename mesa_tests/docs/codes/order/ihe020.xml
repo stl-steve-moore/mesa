@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>ORC1: HL7 Table 0119 Order Control</mesa:title>
+		
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+			<mesa:column_name>Comment</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>NW</mesa:param>
+			<mesa:param>New order</mesa:param>
+			<mesa:param>Required of Placer</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>PA</mesa:param>
+			<mesa:param>Parent order</mesa:param>
+			<mesa:param>Optional for Placer</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>CH</mesa:param>
+			<mesa:param>Child order</mesa:param>
+			<mesa:param>Optional for Placer</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>SN</mesa:param>
+			<mesa:param>Send Placer Order Number</mesa:param>
+			<mesa:param>Sent by Filler</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>NA</mesa:param>
+			<mesa:param>Response with Placer Order Number</mesa:param>
+			<mesa:param>Sent by Placer</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ?>
+
+<cda:ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="urn:hl7-org:v3 ../../cd/hl7/cda/CDA_R2_NormativeWebEdition2005/infrastructure/cda/CDA.xsd"
+ xmlns:cda="urn:hl7-org:v3">
+ <cda:realmCode code="US"/>
+ 
+ <cda:typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+ <!--
+ <cda:templateId root="2.16.840.1.113883.10" extension="IMPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP"/>
+ <cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.2" extension="Medical Summary"/>
+ <cda:templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.5" extension="PHR Extract"/>-->
+ <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.3" extension="484/1"/>
+ 
+ <!--<cda:code displayName="LABORATORY REPORT.TOTAL" codeSystemName="LOINC" codeSystem="2.16.840.1.113883.6.1" code="11502-2"/>-->
+ <cda:code code="18719-5" codeSystem="2.16.840.1.113883.6.1" displayName="CHEMISTRY STUDIES" originalText="CHEMISTRY"/>
+ <cda:title>Laboratory Result</cda:title>
+
+ <cda:effectiveTime value="20050215095400+0500"/>
+ <cda:confidentialityCode codeSystem="2.16.840.1.113883.5.25" code="N"/>
+ <cda:languageCode code="en-US" codeSystem="2.16.840.1.113883.6.121"/>
+ <cda:setId root="1.3.6.1.4.1.21367.2006.1.2.103.4" extension="484"/>
+ <cda:versionNumber value="1"/>
+ <cda:recordTarget>
+  <cda:patientRole>
+   <cda:id root="1.3.6.1.4.1.21367.2005.1.1" extension="40003"/>
+   <cda:addr>
+    <cda:streetAddressLine>4525 Scott Ave</cda:streetAddressLine>
+    <cda:city>St. Louis</cda:city>
+    <cda:state>MO</cda:state>
+    <cda:postalCode>63110</cda:postalCode>
+   </cda:addr>
+   <cda:telecom use="HP" value="tel:314-555-1671"/>
+   <cda:patient>
+    <cda:name>
+     <cda:given>Frederick</cda:given>
+     <cda:family>Randolph</cda:family>
+    </cda:name>
+    <cda:administrativeGenderCode codeSystem="2.16.840.1.113883.5.1" code="M"/>
+    <cda:birthTime value="19590203"/>
+   </cda:patient>
+   <cda:providerOrganization>
+    <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+    <cda:name>Gateway Hospital</cda:name>
+    <cda:telecom use="PUB" value="tel:781-229-3600"/>
+    <cda:addr>
+     <cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+     <cda:city>St. Louis</cda:city>
+     <cda:state>MO</cda:state>
+     <cda:postalCode>63110</cda:postalCode>
+     <cda:country>USA</cda:country>
+    </cda:addr>
+   </cda:providerOrganization>
+  </cda:patientRole>
+ </cda:recordTarget>
+ <cda:author>
+  <cda:time value="20060215"/>
+  <cda:assignedAuthor>
+   <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/>
+   <!--code code="SELF" codeSystem="2.16.840.1.113883.5.111"/-->
+   <cda:addr>
+    <cda:streetAddressLine>700 Euclid Ave</cda:streetAddressLine>
+    <cda:city>St. Louis</cda:city>
+    <cda:state>MO</cda:state>
+    <cda:postalCode>63110</cda:postalCode>
+    <cda:country>USA</cda:country>
+   </cda:addr>
+   <cda:telecom use="HP" value="1-781-229-3677"/>
+   <cda:assignedPerson>
+    <cda:name>
+     <cda:given>Brian</cda:given>
+     <cda:family>Hasselfeld</cda:family>
+    </cda:name>
+   </cda:assignedPerson>
+  </cda:assignedAuthor>
+ </cda:author>
+ <cda:custodian>
+  <cda:assignedCustodian>
+   <cda:representedCustodianOrganization>
+    <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+    <cda:name>Gateway Hospital</cda:name>
+    <cda:telecom use="PUB" value="tel:781-229-3600"/>
+    <cda:addr>
+     <cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+     <cda:city>St. Louis</cda:city>
+     <cda:state>MO</cda:state>
+     <cda:postalCode>63110</cda:postalCode>
+     <cda:country>USA</cda:country>
+    </cda:addr>
+   </cda:representedCustodianOrganization>
+  </cda:assignedCustodian>
+ </cda:custodian>
+ <cda:legalAuthenticator>
+  <cda:time value="20060215"/>
+  <cda:signatureCode code="S"/>
+  <cda:assignedEntity>
+   <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="Carus, Wyn"/>
+   <cda:addr>
+    <cda:streetAddressLine>21 North Ave</cda:streetAddressLine>
+    <cda:city>Burlington</cda:city>
+    <cda:state>MA</cda:state>
+    <cda:postalCode>01803</cda:postalCode>
+    <cda:country>USA</cda:country>
+   </cda:addr>
+   <cda:telecom use="PUB" value="tel:781-229-3600"/><!-- Note the location of this moved, and please change these numbers to an invalid phone number  -->
+   <cda:assignedPerson>
+    <cda:name>Carus, Wyn</cda:name>
+   </cda:assignedPerson>
+  </cda:assignedEntity>
+ </cda:legalAuthenticator>
+ <cda:documentationOf>
+  <cda:serviceEvent classCode="PCPR">
+   <cda:effectiveTime>
+    <cda:low value="20060215"/>
+    <cda:high value="20060215"/>
+   </cda:effectiveTime>
+   <cda:performer typeCode="PRF">
+    <cda:time>
+
+     <cda:low value="20060215"/>
+     <cda:high value="20060215"/>
+    </cda:time>
+    <cda:assignedEntity>
+     <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/>
+     <cda:addr>
+      <cda:streetAddressLine>21 North Ave</cda:streetAddressLine>
+      <cda:city>Burlington</cda:city>
+      <cda:state>MA</cda:state>
+      <cda:postalCode>01803</cda:postalCode>
+     </cda:addr>
+     <cda:telecom use="PUB" value="1-781-229-3677"/>
+     <cda:assignedPerson>
+      <cda:name>
+       <cda:given>Wyn</cda:given>
+       <cda:family>Carus</cda:family>
+      </cda:name>
+     </cda:assignedPerson>
+    </cda:assignedEntity>
+   </cda:performer>
+  </cda:serviceEvent>
+ </cda:documentationOf>
+ <cda:component>
+  <cda:structuredBody>
+   <cda:component>
+    <cda:section>
+     <cda:code code="18719-5" codeSystem="2.16.840.1.113883.6.1" displayName="CHEMISTRY STUDIES" originalText="CHEMISTRY"/>
+     <cda:component>
+       <cda:section><!-- <cda:section></cda:section> -->
+        <cda:code code="12814-0" codeSystem="2.16.840.1.113883.6.1" displayName="POTASSIUM" originalText=" Serum potassium "/>
+	<!--<cda:code code="18728-6" codeSystem="2.16.840.1.113883.6.1" displayName="TOXICOLOGY STUDIES" originalText=" Serum potassium "/>-->
+        <cda:text>
+          <table border="1">
+           <thead align="center">
+            <tr>
+             <th/>
+             <th styleCode="Bold">Mar 21, 2006 07:10</th>
+             <th>Reference range</th>
+             <th>Int.c.</th>
+             <th>Mar 12, 2006 08:15</th>
+             <th>Jan 01, 2006 05:12</th>
+            </tr>
+           </thead>
+           <tbody align="center">
+            <tr>
+             <td>K (mmol/L)</td>
+             <td styleCode="Bold">3.4</td>
+             <td>3.5 - 5.0</td>
+             <td>L, D</td>
+             <td>4.6</td>
+             <td>3.3</td>
+            </tr>
+           </tbody>
+          </table>
+          <paragraph>Result controlled with a second run</paragraph>
+         </cda:text>
+	 <cda:entry typeCode="DRIV">
+           <cda:templateId root="1.3.6.1.4.1.19376.1.3.1" extensionfiltered="Lab.Report.Data.Processing.Entry"/>
+           <!-- Report_Entry from which the section is derived -->
+	   <cda:act classCode="ACT" moodCode="EVN">
+             <cda:code code="12814-0" codeSystem="2.16.840.1.113883.6.1" displayName="POTASSIUM" originalText="Serum potassium "/>
+             <cda:statusCode code="completed"/>
+	     <!--<cda:confidentialitiyCode code="R"/>-->
+             <cda:entryRelationship typeCode="COMP">
+               <cda:observation classCode="OBS" moodCode="EVN">
+                 <cda:code code="12814-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" originalText="K"/>
+                 <cda:statusCode code="completed"/>
+                 <!-- Clinically relevant time for the observation (= specimen collection time) -->
+                 <cda:effectiveTime value="200603210710"/>
+                 <!-- Current result 3.4 -->
+                 <cda:value xsi:type="PQ" value="3.4" unit="mmol/L"/>
+                 <!-- 2 interpretation codes : Low, Significant decrease -->
+                 <cda:interpretationCode code="L" codeSystem="2.16.840.1.113883.5.83"/>
+                 <cda:interpretationCode code="D" codeSystem="2.16.840.1.113883.5.83"/>
+                 <cda:entryRelationship typeCode="REFR">
+                   <!-- Previous result 4.6 from Mar 12, 2006 08:05 -->
+                   <cda:observation classCode="OBS" moodCode="EVN">
+                     <cda:code code="11273-0" codeSystem="2.16.840.1.113883.6.1"/>
+                     <cda:statusCode code="completed"/>
+                     <cda:effectiveTime value="200603120805"/>
+                     <cda:value xsi:type="PQ" value="4.6" unit="mmol/L"/>
+                   </cda:observation>
+                 </cda:entryRelationship>
+                 <cda:entryRelationship typeCode="REFR">
+                   <!-- Previous result 3.3 from Jan 1st, 2006 05:12 -->
+                   <cda:observation classCode="OBS" moodCode="EVN">
+                     <cda:code code="11273-0" codeSystem="2.16.840.1.113883.6.1"/>
+                     <cda:statusCode code="completed"/>
+                     <cda:effectiveTime value="200601010512"/>
+                     <cda:value xsi:type="PQ" value="4.6" unit="mmol/L"/>
+                   </cda:observation>
+                 </cda:entryRelationship>
+                 <!-- Reference range for this patient: [3.5 - 5.0] -->
+                 <cda:referenceRange typeCode="REFV">
+                   <cda:observationRange classCode="OBS" moodCode="EVN.CRT">
+                     <cda:value xsi:type="IVL_PQ">
+                       <cda:low value="3.5" unit="mmol/L"/>
+                       <cda:high value="5.0" unit="mmol/L"/>
+                     </cda:value>
+                   </cda:observationRange>
+                 </cda:referenceRange>
+               </cda:observation>
+             </cda:entryRelationship>
+             <!-- Comment for the section represented by this entry -->
+             <cda:entryRelationship typeCode="COMP">
+               <cda:act classCode="ACT" moodCode="EVN">
+                 <cda:text>Result controlled with a second run</cda:text>
+               </cda:act>
+             </cda:entryRelationship>
+           </cda:act>
+         </cda:entry>
+       </cda:section>
+     </cda:component> 
+    </cda:section>
+   </cda:component>
+     
+  </cda:structuredBody>
+ </cda:component>
+</cda:ClinicalDocument>

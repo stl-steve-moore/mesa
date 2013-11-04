@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!-- ?xml-stylesheet href="http://dictaphone0.ihe.net:8080/nlpr141/XDS/dictaphonecda.xsl" type="text/xsl" ? -->
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 20520: Verify HL7 Report Reference Submission Message Content and Retrieval (CARD-8)</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test 20520 tests the creation and content of an HL7 message with a referenced PDF report.</mesa:paragraph>
+<mesa:paragraph>MESA: The MESA tools act as a Enterprise Report Repository (ERR) and tests the vendor Report Manager. They recieve the report reference and then verify that it can in fact be retrieved.</mesa:paragraph>
+<mesa:paragraph>Any patient name and ID can be used.</mesa:paragraph> 
+</mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>DRPT_WORKFLOW</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>20520/intro.txt</mesa:file>
+ </mesa:text_file>
+
+ <mesa:step>
+   <mesa:identifier>1</mesa:identifier>
+   <mesa:description>ORU: send encapsulated report by reference- unsolicited</mesa:description>
+   <mesa:transaction>CARD-8</mesa:transaction>
+   <mesa:source>RPTMGR</mesa:source>
+   <mesa:destination>ENTRPTREP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>rpt/20520/20520.102.r01.hl7</mesa:param>
+ </mesa:step>
+
+ 
+ <mesa:text_file>
+  <mesa:file>20520/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

@@ -1,0 +1,30 @@
+Test:  3726
+Title: Importer (digitizer) Coerces Attributes -
+             Scheduled Patient Management Option
+
+References:
+ Import Reconciliation Workflow -- RAD TF-1: 21.3.1.2 and RAD TF-2: Appendix A.2
+
+If you import DICOM objects from digital media (eg CD) or via the network, 
+you should run test 3725 instead.
+
+-------
+
+Test 3726 involves transactions for the Scheduled Patient Management Option
+for Importers in the Import Reconciliation Workflow which import by
+digitizing film or documents. Ensure that a film or document is available to
+scan prior to starting this test.  
+
+For this test, you should assume:
+  - the original Patient Name on the scanned film/document is VIOLET^V
+  - the original Patient ID on the scanned film/document is 9999
+You will be expected to include these values in the Modified Attributes
+Sequence (0400,0550).
+
+The next step in the test will give the Patient Name and Patient ID
+that will appear in the MWL for data to be imported. 
+
+Use the data from the MWL entry as new values in the imported object 
+you will C-STORE during this test.
+
+

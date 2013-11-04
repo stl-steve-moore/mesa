@@ -1,0 +1,3 @@
+stationname	CT_3DRECON1^ihe^^
+stationclass	CT_3DRECON^ihe^^
+startdatetime	200210101300

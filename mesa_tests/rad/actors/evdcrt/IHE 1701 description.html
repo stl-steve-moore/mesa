@@ -1,0 +1,244 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=iso-8859-1">
+	<TITLE></TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 1.1  (Linux)">
+	<META NAME="CREATED" CONTENT="20030530;10171700">
+	<META NAME="CHANGED" CONTENT="20030806;10433000">
+	<STYLE>
+	<!--
+		@page { size: 8.27in 11.69in; margin-left: 1.25in; margin-right: 1.25in; margin-top: 1in; margin-bottom: 1in }
+		P { margin-bottom: 0.08in }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="en-US" DIR="LTR">
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Description
+of 1701 test, system under test is Evidence Creator</FONT></FONT></P>
+<P>The 1701 test is an implementation of the steps described in
+Figure 14.2-1 in IHE TF I.  It simulates a typical, error-free
+Evidence Document creation process in the Scheduled Workflow profile.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Getting
+Started</FONT></FONT></P>
+<OL>
+	<LI><P>Make sure that the postgresql database is started.  See below
+	for database configuration.</P>
+	<LI><P>Start the servers with the command (in the evdcrt/scripts
+	directory),</P>
+	<OL>
+		<P>perl mesa_servers.pl start</P>
+	</OL>
+</OL>
+<OL START=3>
+	<LI><P>Start the script with the command,</P>
+	<OL>
+		<P>perl evdcrt_swf.pl -s 1701 4</P>
+	</OL>
+</OL>
+<P>    where 1701 is the test number and 4 is the verbosity level. 
+The 's' flag specifies that this is a self-test.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Major
+differences between my implementation and original implementation</FONT></FONT></P>
+<P>One change I made was to the way that servers are started.  They
+are started, stopped and reset from the mesa_servers.pl script with
+no other script files required; this script reads the evdcrt_test.cfg
+file to determine parameters.</P>
+<P>All files are created in their own directories as described below,
+to keep them from polluting the main directory. 
+</P>
+<P>Finally, the scripts can be started from any directory and detect
+the directory they are in to properly traverse the directory
+structure.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Directory
+structure and files</FONT></FONT></P>
+<P>The &ldquo;root&rdquo; directory of the test is
+testdata/y3_actor/actors/evdcrt.  The main script which runs the show
+is found in scripts/evdcrt_swf.pl.  This script reads the file
+1701.txt, which is found in
+testdata/y3_actor/actors/common/1701/1701.txt.</P>
+<P>For the time being, all auxillary data files are in the 1701
+directory of the root script directory.  There are two subdirectries
+there, data and results.  The idea is that all the pre-made data
+files necessary to run things are found in the data, and all created
+files are in results, according then to the transaction.  Perhaps
+there is a better way of doing this, though.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Caveat
+about directory structure</FONT></FONT></P>
+<P>A number of transactions have the source and result directories
+hard-coded.  This ought to be fixed.  Passing all the source and
+result directories in the 1701.txt file is problematic especially for
+transactions which rely on data from a number of directories (such as
+any transactions which make use of the output of mod_generatestudy,
+which is just about most of them).  Perhaps a global configuration
+file, along with required and unique parameters on a per-transaction
+basis, would be better.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Servers
+running</FONT></FONT></P>
+<P>These are the servers which are started and controlled by the
+mesa_servers.pl script for this test:</P>
+<UL>
+	<LI><P>Order Filler DICOM</P>
+	<LI><P>Order Filler HL7</P>
+	<LI><P>Image Manager DICOM (ds_dcm)</P>
+	<LI><P>For self-test, Workstation 1 (ds_dcm) &ndash; responds to
+	storage commit, storage SCP for Cmove.</P>
+	<LI><P>Also for self-test, mod_dcmps runs.  Accepts storage
+	commitment response.</P>
+</UL>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Database
+issues</FONT></FONT></P>
+<P>The mapping between AE Title and host/port needed for Cmove is in
+the imgmgr database.  Edit the file
+<I>$MESA_TARGET/db/loaddicomapp.pgsql</I> and then run,</P>
+<P>	psql imgmgr &lt; loaddicomapp.pgsql</P>
+<P>An error such as, &ldquo;170012 Illegal service parameter: :0&rdquo;
+is indicative of a bad AE Title -&gt; host/port mapping.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Outline
+of transations</FONT></FONT></P>
+<P>Here are the transactions as given in 1701.txt and what they do in
+the context of this actor and workflow.</P>
+<P>Register (1)  and Order (2).  Does stuff.</P>
+<P>Schedule (4a)  Schedules and produces images as a modality might.</P>
+<P>Store (8) Store produced images on modality to Image Manager</P>
+<P><I>Up to this point, transactions are just to set up the system
+for testing.  From here on, transactions will differ depending on if
+they are self-test or production test.  Describing self-tests here.</I></P>
+<P STYLE="font-style: normal">Query (14) Query the image manager for
+image based on Study Instance UID</P>
+<P STYLE="font-style: normal">Cmove (16) Retrieve images from image
+manager based on Study Instance UID returned by transaction 14</P>
+<P>Send Creator Procedure Step in Progress MPPS (20) Create and send
+MPPS to Image Manager</P>
+<P>Evidence Document Stored (43).  Modify an existing SR document and
+send it to the Image Manager.</P>
+<P>Send Creator Step Completed (21) to Image Manager</P>
+<P>Send Storage Commitment (10) to Image Manager.</P>
+<P STYLE="margin-top: 0.17in; page-break-after: avoid"><FONT FACE="Albany, sans-serif"><FONT SIZE=4>Transaction
+details, where appropriate</FONT></FONT></P>
+<P><B>4a </B><SPAN STYLE="font-weight: medium">This is a
+multi-purpose transaction which does not have a direct analog with an
+IHE transaction.</SPAN></P>
+<P STYLE="font-weight: medium">First Transaction 4 is performed,
+which sends a scheduling MPPS to the Image Manager.</P>
+<P><SPAN STYLE="font-weight: medium">This transaction also &ldquo;produces&rdquo;
+images, simulating a modality, along with a number of auxillary files
+which are used later.  These actions are performed by the
+<I>produced_scheduled_images</I> subroutine.</SPAN></P>
+<P STYLE="font-weight: medium">Produce_scheduled_images consists of
+two main parts: 
+</P>
+<UL>
+	<LI><P STYLE="font-weight: medium">A modality worklist query is
+	created and used to retrieve the modality worklist from the order
+	filler.</P>
+	<LI><P STYLE="font-weight: medium">mod_generatestudy is called,
+	which performs the following actions:</P>
+	<LI><P STYLE="font-weight: medium">image files are copied from the</P>
+	<UL>
+		<P STYLE="font-weight: medium"> $MESA_STORAGE/modality/MR/MR4/MR4S1
+				</P>
+		<UL>
+			<UL>
+				<UL>
+					<UL>
+						<P STYLE="font-weight: medium">directory to 
+						</P>
+					</UL>
+				</UL>
+			</UL>
+		</UL>
+		<P STYLE="font-weight: medium">$MESA_STORAGE/modality/T1701</P>
+	</UL>
+</UL>
+<P STYLE="margin-left: 0.87in; font-weight: medium">	This simulates
+the production of images by a modality.</P>
+<UL>
+	<LI><P STYLE="font-weight: medium">The last image file is renamed
+	x1.dcm to produce a file of a known name.</P>
+	<LI><P STYLE="font-weight: medium">An MPPS file (mpps.crt) is
+	createdwhich would ordinarily be used for the modality procedure
+	step in progress message; we cannot use it, however, since the
+	scheduled workflow requires us to create a Creator Procedure Step in
+	Progress message from an image (eg. x1.dcm)</P>
+	<LI><P STYLE="font-weight: medium">A file named mpps_uid.txt is
+	created with a unique MPPS UID which will be used when sending the
+	constructed MPPS in transaction 20.</P>
+</UL>
+<P><B>8 </B><SPAN STYLE="font-weight: medium">The images produced by
+mod_generatestudy in transaction 4a above are sent to the image
+manager. There are two Cmove events &ndash; one to the image manager
+on the image manager machine, one to the image manager on the local
+machine.</SPAN></P>
+<P STYLE="font-weight: medium"><I>At this point, for Self-test we are
+acting as Evidence Creators.</I></P>
+<P><B>14</B><SPAN STYLE="font-weight: medium">
+construct_cfind_query_study creates a study level query based on a
+template found in 1701/data/14/cfind_study_uid_templ.txt</SPAN></P>
+<P><SPAN STYLE="font-weight: medium"><FONT SIZE=3>The Study Instance
+UID is inserted into the query, as it is assumed that the modality
+knows this.  The value for the Study Instance UID is from the x1.dcm
+image created in transaction 4a. </FONT></SPAN>The image manager is
+queried and the response is written as 
+</P>
+<P>	1701/results/14/msg1_result.dcm</P>
+<P><B>16</B><SPAN STYLE="font-weight: medium"> We wish to retrieve
+all images (using CMove) containing a given Study Instance UID (as 
+returned</SPAN> by transaction 14) from the image manager.  A Cmove
+request is created and sent.  For the self test, the move is to
+localhost, and this data is written to the output directory of the
+Image Manager running on localhost,</P>
+<P>	MESA/storage/wkstation/instances/MESA_IMGMGR</P>
+<P><B>20</B> Need to create the appropriate MPPS message based on
+parsing the first image returned by step 16 (technically, all of them
+should be parsed).  Rather than parsing these files, the files
+created by mod_generatestudy in Transaction 4A are parsed, since they
+are the ones which then come back in step 16.</P>
+<P>The MPPS which needs to be created is defined in Table F.7.2-1 of
+the DICOM documentation, Part 4; Table A-2.1 of IHE TF II lists
+additional comments and clarifications for this table.  The
+definition of the MPPS object is in the file T20MPPS.txt; various
+fields are filled in from the image x1.dcm, and the report, which has
+already been constructed and is found in 1701/data/sr/sr.dcm (and
+which is created from $MESA_ROOT/testdata/y3_actor/sr/sr_601mr.txt)</P>
+<P>The MPPS message is created with an <I>ncreate</I> call.  The MPPS
+instance UID comes from the output of mesa_identifier program.</P>
+<P><B>43</B> Transaction 43 modifies the Structured Report  and sends
+it.  A new SOP Instance UID is created with the mesa_identifier call,
+and the references SOP Instance and Class UIDs are written to the
+object.  Cstore is used to send the Structured Report to the Image
+Manager.</P>
+<P>The datasets which will be used for Transaction 10 for the naction
+and nevent calls are created here as well.</P>
+<P><B>21</B> Uses Nset to send a Creator Procedure Step Completed. 
+The object is constructed from the template T21MPPS.txt, with the end
+time and date fields filled in.  The Instance UID is that generated
+by mod_generatestudy in transaction 4a and matches that of the MPPS
+in transaction 21.</P>
+<P><B>10</B> Uses Naction to send Storage Commitment MPPS.  Object is
+constructed based on a template (found in the T10 code), with various
+elements filled in with values from the structured report sent in
+Transaction 43.</P>
+<P>An Nevent is then sent from the image manager to the workstation.</P>
+<P><BR><BR>
+</P>
+<P><BR><BR>
+</P>
+<P STYLE="margin-top: 0.17in; page-break-before: always; page-break-after: avoid">
+<FONT FACE="Albany, sans-serif"><FONT SIZE=4>Appendix A:
+mod_generatestudy actions</FONT></FONT></P>
+<P>mod_generatestudy seems to perform the following actions</P>
+<OL>
+	<LI><P>copy image files from input directory to output directory.</P>
+	<LI><P>Rename the first of these files in the output directory to
+	x1.dcm</P>
+	<LI><P>Creates mpps.crt.  Used for MPPS NCreate (eg. Transaction 6)</P>
+	<LI><P>Creates mpps.set.  Used for MPPS Nset (eg. Transaction 7)</P>
+	<LI><P>Creates mpps.status Used in Storage Commitment Naction (maybe
+	not)</P>
+	<LI><P>Creates sc.xxx &ndash; Used in Storage Commitment Nevent
+	Report response</P>
+	<LI><P>Creates mpps_uid.txt &ndash; the uid for MPPS create and set.</P>
+</OL>
+</BODY>
+</HTML>

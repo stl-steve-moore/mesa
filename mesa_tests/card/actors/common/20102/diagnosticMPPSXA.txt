@@ -1,0 +1,4 @@
+Test 20102 - DIAGNOSTIC
+ The XA modality will not send MPPS in-progress and complete
+ messages for the diagnostic step. Images will also be sent
+ to the Image Manager.

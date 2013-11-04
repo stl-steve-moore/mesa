@@ -1,0 +1,13 @@
+CTX: MESA Version 8.8.3 created 2005.04.10 
+dn: cn=Hutchins^Lisa^R^^MD,dc=ihe,dc=net
+cn: Hutchins^Lisa^R^^MD
+displayName: Dr. Lisa Hutchins
+employeeNumber: 2030
+mail: lrh@ihepwp.org
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+pager: +1 630 555 2002
+title: Professor
+uid: hutc01
+

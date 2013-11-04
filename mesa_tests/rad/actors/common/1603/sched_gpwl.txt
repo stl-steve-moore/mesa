@@ -1,0 +1,4 @@
+INTERPRETATION workitem for
+station class code:    INTERP_3x, IHEDEMO, ACME 3 step station
+station name code:     REPORTER_1, IHEDEMO, Interpretation Station 1
+human performer code:  8020, IHEDEMO, Radiologist^Jane

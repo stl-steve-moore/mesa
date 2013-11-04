@@ -1,0 +1,7 @@
+##
+## Test Case 151: Appointment Notification
+##
+
+This test is designed to test Appointment Notification for radiology
+examintations scheduled by Department System Scheduler/Order Filler based on
+transaction SIU^S12 - Notification of New Appointment Booking.

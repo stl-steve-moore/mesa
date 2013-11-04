@@ -1,0 +1,7 @@
+
+The Order Filler has received an ADT message with a permanent ID.
+The patient was originally processed with a temporary ID assigned
+by the Order Filler. In the next step, the Order Filler merges
+the temporary ID with the permanent ID and sends an HL7 message
+to the Image Manager indicating the merge.
+

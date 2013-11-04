@@ -1,0 +1,2 @@
+stationname	MG_CAD1^ihe^^,MG_CAD2^ihe^^
+stationclass	MG_CAD^ihe^^

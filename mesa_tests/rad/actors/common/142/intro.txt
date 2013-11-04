@@ -1,0 +1,10 @@
+This is test 142.
+It exercises Order Change Flow initiated by the Order Filler
+References:
+ IHE TF Vol I, Sec 3.3.3
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/142.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

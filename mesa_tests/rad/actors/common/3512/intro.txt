@@ -1,0 +1,7 @@
+Fusion Test 3512
+
+In this test, the Evidence Creator determines the spatial transformation
+necessary between two data sets and creates and stores a valid DICOM 
+Spatial Registration object. The two image series are provided with the 
+MESA tools and have different Frame of Reference.
+

@@ -1,0 +1,6 @@
+You should create a pair of "For Presentation" and "For Processing"
+mammography images. The Patient ID should be MESA3900.  The patient name 
+should be MESA^Mammo3900. These values are not critical to the test.
+
+You should now C-STORE [RAD-8] both Mammography images to the MESA 
+Image Manager.  It does not matter which is sent first.

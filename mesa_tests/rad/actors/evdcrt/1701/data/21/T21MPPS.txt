@@ -1,0 +1,4 @@
+0040 0252 "COMPLETED"                       // Performed Procedure Step Status
+0040 0250                                   // Performed Procedure Step End Date
+0040 0251                                   // Performed Procedure Step End Time
+

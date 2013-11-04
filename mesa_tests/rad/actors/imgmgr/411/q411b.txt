@@ -1,0 +1,11 @@
+0008 0052	IMAGE		// Query level
+0020 000d	1.2.276.0.7230010.3.200.13		// Study Instance UID
+0020 000e	1.2.276.0.7230010.3.200.13.0		// Series Instance UID
+//0008 0018	1.2.276.0.7230010.3.200.13.0.1		// SOP Instance UID
+0008 0018	#					// SOP Instance UID
+
+0070 0080	#		// Presentation Label
+0070 0081	#		// Presentation Description
+0070 0082	#		// Presentation Creation Date
+0070 0083	#		// Presentation Creation Time
+0070 0084	#		// Presentation Creators Name

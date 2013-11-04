@@ -1,0 +1,7 @@
+0008 0052 STUDY
+0008 0061 #		// Modalities in Study
+0008 0020 #		// Study Date
+0008 0050 #		// Accession Number
+0010 0010 #		// Patient Name
+0010 0020 #		// Patient ID
+0020 000D #		// Study Instance UID

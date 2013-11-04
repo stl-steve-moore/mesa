@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cda:ClinicalDocument xmlns:cda="urn:hl7-org:v3"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="urn:hl7-org:v3 file:/D:/cd/hl7/cda/CDA_R2_NormativeWebEdition2005/infrastructure/cda/CDA.xsd" classCode="DOCCLIN" moodCode="EVN">
+    <cda:typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+    <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.7'/><!-- This is a consent -->
+    <cda:templateId root='1.3.6.1.4.1.19376.1.5.3.1.1.1'/>
+    <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.3" extension="485/1"/>
+    <cda:code code='11524-6' displayName='EKG HEART STUDY' codeSystem='2.16.840.1.113883.6.1' codeSystemName='LOINC'/><!-- fill in the appropriate LOINC code and display name -->
+    <cda:title>A patient's consent</cda:title><!-- Local name of the report -->
+    <cda:effectiveTime value='20060215124901'/>
+    <cda:confidentialityCode code='N' displayName='Normal' codeSystem='2.16.840.1.113883.5.25' codeSystemName='ConfidentialityCode'/>
+    <cda:languageCode code='en-US'/>
+    <cda:recordTarget typeCode="RCT" contextControlCode="OP">
+        <cda:patientRole classCode="PAT">
+            <cda:id root="1.3.6.1.4.1.21367.2005.1.1" extension="40004"/><!-- Need an OID for the patient ID,  extension should be MRN. -->
+   			<cda:addr>
+    			<cda:streetAddressLine>1625 Main</cda:streetAddressLine>
+    			<cda:city>St. Louis</cda:city>
+    			<cda:state>MO</cda:state>
+    			<cda:postalCode>63110</cda:postalCode>
+   			</cda:addr>
+   			<cda:telecom use="HP" value="tel:314-555-1672"/>
+            <cda:patient>
+    			<cda:name>
+     				<cda:given>Margaret</cda:given>
+     				<cda:family>Wilson</cda:family>
+    			</cda:name>
+                <cda:administrativeGenderCode code='F' displayName='Female' codeSystem='2.16.840.1.113883.5.1' codeSystemName='AdministrativeGender'/>
+                <cda:birthTime value="19480503"/>
+				<cda:maritalStatusCode code='M' displayName='Male' codeSystem='2.16.840.1.113883.5.1' codeSystemName='MaritalStatus'/>
+   			</cda:patient>
+            <cda:providerOrganization>
+    			<cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+    			<cda:name>Gateway Hospital</cda:name>
+    			<cda:telecom use="PUB" value="tel:781-229-3600"/>
+    			<cda:addr>
+     				<cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+     				<cda:city>St. Louis</cda:city>
+     				<cda:state>MO</cda:state>
+     				<cda:postalCode>63110</cda:postalCode>
+     				<cda:country>USA</cda:country>
+    			</cda:addr>
+   			</cda:providerOrganization>
+        </cda:patientRole>
+    </cda:recordTarget>
+    <cda:author typeCode="AUT" contextControlCode="OP">
+        <cda:time value="20060215"/>
+        <cda:assignedAuthor classCode="ASSIGNED">
+            <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103.5" extension="13616"/><!-- Need an OID for identifiers used to identify the author of the document -->
+            <cda:assignedPerson>
+    			<cda:name>
+     				<cda:given>Brian</cda:given>
+     				<cda:family>Hasselfeld</cda:family>
+    			</cda:name>
+   			</cda:assignedPerson>
+        </cda:assignedAuthor>
+    </cda:author>
+<!--
+    <cda:author typeCode="AUT" contextControlCode="OP">
+        <cda:time/>
+        <cda:assignedAuthor classCode="ASSIGNED">
+            <cda:id root='' extension=''/>--><!-- Need an OID for identifiers used to identify users of the system -->
+<!--            <cda:assignedAuthoringDevice>
+                <cda:softwareName></softwareName>
+            </cda:assignedAuthoringDevice>
+        </cda:assignedAuthor>
+    </cda:author>
+-->
+<!--
+    <dataEnterer>
+        <assignedEntity>
+            <id root='' extension=''/>--><!-- Need an OID for identifiers used to identify users of the system -->
+<!--            <assignedPerson>
+                <name>
+                    <prefix></prefix>
+                    <given></given>
+                    <given></given>
+                    <family></family>
+                    <suffix></suffix>
+                </name>
+            </assignedPerson>
+        </assignedEntity>
+    </dataEnterer>
+-->
+    <cda:custodian typeCode="CST">
+        <cda:assignedCustodian classCode="ASSIGNED">
+            <cda:representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+                <cda:id root="1.3.6.1.4.1.21367.2006.1.2.103" extension="1"/>
+    			<cda:name>Gateway Hospital</cda:name>
+    			<cda:telecom use="PUB" value="tel:781-229-3600"/>
+    			<cda:addr>
+     				<cda:streetAddressLine>600 Euclid Ave</cda:streetAddressLine>
+     				<cda:city>St. Louis</cda:city>
+     				<cda:state>MO</cda:state>
+     				<cda:postalCode>63110</cda:postalCode>
+     				<cda:country>USA</cda:country>
+    			</cda:addr>
+            </cda:representedCustodianOrganization>
+        </cda:assignedCustodian>
+    </cda:custodian>
+	
+    <cda:documentationOf typeCode="DOC">
+        <cda:serviceEvent classCode='CONS' moodCode='EVN'>
+            <cda:id root='1.2'/><!-- need an identifier for the service envent, shall be a GUID or OID.shall no extension-->
+            <cda:effectiveTime>
+                <cda:low value='20060215'/><!-- Low value of the time for which the consent applies -->
+                <cda:high value='20080215'/><!-- high value of the time for which the consent applied, may omit-->
+            </cda:effectiveTime>
+        </cda:serviceEvent>
+    </cda:documentationOf>
+    
+	<cda:authorization typeCode='AUTH'>
+        <cda:consent classCode='CONS' moodCode='EVN'>
+			<!-- one identifier that is use d to uniquely identify the consent act, shall not contain an extension-->
+			<cda:id root='1.3.6.1.4.1.21367.2006.1.2.108' />
+            <!-- code is the consent policy OID, display name can be human readable name for the OID.  
+                   codeSystem is fixed by domain as well.  codeSystemName can be human readable name for it 
+				   refer to BPPC Test Plan for the OID
+            -->
+            <cda:code code='1.3.6.1.4.1.21367.2006.7.1001' displayName='Clinical Use' codeSystem='1.3.6.1.4.1.21367.2006.7' codeSystemName='IHE Connectathon BPPC Policies'/>
+            <cda:statusCode code='completed'/>
+        </cda:consent>
+    </cda:authorization>
+	
+    <cda:component typeCode="COMP" contextConductionInd="true">
+        <cda:nonXMLBody classCode="DOCBODY" moodCode="EVN">
+            <!-- Base 64 encoding of the signed PDF of the consent -->
+            <cda:text  mediaType="application/pdf" representation="B64">
+                ABC02398475902837ABD==
+            </cda:text>
+        </cda:nonXMLBody>
+    </cda:component>
+</cda:ClinicalDocument>

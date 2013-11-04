@@ -1,0 +1,5 @@
+In this test, the Indigo leaves without any work, but there is
+no message for this. The orginal registration was as an outpatient.
+
+The next event will be registration for an unidentified
+patient. You treat this as a different patient.

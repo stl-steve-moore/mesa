@@ -1,0 +1,2 @@
+In the next step, the Order Filler sends a notification to
+rescheduling the booking.

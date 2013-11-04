@@ -1,0 +1,13 @@
+CTX: MESA Version 8.8.3 created 2005.04.10 
+dn: cn=Dailey^Catherine^Ophelia^^,dc=ihe,dc=net
+cn: Dailey^Catherine^Ophelia^^
+displayName: Cathy Dailey
+employeeNumber: 1040
+mail: cod@ihepwp.org
+objectClass: inetOrgPerson
+objectClass: top
+objectClass: person
+pager: +1 630 555 2002
+title: Jr. Librarian
+uid: dail01
+

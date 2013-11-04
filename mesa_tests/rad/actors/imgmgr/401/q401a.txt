@@ -1,0 +1,4 @@
+0008 0052	STUDY	// Query Level
+0008 0061	#	// Modalities in study
+0020 000D	#	// Study Instance UID
+0010 0020	#	// Patient ID

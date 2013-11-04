@@ -1,0 +1,56 @@
+CTX: MESA Version 9.10.5 created 2006.04.06 
+CTX: Care Record Summary 12512.1
+CTX: Evaluation using CRS Schematron
+CTX: /usr/java/j2sdk1.4.2_03/bin/java org.apache.xalan.xslt.Process -IN 12512/crs_schematron.xml -XSL 12512/schematron-basic.xsl -OUT 12512/12512.xsl -PARAM diagnose yes
+CTX: /usr/java/j2sdk1.4.2_03/bin/java org.apache.xalan.xslt.Process -IN /home/bhasselfeld/Desktop/himss-2006/Dictaphone/XDS-MS_test.xml -XSL 12512/12512.xsl -OUT 12512/schematron_12512.log
+
+
+Result from schematron validation:
+Schematron schema for validating conformance to IMPL_CDAR2_LEVEL1REF_US_I1_2005MAY
+In pattern cda:addr[cda:streetAddressLine = '4525 Scott Ave']:
+   patient cda:streetAddressLine OK
+In pattern cda:addr[cda:city = 'St. Louis']:
+   patient cda:city OK
+In pattern cda:addr[cda:state = 'MO']:
+   patient cda:state OK
+In pattern cda:addr[cda:postalCode = '63110']:
+   patient cda:postalCode OK
+In pattern cda:telecom[@value = 'tel:314-555-1671']:
+   patient cda:telecom OK
+In pattern cda:patient[cda:administrativeGenderCode[@code='F' and @codeSystem='2.16.840.1.113883.5.1']]:
+   cda:administrativeGenderCode OK
+In pattern cda:patient[cda:birthTime[@value='19580204']]:
+   cda:birthTime OK
+In pattern cda:providerOrganization[cda:name = 'Gateway Hospital']:
+   cda:providerOrganization name OK
+In pattern cda:providerOrganization[cda:addr[cda:streetAddressLine = '600 Euclid Ave']]:
+   provider organization cda:streetAddressLine OK
+In pattern cda:providerOrganization[cda:addr[cda:city = 'St. Louis']]:
+   provider organization cda:city OK
+In pattern cda:providerOrganization[cda:addr[cda:state = 'MO']]:
+   provider organization cda:state OK
+In pattern cda:providerOrganization[cda:addr[cda:postalCode = '63110']]:
+   provider organization cda:postalCode OK
+In pattern cda:providerOrganization[cda:addr[cda:country = 'USA']]:
+   provider organization cda:country OK
+In pattern cda:assignedAuthor[cda:addr[cda:streetAddressLine = '700 Euclid Ave']]:
+   author cda:streetAddressLine OK
+In pattern cda:assignedAuthor[cda:addr[cda:city = 'St. Louis']]:
+   author cda:city OK
+In pattern cda:assignedAuthor[cda:addr[cda:state = 'MO']]:
+   author cda:state OK
+In pattern cda:assignedAuthor[cda:addr[cda:country = 'USA']]:
+   author cda:country OK
+In pattern cda:assignedCustodian[cda:representedCustodianOrganization[cda:name = 'Gateway Hospital']]:
+   custodian cda:name OK
+In pattern cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:streetAddressLine = '600 Euclid Ave']]]:
+   custodian cda:streetLAddressLine OK
+In pattern cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:city = 'St. Louis']]]:
+   custodian cda:city OK
+In pattern cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:state = 'MO']]]:
+   custodian cda:state OK
+In pattern cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:postalCode = '63110']]]:
+   custodian cda:postalCode OK
+In pattern cda:assignedCustodian[cda:representedCustodianOrganization[cda:addr[cda:country = 'USA']]]:
+   custodian cda:country OK
+

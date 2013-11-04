@@ -1,0 +1,14 @@
+In test 20102, the Order Filler is about to receive the MPPS
+in Progress Message (CARD-1) from the Acquisition Modality.
+The Order Filler will be expected to schedule procedure
+steps for the remaining equipment in the room with the
+expectation that those SPS will be needed before there
+is time to place an order for the corresponding procedures.
+
+The Order Filler will be sent the MPPS in Progress Message and then
+prompted to perform the scheduling in the next step.
+
+The Order Filler will need to schedule two SPS, one for an IVUS
+modality and the second for an XA:
+ XX-20012/LAB7_IVUS/IVUS
+ XX-20013/LAB7_XA/XA

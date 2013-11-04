@@ -1,0 +1,5 @@
+APPLICATION_ID = Acqusition_Modality
+AE_TITLE = AE_TITLE1
+DISPLAY_NAME = Changed_host_name_to_www.abc.com
+PERSON_ID = John.Doe@doe.com
+PERSON_NAME = John_Doe

@@ -1,0 +1,8 @@
+# Requirements for Content Items for Export Manager test 3003.
+# mesa_sr_eval -r 3003_content_items.txt -p pattern test_file
+#
+1	R	Language of Content Item and Descendents
+2	O	Observer Type (Person)
+3	O	Observer Name
+#4	R	CONTAINER
+#5	F	IMAGE

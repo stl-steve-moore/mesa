@@ -1,0 +1,10 @@
+1. When was Gall BladderSurgery performed on the patient?
+   Tip: Look for this under Prior Encounters
+
+
+
+2. When was the report created?
+
+
+3. What was the reason for the patient's visit?
+ 

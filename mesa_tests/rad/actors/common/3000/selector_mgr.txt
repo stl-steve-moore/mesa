@@ -1,0 +1,3 @@
+In the next steps, the Export Selector will send image instances to
+the Export Manager using transaction RAD-50. If these two actors are
+grouped together, this step can be omitted.

@@ -1,0 +1,7 @@
+# 1503.012 (Order Filler) Patient-Record: Access
+
+OBJECT_ACTION = Access
+PATIENT_ID = 583295
+PATIENT_NAME = DOE^J1
+LOCAL_USER = gwfoster
+HOST_NAME = radiology-east

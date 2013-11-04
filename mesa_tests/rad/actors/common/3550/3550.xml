@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>3550 - Query by BSPS SOP Class UID</mesa:title>
+ <mesa:dateStamp value="20060530"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Image Fusion (FUS)</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Image Manager/Archive</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>RAD TF-3: 4.57</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>References to Other Standards/Documents</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>DICOM PS3.3 - 2004 A.30</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>MESA creates a study with PET, CT and BSPS objects, sending
+these to an Image Manager.
+The Image Manager is then queried with SOP Class UID to return only those
+objects in the BSPS SOP Class.
+This is a test both of support of the SOP Class and support of the query.
+   </mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+ <mesa:section>
+  <mesa:title>Test Setup</mesa:title>
+  <mesa:text>
+   <mesa:paragraph>The Evidence Creator imports 2 series (1 PET, 1 CT) provided with the MESA
+    distribution, prior to using its application to specify blending parameters (window width and center, 
+    color map and transparency) and encode them in a BSPS object.  The Evidence Creator C-STOREs 
+    the BSPS object to the Image Manager and requests Storage Commitment.
+   </mesa:paragraph>
+  </mesa:text>
+ </mesa:section>
+ 
+ <mesa:section>
+  <mesa:title>Sequence of Transactions</mesa:title>
+ </mesa:section>
+ 
+ <mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>FUS</mesa:name>
+ </mesa:profile>
+
+ <mesa:text_file>
+   <mesa:file>3550/intro.txt</mesa:file>
+ </mesa:text_file>
+ 
+ <mesa:internal>
+   <mesa:param>BLEND</mesa:param>
+   <mesa:param>COMPUTE</mesa:param>
+   <mesa:param>3550/fusion.txt</mesa:param>
+   <mesa:param>FUSION/3540/CT</mesa:param>
+   <mesa:param>FUSION/3540/PT</mesa:param>
+   <mesa:param>FUSION/3550/BSPS</mesa:param>
+ </mesa:internal>
+
+ <mesa:internal>
+   <mesa:param>STORAGE-COMMITMENT</mesa:param>
+   <mesa:param>COMPUTE</mesa:param>
+   <mesa:param>FUSION/3550/BSPS</mesa:param>
+   <mesa:param>FUSION/3550/sc</mesa:param>
+ </mesa:internal>
+
+ <mesa:text_file>
+   <mesa:file>3550/cstore.txt</mesa:file>
+ </mesa:text_file>
+ 
+ <mesa:step>
+   <mesa:identifier>3550.100</mesa:identifier>
+   <mesa:description>C-STORE a CT series for patient Papaya^P to the Evidence Creator</mesa:description>
+   <mesa:transaction>RAD-8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>FUSION/3540/CT</mesa:param>
+   <mesa:param>PETCT_AE</mesa:param>
+ </mesa:step>
+ 
+<!--
+ <mesa:internal>
+  <mesa:param></mesa:param>
+  <mesa:param></mesa:param>
+  <mesa:param></mesa:param>
+  <mesa:param></mesa:param>
+  <mesa:param></mesa:param>
+  <mesa:param></mesa:param>
+ </mesa:internal>
+-->
+
+ 
+ <mesa:step>
+  <mesa:identifier>3550.120</mesa:identifier>
+  <mesa:description>C-STORE a PET series for the same patient to the Evidence Creator</mesa:description>
+  <mesa:transaction>RAD-8</mesa:transaction>
+  <mesa:source>MOD</mesa:source>
+  <mesa:destination>IM</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>STORE</mesa:param>
+  <mesa:param>FUSION/3540/PT</mesa:param>
+  <mesa:param>PETCT_AE</mesa:param>
+ </mesa:step>
+  
+ <mesa:step>
+  <mesa:identifier>3550.130</mesa:identifier>
+  <mesa:description>C-STORE a BSPS IOD to the Image Manager</mesa:description>
+  <mesa:transaction>RAD-57</mesa:transaction>
+  <mesa:source>EC</mesa:source>
+  <mesa:destination>IM</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>STORE</mesa:param>
+  <mesa:param>FUSION/3550/BSPS</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+ 
+ <mesa:step>
+  <mesa:identifier>3550.140</mesa:identifier>
+  <mesa:description>Storage Commitment (N-ACTION)</mesa:description>
+  <mesa:transaction>RAD-10</mesa:transaction>
+  <mesa:source>EC</mesa:source>
+  <mesa:destination>IM</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>COMMIT-N-ACTION</mesa:param>
+  <mesa:param>FUSION/3550/sc</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+ 
+ <mesa:step>
+  <mesa:identifier>3550.150</mesa:identifier>
+  <mesa:description>Storage Commitment (N-EVENT REPORT)</mesa:description>
+  <mesa:transaction>RAD-10</mesa:transaction>
+  <mesa:source>IM</mesa:source>
+  <mesa:destination>EC</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>COMMIT-N-EVENT</mesa:param>
+  <mesa:param>FUSION/3550/sc</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+ 
+ <mesa:step>
+  <mesa:identifier>3550.160</mesa:identifier>
+  <mesa:description>Image Query</mesa:description>
+  <mesa:transaction>RAD-14</mesa:transaction>
+  <mesa:source>ID</mesa:source>
+  <mesa:destination>IM</mesa:destination>
+  <mesa:verb>TRANSACTION</mesa:verb>
+  <mesa:param>QUERY-INSTANCE-SOP-CLASS</mesa:param>
+  <mesa:param>FUSION/3550/BSPS</mesa:param>
+  <mesa:param>cfind</mesa:param>
+  <mesa:param>3550/cfind_q1</mesa:param>
+  <mesa:param>3550/cfind_q1</mesa:param>
+  <mesa:param>WORKSTATION1</mesa:param>
+ </mesa:step>
+
+ <mesa:text_file>
+   <mesa:file>3550/fini.txt</mesa:file>
+ </mesa:text_file>
+ 
+</mesa:testSteps>
+
+</mesa:TestDocument>
+

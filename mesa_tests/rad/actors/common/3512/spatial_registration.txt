@@ -1,0 +1,10 @@
+==== This text is intended for Evidence Creator actors only.
+     Other actors should ignore this text.
+
+In this next step, the Evidence Creator should take the two
+series it received for this test 3512 and register the images.
+This is likely to require shifts and scaling, but probably
+not rotation. The test makers do not have the final parameters
+for the registration object.
+
+====

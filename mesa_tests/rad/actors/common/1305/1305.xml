@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 1305: Charge Posting Process Flow #1</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+ 
+  <mesa:list>Order Placer</mesa:list>
+  
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 1305 involves all of the actors and transactions for a fully integrated Charge Processing Process Flow. See IHE TF Vol I, section 11.3. The nominal patient name is CALIFORNIA^SACRAMENTO.</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>CHARGE_POSTING</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>1305/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/1305/1305.106.a01.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>1305.102.p01.bar</mesa:identifier>
+   <mesa:description>P01: Account Management: New Account</mesa:description>
+   <mesa:transaction>36</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>CP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ACCOUNT-NEW-P01</mesa:param>
+   <mesa:param>chg/1305/1305.102.p01.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1305.106.a01.bar</mesa:identifier>
+   <mesa:description>A01-Admit CALIFORNIA (inpatient)</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A01-ADMIT</mesa:param>
+   <mesa:param>adt/1305/1305.106.a01.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>1305.110.p05.bar</mesa:identifier>
+   <mesa:description>A01-Admit CALIFORNIA (inpatient)</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A01-ADMIT</mesa:param>
+   <mesa:param>adt/1305/1305.108.a01.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1305.110.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P1 for CALIFORNIA</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/1305/1305.110.o01.hl7</mesa:param>
+ </mesa:step>
+ <mesa:message>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/1305/1305.112.o01.hl7</mesa:param>
+   <mesa:param>T1305</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:message>
+<mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/1305/1305.112.o01.hl7</mesa:param>
+   <mesa:param>T1305</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+<mesa:internal>
+   <mesa:param>GEN-SOP-INSTANCES</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/1305/1305.112.o01.hl7</mesa:param>
+   <mesa:param>T1305</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+<mesa:step>
+   <mesa:identifier>1305.114.dcm</mesa:identifier>
+   <mesa:description>MWL C-Find</mesa:description>
+   <mesa:transaction>6</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T1305</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1305.116.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin procedure(X1)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T1305</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1305.120.dcm</mesa:identifier>
+   <mesa:description>C-Store (images)</mesa:description>
+   <mesa:transaction>8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T1305</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1305.126.p03.dft</mesa:identifier>
+   <mesa:description>P03: Technical Charges</mesa:description>
+   <mesa:transaction>35</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>CP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>CHARGE-TECHNICAL</mesa:param>
+   <mesa:param>chg/1305/1305.126.p03.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1305.128.p03.dft</mesa:identifier>
+   <mesa:description>P03: Professional Charges</mesa:description>
+   <mesa:transaction>35</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>CP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>CHARGE-PROFESSIONAL</mesa:param>
+   <mesa:param>chg/1305/1305.128.p03.hl7</mesa:param>
+ </mesa:step>
+ <mesa:text_file>
+  <mesa:file>1305/fini.txt</mesa:file>
+ </mesa:text_file>
+
+</mesa:testSteps>
+ 
+</mesa:TestDocument>
+

@@ -1,0 +1,11 @@
+This is test 109.
+It exercises Exception Management.
+References:
+ IHE Rad 1: 3.3.4
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/109.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

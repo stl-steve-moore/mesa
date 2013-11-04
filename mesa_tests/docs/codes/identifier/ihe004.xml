@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>Patient ID Prefix (for use at Connectathon)</mesa:title>
+		<mesa:description>Connectathon patient identifiers are 6 digit identifiers that begin with a two-digit code that identifies the system producing the ID.  Thus, if your prefix is 10, your Patient Identifiers will be in the range of 100000 to 109999</mesa:description>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>10</mesa:param>
+			<mesa:param>XYZ Company</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

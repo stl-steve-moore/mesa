@@ -1,0 +1,12 @@
+This is test 105.
+It exercises PIR Unidentified Case #3:
+ Unidentified Patient Registered at ADT but Completed
+ at Modality Prior to Order
+References:
+ IHE TF Vol I, Sec 4.4.3
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+	perl mesa_reset/105.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

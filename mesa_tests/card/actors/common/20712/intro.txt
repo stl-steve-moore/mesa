@@ -1,0 +1,21 @@
+Test: 20712
+Title: 20712: Stress ECG Option -- General ECG Waveform
+
+References:
+ Stress Testing Workflow Integration Profile
+ CARD TF-1: 8.4.1
+ CARD TF-2: Appendix X
+
+Test Case 20712 is for Acquisition Modalities which have implemented 
+the Stress ECG Option of the Stress Testing Workflow Integration 
+Profile (STRESS) and are capable of sending DICOM General ECG Waveform 
+objects.
+
+In this test, you use the MESA tools to collect DICOM General ECG Waveform objects.  
+This test verifies that the Patient ID and Study Instance UID from the MWL is encoded.  
+The Wavform objects will be also evaluated for attributes required for the [CARD-2] 
+transaction when the Stress ECG option is supported . This test verifies that the 
+attributes are present and that defined codes and values are used, but cannot check 
+that the defined attributes are accurate (ie., that a given waveform was acquired using 
+the Pharmacologic protocol, or during the Resting state).  That exercise is left to the
+vendors to test internally.

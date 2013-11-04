@@ -1,0 +1,13 @@
+Fusion Test 3514
+
+In this test, the Evidence Creator (or Modality) creates a
+valid DICOM BSPS object which references a Spatial Registration.  
+You may reference the Spatial Registration Object created in 
+test 3512 or create a new one.
+
+You must store both the BSPS and Spatial Registration objects
+during this test.  You can C-STORE the two objects in any order.
+ 
+Storage Commitment may be sent, but it will not be evaluated in this test.
+
+

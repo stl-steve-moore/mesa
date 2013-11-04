@@ -1,0 +1,3 @@
+The next transactions will be to merge the unidentified
+patient with the real patient. After the merge is complete,
+the real patient is the "survivor".

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>3740: IRWF Exception Management - abandoned scheduled import</mesa:title>
+ <mesa:dateStamp value="20060729"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Import Reconciliation Workflow</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>DSS/OrderFiller</mesa:paragraph>
+  <mesa:paragraph>Importer</mesa:paragraph>
+  <mesa:paragraph>PSS Manager</mesa:paragraph>
+  <mesa:paragraph>Image Manager/Archive</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>RAD TF-3:4.60.4.1.2.2</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>References to Other Standards/Documents</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>None</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+   <mesa:paragraph>3725 or 3726 - Importer Coerces Attributes - Scheduled Import option</mesa:paragraph>
+</mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test Case 3740 involves transactions for PPS EXCEPTION MANAGEMENT in the Import Reconciliation Workflow 
+when the Importer abandons the import after the PPS In Progress message has been sent.  This test requires the
+Importer actor to import DICOM objects from media provided with the MESA tools, or to digitize films or documents.
+Ensure that this media is available prior to starting this test. </mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>IRWF</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>3740/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/3740/3740.110.a04.hl7</mesa:file>
+ </mesa:patient>
+ <mesa:step>
+   <mesa:identifier>3740.110.a04.hl7</mesa:identifier>
+   <mesa:description>A04: Register CORAL^C as outpatient</mesa:description>
+   <mesa:transaction>RAD-1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>A04-REGISTER</mesa:param>
+   <mesa:param>adt/3740/3740.110.a04.hl7</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>3740.120.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P5 for CORAL</mesa:description>
+   <mesa:transaction>RAD-2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/3740/3740.120.o01.hl7</mesa:param>
+ </mesa:step> 
+
+ <mesa:internal>
+   <mesa:param>RAD-SCHEDULE</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>OF</mesa:param>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/3740/3740.130.o01.hl7</mesa:param>
+   <mesa:param>T3740</mesa:param>
+   <mesa:param>IRWF/3740</mesa:param>
+   <mesa:param>X200_A1</mesa:param>
+   <mesa:param>X200</mesa:param>
+   <mesa:param>EASTMR</mesa:param>
+   <mesa:param>MR3T</mesa:param>
+ </mesa:internal>
+ <mesa:step>
+   <mesa:identifier>3740.140.mwl</mesa:identifier>
+   <mesa:description>Perform MWL query for patient</mesa:description>
+   <mesa:transaction>RAD-5</mesa:transaction>
+   <mesa:source>IMP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/3740/3740.120.o01.hl7</mesa:param>
+   <mesa:param>3740/mwl_q1</mesa:param>
+ </mesa:step> 
+
+ <mesa:text_file>
+  <mesa:file>3740/import-and-store.txt</mesa:file>
+ </mesa:text_file>
+ 
+ <mesa:internal>
+   <mesa:param>PRODUCE-MPPS-IMPORT-MWL-EXC</mesa:param>
+   <mesa:param>IRWF/3740</mesa:param>
+   <mesa:param>tmp/3740-mpps</mesa:param>
+   <mesa:param>MEDIA_AE RETRIEVE_AE</mesa:param>
+   <mesa:param>3740/mwl_q1/test</mesa:param>
+   <mesa:param>110523</mesa:param>
+ </mesa:internal>
+ <mesa:internal>
+   <mesa:param>COERCE-IMPORT-OBJECT-ATTRIBUTES</mesa:param>
+   <mesa:param>IRWF/3740</mesa:param>
+   <mesa:param>tmp/3740-instances</mesa:param>
+   <mesa:param>tmp/3740-mpps</mesa:param>
+   <mesa:param>3740/mwl_q1/test</mesa:param>
+ </mesa:internal>
+ 
+ <mesa:step>
+   <mesa:identifier>3740.150.mpps</mesa:identifier>
+   <mesa:description>MPPS In-Progress</mesa:description>
+   <mesa:transaction>RAD-59</mesa:transaction>
+   <mesa:source>IMP</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>tmp/3740-mpps</mesa:param>
+   <mesa:param>MEDIA_AE</mesa:param>
+ </mesa:step>
+ <mesa:step>
+   <mesa:identifier>3740.200.store</mesa:identifier>
+   <mesa:description>STORE</mesa:description>
+   <mesa:transaction>RAD-61</mesa:transaction>
+   <mesa:source>IMP</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>tmp/3740-instances</mesa:param>
+   <mesa:param>MEDIA_AE</mesa:param>
+ </mesa:step> 
+ <mesa:step>
+   <mesa:identifier>3740.210.mpps</mesa:identifier>
+   <mesa:description>MPPS Completed</mesa:description>
+   <mesa:transaction>RAD-60</mesa:transaction>
+   <mesa:source>IMP</mesa:source>
+   <mesa:destination>PPSMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>DISCONTINUED</mesa:param>
+   <mesa:param>tmp/3740-mpps</mesa:param>
+   <mesa:param>MEDIA_AE</mesa:param>
+ </mesa:step> 
+</mesa:testSteps>
+
+</mesa:TestDocument>
+

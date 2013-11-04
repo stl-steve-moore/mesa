@@ -1,0 +1,7 @@
+# 1503.010 (Order Placer) Patient-Record: Modify
+
+OBJECT_ACTION = Modify
+PATIENT_ID = 583295
+PATIENT_NAME = DOE^J1
+LOCAL_USER = tmschmidt
+HOST_NAME = enterprise-east

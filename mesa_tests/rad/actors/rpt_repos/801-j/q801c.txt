@@ -1,0 +1,6 @@
+0008 0050	#	// Accession Number
+0008 0052	STUDY	// Query Level
+0008 0061	CT	// Modalities in study
+0010 0010	#	// Patient ID
+0010 0020	#	// Patient Name
+0020 000D	#	// Study Instance UID

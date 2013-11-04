@@ -1,0 +1,5 @@
+
+0040 4001	COMPLETED	// GP SPS status
+
+0008 1195	1.113654.3.25.1000	// Transaction UID
+

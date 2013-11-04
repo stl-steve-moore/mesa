@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11190: Schematron - Node Authentication Failure</title>
+
+ <sch:pattern name="EventActionCode">
+  <sch:rule context='/AuditMessage/EventIdentification'>
+   
+   <!-- EventActionCode=E -->
+   <sch:assert test="@EventActionCode='E'">
+   ERR: Requires EventActionCode=E in EventIdentification (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="@EventActionCode='E'">
+   CTX: Found EventActionCode=E in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 -->
+   <sch:assert test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   ERR: Requires EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0' or @EventOutcomeIndicator='4' or @EventOutcomeIndicator='8' or @EventOutcomeIndicator='12'">
+   CTX: Found EventOutcomeIndicator=0 or 4 or 8 or 12 in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (DICOM Supplement 95, schema)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <!-- EventID code=110113 -->
+   <sch:assert test="EventID[@code='110113']">
+   ERR: Requires code=110113 in EventID (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventID[@code='110113']">
+   CTX: Found code=110113 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName=DCM -->
+   <sch:assert test="EventID[@codeSystemName='DCM']">
+
+   ERR: Requires codeSystemName=DCM in EventID (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='DCM']">
+   CTX: Found codeSystemName=DCM in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID displayName=Security Alert-->
+   <sch:assert test="EventID[@displayName='Security Alert']">
+   ERR: Requires displayName=Security Alert in EventID (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Security Alert']">
+   CTX: Found displayName=Security Alert in EventID (PASS)
+   </sch:report>
+
+   <!-- EventTypeCode code=110126 -->
+   <sch:assert test="EventTypeCode[@code='110126']">
+   ERR: Requires code=110126 in EventTypeCode (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventTypeCode[@code='110126']">
+   CTX: Found code=110126 in EventTypeCode (PASS)
+   </sch:report>
+
+   <!-- EventTypeCode codeSystemName=DCM -->
+   <sch:assert test="EventTypeCode[@codeSystemName='DCM']">
+   ERR: Requires codeSystemName=DCM in EventTypeCode (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventTypeCod[@codeSystemName='DCM']">
+   CTX: Found codeSystemName=DCM in EventTypeCode (PASS)
+   </sch:report>
+
+   <!-- EventTypeCode displayName=Node Authentication -->
+   <sch:assert test="EventTypeCode[@displayName='Node Authentication']">
+   ERR: Requires displayName=Node Authentication in EventTypeCode (DICOM Supplement 95, A.1.3.14)
+   </sch:assert>
+   <sch:report test="EventTypeCode[@displayName='Node Authentication']">
+   CTX: Found displayName=Node Authentication in EventTypeCode (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

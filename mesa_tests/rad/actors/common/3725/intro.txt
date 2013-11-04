@@ -1,0 +1,22 @@
+Test: 3725
+Title: 3725: Importer Coerces Attributes - Scheduled Patient Management Option
+
+References:
+ Import Reconciliation Workflow
+  - RAD TF-1: 21.3.1.2
+  - RAD TF-2: Appendix A.2
+
+Test Case 3725 involves transactions for the Scheduled Import Option
+for Importers from digital media (eg CD) in the Import Reconciliation Workflow. 
+This test requires the Importer Actor to a import DICOM study from
+media provided  with the MESA tools. Ensure that this media is available
+prior to starting this test. Use the patient with Patient ID 3725XXX on
+the CD. There will be one series of images with 18 slices.
+
+If you import scanned film or documents, you should run test 3726 instead. 
+
+The next step in the test will give the Patient Name and Patient ID
+that will appear in the MWL for data to be imported. The name on the MWL
+might not match the patient name for Patient ID 3725XXX on the CD. That is
+part of the test; use the data from the MWL entry to coerce the data
+from the CD.

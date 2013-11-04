@@ -1,0 +1,5 @@
+
+The patient is now identified and will be registered by
+the ADT system. The next message will indicate the
+permanent patient name and patient ID.
+

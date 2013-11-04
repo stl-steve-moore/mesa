@@ -1,0 +1,11 @@
+This is (IHE-Cardiology) test 20206
+It exercises Echo workflow E6.
+References:
+ IHE Card TF-1:3.4.6
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/20206.pl
+in the directory $MESA_TARGET/mesa_tests/card/msgs
+

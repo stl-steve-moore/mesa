@@ -1,0 +1,12 @@
+This is ITI test 10506.
+
+It is designed to test the PIX Integretation Profile.
+In this test, a patient is registered in two domains
+with different demographics. The Cross Reference Manager
+is queried for a cross reference (and should indicate none).
+The demographics are then updated/syncrhonized so that the
+Cross Reference Manager should link these two patient records.
+Another query is sent to the Cross Reference Manager.
+
+References:
+ ITI TF-2: 3.9.4.2.2

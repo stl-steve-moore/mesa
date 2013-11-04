@@ -1,0 +1,5 @@
+Test 20106 now expects the first MWL query from the SECOND MODALITY 
+to go to the Order Filler.  There should now be an SPS entry on the 
+worklist. This query happens before the MPPS complete message from 
+the first modality, so there should still be entries for both modalities.
+

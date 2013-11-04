@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<mesa:header>
+		<mesa:title>PV1 15: HL7 Table 0009 Ambulatory Status</mesa:title>
+	</mesa:header>
+	<mesa:codes>
+		<mesa:columns>
+			<mesa:column_name>Value</mesa:column_name>
+			<mesa:column_name>Description</mesa:column_name>
+		</mesa:columns>
+		<mesa:coded_entry>
+			<mesa:param>A0</mesa:param>
+			<mesa:param>No functional limitations</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>A1</mesa:param>
+			<mesa:param>Ambulates with assistive device</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>A2</mesa:param>
+			<mesa:param>Wheelchair/stretcher bound</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>A3</mesa:param>
+			<mesa:param>Comatose; non-responsive</mesa:param>
+		</mesa:coded_entry>
+		<mesa:coded_entry>
+			<mesa:param>A4</mesa:param>
+			<mesa:param>Disoriented</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>A5</mesa:param>
+			<mesa:param>Vision impaired</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>A6</mesa:param>
+			<mesa:param>Hearing impaired</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>A7</mesa:param>
+			<mesa:param>Speech impaired</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>A8</mesa:param>
+			<mesa:param>Non-English speaking</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>A9</mesa:param>
+			<mesa:param>Functional level unknown</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>B1</mesa:param>
+			<mesa:param>Oxygen therapy</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>B2</mesa:param>
+			<mesa:param>Special equipment (tubes, IVs, catheters)</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>B3</mesa:param>
+			<mesa:param>Amputee</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>B4</mesa:param>
+			<mesa:param>Mastectomy</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>B5</mesa:param>
+			<mesa:param>Paraplegic</mesa:param>
+		</mesa:coded_entry>
+			<mesa:coded_entry>
+			<mesa:param>B6</mesa:param>
+			<mesa:param>Pregnant</mesa:param>
+		</mesa:coded_entry>
+	</mesa:codes>
+</mesa:CodeDocument>

@@ -1,0 +1,7 @@
+# Delta file to get patient demographics and other identifiers
+
+#AA 0010 0010 DOE^J1
+#AA 0010 0020 583295
+#AA 0010 0030 
+#AA 0010 0040 M
+

@@ -1,0 +1,54 @@
+// Attributes which are to be read from the image are of the form <IMG ...>
+// Attributes which are to be read from the structured report are of the
+// form, <SR ...>
+// Blank attributes will need to be filled in with known values by the script.
+
+0040 0270  (
+  0020 000D <IMG 0020.000D>                 // Study Instance UID
+  0008 1110 ####                            // Referenced Study Sequence 
+  0008 0050 #                               // Accession Number 
+  0040 1001 <IMG 0040.0275,0040.1001 T2>    // Requested Procedure ID 
+  0032 1060 <IMG 0040.0275,0032.1060 T2>    // Requested Procedure Description 
+  0040 0009 <IMG 0040.0275,0040.0009 T2>    // Scheduled Procedure Step ID 
+  0040 0007 <IMG 0040.0275,0040.0007 T2>    // Scheduled Procedure Step Description
+  0040 0008 <IMG 0040.0275,0040.0008 S2>    // Scheduled Protocol Code Sequence
+)
+
+0010 0010 <IMG 0010.0010 T2>                // Patients Name
+0010 0020 <IMG 0010.0020 T2>                // Patient ID
+0010 0030 <IMG 0010.0030 T2>                // Patients Birth Date
+0010 0040 <IMG 0010.0040 T2>                // Patients Sex
+0008 1120 <IMG 0008.1120 S2>                // Referenced Patient Sequence
+
+0040 0253 <IMG 0040.0253 T1>                // Performed Procedure Step ID
+0040 0241 STATION_AE                        // Performed Station AE Title
+0040 0242 TEST_STATION                      // Performed Station Name
+0040 0243 "Room 3364"                       // Performed Location 
+0040 0244 <IMG 0008.0020 T1>                // Performed Procedure Step Start Date
+0040 0245 <IMG 0008.0030 T1>                // Performed Procedure Step Start Time
+0040 0250 #                                 // Performed Procedure Step End Date
+0040 0251 #                                 // Performed Procedure Step End Time
+
+0040 0252 "IN PROGRESS"                     // Performed Procedure Step Status
+0040 0254 <IMG 0040.0254 T2>                // Performed Procedure Step Description
+0040 0255 <IMG 0040.0255 T2>                // Performed Procedure Type Description
+0008 1032 <IMG 0008.1032 S2>                // Procedure Code Sequence
+
+// Image Acquisition Results
+0008 0060 SR                                // Modality
+0020 0010 <IMG 0020.0010 T2>                // Study ID
+0040 0260 <IMG 0040.0260 S2>                // Performed Protocol Code Sequence
+0040 0340 (                                 // Performed Series Sequence
+  0008 1050 <SR 0008.1050 T2>               // Performing Physicians Name
+  0018 1030 "PROTOCOL NAME"                 // Protocol Name
+  0008 1070 <SR 0008.1070 T2>               // Operators Name
+  0020 000E <SR 0020.000E T1>               // Series Instance UID
+  0008 103E <SR 0008.103E T2>               // Series Description
+  0008 0054 RETRIEVE_AE                     // Retrieve AE Title
+  0008 1140 (                               // Referenced Image Sequence
+    0008 1150 <IMG 0008.0016 T1>            // Referenced SOP Class UID
+    0008 1155 <IMG 0008.0018 T1>            // Referenced SOP Instance UID
+  )
+  0040 0220 ####                            // Referenced Non-Image Composite SOP Instance Sequence
+)
+

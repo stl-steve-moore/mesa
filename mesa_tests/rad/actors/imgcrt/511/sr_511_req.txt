@@ -1,0 +1,6 @@
+# Requirements for Content Items for Rpt Creator Test 511
+1	O	Language of Content Item and Descendents
+2	O	Observer Type (Person)
+3	O	Observer Name
+4	O	TEXT : Key Object Description
+5	R	IMAGE

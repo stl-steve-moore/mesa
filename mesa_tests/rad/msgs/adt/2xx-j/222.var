@@ -1,0 +1,23 @@
+# 222.var (Modality 2xx tests)
+#
+# PID
+#
+$PATIENT_ID$ = MM222^^^ADT1
+#PATIENT_NAME$ = 佐伯^捷子^^^^^L^I^^^^^L^I~さえき^かつこ^^^^^L^P~saeki^katuko^^^^^L^A
+$PATIENT_NAME$ = 佐伯^捷子^^^^^L^I^^^^^L^I~サエキ^カツコ^^^^^L^P~saeki^katuko^^^^^L^A
+$DATE_TIME_BIRTH$ = 19500122
+$SEX$ = F
+$RACE$ = BL
+$PATIENT_ADDRESS$ = 東京都港区虎ノ門１−１９−９^^^^1050001^^^^^^I~1-19-9,TORANOMONN^MINATO-KU^TOKYO^^1050001^JPN^^^^^A
+$PATIENT_ACCOUNT_NUM$ = 20-95-MM222
+#
+# PV1
+#
+$PATIENT_CLASS$ = E
+$PATIENT_LOCATION$ = 1W^111^2^XYZ_HOSPITAL
+#ATTENDING_DOCTOR$ = ^タカハシ^カズオ^^^^^^^L
+$ATTENDING_DOCTOR$ = ^高橋^和男^^^^^^^L
+$REFERRING_DOCTOR$ = ^田中^一郎^^^^^^^L
+$VISIT_NUMBER$ = V222^^^ADT1
+$VISIT_INDICATOR$ = V
+$ADMIT_DATE_TIME$ = 200007010800

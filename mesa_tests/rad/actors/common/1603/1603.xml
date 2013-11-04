@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mesa:TestDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<mesa:header>
+ <mesa:title>Test Case 1603: RWF Use Case 2: Workitem Deferred</mesa:title>
+ <mesa:dateStamp value="20060410"/>
+ <mesa:versionNumber value="10.0.0"/>
+</mesa:header>
+
+<mesa:section>
+ <mesa:title>Profiles Covered</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Sceduled Workflow</mesa:paragraph>
+  <mesa:paragraph>Patient Information Reconciliation</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Actors Involved</mesa:title>
+ <mesa:text>
+  <mesa:list>DSS/OrderFiller</mesa:list>
+  <mesa:list>ADT</mesa:list>
+  <mesa:list>Order Placer</mesa:list>
+  <mesa:list>Image Manager</mesa:list>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Technical Framework References</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Prerequisite Tests</mesa:title>
+ <mesa:text>
+  <mesa:paragraph></mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Test Description</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Test 1603 covers the Interpretation task in the Reporting Workflow integration profile (see IHE TF Vol I, section 13.4.2). In this test, the Report Creator claims a workitem and then defers it by setting the status back to "SCHEDULED".</mesa:paragraph>
+ </mesa:text>
+</mesa:section>
+ 
+<mesa:section>
+ <mesa:title>Test Setup</mesa:title>
+ <mesa:text>
+  <mesa:paragraph>Fill-in with the following information. 
+		- what are all necessary to run this test. 
+		- What is expected by completing this test.
+  </mesa:paragraph>
+  </mesa:text>
+</mesa:section>
+
+<mesa:section>
+ <mesa:title>Sequence of Transactions</mesa:title>
+</mesa:section>
+
+<mesa:header>
+ <mesa:textIntroduction>
+ </mesa:textIntroduction>
+ </mesa:header>
+
+<mesa:testSteps>
+ <mesa:profile>
+   <mesa:name>REPORTING_WORKFLOW</mesa:name>
+ </mesa:profile>
+ <mesa:text_file>
+   <mesa:file>1603/intro.txt</mesa:file>
+ </mesa:text_file>
+ <mesa:patient>
+   <mesa:file>adt/1603/1603.102.a04.hl7</mesa:file>
+ </mesa:patient>
+
+ <mesa:step>
+   <mesa:identifier>1603.102.a04.adt</mesa:identifier>
+   <mesa:description>A04: Register LINCOLN as outpatient (Patient Class='E')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OP</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>REGISTER</mesa:param>
+   <mesa:param>adt/1603/1603.102.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1603.104.a04.adt</mesa:identifier>
+   <mesa:description>A04: Register LINCOLN as outpatient (Patient Class='E')</mesa:description>
+   <mesa:transaction>1</mesa:transaction>
+   <mesa:source>ADT</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>REGISTER</mesa:param>
+   <mesa:param>adt/1603/1603.104.a04.hl7</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1603.108.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Order P1 for LINCOLN</mesa:description>
+   <mesa:transaction>2</mesa:transaction>
+   <mesa:source>OP</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>ORDER</mesa:param>
+   <mesa:param>order/1603/1603.106.o01.hl7</mesa:param>
+  </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.110.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Schedule X1</mesa:description>
+   <mesa:transaction>4a</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/1603/1603.110.o01.hl7</mesa:param>
+   <mesa:param>T1603</mesa:param>
+   <mesa:param>MR/MR4/MR4S1</mesa:param>
+   <mesa:param>X1_A1</mesa:param>
+   <mesa:param>X1</mesa:param>
+ </mesa:step>
+<mesa:step>
+   <mesa:identifier>1603.110.o01.orm</mesa:identifier>
+   <mesa:description>ORM: Schedule X1</mesa:description>
+   <mesa:transaction>4</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/1603/1603.110.o01.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.112.o01.orr</mesa:identifier>
+   <mesa:description>ORM: Schedule X1</mesa:description>
+   <mesa:transaction>4</mesa:transaction>
+   <mesa:source>OF</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>SCHEDULE</mesa:param>
+   <mesa:param>sched/1603/1603.112.o01.hl7</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.110.dcm</mesa:identifier>
+   <mesa:description>MWL C-Find</mesa:description>
+   <mesa:transaction>5</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>OF</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>MWL</mesa:param>
+   <mesa:param>order/1603/1603.106.o01.hl7</mesa:param>
+   <mesa:param>1603/mwl_q1</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.112.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin Procedure (X1)</mesa:description>
+   <mesa:transaction>6</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T1603</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.114.dcm</mesa:identifier>
+   <mesa:description>PPS: Begin Procedure (X1)</mesa:description>
+   <mesa:transaction>6</mesa:transaction>
+   <mesa:source>IM</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>IN-PROGRESS</mesa:param>
+   <mesa:param>T1603</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.116.dcm</mesa:identifier>
+   <mesa:description>PPS: Complete Procedure (X1)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T1603</mesa:param>
+  </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.118.dcm</mesa:identifier>
+   <mesa:description>PPS: Complete Procedure (X1)</mesa:description>
+   <mesa:transaction>7</mesa:transaction>
+   <mesa:source>IM</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>COMPLETED</mesa:param>
+   <mesa:param>T1603</mesa:param>
+  </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.120.dcm</mesa:identifier>
+   <mesa:description>C-Store (images)</mesa:description>
+   <mesa:transaction>8</mesa:transaction>
+   <mesa:source>MOD</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>STORE</mesa:param>
+   <mesa:param>T1603</mesa:param>
+ </mesa:step> 
+
+<mesa:step>
+   <mesa:identifier>1603.126.dcm</mesa:identifier>
+   <mesa:description>Images Available</mesa:description>
+   <mesa:transaction>11</mesa:transaction>
+   <mesa:source>RPTMGR</mesa:source>
+   <mesa:destination>IM</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+  </mesa:step> 
+<mesa:step>
+   <mesa:description>Create Interpretation Worklist Task</mesa:description>
+   <mesa:verb>SCHEDULE_GPWL</mesa:verb>
+   <mesa:transaction>1603/sched_gpwl.txt</mesa:transaction>
+   <mesa:source>rwf/1603/spscreate.txt</mesa:source>
+   <mesa:destination>order/1603/1603.106.o01.hl7</mesa:destination>
+  </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.128.dcm</mesa:identifier>
+   <mesa:description>Reporting Worklist Provided (Interp)</mesa:description>
+   <mesa:transaction>46</mesa:transaction>
+   <mesa:source>RPTCRT</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>rwf/1603/gpspsquery_lincoln.dcm</mesa:param>
+   <mesa:param>1603/rwl_q1</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.130.dcm</mesa:identifier>
+   <mesa:description>N-Action: Claim Workitem</mesa:description>
+   <mesa:transaction>38a</mesa:transaction>
+   <mesa:source>RPTMGR</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>1603/rwl_claim1</mesa:param>
+ </mesa:step> 
+<mesa:step>
+   <mesa:identifier>1603.130.dcm</mesa:identifier>
+   <mesa:description>N-Action: Claim Workitem</mesa:description>
+   <mesa:transaction>38</mesa:transaction>
+   <mesa:source>RPTCRT</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>CLAIM</mesa:param>
+   <mesa:param>1603/rwl_q1</mesa:param>
+   <mesa:param>rwf/1603/spsclaim.dcm</mesa:param>
+   <mesa:param>1603/rwl_claim1</mesa:param>
+ </mesa:step> 
+
+<mesa:step>
+   <mesa:identifier>1603.132.dcm</mesa:identifier>
+   <mesa:description>Reporting Worklist Provided (Interp)</mesa:description>
+   <mesa:transaction>46</mesa:transaction>
+   <mesa:source>RPTCRT</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>rwf/1603/gpspsquery_lincoln.dcm</mesa:param>
+   <mesa:param>1603/rwl_q2</mesa:param>
+ </mesa:step> 
+
+<mesa:step>
+   <mesa:identifier>1603.134.dcm</mesa:identifier>
+   <mesa:description>N-Action: Defer Workitem (set status to SCHEDULED)</mesa:description>
+   <mesa:transaction>38</mesa:transaction>
+   <mesa:source>RPTCRT</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>DEFER</mesa:param>
+   <mesa:param>1603/rwl_q1</mesa:param>
+   <mesa:param>rwf/1603/spsschedule.dcm</mesa:param>
+   <mesa:param>1603/rwl_claim1</mesa:param>
+ </mesa:step> 
+
+<mesa:step>
+   <mesa:identifier>1603.136.dcm</mesa:identifier>
+   <mesa:description>Reporting Worklist Provided (Interp)</mesa:description>
+   <mesa:transaction>46</mesa:transaction>
+   <mesa:source>RPTCRT</mesa:source>
+   <mesa:destination>RPTMGR</mesa:destination>
+   <mesa:verb>TRANSACTION</mesa:verb>
+   <mesa:param>rwf/1603/gpspsquery_lincoln.dcm</mesa:param>
+   <mesa:param>1603/rwl_q3</mesa:param>
+ </mesa:step> 
+
+
+<mesa:text_file>
+  <mesa:file>1601/fini.txt</mesa:file>
+ </mesa:text_file>
+</mesa:testSteps>
+
+ 
+</mesa:TestDocument>
+

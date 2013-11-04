@@ -1,0 +1,3 @@
+0008 0052	STUDY	// Query Level
+0008 0061	US	// Modalities in study
+0020 000D	#	// Study Instance UID

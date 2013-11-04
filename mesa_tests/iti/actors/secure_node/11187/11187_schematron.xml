@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sch:schema xmlns:sch="http://www.ascc.net/xml/schematron">
+
+  <title>CTX: 11187: Schematron - Medication</title>
+
+ <sch:pattern name="EventActionCode">
+  <sch:rule context='/AuditMessage/EventIdentification'>
+   
+   <!-- EventActionCode=C -->
+   <sch:assert test="@EventActionCode='C'">
+   ERR: Requires EventActionCode=C in EventIdentification (ITI TF-2, section 3.20.7.3)
+   </sch:assert>
+   <sch:report test="@EventActionCode='C'">
+   CTE: Found EventActionCode=C in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventOutcomeIndicator=0 -->
+   <sch:assert test="@EventOutcomeIndicator='0'">
+   ERR: Requires EventOutcomeIndicator=0 in EventIdentification (RFC 3881 5.1.4 )
+   </sch:assert>
+   <sch:report test="@EventOutcomeIndicator='0'">
+   CTX: Found EventOutcomeIndicator=0 in EventIdentification (PASS)
+   </sch:report>
+
+   <!-- EventDateTime -->
+   <sch:assert test="@EventDateTime">
+   ERR: Requires EventDateTime (Proper date/time format)
+   </sch:assert>
+   <sch:report test="@EventDateTime">
+   CTX: Found EventDateTime (PASS)
+   </sch:report>
+
+   <sch:assert test="count(EventID) = 1">
+   ERR: Requires ONLY ONE EventID (ITI TF-2, section 3.20.7.3)
+   </sch:assert>
+   <sch:report test="count(EventID) = 1">
+   CTX: Found ONLY ONE EventID (PASS)
+   </sch:report>
+
+   <!-- EventID code=IHE0002 -->
+   <sch:assert test="EventID[@code='IHE0002']">
+   ERR: Requires code=IHE0002 in EventID (ITI TF-2, section 3.20.7.3)
+   </sch:assert>
+   <sch:report test="EventID[@code='IHE0002']">
+   CTX: Found code=IHE0002 in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID codeSystemName=IHE -->
+   <sch:assert test="EventID[@codeSystemName='IHE']">
+
+   ERR: Requires codeSystemName=IHE in EventID (ITI TF-2, section 3.20.7.3)
+   </sch:assert>
+   <sch:report test="EventID[@codeSystemName='IHE']">
+   CTX: Found codeSystemName=IHE in EventID (PASS)
+   </sch:report>
+
+   <!-- EventID displayName=Medication Event-->
+   <sch:assert test="EventID[@displayName='Medication Event']">
+   ERR: Requires displayName=Medication Event in EventID (ITI TF-2, section 3.20.7.3)
+   </sch:assert>
+   <sch:report test="EventID[@displayName='Medication Event']">
+   CTX: Found displayName=Medication Event in EventID (PASS)
+   </sch:report>
+
+  </sch:rule>
+ </sch:pattern>
+
+</sch:schema>

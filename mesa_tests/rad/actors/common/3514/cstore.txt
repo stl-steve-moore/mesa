@@ -1,0 +1,9 @@
+The next two transactions are used to send two series
+to the Evidence Creator. This data is supplied here 
+using a C-STORE, but can alternatively be copied to 
+the Evidence Creator from the CD/DVD provided with 
+the MESA tools. 
+
+If the Evidence Creator already the SOP instances or 
+wants to read from the CD, skip the next two C-STORE steps 
+(enter 's' at the prompt).

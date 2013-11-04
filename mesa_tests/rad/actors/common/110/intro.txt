@@ -1,0 +1,11 @@
+This is test 110.
+It exercises Billing and Materials Management
+References:
+ IHE Rad 2: 4.7
+
+
+If you want to reset the patient name and patient ID, you need
+to exit this test script and use the command:
+        perl mesa_reset/110.pl
+in the directory $MESA_TARGET/mesa_tests/rad/msgs
+

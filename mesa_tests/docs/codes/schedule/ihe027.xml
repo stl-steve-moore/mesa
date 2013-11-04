@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <mesa:CodeDocument xmlns:mesa="urn:mir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+ 	<mesa:header>
+ 		<mesa:title>Requested Procedures and Scheduling Codes</mesa:title>
+ 		<mesa:description>This section contains maps showing the relationship between requested procedures, scheduled procedure steps and protocol items. That is, for a given requested procedure, Order Fillers will/shall schedule the protocol items found in Table 5.2-2 below.
+The coded values (Protocol Code, Protocol Code Meaning, Coding Scheme Designator) are also the values transmitted in components 4-6 of OBR 4: Universal Service ID that is sent to the Image Manager for transaction RAD-4: Procedure Scheduled.
+In the Mod column, an asterisk (*) means the value will depend on the test. For a modality running MESA tests, that value will be set by the user running the test (CR, CT, MR, US, …). For Order Filler tests, the value will be dictated by the test instructions. For Connectathon tests, the Mod column will contain fixed values that should be used by the Order Filler.
+The column labeled Modality AE Titles will contain AE Titles of modalities tested at the Connectathon. This will help Order Filler actors schedule steps for the proper systems.
+</mesa:description>
+ 	</mesa:header>
+ 
+  <mesa:codes>
+   <mesa:columns>
+    <mesa:column_name>Scenario</mesa:column_name>
+    <mesa:column_name>Req Procedure</mesa:column_name>
+    <mesa:column_name>SPS Description</mesa:column_name>
+    <mesa:column_name>Protocol Code</mesa:column_name>
+    <mesa:column_name>Protocol Code Meaning</mesa:column_name>
+    <mesa:column_name>Coding Scheme Designator</mesa:column_name>
+    <mesa:column_name>Mod</mesa:column_name>
+    <mesa:column_name>Modality AE Titles</mesa:column_name>
+   </mesa:columns>	 
+   <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P1</mesa:param>
+    <mesa:param>P1 10</mesa:param>
+    <mesa:param>X1_A1</mesa:param>
+    <mesa:param>SP Action Item X1_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P2</mesa:param>
+    <mesa:param>P2 20</mesa:param>
+    <mesa:param>X2_A1</mesa:param>
+    <mesa:param>SP Action Item X2_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P3</mesa:param>
+    <mesa:param>P3 30</mesa:param>
+    <mesa:param>X3A_A1</mesa:param>
+    <mesa:param>SP Action Item X3A_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P3</mesa:param>
+    <mesa:param>P3 31</mesa:param>
+    <mesa:param>X3B_A1</mesa:param>
+    <mesa:param>SP Action Item X3B_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P4</mesa:param>
+    <mesa:param>P4 40</mesa:param>
+    <mesa:param>X4A_A1</mesa:param>
+    <mesa:param>SP Action Item X4A_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P4</mesa:param>
+    <mesa:param>P4 41</mesa:param>
+    <mesa:param>X4B_A1</mesa:param>
+    <mesa:param>SP Action Item X4B_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P4</mesa:param>
+    <mesa:param>P4 41</mesa:param>
+    <mesa:param>X4B_A2</mesa:param>
+    <mesa:param>SP Action Item X4B_A2</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P5</mesa:param>
+    <mesa:param>P5 50</mesa:param>
+    <mesa:param>X5_A1</mesa:param>
+    <mesa:param>SP Action Item X5_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P6</mesa:param>
+    <mesa:param>P6 60</mesa:param>
+    <mesa:param>X6_A1</mesa:param>
+    <mesa:param>SP Action Item X6_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P7</mesa:param>
+    <mesa:param>P7 70</mesa:param>
+    <mesa:param>X7_A1</mesa:param>
+    <mesa:param>SP Action Item X7_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P8</mesa:param>
+    <mesa:param>P8 80</mesa:param>
+    <mesa:param>X8A_A1</mesa:param>
+    <mesa:param>SP Action Item X8A_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P8</mesa:param>
+    <mesa:param>P8 81</mesa:param>
+    <mesa:param>X8B_A1</mesa:param>
+    <mesa:param>SP Action Item X8B_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P9</mesa:param>
+    <mesa:param>P9 90</mesa:param>
+    <mesa:param>X9_A1</mesa:param>
+    <mesa:param>SP Action Item X9_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P10</mesa:param>
+    <mesa:param>P10 100</mesa:param>
+    <mesa:param>X10_A1</mesa:param>
+    <mesa:param>SP Action Item X10_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P20</mesa:param>
+    <mesa:param>P20 200</mesa:param>
+    <mesa:param>X20_A1</mesa:param>
+    <mesa:param>SP Action Item X20_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P21</mesa:param>
+    <mesa:param>P21 210</mesa:param>
+    <mesa:param>X21_A1</mesa:param>
+    <mesa:param>SP Action Item X21_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P22</mesa:param>
+    <mesa:param>P22 220</mesa:param>
+    <mesa:param>X22_A1</mesa:param>
+    <mesa:param>SP Action Item X22_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P23</mesa:param>
+    <mesa:param>P23 230</mesa:param>
+    <mesa:param>X23_A1</mesa:param>
+    <mesa:param>SP Action Item X23_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P101</mesa:param>
+    <mesa:param>P 101 Mammography Screening</mesa:param>
+    <mesa:param>X101_A1</mesa:param>
+    <mesa:param>SP Action Item X101_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>P102</mesa:param>
+    <mesa:param>P102 3D CT Reconstruction</mesa:param>
+    <mesa:param>X102_A1</mesa:param>
+    <mesa:param>SP Action Item X102_A1</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>CATH.001</mesa:param>
+    <mesa:param>Left Heart Cath</mesa:param>
+    <mesa:param>XX-20011</mesa:param>
+    <mesa:param>Left Heart Cath</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>HD</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>CATH.001</mesa:param>
+    <mesa:param>IVUS Left Heart Cath</mesa:param>
+    <mesa:param>XX-20012</mesa:param>
+    <mesa:param>IVUS Left Heart Cath</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>IVUS</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+     <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>CATH.001</mesa:param>
+    <mesa:param>XA Left Heart Cath</mesa:param>
+    <mesa:param>XX-20013</mesa:param>
+    <mesa:param>XA Left Heart Cath</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>XA</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+<mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>ECHO.001</mesa:param>
+    <mesa:param>TTE</mesa:param>
+    <mesa:param>XX-20021</mesa:param>
+    <mesa:param>TTE</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>MESA Tests</mesa:param>
+    <mesa:param>ECHO.002</mesa:param>
+    <mesa:param>Stress Echo</mesa:param>
+    <mesa:param>XX-20031</mesa:param>
+    <mesa:param>Stress Echo</mesa:param>
+    <mesa:param>DSS_MESA</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>10110</mesa:param>
+    <mesa:param>US Procedure 1</mesa:param>
+    <mesa:param>910110</mesa:param>
+    <mesa:param>US: One</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10150</mesa:param>
+    <mesa:param>US Procedure 2</mesa:param>
+    <mesa:param>910150</mesa:param>
+    <mesa:param>US: Two</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10210</mesa:param>
+    <mesa:param>Radiological Examination: Chest X-Ray</mesa:param>
+    <mesa:param>910210</mesa:param>
+    <mesa:param>CR: CXR</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+    <mesa:param>CR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10250</mesa:param>
+    <mesa:param>Radiological Examination: Abdominal X-Ray</mesa:param>
+    <mesa:param>910250</mesa:param>
+    <mesa:param>CR: Abdomen</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>CR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10310</mesa:param>
+    <mesa:param>Ultrasound Examination: Cardiac Screening</mesa:param>
+    <mesa:param>910310</mesa:param>
+    <mesa:param>US: Screening</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10350</mesa:param>
+    <mesa:param>Ultrasound Examination: Stress Echo</mesa:param>
+    <mesa:param>910350</mesa:param>
+    <mesa:param>US: Stress Echo</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+    <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10410</mesa:param>
+    <mesa:param>Radiological Examination: Left Leg</mesa:param>
+    <mesa:param>910410</mesa:param>
+    <mesa:param>DX: Leg</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>DX</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10450</mesa:param>
+    <mesa:param>Radiological Examination: Left Ankle</mesa:param>
+    <mesa:param>910450</mesa:param>
+    <mesa:param>DX: Ankle</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>DX</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10710</mesa:param>
+    <mesa:param>Transabdominal Ultrasound Scan</mesa:param>
+    <mesa:param>910710</mesa:param>
+    <mesa:param>US: Transabdominal</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10750</mesa:param>
+    <mesa:param>Endovaginal Pelvic Scan</mesa:param>
+    <mesa:param>910750</mesa:param>
+    <mesa:param>US: Endovaginal Pelvis</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10910</mesa:param>
+    <mesa:param>Computed Tomography: Chest</mesa:param>
+    <mesa:param>910910</mesa:param>
+    <mesa:param>CT: Chest</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>CT</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>10950</mesa:param>
+    <mesa:param>Computed Tomography: Abdomen</mesa:param>
+    <mesa:param>910950</mesa:param>
+    <mesa:param>CT: Abdomen</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>CT</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11010</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Head</mesa:param>
+    <mesa:param>911010</mesa:param>
+    <mesa:param>MR: Head</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11050</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Neck</mesa:param>
+    <mesa:param>911050</mesa:param>
+    <mesa:param>MR: Neck</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11060</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Cardiac</mesa:param>
+    <mesa:param>911060</mesa:param>
+    <mesa:param>MR: Cardiac</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11210</mesa:param>
+    <mesa:param>Angiography: Cardiac</mesa:param>
+    <mesa:param>911210</mesa:param>
+    <mesa:param>XA: Cardiac</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>XA</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11250</mesa:param>
+    <mesa:param>Angiography: Carotid</mesa:param>
+    <mesa:param>911250</mesa:param>
+    <mesa:param>XA: Carotid</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>XA</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11510</mesa:param>
+    <mesa:param>Radiological Examination: Mammography</mesa:param>
+    <mesa:param>911510</mesa:param>
+    <mesa:param>MG: Mammography</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MG</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11610</mesa:param>
+    <mesa:param>Radiological Examination: Skull</mesa:param>
+    <mesa:param>911610</mesa:param>
+    <mesa:param>CR: Skull</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>CR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11650</mesa:param>
+    <mesa:param>Radiological Examination: C-Spine</mesa:param>
+    <mesa:param>911650</mesa:param>
+    <mesa:param>CR: C-Spine</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>CR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>11810</mesa:param>
+    <mesa:param>OB-GYN Ultrasound</mesa:param>
+    <mesa:param>911810</mesa:param>
+    <mesa:param>US: OB-GYN</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>US</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>12010</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Left Knee</mesa:param>
+    <mesa:param>912010</mesa:param>
+    <mesa:param>MR: Left Knee</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>12050</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Back</mesa:param>
+    <mesa:param>912050</mesa:param>
+    <mesa:param>MR: Back</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>12110</mesa:param>
+    <mesa:param>Radiological Examination: Right Hand</mesa:param>
+    <mesa:param>912110</mesa:param>
+    <mesa:param>DX: Hand R</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>DX</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>12150</mesa:param>
+    <mesa:param>Radiological Examination: Right Wrist</mesa:param>
+    <mesa:param>912150</mesa:param>
+    <mesa:param>DX: Wrist R</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>DX</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>12510</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Brain</mesa:param>
+    <mesa:param>912510</mesa:param>
+    <mesa:param>MR: Brain</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16110</mesa:param>
+    <mesa:param>DEXA Exam: AP Spine</mesa:param>
+    <mesa:param>916110</mesa:param>
+    <mesa:param>OT: AP Spine</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>OT</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16150</mesa:param>
+    <mesa:param>DEXA Exam: Left Femur</mesa:param>
+    <mesa:param>916150</mesa:param>
+    <mesa:param>OT: Left Femur</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>OT</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+<mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16151</mesa:param>
+    <mesa:param>DEXA Exam: Right Femur</mesa:param>
+    <mesa:param>916151</mesa:param>
+    <mesa:param>OT: Right Femur</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>OT</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16210</mesa:param>
+    <mesa:param>Magnetic Resonance Imaging: Ankle</mesa:param>
+    <mesa:param>916210</mesa:param>
+    <mesa:param>MR: Ankle</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>MR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16212</mesa:param>
+    <mesa:param>Nuclear Imaging: Lung</mesa:param>
+    <mesa:param>916212</mesa:param>
+    <mesa:param>NM: Lung</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16214</mesa:param>
+    <mesa:param>Nuclear Imaging: Bone</mesa:param>
+    <mesa:param>916214</mesa:param>
+    <mesa:param>NM: Bone</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+<mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16216</mesa:param>
+    <mesa:param>Nuclear Imaging: RVG</mesa:param>
+    <mesa:param>916216</mesa:param>
+    <mesa:param>NM: RVG</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16310</mesa:param>
+    <mesa:param>Dynamic - Renalgram</mesa:param>
+    <mesa:param>916310</mesa:param>
+    <mesa:param>NM: Renalgram</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16320</mesa:param>
+    <mesa:param>Myocardial Perfusion: Rest</mesa:param>
+    <mesa:param>916320</mesa:param>
+    <mesa:param>NM: Perfusion Rest</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16320</mesa:param>
+    <mesa:param>Myocardial Perfusion: Rest</mesa:param>
+    <mesa:param>916321</mesa:param>
+    <mesa:param>NM: Perfusion Stress</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16350</mesa:param>
+    <mesa:param>Gated Spect - Cardiac Gated Spect</mesa:param>
+    <mesa:param>916350</mesa:param>
+    <mesa:param>NM: Cardiac Gated Spect</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16370</mesa:param>
+    <mesa:param>Spect - Bone Spect</mesa:param>
+    <mesa:param>916370</mesa:param>
+    <mesa:param>NM: Bone Spect</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>NM</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>16410</mesa:param>
+    <mesa:param>Radiological Examination: Ankle</mesa:param>
+    <mesa:param>916410</mesa:param>
+    <mesa:param>CR: Ankle</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>CR</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>17110</mesa:param>
+    <mesa:param>RF Examination: Stomach</mesa:param>
+    <mesa:param>917110</mesa:param>
+    <mesa:param>RF: Stomach</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>RF</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>17130</mesa:param>
+    <mesa:param>RF Examination: Colon</mesa:param>
+    <mesa:param>917130</mesa:param>
+    <mesa:param>RF: Colon</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>RF</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>18110</mesa:param>
+    <mesa:param>Angiography: Diagnostic Catheterization</mesa:param>
+    <mesa:param>XX-40041</mesa:param>
+    <mesa:param>Diagnostic Catheterization</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+    <mesa:param>XA</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>18111</mesa:param>
+    <mesa:param>Angiography: Therapeutic Catherterization</mesa:param>
+    <mesa:param>XX-40061</mesa:param>
+    <mesa:param>Therapeutic Catheterization</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+    <mesa:param>XA</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+   <mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>19110</mesa:param>
+    <mesa:param>Electrophysiology: Diagnostic ECG</mesa:param>
+    <mesa:param>XX-40081</mesa:param>
+    <mesa:param>Diag ECG</mesa:param>
+    <mesa:param>IHEDEMO</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+<mesa:coded_entry>
+    <mesa:param>Connectathon</mesa:param>
+    <mesa:param>20110</mesa:param>
+    <mesa:param>Group Test SPS1</mesa:param>
+    <mesa:param>P1_A1</mesa:param>
+    <mesa:param>SP Action Item P1_A1</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+<mesa:coded_entry>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>20110</mesa:param>
+    <mesa:param>Group Test SPS2</mesa:param>
+    <mesa:param>P2_A1</mesa:param>
+    <mesa:param>SP Action Item P2_A1</mesa:param>
+    <mesa:param>XX</mesa:param>
+    <mesa:param>*</mesa:param>
+    <mesa:param>XX</mesa:param>
+   </mesa:coded_entry>
+
+ </mesa:codes>	
+</mesa:CodeDocument>
+ 

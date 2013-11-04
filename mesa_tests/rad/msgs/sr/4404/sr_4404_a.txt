@@ -1,0 +1,121 @@
+//Patient Module
+0010 0010	DOSE^XXXX			//Patient Name
+0010 0020	DOSE1				//Patient ID
+0010 0030	19500403			//Patient's Birth Date
+0010 0040	M				//Patient's Sex
+//
+//General Study Module
+0020 000D	1.113654.1.2008.4404
+0008 0020	20081024			//Study Date
+0008 0030	#				//Study Time
+0008 0090	#				//Referring Physician's Name
+0020 0010	#				//Study ID
+0008 0050	200810xx 			//Accession Number
+//
+//SR Document Series Module
+0008 0060	SR				//Modality
+0020 000E	1.113654.1.2008.4404.1.1		//Series Instance UID
+0020 0011	1				//Series Number
+0008 1111	####				//Referenced Study Component Sequence
+//
+//
+//General Equipment Module
+0008 0070	MIR				//Manufacturer
+//
+//SR Document General Module
+0020 0013	1				//Instance Number
+0040 A370 (					// Referenced Request Sequence
+ 0020 000D	1.113654.1.2008.4404		// Study Instance UID
+ 0008 1110	####				// Referenced Study Sequence
+ 0008 0050	200810xx 			//Accession Number
+ 0040 2016	AXZ^MESA_ORDPLC			// Placer Order Number
+ 0040 2017	BXZ^MESA_ORDFIL			// Filler Order Number
+ 0040 1001	#				// Requested Procedure ID
+ 0032 1060	#				// Requested Procedure Description
+ 0032 1064	####				// Requested Procedure Code Sequence
+)
+0040 A491	COMPLETE			//Completion Flag
+0040 A493	UNVERIFIED			//Verification Flag
+0008 0023	20081024			//Content Date
+0008 0033	141500.0000			//Content Time
+//
+//SR Document Content
+0040 a504 (					//Content Template Sequence
+ 0040 DB00	10001				//Template Identifier
+ 0008 0105	DCMR				//Mapping Resource
+)
+//
+0040 a040	CONTAINER			//Value Type
+0040 a043 (					//Concept Name Code Sequence
+ 0008 0100	113701				//Code Value
+ 0008 0102	DCM				//Code Scheme Designator
+ 0008 0104	"X-Ray Radiation Dose Report"		//Code Meaning
+)
+0040 a050	SEPARATE			// Continuity of Content
+
+0040 a730 (					//Content Sequence
+ 0040 a010	"HAS CONCEPT MOD"		//Relationship Type
+ 0040 a040	CODE				//Value Type
+ 0040 a043 (					//Concept Name Code Sequence
+  0008 0100	121058				//Code Value
+  0008 0102	DCM				//Code Scheme Designator
+  0008 0104	"Procedure reported" 	//Code Meaning
+ )
+ 0040 a168 (					//Concept Code Sequence
+  0008 0100	113704				//Code Value
+  0008 0102	DCM				//Code Scheme Designator
+  0008 0104	"Projection X-Ray"		//Code Meaning
+  )
+)
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	CODE				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	121005				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Observer Type"			// Code Meaning
+ )
+ 0040 a168 (					//Concept Code Sequence
+  0008 0100	121007				//Code Value
+  0008 0102	DCM				//Code Scheme Designator
+  0008 0104	Device				//Code Meaning
+  )
+)
+// Missing DTID 1004
+
+(
+ 0040 a010	"HAS OBS CONTEXT"		// Relationship Type
+ 0040 a040	CODE				// Value Type
+ 0040 a043 (					// Concept Name Code Sequence
+  0008 0100	113705				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	"Scope of Accumulation"		// Code Meaning
+ )
+ 0040 a168 (					// Concept Code Sequence
+  0008 0100	113014				// Code Value
+  0008 0102	DCM				// Code Scheme Designator
+  0008 0104	Study				// Code Meaning
+ )
+ (
+  0040 a010	"HAS PROPERTIES"		// Relationship Type
+  0040 a040	UIDREF				// Value Type
+  0040 a168 (					// Concept Code Sequence
+   0008 0100	110180				// Code Value
+   0008 0102	DCM				// Code Scheme Designator
+   0008 0104	"Study Instance UID"		// Code Meaning
+  )
+  0040 A124	1.113654.1.2008.4404
+ )
+)
+
+// Add 6, CONTAINS TEXT EV 113780
+// Add 7, CONTAINS INCLUDE DTID 10002
+// Add 8,
+// Add 9
+// Add 10
+// Add 11
+
+//
+//SOP Common Module
+0008 0016	1.2.840.10008.5.1.4.1.1.88.67	// SOP Class: X-Ray Dose Radiation SR
+0008 0018	1.113654.1.2008.4404.2.1		// SOP Instance UID
