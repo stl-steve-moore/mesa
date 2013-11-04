@@ -1,0 +1,24 @@
+
+0040 0100	(		//PRC Scheduled Procedure Step Sequence
+ 0008 0060	#		// Modality
+ 0040 0001	MODALITY1	// PRC Scheduled Station AE Title
+
+ 0040 0008	####		// Scheduled Action Item Code Sequence
+//  0008 0100	 #		// Code Value
+//  0008 0102	 #		// Coding Scheme Designator
+//  0008 0104	 #		// Code Meaning
+// )
+)
+
+// Requested Procedure
+0040 1001	#		// PRC Requested Procedure ID
+0032 1060	#		// SDY Requested Procedure Description
+
+0008 0050	#		// ID Accession Number
+
+0010 0010	#		// PAT Patient Name
+0010 0020	#		// PAT Patient ID
+
+// Patient Demographic
+0010 0030	#		// PAT Patient Birthdate
+0010 0040	#		// PAT Patient Sex

@@ -1,0 +1,15 @@
+0020 000D	1.2.3		// Study Instance UID
+0008 0050	ABC		// Accession Number
+0040 2006	PLACERORDER	// Placer Order Number
+0040 2007	FILLERORDER	// Filler Order Number
+0040 1001	REQPROID	// Requested Procedure ID
+0032 1060	REQPRODES	// Requested Procedure Description
+0040 1006	PLAORDPROCED	// Placer Order Number/Procedure
+0040 1007	FILORDPROC	// Filler Order Number/Procedure
+0040 0009	SPSTEPID	// Scheduled procedure step ID
+0040 0007	SPSTEPDES	// Scheduled procedure step description
+0040 0008	(		// Scheduled Action Item Code Sequence
+ 0008 0100	 AICODE1	// Code Value
+ 0008 0102	 CODESMM	// Coding Scheme designator
+ 0008 0104	 "Action Item 1" // Code meaning
+)

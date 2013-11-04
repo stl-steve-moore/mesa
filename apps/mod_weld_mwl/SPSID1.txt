@@ -1,0 +1,26 @@
+0040 0100 (		// SPS Sequence
+ 0040 0001 MODALITY1	// Scheduled station AE title
+ 0040 0002 19990722	// Scheduled Procedure Step Start Date
+ 0040 0003 2103		// Scheduled Procedure Step Start Time
+ 0008 0060 MR		// Modality
+ 0040 0006 MOORE^STEVE	// Scheduled Performing Physician's Name
+ 0040 0007 "SPS Description"
+ 0040 0010 STATION
+ 0040 0011 LOCATION
+ 0040 0008 (		// Scheduled Action Item Code Sequence
+  0008 0100 X1_A1	// Value
+  0008 0102 MESA_DSS	// Designator
+  0008 0104 "X1 A1"	// Meaning
+ )
+ 0040 0009 SPSID1	// Scheduled Procedure Step ID
+)
+0020 000D 1.2.3.4.1	// Study Instance UID
+0008 0050 ACC1		// Accession Number
+
+// Requested Procedure
+0040 1001 RPSID_1	// Requested Procedure ID
+0032 1060 "Requested Procedure Description"
+
+0010 0010 LAST^FIRST	// Patient Name
+0010 0020 PID_1		// Patient ID
+0010 0030 190101	// Patient Birth Date

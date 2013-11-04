@@ -1,0 +1,71 @@
+
+0040 0100	(		//PRC Scheduled Procedure Step Sequence
+ 0008 0060	#		// Modality
+ 0040 0001	MODALITY2	// PRC Scheduled Station AE Title
+ 0040 0002 	#		// PRC Scheduled Procedure Step Start Date
+ 0040 0003	#		// PRC Scheduled Procedure Step Start Time
+ 0040 0006	#		// PRC Scheduled Performing Physician's Name
+ 0040 0007	#		// PRC Scheduled Step Description
+ 0040 0009	#		// PRC Scheduled Step ID
+ 0040 0010	#		// Scheduled Station Name
+ 0040 0011	#		// Scheduled Procedure Step Location
+ 0040 0400	#		// PRC Comments on the Scheduled Procedure Step
+
+ 0040 0008	(		// Scheduled Action Item Code Sequence
+  0008 0100	 #		// Code Value
+  0008 0102	 #		// Coding Scheme Designator
+  0008 0104	 #		// Code Meaning
+ )
+)
+
+0040 1001	#		// PRC Requested Procedure ID
+0032 1064	(		// Requested Procedure Code Sequence
+ 0008 0100	 #		// Code Value
+ 0008 0102	 #		// Coding Scheme Designator
+ 0008 0104	 #		// Code Meaning
+)
+
+0020 000d	#		// REL Study Instance UID
+0008 1110	(		// Referenced Study Sequence
+ 0008 1150	 #		// Referenced SOP Class UID
+ 0008 1155	 #		// Referenced SOP Instance UID
+)
+
+0008 0050	#		// ID Accession Number
+0008 0090	#		// ID Referring Physician's Name
+0032 1032	#		// Requesting Physician
+
+0010 21d0	#		// PAT Last Menstrual Date
+0010 4000	#		// PAT Comments
+0032 1060	#		// SDY Requested Procedure Description
+
+// Visit Identification
+0038 0010	#		// Admission ID
+
+// Visit Status
+0038 0300	#		// Current Patient Location
+
+// Visit Relationship
+0008 1120	(		// Referenced Patient Sequence
+ 0008 1150	#		// Referenced SOP Class UID
+ 0008 1155	#		// Referenced SOP Instance UID
+)
+
+// Patient Identification
+0010 0010	#		// PAT Patient Name
+0010 0020	#		// PAT Patient ID
+0010 1000	#		// PAT Other Patient IDs
+
+// Patient Demographic
+0010 0030	#		// PAT Patient Birthdate
+0010 0040	#		// PAT Patient Sex
+0010 1020	#		// PAT Patient Size
+0010 1030	#		// PAT Patient Weight
+0040 3001	#		// Confidentiality constraint on patient data
+
+// Patient Medical
+0038 0500	#		// Patient State
+0010 21C0	#		// Pregnancy Status
+0010 2000	#		// Medical Alerts
+0010 2110	#		// Contrast Allergies
+0038 0050	#		// Special Needs

@@ -1,0 +1,32 @@
+0040 0252 COMPLETED		// PPS Status
+0040 0254 StepDescription	// PPS Description
+0040 0255 TypeDescription	// Performed Procedure Type Description
+
+0008 1032 (			// Procedure code sequence
+ 0008 0100 PCODE1		// Code Value
+ 0008 0102 CODESMM		// Coding Scheme Designator
+ 0008 0104 "Procedure Code 1"	// Code Meaning
+)
+
+0040 0250 19990729		// PPS End Date
+0040 0251 1305			// PPS End Time
+
+0040 0260 (			// Performed Action Item Code Seq
+ 0008 0100 AI_CODE1		// Code Value
+ 0008 0102 CODESMM		// Coding Scheme Designator
+ 0008 0104 "Action Item Code 1"	// Code Meaning
+)
+
+0040 0340 (			// Performed Series Sequence
+ 0008 1050 MOORE^HOWARD^H^DR	// Performing Physician's Name
+ 0018 1030 "The simple protocol" // Protocol name
+ 0008 1070 TECHNOLOGIST^TERI	// Operator's Name
+ 0020 000E 1.2.840.31654.1	// Series Instance UID (illegal)
+ 0008 103E "Series Descript"	// Series Description
+ 0008 0054 #			// REtrieve AE title
+ 0008 1140 (			// Referenced Image Sequence
+  0008 1150 1.2.840.10008.5.1.4.1.1.1	// CR
+  0008 1155 1.2.840.31654.2	// SOP Instance UID (illegal)
+ )
+ 0040 0220 ####
+)

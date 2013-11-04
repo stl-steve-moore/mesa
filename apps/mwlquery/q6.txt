@@ -1,0 +1,17 @@
+0040 0100 (		// Scheduled Procedure Step
+ 0040 0001	#	// AE title
+ 0040 0002	#	// Start Date
+ 0040 0003	#	// Start time
+ 0008 0060	CR	// Modality
+ 0040 0006	#	// Performing Phys name
+ 0040 0007	#	// Description
+ 0040 0009	#	// SPS ID
+ 0040 0010	#	// Station Name
+ 0040 0011	#	// Step location
+ 0040 0008 (		//
+  0008 0100	#	// Code Value
+  0008 0102	#	// Coding Scheme Designator
+  0008 0104	#	// Code Meaning
+ )
+)
+0010 0020	#	// Patient ID

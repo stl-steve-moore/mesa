@@ -1,0 +1,18 @@
+
+0040 0100	(		//PRC Scheduled Procedure Step Sequence
+ 0008 0060	#		// Modality
+ 0040 0001	MODALITY1	// PRC Scheduled Station AE Title
+
+)
+
+// Requested Procedure
+0008 0050	#		// ID Accession Number
+
+0010 0020	#		// PAT Patient ID
+
+// Patient Medical
+0038 0500	#		// Patient State
+0010 21C0	#		// Pregnancy Status
+0010 2000	#		// Medical Alerts
+0010 2110	#		// Contrast Allergies
+0038 0050	#		// Special Needs

@@ -1,0 +1,8 @@
+#!/usr/bin/perl -w
+
+$x = "../update_gppps -t gppps_tmplt.dcm -o out.dcm ppscreate.dcm ppsset.dcm";
+print `$x`;
+
+$x = "dcm_dump_file -f out.dcm >out.txt";
+print `$x`;
+

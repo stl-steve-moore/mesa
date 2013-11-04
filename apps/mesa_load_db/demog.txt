@@ -1,0 +1,4 @@
+patient patid issuer nam
+100
+ERL
+utsunomiya^tarou=宇都宮^太郎=うつのみや^たろう
