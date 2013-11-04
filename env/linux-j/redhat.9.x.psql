@@ -1,0 +1,42 @@
+# First section contains MESA specific variables
+
+#
+# MESA software location
+#
+
+setenv MESA_TARGET /opt/mesa
+setenv MESA_STORAGE $MESA_TARGET/storage
+setenv MESA_OS LINUX
+
+#
+#
+setenv MESA_ROOT `pwd`
+setenv ACE_ROOT $MESA_ROOT/external/ACE_wrappers
+setenv XERCESCROOT $MESA_ROOT/external/xerces-c-src1_7_0
+
+setenv MESA_INCLUDE $MESA_ROOT/include
+setenv MESA_LIB $MESA_ROOT/lib
+setenv MESA_MAKE $MESA_ROOT/env/linux-j/make.redhat.9.x.psql
+setenv MESA_BIN $MESA_TARGET/bin
+setenv PSQL_LIB /usr/local/pgsql/lib
+setenv PSQL_INCLUDE /usr/local/pgsql/include/
+#setenv PSQL_LIB /opt/postgres/lib
+#setenv PSQL_INCLUDE /opt/postgres/include
+setenv CTN_LIB $MESA_ROOT/external/ctn/lib/redhat.9.x.psql.noopt
+setenv INSTALL install
+
+# Now, the variables for building CTN software
+setenv DICOM_ROOT `pwd`/external/ctn
+setenv DICOM_BIN $MESA_BIN
+setenv DICOM_LIB $MESA_ROOT/external/ctn/lib/redhat.9.x.psql.noopt
+setenv DICOM_LIBSRC $MESA_ROOT/external/ctn/libsrc
+setenv DICOM_INCLUDE $DICOM_ROOT/include
+setenv DICOM_MAKE $MESA_ROOT/env/linux-j/ctnmake.redhat.9.x.psql.noopt
+setenv CLASSPATH .:$DICOM_ROOT/javactn:$MESA_ROOT/javamesa:$MESA_ROOT/webmesa/mesa-iti:$MESA_ROOT/javaexternal/xerces-1_2_3/xerces.jar:$TOMCAT_HOME/common/lib/servlet-api.jar
+setenv JAR_DIRECTORY $MESA_TARGET/lib
+setenv JDK_ROOT /opt/jdk1.2.2
+setenv INSTALLUID "install -m 4775"
+setenv INSTALLINCLUDE "install -m 444"
+#setenv INDENT "indent -i4 -nfc1 -di4 -nip -bc"
+setenv LEX flex
+setenv RANLIB ranlib

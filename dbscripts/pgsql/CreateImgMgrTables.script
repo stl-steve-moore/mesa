@@ -1,0 +1,36 @@
+#!/bin/csh
+#
+# CreateImgMgrTables
+#
+if ($1 == "") then
+  echo " "
+  echo Usage: "$0 <Database Name>"
+  echo " "
+  exit 1
+endif
+
+
+psql $1 < createpatient.sql
+if ($status != 0) exit 1
+psql $1 < createvisit.pgsql
+if ($status != 0) exit 1
+psql $1 < createstudy.sql
+if ($status != 0) exit 1
+psql $1 < createseries.pgsql
+if ($status != 0) exit 1
+psql $1 < createsopins.pgsql
+if ($status != 0) exit 1
+psql $1 < createdicomapp.pgsql
+if ($status != 0) exit 1
+psql $1 < createstoragecommit.pgsql
+if ($status != 0) exit 1
+psql $1 < createpsview.pgsql
+if ($status != 0) exit 1
+psql $1 < createsopinsview.pgsql
+if ($status != 0) exit 1
+psql $1 < createppwf.pgsql
+if ($status != 0) exit 1
+psql $1 < createidentifiers.pgsql
+if ($status != 0) exit 1
+psql $1 < load_id_rm.sql
+if ($status != 0) exit 1

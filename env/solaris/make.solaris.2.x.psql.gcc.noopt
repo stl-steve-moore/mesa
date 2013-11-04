@@ -1,0 +1,50 @@
+#  Global rules for compilation of Mesa libraries and servers.
+# Includes the ACE and MESA compiler flags.
+
+CXX = g++
+CC = gcc
+
+INSTALLINCLUDE = /usr/ucb/install -m 444 -c
+
+LIBS_MESA = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lcxxctn -lhl7 -lcgihtml -lcommon -limexa  -lctn -lpq -lsocket -ldl -lgen -lnsl -lposix4 -lthread -lw
+LIBS_MESA_NODB = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lcxxctn -lhl7 -lcgihtml -lcommon -limexa  -lctn -lsocket -ldl -lgen -lnsl -lposix4 -lthread -lw
+LIBS_MESA_STATIC = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lcxxctn -lhl7 -lcgihtml -lcommon -limexa  -lctn $(PSQL_ROOT)/lib/libpq.a -lsocket -ldl -lgen -lnsl -lposix4 -lthread -lw
+LIBS_ACE = -lACE -lsocket -ldl -lgen -lnsl -lposix4 -lthread -lw
+
+#LIBS_MESA_SSL = $(LIBS_MESA) -L/usr/local/openssl/lib -lssl -lcrypto
+LIBS_MESA_SSL = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lmesa_secure -lcxxctn -lhl7 -lcgihtml -lcommon -limexa  -lctn -lpq -lsocket -ldl -lgen -lnsl -lposix4 -lthread -lw -L/usr/local/openssl/lib -lssl -lcrypto
+
+LIBS_MESA_XERCESC = $(LIBS_MESA) -L$(XERCESCROOT)/lib -lxerces-c1_7_0
+
+#C_FLAGS = -Wall -Wpointer-arith -pipe -g\
+#	 -fno-exceptions
+
+INCLUDES = -I. -I$(MESA_INCLUDE) \
+	-I$(MESA_ROOT)/external/ctn/include \
+	-I$(MESA_ROOT)/external/cgihtml-1.69 \
+	-I/usr/local/openssl/include \
+	-I$(XERCESCROOT)/include
+
+C_OPTS = \
+	-DSOLARIS \
+	-DSTRING_COMPARE_GCC_NON_STANDARD \
+	-Wpointer-arith -pipe -g \
+	-fexceptions -DMESA_USE_SOCKLEN_T
+#	-Wall -Wpointer-arith -pipe -g 
+#	-fno-exceptions
+
+L_OPTS = -L$(MESA_LIB) -L$(CTN_LIB) -L$(PSQL_ROOT)/lib  \
+-L$(MESA_ROOT)/external/cgihtml-1.69
+
+# Rule to make *.cpp -> *.o
+####################
+.SUFFIXES: .cpp .hpp
+
+.cpp.o:
+	$(CXX) $(CXX_FLAGS) $(INCLUDES) -c $<
+.c.o:
+	$(CC) $(C_FLAGS) $(INCLUDES) -c $<
+
+
+# Unused compiler flags from the ACE environment:
+#  -fno-implicit-templates -O2

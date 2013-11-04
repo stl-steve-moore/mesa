@@ -1,0 +1,34 @@
+#!/usr/local/bin/perl -w
+
+# insertMWL
+#
+# Phil DiCorpo
+# Washington University
+# Electronic Radiology Lab
+# 6/4/99 
+#
+# This script takes in several command line arguments and
+# inserts scheduling information 
+
+use Getopt::Long;
+
+#get all the command line options entered
+&GetOptions("D=s" => \$DATABASE, "P=s" => \$NUM_PROCEDURES,
+	    "S=s" => \$MAX_SPS, "A=s" => \$MAX_AITEMS);
+
+#set some default values if neccessary
+
+# here we randomly generate the other info for each patient
+# using a series of nested "for" loops
+for($X1=$NUM_PROCEDURES; $X1>0; $X1--){
+        $UNISER = "P".$X1."^Procedure ".$X1."^ERL_MESA";
+	for($I=$MAX_SPS; $I>0; $I--){	
+	  $SPSID = "spsid".$X1;
+	  $SPSDES = "spsdes".$I;
+	  `echo "insert into schedule(uniserid,spsid,spsdes) 
+                 values ('$UNISER','$SPSID','$SPSDES');" | psql $DATABASE`;
+	for($X2=$MAX_AITEMS; $X2>0; $X2--){
+	  $AITEM = "actionitem".$X2;
+	  `echo "insert into actionitem(spsid,codmea) 
+           values ('$SPSID','$AITEM');" | psql $DATABASE`;
+}}} #end the nested loops

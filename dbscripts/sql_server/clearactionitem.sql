@@ -1,0 +1,3 @@
+delete from actionitem
+go
+

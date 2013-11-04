@@ -1,0 +1,2 @@
+delete from visit
+go

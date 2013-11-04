@@ -1,0 +1,295 @@
+# SPS Index, Universal Service ID, SPS Description for MWL
+schedule spsindex uniserid spsdes
+10
+P1^Procedure 1^ERL_MESA
+P1 10
+
+actionitem spsindex codval codmea codschdes
+10
+X1_A1
+SP Action Item X1_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+20
+P2^Procedure 2^ERL_MESA
+P2 20
+
+actionitem spsindex codval codmea codschdes
+20
+X2_A1
+SP Action Item X2_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+30
+'P3^Procedure 3^ERL_MESA
+P3 30
+actionitem spsindex codval codmea codschdes
+30
+X3A_A1
+SP Action Item X3A_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+31
+P3^Procedure 3^ERL_MESA
+P3 31
+
+actionitem spsindex codval codmea codschdes
+31
+X3B_A1
+SP Action Item X3B_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+40
+P4^Procedure 4^ERL_MESA
+P4 40
+
+actionitem spsindex codval codmea codschdes
+40
+X4A_A1
+SP Action Item X4A_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+41
+P4^Procedure 4^ERL_MESA
+P4 41
+
+actionitem spsindex codval codmea codschdes
+41
+X4B_A1
+SP Action Item X4B_A1
+DSS_MESA
+#
+#
+#-- This has been commented out for some time; we don't want this extra row.
+#-- insert into schedule(uniserid, spsindex, spsdes) values
+#--  ('P4^Procedure 4B^ERL_MESA', 42, 'P4 42');
+#
+actionitem spsindex codval codmea codschdes
+41
+X4B_A2
+SP Action Item X4B_A2
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+50
+P5^Procedure 5^ERL_MESA
+P5 50
+
+actionitem spsindex codval codmea codschdes
+50
+X5_A1
+SP Action Item X5_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+60
+P6^Procedure 6^ERL_MESA
+P6 60
+
+actionitem spsindex codval codmea codschdes
+60
+X6_A1
+SP Action Item X6_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+70
+P7^Procedure 7^ERL_MESA
+P7 70
+
+actionitem spsindex codval codmea codschdes
+70
+X7_A1
+SP Action Item X7_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+80
+P8^Procedure 8^ERL_MESA
+P8 80
+
+actionitem spsindex codval codmea codschdes
+80
+X8A_A1
+SP Action Item X8A_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+81
+P8^Procedure 8^ERL_MESA
+P8 81
+
+actionitem spsindex codval codmea codschdes
+81
+X8B_A1
+SP Action Item X8B_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+100
+P10^Procedure 10^ERL_MESA
+P10 100
+
+actionitem spsindex codval codmea codschdes
+100
+X10_A1
+SP Action Item X10_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+200
+P20^Procedure 20^ERL_MESA
+P20 200
+
+actionitem spsindex codval codmea codschdes
+200
+X20_A1
+SP Action Item X20_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+210
+P21^Procedure 21^ERL_MESA
+P21 210
+
+actionitem spsindex codval codmea codschdes
+210
+X21_A1
+SP Action Item X21_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+220
+P22^Procedure 22^ERL_MESA
+P22 220
+
+actionitem spsindex codval codmea codschdes
+220
+X22_A1
+SP Action Item X22_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+230
+P23^Procedure 23^ERL_MESA
+P23 230
+
+actionitem spsindex codval codmea codschdes
+230
+X23_A1
+SP Action Item X23_A1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+1010
+P101^Mammography Screening^ERL_MESA
+P101 Mammography Screening
+#
+actionitem spsindex codval codmea codschdes
+1010
+X101_A1
+SP X101 MG Screening
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+1020
+P102^Procedure 102^ERL_MESA
+P102 3D CT Reconstruction
+
+actionitem spsindex codval codmea codschdes
+1020
+X102_A1
+SP X102 CT 3D Reconstruction
+DSS_MESA
+#
+#
+#-- Entries for Japanese implementations
+schedule spsindex uniserid spsdes
+2000
+GX.01.00^単純^JJ1017
+SPS for 単純
+
+actionitem spsindex codval codmea codschdes
+2000
+GX.01.00_PC1
+GX.01.00 Protocol Code Item 1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+2005
+GX.01.01^X線単純ポータブル^JJ1017
+GX.01.01 X線単純ポータブル SPS Description
+#
+actionitem spsindex codval codmea codschdes
+2005
+GX.01.01_PC1
+GX.01.01 Protocol Code Item 1
+DSS_MESA
+#
+schedule spsindex uniserid spsdes
+2010
+XA.02.00^血管造影^JJ1017
+XA-02-00
+
+actionitem spsindex codval codmea codschdes
+2010
+XA.02.00_PC1
+XA.02.00 Protocol Code Item 1
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+2011
+XA.02.00^血管造影^JJ1017
+XA-02-00
+
+actionitem spsindex codval codmea codschdes
+2011
+XA.02.00_PC2
+XA.02.00 Protocol Code Item 2
+DSS_MESA
+#
+#
+schedule spsindex uniserid spsdes
+2020
+NM.02.00^シンチグラム＾^JJ1017
+NM.02.00 シンチグラム＾ SPS Description
+
+actionitem spsindex codval codmea codschdes
+2020
+NM.02.00_PC1
+NM.02.00 Protocol Code Item 1
+DSS_MESA
+#
+schedule spsindex uniserid spsdes
+2030
+MR.01.00^単純MR^JJ1017
+MR.01.00 単純 SPS Description
+actionitem spsindex codval codmea codschdes
+2030
+MR.01.00_PC1
+MR.01.00 Protocol Code Item 1
+DSS_MESA

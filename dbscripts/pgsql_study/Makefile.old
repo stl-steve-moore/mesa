@@ -1,0 +1,53 @@
+# Makefile to create MESA Databases with tables for all simulators
+
+database:
+	./CreateDB adt
+	./CreateDB ordplc
+	./CreateDB ordfil
+	./CreateDB mod1
+	./CreateDB mod2
+	./CreateDB imgmgr
+	./CreateDB wkstation
+	./CreateDB rpt_repos
+	./CreateDB rpt_manager
+
+	./CreateADTTables.script adt
+	./CreateOrdPlcTables.script ordplc
+	./CreateOrdFilTables.script ordfil
+	./CreateModTables.script mod1
+	./CreateModTables.script mod2
+	./CreateImgMgrTables.script imgmgr
+	./CreateImgMgrTables.script wkstation
+	./CreateImgMgrTables.script rpt_repos
+	./CreateImgMgrTables.script rpt_manager
+
+	psql imgmgr < loaddicomapp.pgsql
+	psql rpt_repos < loaddicomapp.pgsql
+clear:
+	./ClearADTTables.script adt
+	./ClearOrdPlcTables.script ordplc
+	perl ./ClearOrdFilTables.script ordfil
+	./ClearModTables.script mod1
+	./ClearModTables.script mod2
+	perl ./ClearImgMgrTables.pl imgmgr
+	perl ./ClearImgMgrTables.pl wkstation
+	perl ./ClearImgMgrTables.pl rpt_repos
+	perl ./ClearImgMgrTables.pl rpt_manager
+
+uninstall:
+	./DropDB adt
+	./DropDB ordplc
+	./DropDB ordfil
+	./DropDB mod1
+	./DropDB mod2
+	./DropDB imgmgr
+	./DropDB wkstation
+	./DropDB rpt_repos
+	./DropDB rpt_manager
+
+imgmgr:
+	psql imgmgr < loaddicomapp.pgsql
+
+# Install these files in target directory.
+install:
+	cp -r * $(MESA_TARGET)/db

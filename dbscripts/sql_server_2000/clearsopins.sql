@@ -1,0 +1,2 @@
+delete from sopins
+go

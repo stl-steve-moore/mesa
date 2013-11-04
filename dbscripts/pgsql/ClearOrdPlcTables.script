@@ -1,0 +1,14 @@
+#!/bin/csh
+#
+# Clear Order Placer Tables
+#
+if ($1 == "") then
+  echo " "
+  echo Usage: "$0 <Database Name>"
+  echo " "
+  exit 1
+endif
+
+./ClearOrdPlcContent.script $1
+
+psql $1 < load_id_op.pgsql

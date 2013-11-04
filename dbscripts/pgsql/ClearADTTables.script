@@ -1,0 +1,15 @@
+#!/bin/csh
+#
+# CreateADTTables
+#
+if ($1 == "") then
+  echo " "
+  echo Usage: "$0 <Database Name>"
+  echo " "
+  exit 1
+endif
+
+
+psql $1 < clearpatient.pgsql
+psql $1 < clearvisit.pgsql
+psql $1 < load_id_adt.pgsql

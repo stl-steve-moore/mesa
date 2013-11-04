@@ -1,0 +1,4 @@
+	drop table identifiers
+	go
+
+

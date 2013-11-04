@@ -1,0 +1,14 @@
+# Makefile to create MESA Databases with tables for all simulators
+
+database:
+	./CreateDB queue_info
+
+	./CreateQueueMgrTables.script queue_info
+
+uninstall:
+	dropdb queue_info
+
+
+# Install these files in target directory.
+install:
+	cp -r * $(MESA_TARGET)/db

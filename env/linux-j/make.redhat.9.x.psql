@@ -1,0 +1,46 @@
+#  Global rules for compilation of Mesa libraries and servers.
+# Includes the MESA compiler flags.
+
+CXX = g++
+CC = gcc
+
+INSTALLINCLUDE = install -m 444
+
+LIBS_MESA = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lhl7 -lcxxctn \
+ -lcgihtml -lcommon -limexa  -lctn -lpq -lcrypt
+LIBS_MESA_NODB = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lhl7 -lcxxctn \
+ -lcgihtml -lcommon -limexa  -lctn
+#LIBS_ACE = -ldl
+
+LIBS_MESA_SSL = -lsyslog -lcommon -lmeval -lsr -ltranslators -ldomain -lmesa_secure -lcxxctn -lhl7 -lcgihtml -lcommon -limexa -lctn -lpq -lcrypt -L/usr/local/openssl/lib -lssl -lcrypto
+
+LIBS_MESA_XERCESC = $(LIBS_MESA) -L$(XERCESCROOT)/lib -lxerces-c1_7_0
+
+#C_FLAGS = -Wall -Wpointer-arith -pipe -g\
+#	 -fno-exceptions
+
+INCLUDES = -I. -I$(MESA_INCLUDE) \
+	-I$(MESA_ROOT)/external/ctn/include \
+	-I/usr/local/openssl/include \
+	-I$(XERCESCROOT)/include
+
+C_OPTS = -g -DLINUX -I$(MESA_INCLUDE) -I$(MESA_ROOT)/external/ctn/include \
+	-Wpointer-arith -pipe -g \
+	-fexceptions -DMESA_USE_SOCKLEN_T
+#	-Wall -Wpointer-arith -pipe -g \
+#	-fno-exceptions
+
+L_OPTS = -L$(MESA_LIB) -L$(CTN_LIB) -L$(PSQL_LIB) 
+
+# Rule to make *.cpp -> *.o
+####################
+.SUFFIXES: .cpp .hpp
+
+.cpp.o:
+	$(CXX) $(CXX_FLAGS) $(INCLUDES) -c $<
+.c.o:
+	$(CC) $(C_FLAGS) $(INCLUDES) -c $<
+
+
+# Unused compiler flags from the ACE environment:
+#  -fno-implicit-templates -O2

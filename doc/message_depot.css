@@ -1,0 +1,26 @@
+
+<style type="text/css">
+
+#side_menu {
+    background: white;
+}
+
+ul.list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.list li {
+    background: white;
+    margin: 0.5em ;
+    padding: 0.1em;
+
+}
+
+#main_menu {
+    text-align: center;
+}
+
+
+</style>

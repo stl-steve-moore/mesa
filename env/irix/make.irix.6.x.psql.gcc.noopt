@@ -1,0 +1,40 @@
+#  Global rules for compilation of Mesa libraries and servers.
+# Includes the ACE and MESA compiler flags.
+
+OS = IRIX
+ARCHITECTURE = BIG_ENDIAN_ARCHITECTURE
+LONGSIZE = 32
+INTSIZE = 32
+SHORTSIZE = 16
+
+
+CXX = g++
+CC = gcc
+
+INSTALLINCLUDE = /sbin/install -m 444 -c
+
+LIBS_MESA = -lcommon -ltranslators -ldomain -lcxxctn -lhl7 -lcommon -limexa  -lctn -lpq -lsocket -ldl -lgen -lnsl -lw
+LIBS_ACE = -lACE -lsocket -ldl -lgen -lnsl -lw
+
+
+INCLUDES = -I. -I$(MESA_INCLUDE) \
+	-I$(MESA_ROOT)/external/ctn/include
+
+C_OPTS = -g -D$(OS) -D$(ARCHITECTURE) \
+	-DLONGSIZE=$(LONGSIZE)  -DINTSIZE=$(INTSIZE) -DSHORTSIZE=$(SHORTSIZE) \
+	-I$(MESA_INCLUDE) -I$(MESA_ROOT)/external/ctn/include 
+
+L_OPTS = -L$(MESA_LIB) -L$(CTN_LIB) -L$(PSQL_ROOT)/lib
+
+# Rule to make *.cpp -> *.o
+####################
+.SUFFIXES: .cpp .hpp
+
+.cpp.o:
+	$(CXX) $(CXX_FLAGS) $(INCLUDES) -c $<
+.c.o:
+	$(CC) $(C_FLAGS) $(INCLUDES) -c $<
+
+
+# Unused compiler flags from the ACE environment:
+#  -fno-implicit-templates -O2

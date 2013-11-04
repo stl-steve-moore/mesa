@@ -1,0 +1,42 @@
+# Makefile for cgihtml.a
+# $Id: Makefile.mesa,v 1.2 2001/08/10 22:31:49 smm Exp $
+include $(MESA_MAKE)
+
+C_FLAGS = $(C_OPTS)
+CXX_FLAGS = $(C_OPTS)
+CC_FLAGS = $(C_OPTS)
+
+
+# macros and variables
+#CC= gcc
+RANLIB= ranlib
+CFLAGS= -g -Wall -DUNIX #-DUPLOADDIR='"/tmp"'
+#CFLAGS = -g -Wall -DWINDOWS #-DUPLOADDIR='"/tmp"'
+
+#INSTALLDIR= /usr/local/etc/httpd/cgi-src
+
+#OBJS = string-lib.o cgi-llist.o cgi-lib.o html-lib.o
+OBJS = string-lib.o cgi-llist.o cgi-lib.o
+LIB = libcgihtml.a
+
+# targets
+$(LIB): $(OBJS)
+	ar cr $@ $(OBJS)
+	$(RANLIB) $@
+
+examples: $(LIB)
+	cd examples; make all
+
+all: examples
+
+install: $(LIB)
+	cp -f *.h $(MESA_ROOT)/include
+	cp $(LIB) $(MESA_ROOT)/lib
+
+clean:
+	rm -f *.o $(LIB)
+
+clobber:
+	rm -f *.o $(LIB)
+	cd examples; make clean
+

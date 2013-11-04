@@ -1,0 +1,52 @@
+#  Global rules for compilation for solaris with postgres/gcc
+
+OS = IRIX
+ARCHITECTURE = BIG_ENDIAN_ARCHITECTURE
+LONGSIZE = 32
+INTSIZE = 32
+SHORTSIZE = 16
+
+CC = gcc
+XCC = gcc
+DBLINK = gcc
+
+
+X11_LIBS = -L/usr/X11/lib -lX11 
+XAW_LIBS = -lXaw -lXmu -lXt -lXext -lm
+XM_INCLUDE = /usr/dt/include
+X11_INCLUDE = /usr/openwin/share/include
+XILHOME = /opt/SUNWits/Graphics-sw/xil
+SYBASE_INCLUDE =
+
+LIBPATH_X11 = -L/usr/X11/lib
+LIBPATH_MOTIF = -L/usr/dt/lib
+LIBPATH_UCB = -L/usr/ucblib
+LIBPATH_XIL = -L$(XILHOME)/lib
+LIBPATH_DATABASE = -L$(PSQL_ROOT)/lib
+LIBS_X11 = -lXt -lX11
+LIBS_MOTIF = -lXm
+LIBS_XAW = -lXaw -lXmu -lXt -lXext -lm
+LIBS_OS = -lm -lsocket -lnsl -lgen -lelf -lc 
+
+LIBS_OS_SECURE_UCB = -lm -lsocket -lnsl -lgen -lelf -lc 
+LIBS_DATABASE = -ltbl_psql -lpq
+LIBS_LEX = -ll
+LIBS_CTN = -lctn $(LIBPATH_DATABASE) -lpq
+
+LIBS_CTN_STATIC =  -lctn $(LIBPATH_DATABASE) $(LIBS_DATABASE)  $(LIBS_OS_SECURE_UCB)
+
+LIBS_XIL = -lxil
+CFLAGS_X11 = -I/usr/openwin/include
+CFLAGS_MOTIF = -I$(XM_INCLUDE)
+CFLAGS_XIL = -I$(XILHOME)/include
+STATIC = -Bstatic
+
+C_OPTS = -g -Dsparc -D$(ARCHITECTURE) -D$(OS) -DSHARED_MEMORY \
+-DSEMAPHORE -DX11 -DATHENA -DMOTIF -DX11R4 -DUSLEEP -DPSQL \
+-DTBL_REQUIRES_HAT_ESCAPE \
+-I$(DICOM_INCLUDE) -I$(PSQL_ROOT)/include \
+$(CFLAGS_MOTIF) $(CFLAGS_X11) \
+-DLONGSIZE=$(LONGSIZE) -DINTSIZE=$(INTSIZE) -DSHORTSIZE=$(SHORTSIZE) \
+-DTIMEOFDAYARGS=2 \
+-DCTN_IDBV2
+

@@ -1,0 +1,114 @@
+10110^US Procedure 1^99IHE@ 77001@ US: One@ 910110@ US: One@ 99IHE
+10150^US Procedure 2^99IHE@ 77002@ US: Two@ 910150@ US: Two@ 99IHE
+#
+10210^Radiological Examination: Chest X-Ray^99IHE@     77011@ CR: CXR@    910210@CR: CXR@     99IHE
+10250^Radiological Examination: Abdominal X-Ray^99IHE@ 77012@ CR: Abdomen@910250@CR: Abdomen@ 99IHE
+#
+10310^Ultrasound Examination: Cardiac Screening^99IHE@ 77021@ US: Screening@  910310@ US: Screening@  99IHE
+10350^Ultrasound Examination: Stress Echo^99IHE@       77022@ US: Stress Echo@910350@ US: Stress Echo@ 99IHE
+#
+10-P2-7131C^Procedure: Balke Protocol^99IHE@ 77041@ ECG: Balke Protocol@ 910-P2-7131C@ ECG: Balke Protocol@ 99IHE
+ 10-STR-NM1^Procedure: Stress-NM1^99IHE@     77042@ NM: Stress-NM1@      910-STR-NM1@  NM: Stress-NM1@      99IHE
+ 10-STR-US1^Procedure: Stress-US1^99IHE@     77043@ NM: Stress-US1@      910-STR-US1@  NM: Stress-US1@      99IHE
+10-P2-7131E^Procedure: Ramp Protocol^99IHE@  77044@ ECG: Ramp Protocol@  910-P2-7131E@ ECG: Rampe Protocol@ 99IHE
+10-DOBUTAMINE^Dobutamine Stress Protocol^99IHE@ 77045@ US Dobutamine Stress@ 910-DOBUTAMINE@ US Dobutamine Stress@ 99IHE
+#
+10410^Radiological Examination: Left Leg^99IHE@   77051@ DX: Left Leg@  910410@DX: Left Leg@  99IHE
+14050^Radiological Examination: Left Ankle^99IHE@ 77052@ DX: Left Ankle@914050@DX: Left Ankle@99IHE
+#
+10610^Radiological Examination: Left Hand^99IHE@  77061@CR: Left Hand@  910610@CR: Left Hand@  99IHE
+10650^Radiological Examination: Left Wrist^99IHE@ 77061@CR: Left Wrist@ 910650@CR: Left Wrist@ 99IHE
+#
+10710^Transabdominal Ultrasound Scan^99IHE@ 77071@ US: Transabdominal@     910710@ US: Transabdominal@     99IHE
+10750^Endovaginal Pelvic Scan^99IHE@        77072@ US: Endovaginal Pelvis@ 910750@ US: Endovaginal Pelvis@ 99IHE
+#
+10810^Radiological Examination: Right Leg^99IHE@   77081@ CR: Right Leg@   910810@CR: Right Leg@   99IHE
+10850^Radiological Examination: Right Ankle^99IHE@ 77082@ CR: Right Ankle@ 910850@CR: Right Ankle@ 99IHE
+#
+10910^Computed Tomography: Chest^99IHE@   77091@CT: Chest@   910910@ CT: Chest@   99IHE
+10950^Computed Tomography: Abdomen^99IHE@ 77092@CT: Abdomen@ 910950@ CT: Abdomen@ 99IHE
+10960^Computed Tomography: Head^99IHE@    77093@CT: Head@    910960@ CT: Head@    99IHE
+#
+11010^Magnetic Resonance Imaging: Head^99IHE@ 77101@ MR: Head@911010@ MR: Head@ 99IHE
+11050^Magnetic Resonance Imaging: Neck^99IHE@ 77102@ MR: Neck@911050@ MR: Neck@ 99IHE
+#
+11210^Angiography: Cardiac^99IHE@ 77111@ XA: Cardiac@     911210@ XA: Cardiac@   99IHE
+11250^Angiography: Carotid^99IHE@ 77112@ XA: Carotid@     911250@ XA: Carotid@   99IHE
+11260^Angiography: CT^99IHE@      77113@ XA: CT@          911260@ XA: CT@        99IHE
+11270^EP: Ablation Procedure^99IHE@ 77121@ EPS: Ablation@ 911270@ EPS: Ablation@ 99IHE
+#
+11410^XRay: Ankle^99IHE@ 77131@DX: Ankle@ 911410@DX: Ankle@ 99IHE
+11450^XRay: Foot^99IHE@  77132@DX: Foot@  911450@DX: Foot@  99IHE
+#
+11510^Radiological Examination: Mammography^99IHE@ 77141@MG: Mammography@ 911510@MG: Mammography@ 99IHE
+#
+11610^Radiological Examination: Skull^99IHE@    77151@ CR: Skull@   911610@CR: Skull@   99IHE
+11650^Radiological Examination: C- Spine^99IHE@ 77152@ CR: C-Spine@ 911650@CR: C-Spine@ 99IHE
+#
+11810^OB-GYN Ultrasound^99IHE@ 77161@US: OB-GYN@ 911810@ US: OB-GYN@ 99IHE
+#
+11910^Venogram^99IHE@ 77171@ XRF: Venogram@ 911910@ XRF: Venogam@  99IHE
+11950^Upper GI^99IHE@ 77172@ XRF: Upper GI@ 911950@ XRF: Upper GI@ 99IHE
+#
+12010^Magnetic Resonance Imaging: Left Knee^99IHE@ 77181@ MR: Left Knee@ 912010@ MR: Left Knee@ 99IHE
+12050^Magnetic Resonance Imaging: Back^99IHE@      77182@ MR: Back@      912050@ MR: Back@      99IHE
+#
+12110^Radiological Examination: Hand R^99IHE@  77191@ DX: Hand R@  912110@ DX: Hand R@  99IHE
+12150^Radiological Examination: Wrist R^99IHE@ 77192@ DX: Wrist R@ 912150@ DX: Wrist R@ 99IHE
+#
+12510^Magnetic Resonance Imaging Brain^99IHE@ 77201@ MR: Brain@ 912510@ MR:Brain@ 99IHE
+#
+13110^CD/DVD Import^99IHE@           77211@ OT: CD/DVD Import@           913110@ OT: CD/DVD Import@       99IHE
+13120^Scanned Film Import^99IHE@     77212@ SC: Scanned Film Import@     913120@ SC: Scanned Film Import@ 99IHE
+13130^Scanned Document Import^99IHE@ 77213@ SC: Scanned Document Import@ 913130@ SC: Scanned Document Import@ 99IHE
+13140^Network Import^99IHE@          77214@ OT: Network Import@          913140@ OT: Network Import@      99IHE
+#
+16110^DEXA Exam: AP Spine^99IHE@    77221@ BMD: Bone Densitometry: AP Spine@    916110@ Bone Densitometry: AP Spine@    99IHE
+16150^DEXA Exam: Left Femur^99IHE@  77222@ BMD: Bone Densitometry: Left Femur@  916150@ Bone Densitometry: Left Femur@  99IHE
+16151^DEXA Exam: Right Femur^99IHE@ 77223@ BMD: Bone Densitometry: Right Femur@ 916151@ Bone Densitometry: Right Femur@ 99IHE
+#
+16210^Magnetic Resonance Imaging: Ankle^99IHE@ 77221@ MR: Ankle@ 916210@MR: Ankle@ 99IHE
+#
+16310^Dynamic - Renalgram^99IHE@               77231@NM: Renalgram@           916310@ NM: Renalgram@           99IHE
+16350^Gated Spect - Cardiac Gated Spect^99IHE@ 77232@NM: Cardiac Gated Spect@ 916350@ NM: Cardiac Gated Spect@ 99IHE
+16370^Spect - Bone Spect^99IHE@                77233@NM: Bone Spect@          916370@ NM: Bone Spect@          99IHE
+#
+17110^RF Examination: Stomach^99IHE@ 77241@ RF: Stomach@ 917110@ RF: Stomach@ 99IHE
+17130^RF Examination: Colon^99IHE@   77242@ RF: Colon@   917130@ RF: Colon@   99IHE
+#-##
+18110^Angiography: Diagnostic Catheterization^99IHE@  77251@ XA: Diagnostic Catheterization@  XX-40041@ XA: Diagnostic Catheterization@ 99IHE
+18111^Angiography: Therapeutic Catheterization^99IHE@ 77252@ XA: Therapeutic Catheterization@ XX-40061@ XA: Therapeutic Catheterization@ 99IHE
+#
+19110^Diagnostic ECG^99IHE@ 77261@ Diag ECG@ XX-40081@ Diag ECG@ 99IHE
+#
+MAWF0001^Screening Mammography, bilateral^99IHE@ 77271@ MG: Screening bilateral@ 9MAWF0001@ MG: Screening bilateral@ 99IHE
+MAWF0002^Screening Mammography, left^99IHE@      77272@ MG: Screening left@      9MAWF0002@ MG: Screening left@      99IHE
+MAWF0003^Screening Mammography, right^99IHE@     77273@ MG: Screening right@     9MAWF0003@ MG: Screening right@     99IHE
+#
+MAWF0004^Diagnostic Mammography, bilateral^99IHE@ 77281@ MG: Diagnostic bilateral@  9MAWF0004@ MG: Diagnostic bilateral@ 99IHE
+MAWF0005^Diagnostic Mammography, left^99IHE@      77282@ MG: Diagnostic left@       9MAWF0005@ MG: Diagnostic left@ 99IHE
+MAWF0006^Diagnostic Mammography, right^99IHE@     77283@ MG: Diagnostic right@      9MAWF0006@ MG: Diagnostic right@ 99IHE
+#
+MAWF0007^Mammary Ductogram, Single Duct, left^99IHE@    77291@ MG: Ductogram, single, left@    9MAWF0007@ MG: Ductogram, single, left@99IHE
+MAWF0008^Mammary Ductogram, Single Duct, right^99IHE@   77292@ MG: Ductogram, single, right@   9MAWF0008@ MG: Ductogram, single, right@99IHE
+MAWF0009^Mammary Ductogram, Multiple Duct, left^99IHE@  77293@ MG: Ductogram, multiple, left@  9MAWF0009@ MG: Ductogram, multiple, left@99IHE
+MAWF0010^Mammary Ductogram, Multiple Duct, right^99IHE@ 77294@ MG: Ductogram, multiple, right@ 9MAWF0010@ MG: Ductogram, multiple, right@99IHE
+#
+MAWF0011^Mammogram for marker placement, left^99IHE@  77301@ MG: Marker placement, left@   9MAWF0011@ MG: Marker placement, left@  99IHE
+MAWF0012^Mammogram for marker placement, right^99IHE@ 77302@ MG: Marker placement, right@  9MAWF0012@ MG: Marker placement, right@ 99IHE
+#-##
+MAWF0013^Needle Localization, Image Guided, Mammography, left^99IHE@  77311@ MG: Needle localization, left@  9MAWF0013@ MG: Needle localization, left@  99IHE
+MAWF0014^Needle Localization, Image Guided, Mammography, right^99IHE@ 77312@ MG: Needle localization, right@ 9MAWF0014@ MG: Needle localization, right@ 99IHE
+#
+MAWF0015^Stereotactic Biopsy, Image Guidance, left^99IHE@  77321@ MG: Stereotactic biopsy, left@  9MAWF0015@ MG: Streotactic biopsy, left@  99IHE
+MAWF0016^Stereotactic Biopsy, Image Guidance, right^99IHE@ 77322@ MG: Stereotactic biopsy, right@ 9MAWF0016@ MG: Streotactic biopsy, right@ 99IHE
+#
+MAWF0017^Breast Specimen Mammography, left^99IHE@  77331@ MG: Breast specimen, left@  9MAWF0017@ MG: Breast specimen, left@  99IHE
+MAWF0018^Breast Specimen Mammography, right^99IHE@ 77332@ MG: Breast specimen, right@ 9MAWF0018@ MG: Breast specimen, right@ 99IHE
+#
+MAWF0019^Quality Control, Mammography^99IHE@ 77341@ MG: Quality control@ 9MAWF0019@  MG: Quality Control@  99IHE
+MAWF0020^Additional Mammography Views^99IHE@ 77342@ MG: Additional views@ 9MAWF0020@ MG: Additional views@ 99IHE
+#
+20110^Group Test^99IHE@77351@Group Test SPS1@P1_A1@SP Action Item P1_A1@99IHE
+20110^Group Test^99IHE@77352@Group Test SPS2@P2_A1@SP Action Item P2_A1@99IHE
+#

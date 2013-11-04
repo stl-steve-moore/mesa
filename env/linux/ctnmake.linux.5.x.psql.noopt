@@ -1,0 +1,63 @@
+#  Global rules for compilation for sunos
+
+XCC = gcc
+
+OS = LINUX
+ARCHITECTURE = LITTLE_ENDIAN_ARCHITECTURE
+LONGSIZE = 32
+INTSIZE = 32
+SHORTSIZE = 16
+
+XM_INCLUDE = /usr/X11R6/include
+
+LIBPATH_X11 = -L/usr/X11R6/lib
+LIBPATH_MOTIF = -L/usr/X11R6/lib
+LIBPATH_UCB =
+LIBS_X11 = -lXext -lXt -lX11
+LIBS_MOTIF = -lXm
+LIBS_XAW = -lXaw -lXmu -lXt -lXext -lm
+LIBS_OS = 
+LIBS_DATABASE = -ltbl_psql -lpq
+LIBS_LEX = -lfl
+LIBS_CTN = -lctn -L$(PSQL_LIB) -lpq -lcrypt
+LIBS_CTN_NODB = -lctn
+ALIBS_CTN =  \
+	-lmut \
+	-lmanage \
+	-liap \
+	-licon \
+	-lprint \
+	-lsnp \
+	-lfis -lidb \
+	$(LIBPATH_DATABASE) $(LIBS_DATABASE) \
+	-ldatabase -lhunk_man \
+	-lcfg \
+	-lservices \
+	-lmessages \
+	-lsq -ldcmobjects \
+	-ldulprotocol \
+	-luid \
+	-llst \
+	-lgq \
+	-lie \
+	-lutility \
+	-lcondition \
+	-lctnthread
+
+CFLAGS_X11 =
+CFLAGS_MOTIF = -I$(XM_INCLUDE)
+SYBASE_INCLUDE = .
+
+#DEBUG_LIBS = -lmalloc
+LONGSIZE=32
+INTSIZE=32
+SHORTSIZE=16
+C_OPTS = -g -DDEBUG -D$(ARCHITECTURE) -D$(OS) -DSHARED_MEMORY -DLINUX\
+-DSEMAPHORE -DX11 -DATHENA -DX11R4 -DUSLEEP -DPSQL -DUSEREGCOMP\
+-I$(DICOM_INCLUDE) -I$(PSQL_INCLUDE) \
+$(CFLAGS_MOTIF) $(CFLAGS_X11) \
+-DLONGSIZE=$(LONGSIZE) -DINTSIZE=$(INTSIZE) -DSHORTSIZE=$(SHORTSIZE) \
+-DTIMEOFDAYARGS=2
+
+DB_OBJS = tbl_psql.o tblcond.o idb.o idbcond.o
+
